@@ -1,0 +1,53 @@
+{
+    "name": "vscode-pawn",
+    "displayName": "Pawn Tools",
+    "description": "Pawn tools for vscode powered by sampctl.",
+    "version": "0.5.0",
+    "publisher": "southclaws",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": ["Other", "Languages"],
+    "activationEvents": ["onCommand:extension.packageBuild"],
+    "main": "./out/extension",
+    "contributes": {
+        "languages": [
+            {
+                "id": "pawn",
+                "aliases": ["Pawn", "pawn"],
+                "extensions": [".p", ".pwn", ".inc"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "pawn",
+                "scopeName": "source.pawn",
+                "path": "./syntaxes/Pawn.tmLanguage"
+            }
+        ],
+        "commands": [
+            {
+                "command": "extension.packageEnsure",
+                "title": "Ensure Package Dependencies"
+            },
+            {
+                "command": "extension.packageBuild",
+                "title": "Build Pawn Package"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
