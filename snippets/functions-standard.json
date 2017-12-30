@@ -1,0 +1,2257 @@
+{
+    "CreateActor": {
+        "prefix": "CreateActor",
+        "body":
+            "CreateActor(${1:modelid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z}, ${5:Float:Rotation})$0"
+    },
+    "DestroyActor": {
+        "prefix": "DestroyActor",
+        "body": "DestroyActor(${1:actorid})$0"
+    },
+    "IsActorStreamedIn": {
+        "prefix": "IsActorStreamedIn",
+        "body": "IsActorStreamedIn(${1:actorid}, ${2:forplayerid})$0"
+    },
+    "SetActorVirtualWorld": {
+        "prefix": "SetActorVirtualWorld",
+        "body": "SetActorVirtualWorld(${1:actorid}, ${2:vworld})$0"
+    },
+    "GetActorVirtualWorld": {
+        "prefix": "GetActorVirtualWorld",
+        "body": "GetActorVirtualWorld(${1:actorid})$0"
+    },
+    "ApplyActorAnimation": {
+        "prefix": "ApplyActorAnimation",
+        "body":
+            "ApplyActorAnimation(${1:actorid}, ${2:animlib[]}, ${3:animname[]}, ${4:Float:fDelta}, ${5:loop}, ${6:lockx}, ${7:locky}, ${8:freeze}, ${9:time})$0"
+    },
+    "ClearActorAnimations": {
+        "prefix": "ClearActorAnimations",
+        "body": "ClearActorAnimations(${1:actorid})$0"
+    },
+    "SetActorPos": {
+        "prefix": "SetActorPos",
+        "body": "SetActorPos(${1:actorid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "GetActorPos": {
+        "prefix": "GetActorPos",
+        "body": "GetActorPos(${1:actorid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "SetActorFacingAngle": {
+        "prefix": "SetActorFacingAngle",
+        "body": "SetActorFacingAngle(${1:actorid}, ${2:Float:ang})$0"
+    },
+    "GetActorFacingAngle": {
+        "prefix": "GetActorFacingAngle",
+        "body": "GetActorFacingAngle(${1:actorid}, ${2:Float:ang})$0"
+    },
+    "SetActorHealth": {
+        "prefix": "SetActorHealth",
+        "body": "SetActorHealth(${1:actorid}, ${2:Float:health})$0"
+    },
+    "GetActorHealth": {
+        "prefix": "GetActorHealth",
+        "body": "GetActorHealth(${1:actorid}, ${2:Float:health})$0"
+    },
+    "SetActorInvulnerable": {
+        "prefix": "SetActorInvulnerable",
+        "body": "SetActorInvulnerable(${1:actorid}, ${2:invulnerable = true})$0"
+    },
+    "IsActorInvulnerable": {
+        "prefix": "IsActorInvulnerable",
+        "body": "IsActorInvulnerable(${1:actorid})$0"
+    },
+    "IsValidActor": {
+        "prefix": "IsValidActor",
+        "body": "IsValidActor(${1:actorid})$0"
+    },
+
+    "HTTP": {
+        "prefix": "HTTP",
+        "body": "HTTP(${1:index}, ${2:type}, ${3:url[]}, ${4:data[]}, ${5:callback[]})$0"
+    },
+
+    "StartRecordingPlayback": {
+        "prefix": "StartRecordingPlayback",
+        "body": "StartRecordingPlayback(${1:playbacktype}, ${2:recordname[]})$0"
+    },
+    "StopRecordingPlayback": {
+        "prefix": "StopRecordingPlayback",
+        "body": "StopRecordingPlayback()$0"
+    },
+    "PauseRecordingPlayback": {
+        "prefix": "PauseRecordingPlayback",
+        "body": "PauseRecordingPlayback()$0"
+    },
+    "ResumeRecordingPlayback": {
+        "prefix": "ResumeRecordingPlayback",
+        "body": "ResumeRecordingPlayback()$0"
+    },
+    "OnNPCModeInit": {
+        "prefix": "OnNPCModeInit",
+        "body": "OnNPCModeInit()$0"
+    },
+    "OnNPCModeExit": {
+        "prefix": "OnNPCModeExit",
+        "body": "OnNPCModeExit()$0"
+    },
+    "OnNPCConnect": {
+        "prefix": "OnNPCConnect",
+        "body": "OnNPCConnect(${1:myplayerid})$0"
+    },
+    "OnNPCDisconnect": {
+        "prefix": "OnNPCDisconnect",
+        "body": "OnNPCDisconnect(${1:reason[]})$0"
+    },
+    "OnNPCSpawn": {
+        "prefix": "OnNPCSpawn",
+        "body": "OnNPCSpawn()$0"
+    },
+    "OnNPCEnterVehicle": {
+        "prefix": "OnNPCEnterVehicle",
+        "body": "OnNPCEnterVehicle(${1:vehicleid}, ${2:seatid})$0"
+    },
+    "OnNPCExitVehicle": {
+        "prefix": "OnNPCExitVehicle",
+        "body": "OnNPCExitVehicle()$0"
+    },
+    "OnClientMessage": {
+        "prefix": "OnClientMessage",
+        "body": "OnClientMessage(${1:color}, ${2:text[]})$0"
+    },
+    "OnPlayerText": {
+        "prefix": "OnPlayerText",
+        "body": "OnPlayerText(${1:playerid}, ${2:text[]})$0"
+    },
+    "OnPlayerStreamIn": {
+        "prefix": "OnPlayerStreamIn",
+        "body": "OnPlayerStreamIn(${1:playerid})$0"
+    },
+    "OnPlayerStreamOut": {
+        "prefix": "OnPlayerStreamOut",
+        "body": "OnPlayerStreamOut(${1:playerid})$0"
+    },
+    "OnVehicleStreamIn": {
+        "prefix": "OnVehicleStreamIn",
+        "body": "OnVehicleStreamIn(${1:vehicleid})$0"
+    },
+    "OnVehicleStreamOut": {
+        "prefix": "OnVehicleStreamOut",
+        "body": "OnVehicleStreamOut(${1:vehicleid})$0"
+    },
+    "OnRecordingPlaybackEnd": {
+        "prefix": "OnRecordingPlaybackEnd",
+        "body": "OnRecordingPlaybackEnd()$0"
+    },
+
+    "CreateObject": {
+        "prefix": "CreateObject",
+        "body":
+            "CreateObject(${1:modelid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z}, ${5:Float:rX}, ${6:Float:rY}, ${7:Float:rZ}, ${8:Float:DrawDistance = 0.0})$0"
+    },
+    "AttachObjectToVehicle": {
+        "prefix": "AttachObjectToVehicle",
+        "body":
+            "AttachObjectToVehicle(${1:objectid}, ${2:vehicleid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ}, ${6:Float:RotX}, ${7:Float:RotY}, ${8:Float:RotZ})$0"
+    },
+    "AttachObjectToObject": {
+        "prefix": "AttachObjectToObject",
+        "body":
+            "AttachObjectToObject(${1:objectid}, ${2:attachtoid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ}, ${6:Float:RotX}, ${7:Float:RotY}, ${8:Float:RotZ}, ${9:SyncRotation = 1})$0"
+    },
+    "AttachObjectToPlayer": {
+        "prefix": "AttachObjectToPlayer",
+        "body":
+            "AttachObjectToPlayer(${1:objectid}, ${2:playerid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ}, ${6:Float:RotX}, ${7:Float:RotY}, ${8:Float:RotZ})$0"
+    },
+    "SetObjectPos": {
+        "prefix": "SetObjectPos",
+        "body": "SetObjectPos(${1:objectid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "GetObjectPos": {
+        "prefix": "GetObjectPos",
+        "body": "GetObjectPos(${1:objectid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "SetObjectRot": {
+        "prefix": "SetObjectRot",
+        "body": "SetObjectRot(${1:objectid}, ${2:Float:RotX}, ${3:Float:RotY}, ${4:Float:RotZ})$0"
+    },
+    "GetObjectRot": {
+        "prefix": "GetObjectRot",
+        "body": "GetObjectRot(${1:objectid}, ${2:Float:RotX}, ${3:Float:RotY}, ${4:Float:RotZ})$0"
+    },
+    "GetObjectModel": {
+        "prefix": "GetObjectModel",
+        "body": "GetObjectModel(${1:objectid})$0"
+    },
+    "SetObjectNoCameraCol": {
+        "prefix": "SetObjectNoCameraCol",
+        "body": "SetObjectNoCameraCol(${1:objectid})$0"
+    },
+    "IsValidObject": {
+        "prefix": "IsValidObject",
+        "body": "IsValidObject(${1:objectid})$0"
+    },
+    "DestroyObject": {
+        "prefix": "DestroyObject",
+        "body": "DestroyObject(${1:objectid})$0"
+    },
+    "MoveObject": {
+        "prefix": "MoveObject",
+        "body":
+            "MoveObject(${1:objectid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z}, ${5:Float:Speed}, ${6:Float:RotX = -1000.0}, ${7:Float:RotY = -1000.0}, ${8:Float:RotZ = -1000.0})$0"
+    },
+    "StopObject": {
+        "prefix": "StopObject",
+        "body": "StopObject(${1:objectid})$0"
+    },
+    "IsObjectMoving": {
+        "prefix": "IsObjectMoving",
+        "body": "IsObjectMoving(${1:objectid})$0"
+    },
+    "EditObject": {
+        "prefix": "EditObject",
+        "body": "EditObject(${1:playerid}, ${2:objectid})$0"
+    },
+    "EditPlayerObject": {
+        "prefix": "EditPlayerObject",
+        "body": "EditPlayerObject(${1:playerid}, ${2:objectid})$0"
+    },
+    "SelectObject": {
+        "prefix": "SelectObject",
+        "body": "SelectObject(${1:playerid})$0"
+    },
+    "CancelEdit": {
+        "prefix": "CancelEdit",
+        "body": "CancelEdit(${1:playerid})$0"
+    },
+    "CreatePlayerObject": {
+        "prefix": "CreatePlayerObject",
+        "body":
+            "CreatePlayerObject(${1:playerid}, ${2:modelid}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:Float:rX}, ${7:Float:rY}, ${8:Float:rZ}, ${9:Float:DrawDistance = 0.0})$0"
+    },
+    "AttachPlayerObjectToVehicle": {
+        "prefix": "AttachPlayerObjectToVehicle",
+        "body":
+            "AttachPlayerObjectToVehicle(${1:playerid}, ${2:objectid}, ${3:vehicleid}, ${4:Float:fOffsetX}, ${5:Float:fOffsetY}, ${6:Float:fOffsetZ}, ${7:Float:fRotX}, ${8:Float:fRotY}, ${9:Float:RotZ})$0"
+    },
+    "SetPlayerObjectPos": {
+        "prefix": "SetPlayerObjectPos",
+        "body":
+            "SetPlayerObjectPos(${1:playerid}, ${2:objectid}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z})$0"
+    },
+    "GetPlayerObjectPos": {
+        "prefix": "GetPlayerObjectPos",
+        "body":
+            "GetPlayerObjectPos(${1:playerid}, ${2:objectid}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z})$0"
+    },
+    "SetPlayerObjectRot": {
+        "prefix": "SetPlayerObjectRot",
+        "body":
+            "SetPlayerObjectRot(${1:playerid}, ${2:objectid}, ${3:Float:RotX}, ${4:Float:RotY}, ${5:Float:RotZ})$0"
+    },
+    "GetPlayerObjectRot": {
+        "prefix": "GetPlayerObjectRot",
+        "body":
+            "GetPlayerObjectRot(${1:playerid}, ${2:objectid}, ${3:Float:RotX}, ${4:Float:RotY}, ${5:Float:RotZ})$0"
+    },
+    "GetPlayerObjectModel": {
+        "prefix": "GetPlayerObjectModel",
+        "body": "GetPlayerObjectModel(${1:playerid}, ${2:objectid})$0"
+    },
+    "SetPlayerObjectNoCameraCol": {
+        "prefix": "SetPlayerObjectNoCameraCol",
+        "body": "SetPlayerObjectNoCameraCol(${1:playerid}, ${2:objectid})$0"
+    },
+    "IsValidPlayerObject": {
+        "prefix": "IsValidPlayerObject",
+        "body": "IsValidPlayerObject(${1:playerid}, ${2:objectid})$0"
+    },
+    "DestroyPlayerObject": {
+        "prefix": "DestroyPlayerObject",
+        "body": "DestroyPlayerObject(${1:playerid}, ${2:objectid})$0"
+    },
+    "MovePlayerObject": {
+        "prefix": "MovePlayerObject",
+        "body":
+            "MovePlayerObject(${1:playerid}, ${2:objectid}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:Float:Speed}, ${7:Float:RotX = -1000.0}, ${8:Float:RotY = -1000.0}, ${9:Float:RotZ = -1000.0})$0"
+    },
+    "StopPlayerObject": {
+        "prefix": "StopPlayerObject",
+        "body": "StopPlayerObject(${1:playerid}, ${2:objectid})$0"
+    },
+    "IsPlayerObjectMoving": {
+        "prefix": "IsPlayerObjectMoving",
+        "body": "IsPlayerObjectMoving(${1:playerid}, ${2:objectid})$0"
+    },
+    "AttachPlayerObjectToPlayer": {
+        "prefix": "AttachPlayerObjectToPlayer",
+        "body":
+            "AttachPlayerObjectToPlayer(${1:objectplayer}, ${2:objectid}, ${3:attachplayer}, ${4:Float:OffsetX}, ${5:Float:OffsetY}, ${6:Float:OffsetZ}, ${7:Float:rX}, ${8:Float:rY}, ${9:Float:rZ})$0"
+    },
+
+    "SetObjectMaterial": {
+        "prefix": "SetObjectMaterial",
+        "body":
+            "SetObjectMaterial(${1:objectid}, ${2:materialindex}, ${3:modelid}, ${4:txdname[]}, ${5:texturename[]}, ${6:materialcolor=0})$0"
+    },
+    "SetPlayerObjectMaterial": {
+        "prefix": "SetPlayerObjectMaterial",
+        "body":
+            "SetPlayerObjectMaterial(${1:playerid}, ${2:objectid}, ${3:materialindex}, ${4:modelid}, ${5:txdname[]}, ${6:texturename[]}, ${7:materialcolor=0})$0"
+    },
+    "SetObjectMaterialText": {
+        "prefix": "SetObjectMaterialText",
+        "body":
+            "SetObjectMaterialText(${1:objectid}, ${2:text[]}, ${3:materialindex = 0}, ${4:materialsize = OBJECT_MATERIAL_SIZE_256x128}, ${5:fontface[] = \"Arial\"}, ${6:fontsize = 24}, ${7:bold = 1}, ${8:fontcolor = 0xFFFFFFFF}, ${9:backcolor = 0}, ${10:textalignment = 0})$0"
+    },
+    "SetPlayerObjectMaterialText": {
+        "prefix": "SetPlayerObjectMaterialText",
+        "body":
+            "SetPlayerObjectMaterialText(${1:playerid}, ${2:objectid}, ${3:text[]}, ${4:materialindex = 0}, ${5:materialsize = OBJECT_MATERIAL_SIZE_256x128}, ${6:fontface[] = \"Arial\"}, ${7:fontsize = 24}, ${8:bold = 1}, ${9:fontcolor = 0xFFFFFFFF}, ${10:backcolor = 0}, ${11:textalignment = 0})$0"
+    },
+    "SetObjectsDefaultCameraCol": {
+        "prefix": "SetObjectsDefaultCameraCol",
+        "body": "SetObjectsDefaultCameraCol(${1:disable})$0"
+    },
+
+    "SetSpawnInfo": {
+        "prefix": "SetSpawnInfo",
+        "body":
+            "SetSpawnInfo(${1:playerid}, ${2:team}, ${3:skin}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:rotation}, ${8:weapon1}, ${9:weapon1_ammo}, ${10:weapon2}, ${11:weapon2_ammo}, ${12:weapon3}, ${13:weapon3_ammo})$0"
+    },
+    "SpawnPlayer": {
+        "prefix": "SpawnPlayer",
+        "body": "SpawnPlayer(${1:playerid})$0"
+    },
+    "SetPlayerPos": {
+        "prefix": "SetPlayerPos",
+        "body": "SetPlayerPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+    },
+    "SetPlayerPosFindZ": {
+        "prefix": "SetPlayerPosFindZ",
+        "body": "SetPlayerPosFindZ(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+    },
+    "GetPlayerPos": {
+        "prefix": "GetPlayerPos",
+        "body": "GetPlayerPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+    },
+    "SetPlayerFacingAngle": {
+        "prefix": "SetPlayerFacingAngle",
+        "body": "SetPlayerFacingAngle(${1:playerid}, ${2:Float:ang})$0"
+    },
+    "GetPlayerFacingAngle": {
+        "prefix": "GetPlayerFacingAngle",
+        "body": "GetPlayerFacingAngle(${1:playerid}, ${2:Float:ang})$0"
+    },
+    "IsPlayerInRangeOfPoint": {
+        "prefix": "IsPlayerInRangeOfPoint",
+        "body":
+            "IsPlayerInRangeOfPoint(${1:playerid}, ${2:Float:range}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})$0"
+    },
+    "GetPlayerDistanceFromPoint": {
+        "prefix": "GetPlayerDistanceFromPoint",
+        "body":
+            "GetPlayerDistanceFromPoint(${1:playerid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "IsPlayerStreamedIn": {
+        "prefix": "IsPlayerStreamedIn",
+        "body": "IsPlayerStreamedIn(${1:playerid}, ${2:forplayerid})$0"
+    },
+    "SetPlayerInterior": {
+        "prefix": "SetPlayerInterior",
+        "body": "SetPlayerInterior(${1:playerid}, ${2:interiorid})$0"
+    },
+    "GetPlayerInterior": {
+        "prefix": "GetPlayerInterior",
+        "body": "GetPlayerInterior(${1:playerid})$0"
+    },
+    "SetPlayerHealth": {
+        "prefix": "SetPlayerHealth",
+        "body": "SetPlayerHealth(${1:playerid}, ${2:Float:health})$0"
+    },
+    "GetPlayerHealth": {
+        "prefix": "GetPlayerHealth",
+        "body": "GetPlayerHealth(${1:playerid}, ${2:Float:health})$0"
+    },
+    "SetPlayerArmour": {
+        "prefix": "SetPlayerArmour",
+        "body": "SetPlayerArmour(${1:playerid}, ${2:Float:armour})$0"
+    },
+    "GetPlayerArmour": {
+        "prefix": "GetPlayerArmour",
+        "body": "GetPlayerArmour(${1:playerid}, ${2:Float:armour})$0"
+    },
+    "SetPlayerAmmo": {
+        "prefix": "SetPlayerAmmo",
+        "body": "SetPlayerAmmo(${1:playerid}, ${2:weaponslot}, ${3:ammo})$0"
+    },
+    "GetPlayerAmmo": {
+        "prefix": "GetPlayerAmmo",
+        "body": "GetPlayerAmmo(${1:playerid})$0"
+    },
+    "GetPlayerWeaponState": {
+        "prefix": "GetPlayerWeaponState",
+        "body": "GetPlayerWeaponState(${1:playerid})$0"
+    },
+    "GetPlayerTargetPlayer": {
+        "prefix": "GetPlayerTargetPlayer",
+        "body": "GetPlayerTargetPlayer(${1:playerid})$0"
+    },
+    "GetPlayerTargetActor": {
+        "prefix": "GetPlayerTargetActor",
+        "body": "GetPlayerTargetActor(${1:playerid})$0"
+    },
+    "SetPlayerTeam": {
+        "prefix": "SetPlayerTeam",
+        "body": "SetPlayerTeam(${1:playerid}, ${2:teamid})$0"
+    },
+    "GetPlayerTeam": {
+        "prefix": "GetPlayerTeam",
+        "body": "GetPlayerTeam(${1:playerid})$0"
+    },
+    "SetPlayerScore": {
+        "prefix": "SetPlayerScore",
+        "body": "SetPlayerScore(${1:playerid}, ${2:score})$0"
+    },
+    "GetPlayerScore": {
+        "prefix": "GetPlayerScore",
+        "body": "GetPlayerScore(${1:playerid})$0"
+    },
+    "GetPlayerDrunkLevel": {
+        "prefix": "GetPlayerDrunkLevel",
+        "body": "GetPlayerDrunkLevel(${1:playerid})$0"
+    },
+    "SetPlayerDrunkLevel": {
+        "prefix": "SetPlayerDrunkLevel",
+        "body": "SetPlayerDrunkLevel(${1:playerid}, ${2:level})$0"
+    },
+    "SetPlayerColor": {
+        "prefix": "SetPlayerColor",
+        "body": "SetPlayerColor(${1:playerid}, ${2:color})$0"
+    },
+    "GetPlayerColor": {
+        "prefix": "GetPlayerColor",
+        "body": "GetPlayerColor(${1:playerid})$0"
+    },
+    "SetPlayerSkin": {
+        "prefix": "SetPlayerSkin",
+        "body": "SetPlayerSkin(${1:playerid}, ${2:skinid})$0"
+    },
+    "GetPlayerSkin": {
+        "prefix": "GetPlayerSkin",
+        "body": "GetPlayerSkin(${1:playerid})$0"
+    },
+    "GivePlayerWeapon": {
+        "prefix": "GivePlayerWeapon",
+        "body": "GivePlayerWeapon(${1:playerid}, ${2:weaponid}, ${3:ammo})$0"
+    },
+    "ResetPlayerWeapons": {
+        "prefix": "ResetPlayerWeapons",
+        "body": "ResetPlayerWeapons(${1:playerid})$0"
+    },
+    "SetPlayerArmedWeapon": {
+        "prefix": "SetPlayerArmedWeapon",
+        "body": "SetPlayerArmedWeapon(${1:playerid}, ${2:weaponid})$0"
+    },
+    "GetPlayerWeaponData": {
+        "prefix": "GetPlayerWeaponData",
+        "body": "GetPlayerWeaponData(${1:playerid}, ${2:slot}, ${3:weapons}, ${4:ammo})$0"
+    },
+    "GivePlayerMoney": {
+        "prefix": "GivePlayerMoney",
+        "body": "GivePlayerMoney(${1:playerid}, ${2:money})$0"
+    },
+    "ResetPlayerMoney": {
+        "prefix": "ResetPlayerMoney",
+        "body": "ResetPlayerMoney(${1:playerid})$0"
+    },
+    "SetPlayerName": {
+        "prefix": "SetPlayerName",
+        "body": "SetPlayerName(${1:playerid}, ${2:const name[]})$0"
+    },
+    "GetPlayerMoney": {
+        "prefix": "GetPlayerMoney",
+        "body": "GetPlayerMoney(${1:playerid})$0"
+    },
+    "GetPlayerState": {
+        "prefix": "GetPlayerState",
+        "body": "GetPlayerState(${1:playerid})$0"
+    },
+    "GetPlayerIp": {
+        "prefix": "GetPlayerIp",
+        "body": "GetPlayerIp(${1:playerid}, ${2:name[]}, ${3:len})$0"
+    },
+    "GetPlayerPing": {
+        "prefix": "GetPlayerPing",
+        "body": "GetPlayerPing(${1:playerid})$0"
+    },
+    "GetPlayerWeapon": {
+        "prefix": "GetPlayerWeapon",
+        "body": "GetPlayerWeapon(${1:playerid})$0"
+    },
+    "GetPlayerKeys": {
+        "prefix": "GetPlayerKeys",
+        "body": "GetPlayerKeys(${1:playerid}, ${2:keys}, ${3:updown}, ${4:leftright})$0"
+    },
+    "GetPlayerName": {
+        "prefix": "GetPlayerName",
+        "body": "GetPlayerName(${1:playerid}, ${2:const name[]}, ${3:len})$0"
+    },
+    "SetPlayerTime": {
+        "prefix": "SetPlayerTime",
+        "body": "SetPlayerTime(${1:playerid}, ${2:hour}, ${3:minute})$0"
+    },
+    "GetPlayerTime": {
+        "prefix": "GetPlayerTime",
+        "body": "GetPlayerTime(${1:playerid}, ${2:hour}, ${3:minute})$0"
+    },
+    "TogglePlayerClock": {
+        "prefix": "TogglePlayerClock",
+        "body": "TogglePlayerClock(${1:playerid}, ${2:toggle})$0"
+    },
+    "SetPlayerWeather": {
+        "prefix": "SetPlayerWeather",
+        "body": "SetPlayerWeather(${1:playerid}, ${2:weather})$0"
+    },
+    "ForceClassSelection": {
+        "prefix": "ForceClassSelection",
+        "body": "ForceClassSelection(${1:playerid})$0"
+    },
+    "SetPlayerWantedLevel": {
+        "prefix": "SetPlayerWantedLevel",
+        "body": "SetPlayerWantedLevel(${1:playerid}, ${2:level})$0"
+    },
+    "GetPlayerWantedLevel": {
+        "prefix": "GetPlayerWantedLevel",
+        "body": "GetPlayerWantedLevel(${1:playerid})$0"
+    },
+    "SetPlayerFightingStyle": {
+        "prefix": "SetPlayerFightingStyle",
+        "body": "SetPlayerFightingStyle(${1:playerid}, ${2:style})$0"
+    },
+    "GetPlayerFightingStyle": {
+        "prefix": "GetPlayerFightingStyle",
+        "body": "GetPlayerFightingStyle(${1:playerid})$0"
+    },
+    "SetPlayerVelocity": {
+        "prefix": "SetPlayerVelocity",
+        "body": "SetPlayerVelocity(${1:playerid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "GetPlayerVelocity": {
+        "prefix": "GetPlayerVelocity",
+        "body": "GetPlayerVelocity(${1:playerid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z })$0"
+    },
+    "PlayCrimeReportForPlayer": {
+        "prefix": "PlayCrimeReportForPlayer",
+        "body": "PlayCrimeReportForPlayer(${1:playerid}, ${2:suspectid}, ${3:crime})$0"
+    },
+    "PlayAudioStreamForPlayer": {
+        "prefix": "PlayAudioStreamForPlayer",
+        "body":
+            "PlayAudioStreamForPlayer(${1:playerid}, ${2:url[]}, ${3:Float:posX = 0.0}, ${4:Float:posY = 0.0}, ${5:Float:posZ = 0.0}, ${6:Float:distance = 50.0}, ${7:usepos = 0})$0"
+    },
+    "StopAudioStreamForPlayer": {
+        "prefix": "StopAudioStreamForPlayer",
+        "body": "StopAudioStreamForPlayer(${1:playerid})$0"
+    },
+    "SetPlayerShopName": {
+        "prefix": "SetPlayerShopName",
+        "body": "SetPlayerShopName(${1:playerid}, ${2:shopname[]})$0"
+    },
+    "SetPlayerSkillLevel": {
+        "prefix": "SetPlayerSkillLevel",
+        "body": "SetPlayerSkillLevel(${1:playerid}, ${2:skill}, ${3:level})$0"
+    },
+    "GetPlayerSurfingVehicleID": {
+        "prefix": "GetPlayerSurfingVehicleID",
+        "body": "GetPlayerSurfingVehicleID(${1:playerid})$0"
+    },
+    "GetPlayerSurfingObjectID": {
+        "prefix": "GetPlayerSurfingObjectID",
+        "body": "GetPlayerSurfingObjectID(${1:playerid})$0"
+    },
+    "RemoveBuildingForPlayer": {
+        "prefix": "RemoveBuildingForPlayer",
+        "body":
+            "RemoveBuildingForPlayer(${1:playerid}, ${2:modelid}, ${3:Float:fX}, ${4:Float:fY}, ${5:Float:fZ}, ${6:Float:fRadius})$0"
+    },
+    "GetPlayerLastShotVectors": {
+        "prefix": "GetPlayerLastShotVectors",
+        "body":
+            "GetPlayerLastShotVectors(${1:playerid}, ${2:Float:fOriginX}, ${3:Float:fOriginY}, ${4:Float:fOriginZ}, ${5:Float:fHitPosX}, ${6:Float:fHitPosY}, ${7:Float:fHitPosZ})$0"
+    },
+    "SetPlayerAttachedObject": {
+        "prefix": "SetPlayerAttachedObject",
+        "body":
+            "SetPlayerAttachedObject(${1:playerid}, ${2:index}, ${3:modelid}, ${4:bone}, ${5:Float:fOffsetX = 0.0}, ${6:Float:fOffsetY = 0.0}, ${7:Float:fOffsetZ = 0.0}, ${8:Float:fRotX = 0.0}, ${9:Float:fRotY = 0.0}, ${10:Float:fRotZ = 0.0}, ${11:Float:fScaleX = 1.0}, ${12:Float:fScaleY = 1.0}, ${13:Float:fScaleZ = 1.0}, ${14:materialcolor1 = 0}, ${15:materialcolor2 = 0})$0"
+    },
+    "RemovePlayerAttachedObject": {
+        "prefix": "RemovePlayerAttachedObject",
+        "body": "RemovePlayerAttachedObject(${1:playerid}, ${2:index})$0"
+    },
+    "IsPlayerAttachedObjectSlotUsed": {
+        "prefix": "IsPlayerAttachedObjectSlotUsed",
+        "body": "IsPlayerAttachedObjectSlotUsed(${1:playerid}, ${2:index})$0"
+    },
+    "EditAttachedObject": {
+        "prefix": "EditAttachedObject",
+        "body": "EditAttachedObject(${1:playerid}, ${2:index})$0"
+    },
+    "CreatePlayerTextDraw": {
+        "prefix": "CreatePlayerTextDraw",
+        "body": "CreatePlayerTextDraw(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:text[]})$0"
+    },
+    "PlayerTextDrawDestroy": {
+        "prefix": "PlayerTextDrawDestroy",
+        "body": "PlayerTextDrawDestroy(${1:playerid}, ${2:PlayerText:text})$0"
+    },
+    "PlayerTextDrawLetterSize": {
+        "prefix": "PlayerTextDrawLetterSize",
+        "body":
+            "PlayerTextDrawLetterSize(${1:playerid}, ${2:PlayerText:text}, ${3:Float:x}, ${4:Float:y})$0"
+    },
+    "PlayerTextDrawTextSize": {
+        "prefix": "PlayerTextDrawTextSize",
+        "body":
+            "PlayerTextDrawTextSize(${1:playerid}, ${2:PlayerText:text}, ${3:Float:x}, ${4:Float:y})$0"
+    },
+    "PlayerTextDrawAlignment": {
+        "prefix": "PlayerTextDrawAlignment",
+        "body": "PlayerTextDrawAlignment(${1:playerid}, ${2:PlayerText:text}, ${3:alignment})$0"
+    },
+    "PlayerTextDrawColor": {
+        "prefix": "PlayerTextDrawColor",
+        "body": "PlayerTextDrawColor(${1:playerid}, ${2:PlayerText:text}, ${3:color})$0"
+    },
+    "PlayerTextDrawUseBox": {
+        "prefix": "PlayerTextDrawUseBox",
+        "body": "PlayerTextDrawUseBox(${1:playerid}, ${2:PlayerText:text}, ${3:use})$0"
+    },
+    "PlayerTextDrawBoxColor": {
+        "prefix": "PlayerTextDrawBoxColor",
+        "body": "PlayerTextDrawBoxColor(${1:playerid}, ${2:PlayerText:text}, ${3:color})$0"
+    },
+    "PlayerTextDrawSetShadow": {
+        "prefix": "PlayerTextDrawSetShadow",
+        "body": "PlayerTextDrawSetShadow(${1:playerid}, ${2:PlayerText:text}, ${3:size})$0"
+    },
+    "PlayerTextDrawSetOutline": {
+        "prefix": "PlayerTextDrawSetOutline",
+        "body": "PlayerTextDrawSetOutline(${1:playerid}, ${2:PlayerText:text}, ${3:size})$0"
+    },
+    "PlayerTextDrawBackgroundColor": {
+        "prefix": "PlayerTextDrawBackgroundColor",
+        "body": "PlayerTextDrawBackgroundColor(${1:playerid}, ${2:PlayerText:text}, ${3:color})$0"
+    },
+    "PlayerTextDrawFont": {
+        "prefix": "PlayerTextDrawFont",
+        "body": "PlayerTextDrawFont(${1:playerid}, ${2:PlayerText:text}, ${3:font})$0"
+    },
+    "PlayerTextDrawSetProportional": {
+        "prefix": "PlayerTextDrawSetProportional",
+        "body": "PlayerTextDrawSetProportional(${1:playerid}, ${2:PlayerText:text}, ${3:set})$0"
+    },
+    "PlayerTextDrawSetSelectable": {
+        "prefix": "PlayerTextDrawSetSelectable",
+        "body": "PlayerTextDrawSetSelectable(${1:playerid}, ${2:PlayerText:text}, ${3:set})$0"
+    },
+    "PlayerTextDrawShow": {
+        "prefix": "PlayerTextDrawShow",
+        "body": "PlayerTextDrawShow(${1:playerid}, ${2:PlayerText:text})$0"
+    },
+    "PlayerTextDrawHide": {
+        "prefix": "PlayerTextDrawHide",
+        "body": "PlayerTextDrawHide(${1:playerid}, ${2:PlayerText:text})$0"
+    },
+    "PlayerTextDrawSetString": {
+        "prefix": "PlayerTextDrawSetString",
+        "body": "PlayerTextDrawSetString(${1:playerid}, ${2:PlayerText:text}, ${3:string[]})$0"
+    },
+    "PlayerTextDrawSetPreviewModel": {
+        "prefix": "PlayerTextDrawSetPreviewModel",
+        "body":
+            "PlayerTextDrawSetPreviewModel(${1:playerid}, ${2:PlayerText:text}, ${3:modelindex})$0"
+    },
+    "PlayerTextDrawSetPreviewRot": {
+        "prefix": "PlayerTextDrawSetPreviewRot",
+        "body":
+            "PlayerTextDrawSetPreviewRot(${1:playerid}, ${2:PlayerText:text}, ${3:Float:fRotX}, ${4:Float:fRotY}, ${5:Float:fRotZ}, ${6:Float:fZoom = 1.0})$0"
+    },
+    "PlayerTextDrawSetPreviewVehCol": {
+        "prefix": "PlayerTextDrawSetPreviewVehCol",
+        "body":
+            "PlayerTextDrawSetPreviewVehCol(${1:playerid}, ${2:PlayerText:text}, ${3:color1}, ${4:color2})$0"
+    },
+    "SetPVarInt": {
+        "prefix": "SetPVarInt",
+        "body": "SetPVarInt(${1:playerid}, ${2:varname[]}, ${3:int_value})$0"
+    },
+    "GetPVarInt": {
+        "prefix": "GetPVarInt",
+        "body": "GetPVarInt(${1:playerid}, ${2:varname[]})$0"
+    },
+    "SetPVarString": {
+        "prefix": "SetPVarString",
+        "body": "SetPVarString(${1:playerid}, ${2:varname[]}, ${3:string_value[]})$0"
+    },
+    "GetPVarString": {
+        "prefix": "GetPVarString",
+        "body": "GetPVarString(${1:playerid}, ${2:varname[]}, ${3:string_return[]}, ${4:len})$0"
+    },
+    "SetPVarFloat": {
+        "prefix": "SetPVarFloat",
+        "body": "SetPVarFloat(${1:playerid}, ${2:varname[]}, ${3:Float:float_value})$0"
+    },
+    "GetPVarFloat": {
+        "prefix": "GetPVarFloat",
+        "body": "GetPVarFloat(${1:playerid}, ${2:varname[]})$0"
+    },
+    "DeletePVar": {
+        "prefix": "DeletePVar",
+        "body": "DeletePVar(${1:playerid}, ${2:varname[]})$0"
+    },
+    "GetPVarsUpperIndex": {
+        "prefix": "GetPVarsUpperIndex",
+        "body": "GetPVarsUpperIndex(${1:playerid})$0"
+    },
+    "GetPVarNameAtIndex": {
+        "prefix": "GetPVarNameAtIndex",
+        "body": "GetPVarNameAtIndex(${1:playerid}, ${2:index}, ${3:ret_varname[]}, ${4:ret_len})$0"
+    },
+    "GetPVarType": {
+        "prefix": "GetPVarType",
+        "body": "GetPVarType(${1:playerid}, ${2:varname[]})$0"
+    },
+    "SetPlayerChatBubble": {
+        "prefix": "SetPlayerChatBubble",
+        "body":
+            "SetPlayerChatBubble(${1:playerid}, ${2:text[]}, ${3:color}, ${4:Float:drawdistance}, ${5:expiretime})$0"
+    },
+    "PutPlayerInVehicle": {
+        "prefix": "PutPlayerInVehicle",
+        "body": "PutPlayerInVehicle(${1:playerid}, ${2:vehicleid}, ${3:seatid})$0"
+    },
+    "GetPlayerVehicleID": {
+        "prefix": "GetPlayerVehicleID",
+        "body": "GetPlayerVehicleID(${1:playerid})$0"
+    },
+    "GetPlayerVehicleSeat": {
+        "prefix": "GetPlayerVehicleSeat",
+        "body": "GetPlayerVehicleSeat(${1:playerid})$0"
+    },
+    "RemovePlayerFromVehicle": {
+        "prefix": "RemovePlayerFromVehicle",
+        "body": "RemovePlayerFromVehicle(${1:playerid})$0"
+    },
+    "TogglePlayerControllable": {
+        "prefix": "TogglePlayerControllable",
+        "body": "TogglePlayerControllable(${1:playerid}, ${2:toggle})$0"
+    },
+    "PlayerPlaySound": {
+        "prefix": "PlayerPlaySound",
+        "body":
+            "PlayerPlaySound(${1:playerid}, ${2:soundid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})$0"
+    },
+    "ApplyAnimation": {
+        "prefix": "ApplyAnimation",
+        "body":
+            "ApplyAnimation(${1:playerid}, ${2:animlib[]}, ${3:animname[]}, ${4:Float:fDelta}, ${5:loop}, ${6:lockx}, ${7:locky}, ${8:freeze}, ${9:time}, ${10:forcesync = 0})$0"
+    },
+    "ClearAnimations": {
+        "prefix": "ClearAnimations",
+        "body": "ClearAnimations(${1:playerid}, ${2:forcesync = 0})$0"
+    },
+    "GetPlayerAnimationIndex": {
+        "prefix": "GetPlayerAnimationIndex",
+        "body": "GetPlayerAnimationIndex(${1:playerid})$0"
+    },
+    "GetAnimationName": {
+        "prefix": "GetAnimationName",
+        "body":
+            "GetAnimationName(${1:index}, ${2:animlib[]}, ${3:len1}, ${4:animname[]}, ${5:len2})$0"
+    },
+    "GetPlayerSpecialAction": {
+        "prefix": "GetPlayerSpecialAction",
+        "body": "GetPlayerSpecialAction(${1:playerid})$0"
+    },
+    "SetPlayerSpecialAction": {
+        "prefix": "SetPlayerSpecialAction",
+        "body": "SetPlayerSpecialAction(${1:playerid}, ${2:actionid})$0"
+    },
+    "DisableRemoteVehicleCollisions": {
+        "prefix": "DisableRemoteVehicleCollisions",
+        "body": "DisableRemoteVehicleCollisions(${1:playerid}, ${2:disable})$0"
+    },
+    "SetPlayerCheckpoint": {
+        "prefix": "SetPlayerCheckpoint",
+        "body":
+            "SetPlayerCheckpoint(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:size})$0"
+    },
+    "DisablePlayerCheckpoint": {
+        "prefix": "DisablePlayerCheckpoint",
+        "body": "DisablePlayerCheckpoint(${1:playerid})$0"
+    },
+    "SetPlayerRaceCheckpoint": {
+        "prefix": "SetPlayerRaceCheckpoint",
+        "body":
+            "SetPlayerRaceCheckpoint(${1:playerid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:nextx}, ${7:Float:nexty}, ${8:Float:nextz}, ${9:Float:size})$0"
+    },
+    "DisablePlayerRaceCheckpoint": {
+        "prefix": "DisablePlayerRaceCheckpoint",
+        "body": "DisablePlayerRaceCheckpoint(${1:playerid})$0"
+    },
+    "SetPlayerWorldBounds": {
+        "prefix": "SetPlayerWorldBounds",
+        "body":
+            "SetPlayerWorldBounds(${1:playerid}, ${2:Float:x_max}, ${3:Float:x_min}, ${4:Float:y_max}, ${5:Float:y_min})$0"
+    },
+    "SetPlayerMarkerForPlayer": {
+        "prefix": "SetPlayerMarkerForPlayer",
+        "body": "SetPlayerMarkerForPlayer(${1:playerid}, ${2:showplayerid}, ${3:color})$0"
+    },
+    "ShowPlayerNameTagForPlayer": {
+        "prefix": "ShowPlayerNameTagForPlayer",
+        "body": "ShowPlayerNameTagForPlayer(${1:playerid}, ${2:showplayerid}, ${3:show})$0"
+    },
+    "SetPlayerMapIcon": {
+        "prefix": "SetPlayerMapIcon",
+        "body":
+            "SetPlayerMapIcon(${1:playerid}, ${2:iconid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:markertype}, ${7:color}, ${8:style = MAPICON_LOCAL})$0"
+    },
+    "RemovePlayerMapIcon": {
+        "prefix": "RemovePlayerMapIcon",
+        "body": "RemovePlayerMapIcon(${1:playerid}, ${2:iconid})$0"
+    },
+    "AllowPlayerTeleport": {
+        "prefix": "AllowPlayerTeleport",
+        "body": "AllowPlayerTeleport(${1:playerid}, ${2:allow})$0"
+    },
+    "SetPlayerCameraPos": {
+        "prefix": "SetPlayerCameraPos",
+        "body": "SetPlayerCameraPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+    },
+    "SetPlayerCameraLookAt": {
+        "prefix": "SetPlayerCameraLookAt",
+        "body":
+            "SetPlayerCameraLookAt(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:cut = CAMERA_CUT})$0"
+    },
+    "SetCameraBehindPlayer": {
+        "prefix": "SetCameraBehindPlayer",
+        "body": "SetCameraBehindPlayer(${1:playerid})$0"
+    },
+    "GetPlayerCameraPos": {
+        "prefix": "GetPlayerCameraPos",
+        "body": "GetPlayerCameraPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+    },
+    "GetPlayerCameraFrontVector": {
+        "prefix": "GetPlayerCameraFrontVector",
+        "body":
+            "GetPlayerCameraFrontVector(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+    },
+    "GetPlayerCameraMode": {
+        "prefix": "GetPlayerCameraMode",
+        "body": "GetPlayerCameraMode(${1:playerid})$0"
+    },
+    "EnablePlayerCameraTarget": {
+        "prefix": "EnablePlayerCameraTarget",
+        "body": "EnablePlayerCameraTarget(${1:playerid}, ${2:enable})$0"
+    },
+    "GetPlayerCameraTargetObject": {
+        "prefix": "GetPlayerCameraTargetObject",
+        "body": "GetPlayerCameraTargetObject(${1:playerid})$0"
+    },
+    "GetPlayerCameraTargetVehicle": {
+        "prefix": "GetPlayerCameraTargetVehicle",
+        "body": "GetPlayerCameraTargetVehicle(${1:playerid})$0"
+    },
+    "GetPlayerCameraTargetPlayer": {
+        "prefix": "GetPlayerCameraTargetPlayer",
+        "body": "GetPlayerCameraTargetPlayer(${1:playerid})$0"
+    },
+    "GetPlayerCameraTargetActor": {
+        "prefix": "GetPlayerCameraTargetActor",
+        "body": "GetPlayerCameraTargetActor(${1:playerid})$0"
+    },
+    "GetPlayerCameraAspectRatio": {
+        "prefix": "GetPlayerCameraAspectRatio",
+        "body": "GetPlayerCameraAspectRatio(${1:playerid})$0"
+    },
+    "GetPlayerCameraZoom": {
+        "prefix": "GetPlayerCameraZoom",
+        "body": "GetPlayerCameraZoom(${1:playerid})$0"
+    },
+    "AttachCameraToObject": {
+        "prefix": "AttachCameraToObject",
+        "body": "AttachCameraToObject(${1:playerid}, ${2:objectid})$0"
+    },
+    "AttachCameraToPlayerObject": {
+        "prefix": "AttachCameraToPlayerObject",
+        "body": "AttachCameraToPlayerObject(${1:playerid}, ${2:playerobjectid})$0"
+    },
+    "InterpolateCameraPos": {
+        "prefix": "InterpolateCameraPos",
+        "body":
+            "InterpolateCameraPos(${1:playerid}, ${2:Float:FromX}, ${3:Float:FromY}, ${4:Float:FromZ}, ${5:Float:ToX}, ${6:Float:ToY}, ${7:Float:ToZ}, ${8:time}, ${9:cut = CAMERA_CUT})$0"
+    },
+    "InterpolateCameraLookAt": {
+        "prefix": "InterpolateCameraLookAt",
+        "body":
+            "InterpolateCameraLookAt(${1:playerid}, ${2:Float:FromX}, ${3:Float:FromY}, ${4:Float:FromZ}, ${5:Float:ToX}, ${6:Float:ToY}, ${7:Float:ToZ}, ${8:time}, ${9:cut = CAMERA_CUT})$0"
+    },
+    "IsPlayerConnected": {
+        "prefix": "IsPlayerConnected",
+        "body": "IsPlayerConnected(${1:playerid})$0"
+    },
+    "IsPlayerInVehicle": {
+        "prefix": "IsPlayerInVehicle",
+        "body": "IsPlayerInVehicle(${1:playerid}, ${2:vehicleid})$0"
+    },
+    "IsPlayerInAnyVehicle": {
+        "prefix": "IsPlayerInAnyVehicle",
+        "body": "IsPlayerInAnyVehicle(${1:playerid})$0"
+    },
+    "IsPlayerInCheckpoint": {
+        "prefix": "IsPlayerInCheckpoint",
+        "body": "IsPlayerInCheckpoint(${1:playerid})$0"
+    },
+    "IsPlayerInRaceCheckpoint": {
+        "prefix": "IsPlayerInRaceCheckpoint",
+        "body": "IsPlayerInRaceCheckpoint(${1:playerid})$0"
+    },
+    "SetPlayerVirtualWorld": {
+        "prefix": "SetPlayerVirtualWorld",
+        "body": "SetPlayerVirtualWorld(${1:playerid}, ${2:worldid})$0"
+    },
+    "GetPlayerVirtualWorld": {
+        "prefix": "GetPlayerVirtualWorld",
+        "body": "GetPlayerVirtualWorld(${1:playerid})$0"
+    },
+    "EnableStuntBonusForPlayer": {
+        "prefix": "EnableStuntBonusForPlayer",
+        "body": "EnableStuntBonusForPlayer(${1:playerid}, ${2:enable})$0"
+    },
+    "EnableStuntBonusForAll": {
+        "prefix": "EnableStuntBonusForAll",
+        "body": "EnableStuntBonusForAll(${1:enable})$0"
+    },
+    "TogglePlayerSpectating": {
+        "prefix": "TogglePlayerSpectating",
+        "body": "TogglePlayerSpectating(${1:playerid}, ${2:toggle})$0"
+    },
+    "PlayerSpectatePlayer": {
+        "prefix": "PlayerSpectatePlayer",
+        "body":
+            "PlayerSpectatePlayer(${1:playerid}, ${2:targetplayerid}, ${3:mode = SPECTATE_MODE_NORMAL})$0"
+    },
+    "PlayerSpectateVehicle": {
+        "prefix": "PlayerSpectateVehicle",
+        "body":
+            "PlayerSpectateVehicle(${1:playerid}, ${2:targetvehicleid}, ${3:mode = SPECTATE_MODE_NORMAL})$0"
+    },
+    "StartRecordingPlayerData": {
+        "prefix": "StartRecordingPlayerData",
+        "body": "StartRecordingPlayerData(${1:playerid}, ${2:recordtype}, ${3:recordname[]})$0"
+    },
+    "StopRecordingPlayerData": {
+        "prefix": "StopRecordingPlayerData",
+        "body": "StopRecordingPlayerData(${1:playerid})$0"
+    },
+    "SelectTextDraw": {
+        "prefix": "SelectTextDraw",
+        "body": "SelectTextDraw(${1:playerid}, ${2:hovercolor})$0"
+    },
+    "CancelSelectTextDraw": {
+        "prefix": "CancelSelectTextDraw",
+        "body": "CancelSelectTextDraw(${1:playerid})$0"
+    },
+    "CreateExplosionForPlayer": {
+        "prefix": "CreateExplosionForPlayer",
+        "body":
+            "CreateExplosionForPlayer(${1:playerid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z}, ${5:type}, ${6:Float:Radius})$0"
+    },
+
+    "print": {
+        "prefix": "print",
+        "body": "print(${1:const string[]})$0"
+    },
+    "printf": {
+        "prefix": "printf",
+        "body": "printf(${1:const format[]}, ${2:...})$0"
+    },
+    "format": {
+        "prefix": "format",
+        "body": "format(${1:output[]}, ${2:len}, ${3:const format[]}, ${4:...})$0"
+    },
+    "SendClientMessage": {
+        "prefix": "SendClientMessage",
+        "body": "SendClientMessage(${1:playerid}, ${2:color}, ${3:const message[]})$0"
+    },
+    "SendClientMessageToAll": {
+        "prefix": "SendClientMessageToAll",
+        "body": "SendClientMessageToAll(${1:color}, ${2:const message[]})$0"
+    },
+    "SendPlayerMessageToPlayer": {
+        "prefix": "SendPlayerMessageToPlayer",
+        "body": "SendPlayerMessageToPlayer(${1:playerid}, ${2:senderid}, ${3:const message[]})$0"
+    },
+    "SendPlayerMessageToAll": {
+        "prefix": "SendPlayerMessageToAll",
+        "body": "SendPlayerMessageToAll(${1:senderid}, ${2:const message[]})$0"
+    },
+    "SendDeathMessage": {
+        "prefix": "SendDeathMessage",
+        "body": "SendDeathMessage(${1:killer}, ${2:killee}, ${3:weapon})$0"
+    },
+    "SendDeathMessageToPlayer": {
+        "prefix": "SendDeathMessageToPlayer",
+        "body": "SendDeathMessageToPlayer(${1:playerid}, ${2:killer}, ${3:killee}, ${4:weapon})$0"
+    },
+    "GameTextForAll": {
+        "prefix": "GameTextForAll",
+        "body": "GameTextForAll(${1:const string[]}, ${2:time}, ${3:style})$0"
+    },
+    "GameTextForPlayer": {
+        "prefix": "GameTextForPlayer",
+        "body": "GameTextForPlayer(${1:playerid}, ${2:const string[]}, ${3:time}, ${4:style})$0"
+    },
+    "SetTimer": {
+        "prefix": "SetTimer",
+        "body": "SetTimer(${1:funcname[]}, ${2:interval}, ${3:repeating})$0"
+    },
+    "SetTimerEx": {
+        "prefix": "SetTimerEx",
+        "body":
+            "SetTimerEx(${1:funcname[]}, ${2:interval}, ${3:repeating}, ${4:const format[]}, ${5:...})$0"
+    },
+    "KillTimer": {
+        "prefix": "KillTimer",
+        "body": "KillTimer(${1:timerid})$0"
+    },
+    "GetTickCount": {
+        "prefix": "GetTickCount",
+        "body": "GetTickCount()$0"
+    },
+    "GetMaxPlayers": {
+        "prefix": "GetMaxPlayers",
+        "body": "GetMaxPlayers()$0"
+    },
+    "CallRemoteFunction": {
+        "prefix": "CallRemoteFunction",
+        "body": "CallRemoteFunction(${1:const function[]}, ${2:const format[]}, ${3:...})$0"
+    },
+    "CallLocalFunction": {
+        "prefix": "CallLocalFunction",
+        "body": "CallLocalFunction(${1:const function[]}, ${2:const format[]}, ${3:...})$0"
+    },
+    "VectorSize": {
+        "prefix": "VectorSize",
+        "body": "VectorSize(${1:Float:x}, ${2:Float:y}, ${3:Float:z})$0"
+    },
+    "asin": {
+        "prefix": "asin",
+        "body": "asin(${1:Float:value})$0"
+    },
+    "acos": {
+        "prefix": "acos",
+        "body": "acos(${1:Float:value})$0"
+    },
+    "atan": {
+        "prefix": "atan",
+        "body": "atan(${1:Float:value})$0"
+    },
+    "atan2": {
+        "prefix": "atan2",
+        "body": "atan2(${1:Float:x}, ${2:Float:y})$0"
+    },
+    "GetPlayerPoolSize": {
+        "prefix": "GetPlayerPoolSize",
+        "body": "GetPlayerPoolSize()$0"
+    },
+    "GetVehiclePoolSize": {
+        "prefix": "GetVehiclePoolSize",
+        "body": "GetVehiclePoolSize()$0"
+    },
+    "GetActorPoolSize": {
+        "prefix": "GetActorPoolSize",
+        "body": "GetActorPoolSize()$0"
+    },
+    "SHA256_PassHash": {
+        "prefix": "SHA256_PassHash",
+        "body":
+            "SHA256_PassHash(${1:password[]}, ${2:salt[]}, ${3:ret_hash[]}, ${4:ret_hash_len})$0"
+    },
+    "SetSVarInt": {
+        "prefix": "SetSVarInt",
+        "body": "SetSVarInt(${1:varname[]}, ${2:int_value})$0"
+    },
+    "GetSVarInt": {
+        "prefix": "GetSVarInt",
+        "body": "GetSVarInt(${1:varname[]})$0"
+    },
+    "SetSVarString": {
+        "prefix": "SetSVarString",
+        "body": "SetSVarString(${1:varname[]}, ${2:string_value[]})$0"
+    },
+    "GetSVarString": {
+        "prefix": "GetSVarString",
+        "body": "GetSVarString(${1:varname[]}, ${2:string_return[]}, ${3:len})$0"
+    },
+    "SetSVarFloat": {
+        "prefix": "SetSVarFloat",
+        "body": "SetSVarFloat(${1:varname[]}, ${2:Float:float_value})$0"
+    },
+    "GetSVarFloat": {
+        "prefix": "GetSVarFloat",
+        "body": "GetSVarFloat(${1:varname[]})$0"
+    },
+    "DeleteSVar": {
+        "prefix": "DeleteSVar",
+        "body": "DeleteSVar(${1:varname[]})$0"
+    },
+    "GetSVarsUpperIndex": {
+        "prefix": "GetSVarsUpperIndex",
+        "body": "GetSVarsUpperIndex()$0"
+    },
+    "GetSVarNameAtIndex": {
+        "prefix": "GetSVarNameAtIndex",
+        "body": "GetSVarNameAtIndex(${1:index}, ${2:ret_varname[]}, ${3:ret_len})$0"
+    },
+    "GetSVarType": {
+        "prefix": "GetSVarType",
+        "body": "GetSVarType(${1:varname[]})$0"
+    },
+    "SetGameModeText": {
+        "prefix": "SetGameModeText",
+        "body": "SetGameModeText(${1:const string[]})$0"
+    },
+    "SetTeamCount": {
+        "prefix": "SetTeamCount",
+        "body": "SetTeamCount(${1:count})$0"
+    },
+    "AddPlayerClass": {
+        "prefix": "AddPlayerClass",
+        "body":
+            "AddPlayerClass(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:z_angle}, ${6:weapon1}, ${7:weapon1_ammo}, ${8:weapon2}, ${9:weapon2_ammo}, ${10:weapon3}, ${11:weapon3_ammo})$0"
+    },
+    "AddPlayerClassEx": {
+        "prefix": "AddPlayerClassEx",
+        "body":
+            "AddPlayerClassEx(${1:teamid}, ${2:modelid}, ${3:Float:spawn_x}, ${4:Float:spawn_y}, ${5:Float:spawn_z}, ${6:Float:z_angle}, ${7:weapon1}, ${8:weapon1_ammo}, ${9:weapon2}, ${10:weapon2_ammo}, ${11:weapon3}, ${12:weapon3_ammo})$0"
+    },
+    "AddStaticVehicle": {
+        "prefix": "AddStaticVehicle",
+        "body":
+            "AddStaticVehicle(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:z_angle}, ${6:color1}, ${7:color2})$0"
+    },
+    "AddStaticVehicleEx": {
+        "prefix": "AddStaticVehicleEx",
+        "body":
+            "AddStaticVehicleEx(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:z_angle}, ${6:color1}, ${7:color2}, ${8:respawn_delay}, ${9:addsiren=0})$0"
+    },
+    "AddStaticPickup": {
+        "prefix": "AddStaticPickup",
+        "body":
+            "AddStaticPickup(${1:model}, ${2:type}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:virtualworld = 0})$0"
+    },
+    "CreatePickup": {
+        "prefix": "CreatePickup",
+        "body":
+            "CreatePickup(${1:model}, ${2:type}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:virtualworld = 0})$0"
+    },
+    "DestroyPickup": {
+        "prefix": "DestroyPickup",
+        "body": "DestroyPickup(${1:pickup})$0"
+    },
+    "ShowNameTags": {
+        "prefix": "ShowNameTags",
+        "body": "ShowNameTags(${1:show})$0"
+    },
+    "ShowPlayerMarkers": {
+        "prefix": "ShowPlayerMarkers",
+        "body": "ShowPlayerMarkers(${1:mode})$0"
+    },
+    "GameModeExit": {
+        "prefix": "GameModeExit",
+        "body": "GameModeExit()$0"
+    },
+    "SetWorldTime": {
+        "prefix": "SetWorldTime",
+        "body": "SetWorldTime(${1:hour})$0"
+    },
+    "GetWeaponName": {
+        "prefix": "GetWeaponName",
+        "body": "GetWeaponName(${1:weaponid}, ${2:const weapon[]}, ${3:len})$0"
+    },
+    "EnableTirePopping": {
+        "prefix": "EnableTirePopping",
+        "body": "EnableTirePopping(${1:enable})$0"
+    },
+    "EnableVehicleFriendlyFire": {
+        "prefix": "EnableVehicleFriendlyFire",
+        "body": "EnableVehicleFriendlyFire()$0"
+    },
+    "AllowInteriorWeapons": {
+        "prefix": "AllowInteriorWeapons",
+        "body": "AllowInteriorWeapons(${1:allow})$0"
+    },
+    "SetWeather": {
+        "prefix": "SetWeather",
+        "body": "SetWeather(${1:weatherid})$0"
+    },
+    "SetGravity": {
+        "prefix": "SetGravity",
+        "body": "SetGravity(${1:Float:gravity})$0"
+    },
+    "AllowAdminTeleport": {
+        "prefix": "AllowAdminTeleport",
+        "body": "AllowAdminTeleport(${1:allow})$0"
+    },
+    "SetDeathDropAmount": {
+        "prefix": "SetDeathDropAmount",
+        "body": "SetDeathDropAmount(${1:amount})$0"
+    },
+    "CreateExplosion": {
+        "prefix": "CreateExplosion",
+        "body":
+            "CreateExplosion(${1:Float:X}, ${2:Float:Y}, ${3:Float:Z}, ${4:type}, ${5:Float:Radius})$0"
+    },
+    "EnableZoneNames": {
+        "prefix": "EnableZoneNames",
+        "body": "EnableZoneNames(${1:enable})$0"
+    },
+    "UsePlayerPedAnims": {
+        "prefix": "UsePlayerPedAnims",
+        "body": "UsePlayerPedAnims()$0"
+    },
+    "DisableInteriorEnterExits": {
+        "prefix": "DisableInteriorEnterExits",
+        "body": "DisableInteriorEnterExits()$0"
+    },
+    "SetNameTagDrawDistance": {
+        "prefix": "SetNameTagDrawDistance",
+        "body": "SetNameTagDrawDistance(${1:Float:distance})$0"
+    },
+    "DisableNameTagLOS": {
+        "prefix": "DisableNameTagLOS",
+        "body": "DisableNameTagLOS()$0"
+    },
+    "LimitGlobalChatRadius": {
+        "prefix": "LimitGlobalChatRadius",
+        "body": "LimitGlobalChatRadius(${1:Float:chat_radius})$0"
+    },
+    "LimitPlayerMarkerRadius": {
+        "prefix": "LimitPlayerMarkerRadius",
+        "body": "LimitPlayerMarkerRadius(${1:Float:marker_radius})$0"
+    },
+    "ConnectNPC": {
+        "prefix": "ConnectNPC",
+        "body": "ConnectNPC(${1:name[]}, ${2:script[]})$0"
+    },
+    "IsPlayerNPC": {
+        "prefix": "IsPlayerNPC",
+        "body": "IsPlayerNPC(${1:playerid})$0"
+    },
+    "IsPlayerAdmin": {
+        "prefix": "IsPlayerAdmin",
+        "body": "IsPlayerAdmin(${1:playerid})$0"
+    },
+    "Kick": {
+        "prefix": "Kick",
+        "body": "Kick(${1:playerid})$0"
+    },
+    "Ban": {
+        "prefix": "Ban",
+        "body": "Ban(${1:playerid})$0"
+    },
+    "BanEx": {
+        "prefix": "BanEx",
+        "body": "BanEx(${1:playerid}, ${2:const reason[]})$0"
+    },
+    "SendRconCommand": {
+        "prefix": "SendRconCommand",
+        "body": "SendRconCommand(${1:command[]})$0"
+    },
+    "GetPlayerNetworkStats": {
+        "prefix": "GetPlayerNetworkStats",
+        "body": "GetPlayerNetworkStats(${1:playerid}, ${2:retstr[]}, ${3:retstr_size})$0"
+    },
+    "GetNetworkStats": {
+        "prefix": "GetNetworkStats",
+        "body": "GetNetworkStats(${1:retstr[]}, ${2:retstr_size})$0"
+    },
+    "GetPlayerVersion": {
+        "prefix": "GetPlayerVersion",
+        "body": "GetPlayerVersion(${1:playerid}, ${2:const version[]}, ${3:len})$0"
+    },
+    "BlockIpAddress": {
+        "prefix": "BlockIpAddress",
+        "body": "BlockIpAddress(${1:ip_address[]}, ${2:timems})$0"
+    },
+    "UnBlockIpAddress": {
+        "prefix": "UnBlockIpAddress",
+        "body": "UnBlockIpAddress(${1:ip_address[]})$0"
+    },
+    "GetServerVarAsString": {
+        "prefix": "GetServerVarAsString",
+        "body": "GetServerVarAsString(${1:const varname[]}, ${2:buffer[]}, ${3:len})$0"
+    },
+    "GetServerVarAsInt": {
+        "prefix": "GetServerVarAsInt",
+        "body": "GetServerVarAsInt(${1:const varname[]})$0"
+    },
+    "GetServerVarAsBool": {
+        "prefix": "GetServerVarAsBool",
+        "body": "GetServerVarAsBool(${1:const varname[]})$0"
+    },
+    "GetConsoleVarAsString": {
+        "prefix": "GetConsoleVarAsString",
+        "body": "GetConsoleVarAsString(${1:const varname[]}, ${2:buffer[]}, ${3:len})$0"
+    },
+    "GetConsoleVarAsInt": {
+        "prefix": "GetConsoleVarAsInt",
+        "body": "GetConsoleVarAsInt(${1:const varname[]})$0"
+    },
+    "GetConsoleVarAsBool": {
+        "prefix": "GetConsoleVarAsBool",
+        "body": "GetConsoleVarAsBool(${1:const varname[]})$0"
+    },
+    "GetServerTickRate": {
+        "prefix": "GetServerTickRate",
+        "body": "GetServerTickRate()$0"
+    },
+    "NetStats_GetConnectedTime": {
+        "prefix": "NetStats_GetConnectedTime",
+        "body": "NetStats_GetConnectedTime(${1:playerid})$0"
+    },
+    "NetStats_MessagesReceived": {
+        "prefix": "NetStats_MessagesReceived",
+        "body": "NetStats_MessagesReceived(${1:playerid})$0"
+    },
+    "NetStats_BytesReceived": {
+        "prefix": "NetStats_BytesReceived",
+        "body": "NetStats_BytesReceived(${1:playerid})$0"
+    },
+    "NetStats_MessagesSent": {
+        "prefix": "NetStats_MessagesSent",
+        "body": "NetStats_MessagesSent(${1:playerid})$0"
+    },
+    "NetStats_BytesSent": {
+        "prefix": "NetStats_BytesSent",
+        "body": "NetStats_BytesSent(${1:playerid})$0"
+    },
+    "NetStats_MessagesRecvPerSecond": {
+        "prefix": "NetStats_MessagesRecvPerSecond",
+        "body": "NetStats_MessagesRecvPerSecond(${1:playerid})$0"
+    },
+    "NetStats_PacketLossPercent": {
+        "prefix": "NetStats_PacketLossPercent",
+        "body": "NetStats_PacketLossPercent(${1:playerid})$0"
+    },
+    "NetStats_ConnectionStatus": {
+        "prefix": "NetStats_ConnectionStatus",
+        "body": "NetStats_ConnectionStatus(${1:playerid})$0"
+    },
+    "NetStats_GetIpPort": {
+        "prefix": "NetStats_GetIpPort",
+        "body": "NetStats_GetIpPort(${1:playerid}, ${2:ip_port[]}, ${3:ip_port_len})$0"
+    },
+    "CreateMenu": {
+        "prefix": "CreateMenu",
+        "body":
+            "CreateMenu(${1:const title[]}, ${2:columns}, ${3:Float:x}, ${4:Float:y}, ${5:Float:col1width}, ${6:Float:col2width = 0.0})$0"
+    },
+    "DestroyMenu": {
+        "prefix": "DestroyMenu",
+        "body": "DestroyMenu(${1:Menu:menuid})$0"
+    },
+    "AddMenuItem": {
+        "prefix": "AddMenuItem",
+        "body": "AddMenuItem(${1:Menu:menuid}, ${2:column}, ${3:const menutext[]})$0"
+    },
+    "SetMenuColumnHeader": {
+        "prefix": "SetMenuColumnHeader",
+        "body": "SetMenuColumnHeader(${1:Menu:menuid}, ${2:column}, ${3:const columnheader[]})$0"
+    },
+    "ShowMenuForPlayer": {
+        "prefix": "ShowMenuForPlayer",
+        "body": "ShowMenuForPlayer(${1:Menu:menuid}, ${2:playerid})$0"
+    },
+    "HideMenuForPlayer": {
+        "prefix": "HideMenuForPlayer",
+        "body": "HideMenuForPlayer(${1:Menu:menuid}, ${2:playerid})$0"
+    },
+    "IsValidMenu": {
+        "prefix": "IsValidMenu",
+        "body": "IsValidMenu(${1:Menu:menuid})$0"
+    },
+    "DisableMenu": {
+        "prefix": "DisableMenu",
+        "body": "DisableMenu(${1:Menu:menuid})$0"
+    },
+    "DisableMenuRow": {
+        "prefix": "DisableMenuRow",
+        "body": "DisableMenuRow(${1:Menu:menuid}, ${2:row})$0"
+    },
+    "GetPlayerMenu": {
+        "prefix": "GetPlayerMenu",
+        "body": "GetPlayerMenu(${1:playerid})$0"
+    },
+    "TextDrawCreate": {
+        "prefix": "TextDrawCreate",
+        "body": "TextDrawCreate(${1:Float:x}, ${2:Float:y}, ${3:text[]})$0"
+    },
+    "TextDrawDestroy": {
+        "prefix": "TextDrawDestroy",
+        "body": "TextDrawDestroy(${1:Text:text})$0"
+    },
+    "TextDrawLetterSize": {
+        "prefix": "TextDrawLetterSize",
+        "body": "TextDrawLetterSize(${1:Text:text}, ${2:Float:x}, ${3:Float:y})$0"
+    },
+    "TextDrawTextSize": {
+        "prefix": "TextDrawTextSize",
+        "body": "TextDrawTextSize(${1:Text:text}, ${2:Float:x}, ${3:Float:y})$0"
+    },
+    "TextDrawAlignment": {
+        "prefix": "TextDrawAlignment",
+        "body": "TextDrawAlignment(${1:Text:text}, ${2:alignment})$0"
+    },
+    "TextDrawColor": {
+        "prefix": "TextDrawColor",
+        "body": "TextDrawColor(${1:Text:text}, ${2:color})$0"
+    },
+    "TextDrawUseBox": {
+        "prefix": "TextDrawUseBox",
+        "body": "TextDrawUseBox(${1:Text:text}, ${2:use})$0"
+    },
+    "TextDrawBoxColor": {
+        "prefix": "TextDrawBoxColor",
+        "body": "TextDrawBoxColor(${1:Text:text}, ${2:color})$0"
+    },
+    "TextDrawSetShadow": {
+        "prefix": "TextDrawSetShadow",
+        "body": "TextDrawSetShadow(${1:Text:text}, ${2:size})$0"
+    },
+    "TextDrawSetOutline": {
+        "prefix": "TextDrawSetOutline",
+        "body": "TextDrawSetOutline(${1:Text:text}, ${2:size})$0"
+    },
+    "TextDrawBackgroundColor": {
+        "prefix": "TextDrawBackgroundColor",
+        "body": "TextDrawBackgroundColor(${1:Text:text}, ${2:color})$0"
+    },
+    "TextDrawFont": {
+        "prefix": "TextDrawFont",
+        "body": "TextDrawFont(${1:Text:text}, ${2:font})$0"
+    },
+    "TextDrawSetProportional": {
+        "prefix": "TextDrawSetProportional",
+        "body": "TextDrawSetProportional(${1:Text:text}, ${2:set})$0"
+    },
+    "TextDrawSetSelectable": {
+        "prefix": "TextDrawSetSelectable",
+        "body": "TextDrawSetSelectable(${1:Text:text}, ${2:set})$0"
+    },
+    "TextDrawShowForPlayer": {
+        "prefix": "TextDrawShowForPlayer",
+        "body": "TextDrawShowForPlayer(${1:playerid}, ${2:Text:text})$0"
+    },
+    "TextDrawHideForPlayer": {
+        "prefix": "TextDrawHideForPlayer",
+        "body": "TextDrawHideForPlayer(${1:playerid}, ${2:Text:text})$0"
+    },
+    "TextDrawShowForAll": {
+        "prefix": "TextDrawShowForAll",
+        "body": "TextDrawShowForAll(${1:Text:text})$0"
+    },
+    "TextDrawHideForAll": {
+        "prefix": "TextDrawHideForAll",
+        "body": "TextDrawHideForAll(${1:Text:text})$0"
+    },
+    "TextDrawSetString": {
+        "prefix": "TextDrawSetString",
+        "body": "TextDrawSetString(${1:Text:text}, ${2:string[]})$0"
+    },
+    "TextDrawSetPreviewModel": {
+        "prefix": "TextDrawSetPreviewModel",
+        "body": "TextDrawSetPreviewModel(${1:Text:text}, ${2:modelindex})$0"
+    },
+    "TextDrawSetPreviewRot": {
+        "prefix": "TextDrawSetPreviewRot",
+        "body":
+            "TextDrawSetPreviewRot(${1:Text:text}, ${2:Float:fRotX}, ${3:Float:fRotY}, ${4:Float:fRotZ}, ${5:Float:fZoom = 1.0})$0"
+    },
+    "TextDrawSetPreviewVehCol": {
+        "prefix": "TextDrawSetPreviewVehCol",
+        "body": "TextDrawSetPreviewVehCol(${1:Text:text}, ${2:color1}, ${3:color2})$0"
+    },
+    "GangZoneCreate": {
+        "prefix": "GangZoneCreate",
+        "body":
+            "GangZoneCreate(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy})$0"
+    },
+    "GangZoneDestroy": {
+        "prefix": "GangZoneDestroy",
+        "body": "GangZoneDestroy(${1:zone})$0"
+    },
+    "GangZoneShowForPlayer": {
+        "prefix": "GangZoneShowForPlayer",
+        "body": "GangZoneShowForPlayer(${1:playerid}, ${2:zone}, ${3:color})$0"
+    },
+    "GangZoneShowForAll": {
+        "prefix": "GangZoneShowForAll",
+        "body": "GangZoneShowForAll(${1:zone}, ${2:color})$0"
+    },
+    "GangZoneHideForPlayer": {
+        "prefix": "GangZoneHideForPlayer",
+        "body": "GangZoneHideForPlayer(${1:playerid}, ${2:zone})$0"
+    },
+    "GangZoneHideForAll": {
+        "prefix": "GangZoneHideForAll",
+        "body": "GangZoneHideForAll(${1:zone})$0"
+    },
+    "GangZoneFlashForPlayer": {
+        "prefix": "GangZoneFlashForPlayer",
+        "body": "GangZoneFlashForPlayer(${1:playerid}, ${2:zone}, ${3:flashcolor})$0"
+    },
+    "GangZoneFlashForAll": {
+        "prefix": "GangZoneFlashForAll",
+        "body": "GangZoneFlashForAll(${1:zone}, ${2:flashcolor})$0"
+    },
+    "GangZoneStopFlashForPlayer": {
+        "prefix": "GangZoneStopFlashForPlayer",
+        "body": "GangZoneStopFlashForPlayer(${1:playerid}, ${2:zone})$0"
+    },
+    "GangZoneStopFlashForAll": {
+        "prefix": "GangZoneStopFlashForAll",
+        "body": "GangZoneStopFlashForAll(${1:zone})$0"
+    },
+    "Create3DTextLabel": {
+        "prefix": "Create3DTextLabel",
+        "body":
+            "Create3DTextLabel(${1:text[]}, ${2:color}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:Float:DrawDistance}, ${7:virtualworld}, ${8:testLOS=0})$0"
+    },
+    "Delete3DTextLabel": {
+        "prefix": "Delete3DTextLabel",
+        "body": "Delete3DTextLabel(${1:Text3D:id})$0"
+    },
+    "Attach3DTextLabelToPlayer": {
+        "prefix": "Attach3DTextLabelToPlayer",
+        "body":
+            "Attach3DTextLabelToPlayer(${1:Text3D:id}, ${2:playerid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ})$0"
+    },
+    "Attach3DTextLabelToVehicle": {
+        "prefix": "Attach3DTextLabelToVehicle",
+        "body":
+            "Attach3DTextLabelToVehicle(${1:Text3D:id}, ${2:vehicleid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ})$0"
+    },
+    "Update3DTextLabelText": {
+        "prefix": "Update3DTextLabelText",
+        "body": "Update3DTextLabelText(${1:Text3D:id}, ${2:color}, ${3:text[]})$0"
+    },
+    "CreatePlayer3DTextLabel": {
+        "prefix": "CreatePlayer3DTextLabel",
+        "body":
+            "CreatePlayer3DTextLabel(${1:playerid}, ${2:text[]}, ${3:color}, ${4:Float:X}, ${5:Float:Y}, ${6:Float:Z}, ${7:Float:DrawDistance}, ${8:attachedplayer=INVALID_PLAYER_ID}, ${9:attachedvehicle=INVALID_VEHICLE_ID}, ${10:testLOS=0})$0"
+    },
+    "DeletePlayer3DTextLabel": {
+        "prefix": "DeletePlayer3DTextLabel",
+        "body": "DeletePlayer3DTextLabel(${1:playerid}, ${2:PlayerText3D:id})$0"
+    },
+    "UpdatePlayer3DTextLabelText": {
+        "prefix": "UpdatePlayer3DTextLabelText",
+        "body":
+            "UpdatePlayer3DTextLabelText(${1:playerid}, ${2:PlayerText3D:id}, ${3:color}, ${4:text[]})$0"
+    },
+    "ShowPlayerDialog": {
+        "prefix": "ShowPlayerDialog",
+        "body":
+            "ShowPlayerDialog(${1:playerid}, ${2:dialogid}, ${3:style}, ${4:caption[]}, ${5:info[]}, ${6:button1[]}, ${7:button2[]})$0"
+    },
+    "OnGameModeInit": {
+        "prefix": "OnGameModeInit",
+        "body": "OnGameModeInit()$0"
+    },
+    "OnGameModeExit": {
+        "prefix": "OnGameModeExit",
+        "body": "OnGameModeExit()$0"
+    },
+    "OnFilterScriptInit": {
+        "prefix": "OnFilterScriptInit",
+        "body": "OnFilterScriptInit()$0"
+    },
+    "OnFilterScriptExit": {
+        "prefix": "OnFilterScriptExit",
+        "body": "OnFilterScriptExit()$0"
+    },
+    "OnPlayerConnect": {
+        "prefix": "OnPlayerConnect",
+        "body": "OnPlayerConnect(${1:playerid})$0"
+    },
+    "OnPlayerDisconnect": {
+        "prefix": "OnPlayerDisconnect",
+        "body": "OnPlayerDisconnect(${1:playerid}, ${2:reason})$0"
+    },
+    "OnPlayerSpawn": {
+        "prefix": "OnPlayerSpawn",
+        "body": "OnPlayerSpawn(${1:playerid})$0"
+    },
+    "OnPlayerDeath": {
+        "prefix": "OnPlayerDeath",
+        "body": "OnPlayerDeath(${1:playerid}, ${2:killerid}, ${3:reason})$0"
+    },
+    "OnVehicleSpawn": {
+        "prefix": "OnVehicleSpawn",
+        "body": "OnVehicleSpawn(${1:vehicleid})$0"
+    },
+    "OnVehicleDeath": {
+        "prefix": "OnVehicleDeath",
+        "body": "OnVehicleDeath(${1:vehicleid}, ${2:killerid})$0"
+    },
+    "OnPlayerCommandText": {
+        "prefix": "OnPlayerCommandText",
+        "body": "OnPlayerCommandText(${1:playerid}, ${2:cmdtext[]})$0"
+    },
+    "OnPlayerRequestClass": {
+        "prefix": "OnPlayerRequestClass",
+        "body": "OnPlayerRequestClass(${1:playerid}, ${2:classid})$0"
+    },
+    "OnPlayerEnterVehicle": {
+        "prefix": "OnPlayerEnterVehicle",
+        "body": "OnPlayerEnterVehicle(${1:playerid}, ${2:vehicleid}, ${3:ispassenger})$0"
+    },
+    "OnPlayerExitVehicle": {
+        "prefix": "OnPlayerExitVehicle",
+        "body": "OnPlayerExitVehicle(${1:playerid}, ${2:vehicleid})$0"
+    },
+    "OnPlayerStateChange": {
+        "prefix": "OnPlayerStateChange",
+        "body": "OnPlayerStateChange(${1:playerid}, ${2:newstate}, ${3:oldstate})$0"
+    },
+    "OnPlayerEnterCheckpoint": {
+        "prefix": "OnPlayerEnterCheckpoint",
+        "body": "OnPlayerEnterCheckpoint(${1:playerid})$0"
+    },
+    "OnPlayerLeaveCheckpoint": {
+        "prefix": "OnPlayerLeaveCheckpoint",
+        "body": "OnPlayerLeaveCheckpoint(${1:playerid})$0"
+    },
+    "OnPlayerEnterRaceCheckpoint": {
+        "prefix": "OnPlayerEnterRaceCheckpoint",
+        "body": "OnPlayerEnterRaceCheckpoint(${1:playerid})$0"
+    },
+    "OnPlayerLeaveRaceCheckpoint": {
+        "prefix": "OnPlayerLeaveRaceCheckpoint",
+        "body": "OnPlayerLeaveRaceCheckpoint(${1:playerid})$0"
+    },
+    "OnRconCommand": {
+        "prefix": "OnRconCommand",
+        "body": "OnRconCommand(${1:cmd[]})$0"
+    },
+    "OnPlayerRequestSpawn": {
+        "prefix": "OnPlayerRequestSpawn",
+        "body": "OnPlayerRequestSpawn(${1:playerid})$0"
+    },
+    "OnObjectMoved": {
+        "prefix": "OnObjectMoved",
+        "body": "OnObjectMoved(${1:objectid})$0"
+    },
+    "OnPlayerObjectMoved": {
+        "prefix": "OnPlayerObjectMoved",
+        "body": "OnPlayerObjectMoved(${1:playerid}, ${2:objectid})$0"
+    },
+    "OnPlayerPickUpPickup": {
+        "prefix": "OnPlayerPickUpPickup",
+        "body": "OnPlayerPickUpPickup(${1:playerid}, ${2:pickupid})$0"
+    },
+    "OnVehicleMod": {
+        "prefix": "OnVehicleMod",
+        "body": "OnVehicleMod(${1:playerid}, ${2:vehicleid}, ${3:componentid})$0"
+    },
+    "OnEnterExitModShop": {
+        "prefix": "OnEnterExitModShop",
+        "body": "OnEnterExitModShop(${1:playerid}, ${2:enterexit}, ${3:interiorid})$0"
+    },
+    "OnVehiclePaintjob": {
+        "prefix": "OnVehiclePaintjob",
+        "body": "OnVehiclePaintjob(${1:playerid}, ${2:vehicleid}, ${3:paintjobid})$0"
+    },
+    "OnVehicleRespray": {
+        "prefix": "OnVehicleRespray",
+        "body": "OnVehicleRespray(${1:playerid}, ${2:vehicleid}, ${3:color1}, ${4:color2})$0"
+    },
+    "OnVehicleDamageStatusUpdate": {
+        "prefix": "OnVehicleDamageStatusUpdate",
+        "body": "OnVehicleDamageStatusUpdate(${1:vehicleid}, ${2:playerid})$0"
+    },
+    "OnUnoccupiedVehicleUpdate": {
+        "prefix": "OnUnoccupiedVehicleUpdate",
+        "body":
+            "OnUnoccupiedVehicleUpdate(${1:vehicleid}, ${2:playerid}, ${3:passenger_seat}, ${4:Float:new_x}, ${5:Float:new_y}, ${6:Float:new_z}, ${7:Float:vel_x}, ${8:Float:vel_y}, ${9:Float:vel_z})$0"
+    },
+    "OnPlayerSelectedMenuRow": {
+        "prefix": "OnPlayerSelectedMenuRow",
+        "body": "OnPlayerSelectedMenuRow(${1:playerid}, ${2:row})$0"
+    },
+    "OnPlayerExitedMenu": {
+        "prefix": "OnPlayerExitedMenu",
+        "body": "OnPlayerExitedMenu(${1:playerid})$0"
+    },
+    "OnPlayerInteriorChange": {
+        "prefix": "OnPlayerInteriorChange",
+        "body": "OnPlayerInteriorChange(${1:playerid}, ${2:newinteriorid}, ${3:oldinteriorid})$0"
+    },
+    "OnPlayerKeyStateChange": {
+        "prefix": "OnPlayerKeyStateChange",
+        "body": "OnPlayerKeyStateChange(${1:playerid}, ${2:newkeys}, ${3:oldkeys})$0"
+    },
+    "OnRconLoginAttempt": {
+        "prefix": "OnRconLoginAttempt",
+        "body": "OnRconLoginAttempt(${1:ip[]}, ${2:password[]}, ${3:success })$0"
+    },
+    "OnPlayerUpdate": {
+        "prefix": "OnPlayerUpdate",
+        "body": "OnPlayerUpdate(${1:playerid})$0"
+    },
+    "OnActorStreamIn": {
+        "prefix": "OnActorStreamIn",
+        "body": "OnActorStreamIn(${1:actorid}, ${2:forplayerid})$0"
+    },
+    "OnActorStreamOut": {
+        "prefix": "OnActorStreamOut",
+        "body": "OnActorStreamOut(${1:actorid}, ${2:forplayerid})$0"
+    },
+    "OnDialogResponse": {
+        "prefix": "OnDialogResponse",
+        "body":
+            "OnDialogResponse(${1:playerid}, ${2:dialogid}, ${3:response}, ${4:listitem}, ${5:inputtext[]})$0"
+    },
+    "OnPlayerTakeDamage": {
+        "prefix": "OnPlayerTakeDamage",
+        "body":
+            "OnPlayerTakeDamage(${1:playerid}, ${2:issuerid}, ${3:Float:amount}, ${4:weaponid}, ${5:bodypart})$0"
+    },
+    "OnPlayerGiveDamage": {
+        "prefix": "OnPlayerGiveDamage",
+        "body":
+            "OnPlayerGiveDamage(${1:playerid}, ${2:damagedid}, ${3:Float:amount}, ${4:weaponid}, ${5:bodypart})$0"
+    },
+    "OnPlayerGiveDamageActor": {
+        "prefix": "OnPlayerGiveDamageActor",
+        "body":
+            "OnPlayerGiveDamageActor(${1:playerid}, ${2:damaged_actorid}, ${3:Float:amount}, ${4:weaponid}, ${5:bodypart})$0"
+    },
+    "OnPlayerClickMap": {
+        "prefix": "OnPlayerClickMap",
+        "body": "OnPlayerClickMap(${1:playerid}, ${2:Float:fX}, ${3:Float:fY}, ${4:Float:fZ})$0"
+    },
+    "OnPlayerClickTextDraw": {
+        "prefix": "OnPlayerClickTextDraw",
+        "body": "OnPlayerClickTextDraw(${1:playerid}, ${2:Text:clickedid})$0"
+    },
+    "OnPlayerClickPlayerTextDraw": {
+        "prefix": "OnPlayerClickPlayerTextDraw",
+        "body": "OnPlayerClickPlayerTextDraw(${1:playerid}, ${2:PlayerText:playertextid})$0"
+    },
+    "OnIncomingConnection": {
+        "prefix": "OnIncomingConnection",
+        "body": "OnIncomingConnection(${1:playerid}, ${2:ip_address[]}, ${3:port})$0"
+    },
+    "OnTrailerUpdate": {
+        "prefix": "OnTrailerUpdate",
+        "body": "OnTrailerUpdate(${1:playerid}, ${2:vehicleid})$0"
+    },
+    "OnVehicleSirenStateChange": {
+        "prefix": "OnVehicleSirenStateChange",
+        "body": "OnVehicleSirenStateChange(${1:playerid}, ${2:vehicleid}, ${3:newstate})$0"
+    },
+    "OnPlayerClickPlayer": {
+        "prefix": "OnPlayerClickPlayer",
+        "body": "OnPlayerClickPlayer(${1:playerid}, ${2:clickedplayerid}, ${3:source})$0"
+    },
+    "OnPlayerEditObject": {
+        "prefix": "OnPlayerEditObject",
+        "body":
+            "OnPlayerEditObject(${1:playerid}, ${2:playerobject}, ${3:objectid}, ${4:response}, ${5:Float:fX}, ${6:Float:fY}, ${7:Float:fZ}, ${8:Float:fRotX}, ${9:Float:fRotY}, ${10:Float:fRotZ })$0"
+    },
+    "OnPlayerEditAttachedObject": {
+        "prefix": "OnPlayerEditAttachedObject",
+        "body":
+            "OnPlayerEditAttachedObject(${1:playerid}, ${2:response}, ${3:index}, ${4:modelid}, ${5:boneid}, ${6:Float:fOffsetX}, ${7:Float:fOffsetY}, ${8:Float:fOffsetZ}, ${9:Float:fRotX}, ${10:Float:fRotY}, ${11:Float:fRotZ}, ${12:Float:fScaleX}, ${13:Float:fScaleY}, ${14:Float:fScaleZ })$0"
+    },
+    "OnPlayerSelectObject": {
+        "prefix": "OnPlayerSelectObject",
+        "body":
+            "OnPlayerSelectObject(${1:playerid}, ${2:type}, ${3:objectid}, ${4:modelid}, ${5:Float:fX}, ${6:Float:fY}, ${7:Float:fZ})$0"
+    },
+    "OnPlayerWeaponShot": {
+        "prefix": "OnPlayerWeaponShot",
+        "body":
+            "OnPlayerWeaponShot(${1:playerid}, ${2:weaponid}, ${3:hittype}, ${4:hitid}, ${5:Float:fX}, ${6:Float:fY}, ${7:Float:fZ})$0"
+    },
+
+    "db_open": {
+        "prefix": "db_open",
+        "body": "db_open(${1:name[]})$0"
+    },
+    "db_close": {
+        "prefix": "db_close",
+        "body": "db_close(${1:DB:db})$0"
+    },
+    "db_query": {
+        "prefix": "db_query",
+        "body": "db_query(${1:DB:db}, ${2:query[]})$0"
+    },
+    "db_free_result": {
+        "prefix": "db_free_result",
+        "body": "db_free_result(${1:DBResult:dbresult})$0"
+    },
+    "db_num_rows": {
+        "prefix": "db_num_rows",
+        "body": "db_num_rows(${1:DBResult:dbresult})$0"
+    },
+    "db_next_row": {
+        "prefix": "db_next_row",
+        "body": "db_next_row(${1:DBResult:dbresult})$0"
+    },
+    "db_num_fields": {
+        "prefix": "db_num_fields",
+        "body": "db_num_fields(${1:DBResult:dbresult})$0"
+    },
+    "db_field_name": {
+        "prefix": "db_field_name",
+        "body": "db_field_name(${1:DBResult:dbresult}, ${2:field}, ${3:result[]}, ${4:maxlength})$0"
+    },
+    "db_get_field": {
+        "prefix": "db_get_field",
+        "body": "db_get_field(${1:DBResult:dbresult}, ${2:field}, ${3:result[]}, ${4:maxlength})$0"
+    },
+    "db_get_field_int": {
+        "prefix": "db_get_field_int",
+        "body": "db_get_field_int(${1:DBResult:result}, ${2:field = 0})$0"
+    },
+    "db_get_field_float": {
+        "prefix": "db_get_field_float",
+        "body": "db_get_field_float(${1:DBResult:result}, ${2:field = 0})$0"
+    },
+    "db_get_field_assoc": {
+        "prefix": "db_get_field_assoc",
+        "body":
+            "db_get_field_assoc(${1:DBResult:dbresult}, ${2:const field[]}, ${3:result[]}, ${4:maxlength})$0"
+    },
+    "db_get_field_assoc_int": {
+        "prefix": "db_get_field_assoc_int",
+        "body": "db_get_field_assoc_int(${1:DBResult:result}, ${2:const field[]})$0"
+    },
+    "db_get_field_assoc_float": {
+        "prefix": "db_get_field_assoc_float",
+        "body": "db_get_field_assoc_float(${1:DBResult:result}, ${2:const field[]})$0"
+    },
+    "db_get_mem_handle": {
+        "prefix": "db_get_mem_handle",
+        "body": "db_get_mem_handle(${1:DB:db})$0"
+    },
+    "db_get_result_mem_handle": {
+        "prefix": "db_get_result_mem_handle",
+        "body": "db_get_result_mem_handle(${1:DBResult:result})$0"
+    },
+    "db_debug_openfiles": {
+        "prefix": "db_debug_openfiles",
+        "body": "db_debug_openfiles()$0"
+    },
+    "db_debug_openresults": {
+        "prefix": "db_debug_openresults",
+        "body": "db_debug_openresults()$0"
+    },
+
+    "CreateVehicle": {
+        "prefix": "CreateVehicle",
+        "body":
+            "CreateVehicle(${1:vehicletype}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rotation}, ${6:color1}, ${7:color2}, ${8:respawn_delay}, ${9:addsiren=0})$0"
+    },
+    "DestroyVehicle": {
+        "prefix": "DestroyVehicle",
+        "body": "DestroyVehicle(${1:vehicleid})$0"
+    },
+    "IsValidVehicle": {
+        "prefix": "IsValidVehicle",
+        "body": "IsValidVehicle(${1:vehicleid})$0"
+    },
+    "IsVehicleStreamedIn": {
+        "prefix": "IsVehicleStreamedIn",
+        "body": "IsVehicleStreamedIn(${1:vehicleid}, ${2:forplayerid})$0"
+    },
+    "GetVehiclePos": {
+        "prefix": "GetVehiclePos",
+        "body": "GetVehiclePos(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+    },
+    "SetVehiclePos": {
+        "prefix": "SetVehiclePos",
+        "body": "SetVehiclePos(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+    },
+    "GetVehicleZAngle": {
+        "prefix": "GetVehicleZAngle",
+        "body": "GetVehicleZAngle(${1:vehicleid}, ${2:Float:z_angle})$0"
+    },
+    "GetVehicleRotationQuat": {
+        "prefix": "GetVehicleRotationQuat",
+        "body":
+            "GetVehicleRotationQuat(${1:vehicleid}, ${2:Float:w}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})$0"
+    },
+    "GetVehicleDistanceFromPoint": {
+        "prefix": "GetVehicleDistanceFromPoint",
+        "body":
+            "GetVehicleDistanceFromPoint(${1:vehicleid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "SetVehicleZAngle": {
+        "prefix": "SetVehicleZAngle",
+        "body": "SetVehicleZAngle(${1:vehicleid}, ${2:Float:z_angle})$0"
+    },
+    "SetVehicleParamsForPlayer": {
+        "prefix": "SetVehicleParamsForPlayer",
+        "body":
+            "SetVehicleParamsForPlayer(${1:vehicleid}, ${2:playerid}, ${3:objective}, ${4:doorslocked})$0"
+    },
+    "ManualVehicleEngineAndLights": {
+        "prefix": "ManualVehicleEngineAndLights",
+        "body": "ManualVehicleEngineAndLights()$0"
+    },
+    "SetVehicleParamsEx": {
+        "prefix": "SetVehicleParamsEx",
+        "body":
+            "SetVehicleParamsEx(${1:vehicleid}, ${2:engine}, ${3:lights}, ${4:alarm}, ${5:doors}, ${6:bonnet}, ${7:boot}, ${8:objective})$0"
+    },
+    "GetVehicleParamsEx": {
+        "prefix": "GetVehicleParamsEx",
+        "body":
+            "GetVehicleParamsEx(${1:vehicleid}, ${2:engine}, ${3:lights}, ${4:alarm}, ${5:doors}, ${6:bonnet}, ${7:boot}, ${8:objective})$0"
+    },
+    "GetVehicleParamsSirenState": {
+        "prefix": "GetVehicleParamsSirenState",
+        "body": "GetVehicleParamsSirenState(${1:vehicleid})$0"
+    },
+    "SetVehicleParamsCarDoors": {
+        "prefix": "SetVehicleParamsCarDoors",
+        "body":
+            "SetVehicleParamsCarDoors(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
+    },
+    "GetVehicleParamsCarDoors": {
+        "prefix": "GetVehicleParamsCarDoors",
+        "body":
+            "GetVehicleParamsCarDoors(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
+    },
+    "SetVehicleParamsCarWindows": {
+        "prefix": "SetVehicleParamsCarWindows",
+        "body":
+            "SetVehicleParamsCarWindows(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
+    },
+    "GetVehicleParamsCarWindows": {
+        "prefix": "GetVehicleParamsCarWindows",
+        "body":
+            "GetVehicleParamsCarWindows(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
+    },
+    "SetVehicleToRespawn": {
+        "prefix": "SetVehicleToRespawn",
+        "body": "SetVehicleToRespawn(${1:vehicleid})$0"
+    },
+    "LinkVehicleToInterior": {
+        "prefix": "LinkVehicleToInterior",
+        "body": "LinkVehicleToInterior(${1:vehicleid}, ${2:interiorid})$0"
+    },
+    "AddVehicleComponent": {
+        "prefix": "AddVehicleComponent",
+        "body": "AddVehicleComponent(${1:vehicleid}, ${2:componentid})$0"
+    },
+    "RemoveVehicleComponent": {
+        "prefix": "RemoveVehicleComponent",
+        "body": "RemoveVehicleComponent(${1:vehicleid}, ${2:componentid})$0"
+    },
+    "ChangeVehicleColor": {
+        "prefix": "ChangeVehicleColor",
+        "body": "ChangeVehicleColor(${1:vehicleid}, ${2:color1}, ${3:color2})$0"
+    },
+    "ChangeVehiclePaintjob": {
+        "prefix": "ChangeVehiclePaintjob",
+        "body": "ChangeVehiclePaintjob(${1:vehicleid}, ${2:paintjobid})$0"
+    },
+    "SetVehicleHealth": {
+        "prefix": "SetVehicleHealth",
+        "body": "SetVehicleHealth(${1:vehicleid}, ${2:Float:health})$0"
+    },
+    "GetVehicleHealth": {
+        "prefix": "GetVehicleHealth",
+        "body": "GetVehicleHealth(${1:vehicleid}, ${2:Float:health})$0"
+    },
+    "AttachTrailerToVehicle": {
+        "prefix": "AttachTrailerToVehicle",
+        "body": "AttachTrailerToVehicle(${1:trailerid}, ${2:vehicleid})$0"
+    },
+    "DetachTrailerFromVehicle": {
+        "prefix": "DetachTrailerFromVehicle",
+        "body": "DetachTrailerFromVehicle(${1:vehicleid})$0"
+    },
+    "IsTrailerAttachedToVehicle": {
+        "prefix": "IsTrailerAttachedToVehicle",
+        "body": "IsTrailerAttachedToVehicle(${1:vehicleid})$0"
+    },
+    "GetVehicleTrailer": {
+        "prefix": "GetVehicleTrailer",
+        "body": "GetVehicleTrailer(${1:vehicleid})$0"
+    },
+    "SetVehicleNumberPlate": {
+        "prefix": "SetVehicleNumberPlate",
+        "body": "SetVehicleNumberPlate(${1:vehicleid}, ${2:numberplate[]})$0"
+    },
+    "GetVehicleModel": {
+        "prefix": "GetVehicleModel",
+        "body": "GetVehicleModel(${1:vehicleid})$0"
+    },
+    "GetVehicleComponentInSlot": {
+        "prefix": "GetVehicleComponentInSlot",
+        "body": "GetVehicleComponentInSlot(${1:vehicleid}, ${2:slot})$0"
+    },
+    "GetVehicleComponentType": {
+        "prefix": "GetVehicleComponentType",
+        "body": "GetVehicleComponentType(${1:component})$0"
+    },
+    "RepairVehicle": {
+        "prefix": "RepairVehicle",
+        "body": "RepairVehicle(${1:vehicleid})$0"
+    },
+    "GetVehicleVelocity": {
+        "prefix": "GetVehicleVelocity",
+        "body": "GetVehicleVelocity(${1:vehicleid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "SetVehicleVelocity": {
+        "prefix": "SetVehicleVelocity",
+        "body": "SetVehicleVelocity(${1:vehicleid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "SetVehicleAngularVelocity": {
+        "prefix": "SetVehicleAngularVelocity",
+        "body":
+            "SetVehicleAngularVelocity(${1:vehicleid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+    },
+    "GetVehicleDamageStatus": {
+        "prefix": "GetVehicleDamageStatus",
+        "body":
+            "GetVehicleDamageStatus(${1:vehicleid}, ${2:panels}, ${3:doors}, ${4:lights}, ${5:tires})$0"
+    },
+    "UpdateVehicleDamageStatus": {
+        "prefix": "UpdateVehicleDamageStatus",
+        "body":
+            "UpdateVehicleDamageStatus(${1:vehicleid}, ${2:panels}, ${3:doors}, ${4:lights}, ${5:tires})$0"
+    },
+    "GetVehicleModelInfo": {
+        "prefix": "GetVehicleModelInfo",
+        "body":
+            "GetVehicleModelInfo(${1:vehiclemodel}, ${2:infotype}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z})$0"
+    },
+    "SetVehicleVirtualWorld": {
+        "prefix": "SetVehicleVirtualWorld",
+        "body": "SetVehicleVirtualWorld(${1:vehicleid}, ${2:worldid})$0"
+    },
+    "GetVehicleVirtualWorld": {
+        "prefix": "GetVehicleVirtualWorld",
+        "body": "GetVehicleVirtualWorld(${1:vehicleid})$0"
+    },
+
+    "fopen": {
+        "prefix": "fopen",
+        "body": "fopen(${1:const name[]}, ${2:filemode: mode = io_readwrite})$0"
+    },
+    "fclose": {
+        "prefix": "fclose",
+        "body": "fclose(${1:File: handle})$0"
+    },
+    "ftemp": {
+        "prefix": "ftemp",
+        "body": "ftemp()$0"
+    },
+    "fremove": {
+        "prefix": "fremove",
+        "body": "fremove(${1:const name[]})$0"
+    },
+    "fwrite": {
+        "prefix": "fwrite",
+        "body": "fwrite(${1:File: handle}, ${2:const string[]})$0"
+    },
+    "fread": {
+        "prefix": "fread",
+        "body":
+            "fread(${1:File: handle}, ${2:string[]}, ${3:size = sizeof string}, ${4:bool: pack = false})$0"
+    },
+    "fputchar": {
+        "prefix": "fputchar",
+        "body": "fputchar(${1:File: handle}, ${2:value}, ${3:bool: utf8 = true})$0"
+    },
+    "fgetchar": {
+        "prefix": "fgetchar",
+        "body": "fgetchar(${1:File: handle}, ${2:value}, ${3:bool: utf8 = true})$0"
+    },
+    "fblockwrite": {
+        "prefix": "fblockwrite",
+        "body": "fblockwrite(${1:File: handle}, ${2:const buffer[]}, ${3:size = sizeof buffer})$0"
+    },
+    "fblockread": {
+        "prefix": "fblockread",
+        "body": "fblockread(${1:File: handle}, ${2:buffer[]}, ${3:size = sizeof buffer})$0"
+    },
+    "fseek": {
+        "prefix": "fseek",
+        "body":
+            "fseek(${1:File: handle}, ${2:position = 0}, ${3:seek_whence: whence = seek_start})$0"
+    },
+    "flength": {
+        "prefix": "flength",
+        "body": "flength(${1:File: handle})$0"
+    },
+    "fexist": {
+        "prefix": "fexist",
+        "body": "fexist(${1:const pattern[]})$0"
+    },
+    "fmatch": {
+        "prefix": "fmatch",
+        "body":
+            "fmatch(${1:name[]}, ${2:const pattern[]}, ${3:index = 0}, ${4:size = sizeof name})$0"
+    },
+
+    "file_move": {
+        "prefix": "file_move",
+        "body": "file_move(${1:file[]}, ${2:destination[]})$0"
+    },
+    "file_copy": {
+        "prefix": "file_copy",
+        "body": "file_copy(${1:file[]}, ${2:destination[]})$0"
+    },
+    "file_delete": {
+        "prefix": "file_delete",
+        "body": "file_delete(${1:file[]})$0"
+    },
+    "file_create": {
+        "prefix": "file_create",
+        "body": "file_create(${1:file[]})$0"
+    },
+    "file_write": {
+        "prefix": "file_write",
+        "body": "file_write(${1:file[]}, ${2:text[]}, ${3:mode[] = \"a\"})$0"
+    },
+    "file_read": {
+        "prefix": "file_read",
+        "body": "file_read(${1:file[]}, ${2:storage[]}, ${3:size = sizeof(storage})$0"
+    },
+    "file_log": {
+        "prefix": "file_log",
+        "body": "file_log()$0"
+    },
+    "file_exists": {
+        "prefix": "file_exists",
+        "body": "file_exists(${1:file[]})$0"
+    },
+    "f_open": {
+        "prefix": "f_open",
+        "body": "f_open(${1:file[]}, ${2:mode[] = \"r\"})$0"
+    },
+    "f_close": {
+        "prefix": "f_close",
+        "body": "f_close(${1:File: file})$0"
+    },
+    "f_read": {
+        "prefix": "f_read",
+        "body": "f_read(${1:File: file}, ${2:storage[]}, ${3:size = sizeof(storage})$0"
+    },
+    "f_write": {
+        "prefix": "f_write",
+        "body": "f_write(${1:File: file}, ${2:string[]})$0"
+    },
+    "dir_create": {
+        "prefix": "dir_create",
+        "body": "dir_create(${1:directory[]})$0"
+    },
+    "dir_delete": {
+        "prefix": "dir_delete",
+        "body": "dir_delete(${1:directory[]})$0"
+    },
+    "dir_exists": {
+        "prefix": "dir_exists",
+        "body": "dir_exists(${1:directory[]})$0"
+    },
+    "dir_open": {
+        "prefix": "dir_open",
+        "body": "dir_open(${1:directory[]})$0"
+    },
+    "dir_close": {
+        "prefix": "dir_close",
+        "body": "dir_close(${1:dir:handle})$0"
+    },
+    "dir_list": {
+        "prefix": "dir_list",
+        "body":
+            "dir_list(${1:dir:handle}, ${2:storage[]}, ${3:type}, ${4:length = sizeof(storage})$0"
+    },
+
+    "float": {
+        "prefix": "float",
+        "body": "float(${1:value})$0"
+    },
+    "floatstr": {
+        "prefix": "floatstr",
+        "body": "floatstr(${1:const string[]})$0"
+    },
+    "floatmul": {
+        "prefix": "floatmul",
+        "body": "floatmul(${1:Float:oper1}, ${2:Float:oper2})$0"
+    },
+    "floatdiv": {
+        "prefix": "floatdiv",
+        "body": "floatdiv(${1:Float:dividend}, ${2:Float:divisor})$0"
+    },
+    "floatadd": {
+        "prefix": "floatadd",
+        "body": "floatadd(${1:Float:oper1}, ${2:Float:oper2})$0"
+    },
+    "floatsub": {
+        "prefix": "floatsub",
+        "body": "floatsub(${1:Float:oper1}, ${2:Float:oper2})$0"
+    },
+    "floatfract": {
+        "prefix": "floatfract",
+        "body": "floatfract(${1:Float:value})$0"
+    },
+    "floatround": {
+        "prefix": "floatround",
+        "body": "floatround(${1:Float:value}, ${2:floatround_method:method=floatround_round})$0"
+    },
+    "floatcmp": {
+        "prefix": "floatcmp",
+        "body": "floatcmp(${1:Float:oper1}, ${2:Float:oper2})$0"
+    },
+    "floatsqroot": {
+        "prefix": "floatsqroot",
+        "body": "floatsqroot(${1:Float:value})$0"
+    },
+    "floatpower": {
+        "prefix": "floatpower",
+        "body": "floatpower(${1:Float:value}, ${2:Float:exponent})$0"
+    },
+    "floatlog": {
+        "prefix": "floatlog",
+        "body": "floatlog(${1:Float:value}, ${2:Float:base=10.0})$0"
+    },
+    "floatsin": {
+        "prefix": "floatsin",
+        "body": "floatsin(${1:Float:value}, ${2:anglemode:mode=radian})$0"
+    },
+    "floatcos": {
+        "prefix": "floatcos",
+        "body": "floatcos(${1:Float:value}, ${2:anglemode:mode=radian})$0"
+    },
+    "floattan": {
+        "prefix": "floattan",
+        "body": "floattan(${1:Float:value}, ${2:anglemode:mode=radian})$0"
+    },
+    "floatabs": {
+        "prefix": "floatabs",
+        "body": "floatabs(${1:Float:value})$0"
+    }
+}

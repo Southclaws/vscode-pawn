@@ -30,7 +30,44 @@
         "snippets": [
             {
                 "language": "pawn",
-                "path": "./snippets/pawn.json"
+                "path": "./snippets/macros.json"
+            },
+            {
+                "language": "pawn",
+                "path": "./snippets/functions-standard.json"
+            },
+            {
+                "language": "pawn",
+                "path": "./snippets/functions-community.json"
+            }
+        ],
+        "problemMatchers": [
+            {
+                "name": "pawncc",
+                "owner": "pawn",
+                "fileLocation": ["relative", "${workspaceRoot}/gamemodes"],
+                "pattern": {
+                    "regexp":
+                        "^(.*?)\\(([0-9]*)[- 0-9]*\\) \\: (fatal error|error|warning) [0-9]*\\: (.*)$",
+                    "file": 1,
+                    "location": 2,
+                    "severity": 3,
+                    "message": 4
+                }
+            },
+            {
+                "name": "sampctl",
+                "owner": "pawn",
+                "fileLocation": "absolute",
+                "pattern": [
+                    {
+                        "regexp": "^(.+):([0-9]+) \\((\\w+)\\) (.+)$",
+                        "file": 1,
+                        "location": 2,
+                        "severity": 3,
+                        "message": 4
+                    }
+                ]
             }
         ],
         "commands": [
