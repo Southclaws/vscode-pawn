@@ -8,7 +8,7 @@ import { spawn, SpawnOptions, ChildProcess } from "child_process";
 var process: ChildProcess;
 
 export function activate(context: vscode.ExtensionContext) {
-    vscode.window.showInformationMessage("Pawn Tools Loaded!");
+    // vscode.window.showInformationMessage("Pawn Tools Loaded!");
     context.subscriptions.push(
         vscode.commands.registerCommand("extension.packageEnsure", packageEnsure)
     );
