@@ -1,14 +1,15 @@
 {
     "name": "vscode-pawn",
     "displayName": "Pawn Tools",
-    "description": "Pawn tools for vscode powered by sampctl.",
-    "version": "0.5.0",
+    "description":
+        "Pawn tools for vscode. Includes syntax highlighting and snippets/completions for common libraries.",
+    "version": "0.6.0",
     "publisher": "southclaws",
     "engines": {
         "vscode": "^1.19.0"
     },
     "categories": ["Other", "Languages"],
-    "activationEvents": ["onCommand:extension.packageBuild"],
+    "activationEvents": ["onLanguage:pawn"],
     "main": "./out/extension",
     "contributes": {
         "languages": [
@@ -24,6 +25,12 @@
                 "language": "pawn",
                 "scopeName": "source.pawn",
                 "path": "./syntaxes/Pawn.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "pawn",
+                "path": "./snippets/pawn.json"
             }
         ],
         "commands": [
@@ -49,5 +56,6 @@
         "vscode": "^1.1.6",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
-    }
+    },
+    "dependencies": {}
 }
