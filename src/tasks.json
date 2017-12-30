@@ -2,9 +2,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "build-normal",
             "type": "shell",
-            "command": "pawncc",
+            "command": "C:\\path\\to\\pawncc.exe",
+            "args": [
+                "${relativeFile}",
+                "-;+",
+                "-(+"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
