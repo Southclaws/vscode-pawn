@@ -3,7 +3,7 @@
     "displayName": "Pawn Tools",
     "description":
         "Pawn tools for vscode. Includes syntax highlighting and snippets/completions for common libraries.",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "publisher": "southclaws",
     "engines": {
         "vscode": "^1.19.0"
