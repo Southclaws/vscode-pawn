@@ -7,8 +7,8 @@
             "command": "C:\\path\\to\\pawncc.exe",
             "args": [
                 "${relativeFile}",
-                "-;+",
-                "-(+"
+                "-\\;+",
+                "-\\(+"
             ],
             "group": {
                 "kind": "build",

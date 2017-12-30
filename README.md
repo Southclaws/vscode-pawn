@@ -26,7 +26,7 @@ Code uses a method called "Tasks" to run compilers and build tools. All you need
             "label": "build-normal",
             "type": "shell",
             "command": "C:\\path\\to\\pawncc.exe",
-            "args": ["${relativeFile}", "-;+", "-(+", "-d3"],
+            "args": ["${relativeFile}", "-\\;+", "-\\(+"],
             "group": {
                 "kind": "build",
                 "isDefault": true
