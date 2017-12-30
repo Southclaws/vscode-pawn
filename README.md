@@ -1,4 +1,4 @@
-# vscode-pawn README
+# vscode-pawn
 
 Pawn tools for vscode.
 
@@ -25,7 +25,7 @@ Code uses a method called "Tasks" to run compilers and build tools. All you need
         {
             "label": "build-normal",
             "type": "shell",
-            "command": "C:\\path\\to\\pawncc.exe",
+            "command": "${workspaceRoot}\\pawno\\pawncc.exe",
             "args": ["${relativeFile}", "-\\;+", "-\\(+"],
             "group": {
                 "kind": "build",
@@ -42,11 +42,13 @@ Code uses a method called "Tasks" to run compilers and build tools. All you need
 }
 ```
 
-`"command": "C:\\path\\to\\pawncc.exe",` is the important bit here, this is the path to your Pawn compiler.
+`"command": "${workspaceRoot}\\pawno\\pawncc.exe",` is the important bit here, this is the path to your Pawn compiler and I've assumed most of you have a left-over `pawno` folder from that long dead text editor! This folder not only contains Pawno but also the Pawn code compiler (pawncc.exe).
 
-If you use the standard server directory structure, you probably have a `pawno` directory in your workspace, so you can simply set `command` to `"command": "${workspaceRoot}\\pawno\\pawncc.exe",`
+If you store your Pawn compiler elsewhere, just replace the entire `command` setting with the full path to your compiler.
 
-Also, if you want to disable debug symbols (you won't be able to use crashdetect) just remoe `-d3` from `"args": ["${relativeFile}", "-;+", "-(+", "-d3"],`.
+Also, if you want to disable debug symbols (you won't be able to use crashdetect) just remove `-d3` from `"args": ["${relativeFile}", "-;+", "-(+", "-d3"],`.
+
+`problemMatcher` is the part that allows recognising the Pawn compiler output and presenting it in the `problems` panel of the editor. This doesn't work well with external includes because the paths change from relative to absolute. [sampctl](http://sampctl.com) fortunately fixes this (and a lot of other annoying things).
 
 ## Features
 

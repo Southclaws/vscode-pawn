@@ -4,7 +4,7 @@
         {
             "label": "build-normal",
             "type": "shell",
-            "command": "C:\\path\\to\\pawncc.exe",
+            "command": "${workspaceRoot}\\pawno\\pawncc.exe",
             "args": [
                 "${relativeFile}",
                 "-\\;+",
