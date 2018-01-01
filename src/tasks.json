@@ -6,9 +6,9 @@
             "type": "shell",
             "command": "${workspaceRoot}\\pawno\\pawncc.exe",
             "args": [
-                "${relativeFile}",
-                "-\\;+",
-                "-\\(+"
+                "\\\"${relativeFile}\\\"",
+                "\\\"-;+\\\"",
+                "\\\"-(+\\\""
             ],
             "group": {
                 "kind": "build",
