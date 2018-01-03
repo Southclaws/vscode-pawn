@@ -8,6 +8,15 @@
     "engines": {
         "vscode": "^1.19.0"
     },
+    "bugs": {
+        "url": "https://github.com/Southclaws/vscode-pawn/issues",
+        "email": "hello@southcla.ws"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Southclaws/vscode-pawn.git"
+    },
+    "icon": "sampctl-icon.png",
     "categories": ["Other", "Languages"],
     "activationEvents": ["onLanguage:pawn"],
     "main": "./out/extension",
