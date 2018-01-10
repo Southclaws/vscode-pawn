@@ -1,0 +1,508 @@
+{
+    "BODY_PART_TORSO": { 
+        "prefix": "BODY_PART_TORSO",
+        "body": "BODY_PART_TORSO"
+    },
+    "BODY_PART_GROIN": { 
+        "prefix": "BODY_PART_GROIN",
+        "body": "BODY_PART_GROIN"
+    },
+    "BODY_PART_LEFT_ARM": { 
+        "prefix": "BODY_PART_LEFT_ARM",
+        "body": "BODY_PART_LEFT_ARM"
+    },
+    "BODY_PART_RIGHT_ARM": { 
+        "prefix": "BODY_PART_RIGHT_ARM",
+        "body": "BODY_PART_RIGHT_ARM"
+    },
+    "BODY_PART_LEFT_LEG": { 
+        "prefix": "BODY_PART_LEFT_LEG",
+        "body": "BODY_PART_LEFT_LEG"
+    },
+    "BODY_PART_RIGHT_LEG": { 
+        "prefix": "BODY_PART_RIGHT_LEG",
+        "body": "BODY_PART_RIGHT_LEG"
+    },
+    "BODY_PART_HEAD": { 
+        "prefix": "BODY_PART_HEAD",
+        "body": "BODY_PART_HEAD"
+    },
+    "MAX_PLAYER_NAME": {
+        "prefix": "MAX_PLAYER_NAME",
+        "body": "MAX_PLAYER_NAME"
+    },
+    "MAX_PLAYERS": { 
+        "prefix": "MAX_PLAYERS",
+        "body": "MAX_PLAYERS"
+    },
+    "MAX_VEHICLES": { 
+        "prefix": "MAX_VEHICLES",
+        "body": "MAX_VEHICLES"
+    },
+    "MAX_ACTORS": { 
+        "prefix": "MAX_ACTORS",
+        "body": "MAX_ACTORS"
+    },
+    "INVALID_PLAYER_ID": { 
+        "prefix": "INVALID_PLAYER_ID",
+        "body": "INVALID_PLAYER_ID"
+    },
+    "INVALID_VEHICLE_ID": { 
+        "prefix": "INVALID_VEHICLE_ID",
+        "body": "INVALID_VEHICLE_ID"
+    },
+    "INVALID_ACTOR_ID": { 
+        "prefix": "INVALID_ACTOR_ID",
+        "body": "INVALID_ACTOR_ID"
+    },
+    "NO_TEAM": { 
+        "prefix": "NO_TEAM",
+        "body": "NO_TEAM"
+    },
+    "MAX_OBJECTS": { 
+        "prefix": "MAX_OBJECTS",
+        "body": "MAX_OBJECTS"
+    },
+    "INVALID_OBJECT_ID": { 
+        "prefix": "INVALID_OBJECT_ID",
+        "body": "INVALID_OBJECT_ID"
+    },
+    "MAX_GANG_ZONES": { 
+        "prefix": "MAX_GANG_ZONES",
+        "body": "MAX_GANG_ZONES"
+    },
+    "MAX_TEXT_DRAWS": { 
+        "prefix": "MAX_TEXT_DRAWS",
+        "body": "MAX_TEXT_DRAWS"
+    },
+    "MAX_PLAYER_TEXT_DRAWS": { 
+        "prefix": "MAX_PLAYER_TEXT_DRAWS",
+        "body": "MAX_PLAYER_TEXT_DRAWS"
+    },
+    "MAX_MENUS": { 
+        "prefix": "MAX_MENUS",
+        "body": "MAX_MENUS"
+    },
+    "MAX_3DTEXT_GLOBAL": { 
+        "prefix": "MAX_3DTEXT_GLOBAL",
+        "body": "MAX_3DTEXT_GLOBAL"
+    },
+    "MAX_3DTEXT_PLAYER": { 
+        "prefix": "MAX_3DTEXT_PLAYER",
+        "body": "MAX_3DTEXT_PLAYER"
+    },
+    "MAX_PICKUPS": { 
+        "prefix": "MAX_PICKUPS",
+        "body": "MAX_PICKUPS"
+    },
+    "INVALID_MENU": { 
+        "prefix": "INVALID_MENU",
+        "body": "INVALID_MENU"
+    },
+    "INVALID_TEXT_DRAW": { 
+        "prefix": "INVALID_TEXT_DRAW",
+        "body": "INVALID_TEXT_DRAW"
+    },
+    "INVALID_GANG_ZONE": { 
+        "prefix": "INVALID_GANG_ZONE",
+        "body": "INVALID_GANG_ZONE"
+    },
+    "INVALID_3DTEXT_ID": { 
+        "prefix": "INVALID_3DTEXT_ID",
+        "body": "INVALID_3DTEXT_ID"
+    },
+    "PLAYER_STATE_ONFOOT": {
+
+        "prefix": "PLAYER_STATE_ONFOOT",
+        "body": "PLAYER_STATE_ONFOOT"
+    },
+    "PLAYER_STATE_NONE": {
+
+        "prefix": "PLAYER_STATE_NONE",
+        "body": "PLAYER_STATE_NONE"
+    },
+    "PLAYER_STATE_DRIVER": {
+
+        "prefix": "PLAYER_STATE_DRIVER",
+        "body": "PLAYER_STATE_DRIVER"
+    },
+    "PLAYER_STATE_PASSENGER": {
+
+        "prefix": "PLAYER_STATE_PASSENGER",
+        "body": "PLAYER_STATE_PASSENGER"
+    },
+    "PLAYER_STATE_EXIT_VEHICLE": {
+
+        "prefix": "PLAYER_STATE_EXIT_VEHICLE",
+        "body": "PLAYER_STATE_EXIT_VEHICLE"
+    },
+    "PLAYER_STATE_ENTER_VEHICLE_DRIVER": {
+
+        "prefix": "PLAYER_STATE_ENTER_VEHICLE_DRIVER",
+        "body": "PLAYER_STATE_ENTER_VEHICLE_DRIVER"
+    },
+    "PLAYER_STATE_ENTER_VEHICLE_PASSENGER": {
+
+        "prefix": "PLAYER_STATE_ENTER_VEHICLE_PASSENGER",
+        "body": "PLAYER_STATE_ENTER_VEHICLE_PASSENGER"
+    },
+    "PLAYER_STATE_WASTED": {
+
+        "prefix": "PLAYER_STATE_WASTED",
+        "body": "PLAYER_STATE_WASTED"
+    },
+    "PLAYER_STATE_SPAWNED": {
+
+        "prefix": "PLAYER_STATE_SPAWNED",
+        "body": "PLAYER_STATE_SPAWNED"
+    },
+    "PLAYER_STATE_SPECTATING": {
+
+        "prefix": "PLAYER_STATE_SPECTATING",
+        "body": "PLAYER_STATE_SPECTATING"
+    },
+    "PLAYER_MARKERS_MODE_OFF": {
+
+        "prefix": "PLAYER_MARKERS_MODE_OFF",
+        "body": "PLAYER_MARKERS_MODE_OFF"
+    },
+    "PLAYER_MARKERS_MODE_GLOBAL": {
+
+        "prefix": "PLAYER_MARKERS_MODE_GLOBAL",
+        "body": "PLAYER_MARKERS_MODE_GLOBAL"
+    },
+    "PLAYER_MARKERS_MODE_STREAMED": {
+
+        "prefix": "PLAYER_MARKERS_MODE_STREAMED",
+        "body": "PLAYER_MARKERS_MODE_STREAMED"
+    },
+    "WEAPON_BRASSKNUCKLE": {
+        "prefix": "WEAPON_BRASSKNUCKLE",
+        "body": "WEAPON_BRASSKNUCKLE"
+    },
+    "WEAPON_GOLFCLUB": {
+        "prefix": "WEAPON_GOLFCLUB",
+        "body": "WEAPON_GOLFCLUB"
+    },
+    "WEAPON_NITESTICK": {
+
+        "prefix": "WEAPON_NITESTICK",
+        "body": "WEAPON_NITESTICK"
+    },
+    "WEAPON_KNIFE": {
+
+        "prefix": "WEAPON_KNIFE",
+        "body": "WEAPON_KNIFE"
+    },
+    "WEAPON_BAT": {
+
+        "prefix": "WEAPON_BAT",
+        "body": "WEAPON_BAT"
+    },
+    "WEAPON_SHOVEL": {
+
+        "prefix": "WEAPON_SHOVEL",
+        "body": "WEAPON_SHOVEL"
+    },
+    "WEAPON_POOLSTICK": {
+
+        "prefix": "WEAPON_POOLSTICK",
+        "body": "WEAPON_POOLSTICK"
+    },
+    "WEAPON_KATANA": {
+
+        "prefix": "WEAPON_KATANA",
+        "body": "WEAPON_KATANA"
+    },
+    "WEAPON_CHAINSAW": {
+
+        "prefix": "WEAPON_CHAINSAW",
+        "body": "WEAPON_CHAINSAW"
+    },
+    "WEAPON_DILDO": {
+
+        "prefix": "WEAPON_DILDO",
+        "body": "WEAPON_DILDO"
+    },
+    "WEAPON_DILDO2": {
+
+        "prefix": "WEAPON_DILDO2",
+        "body": "WEAPON_DILDO2"
+    },
+    "WEAPON_VIBRATOR": {
+
+        "prefix": "WEAPON_VIBRATOR",
+        "body": "WEAPON_VIBRATOR"
+    },
+    "WEAPON_VIBRATOR2": {
+
+        "prefix": "WEAPON_VIBRATOR2",
+        "body": "WEAPON_VIBRATOR2"
+    },
+    "WEAPON_FLOWER": {
+
+        "prefix": "WEAPON_FLOWER",
+        "body": "WEAPON_FLOWER"
+    },
+    "WEAPON_CANE": {
+
+        "prefix": "WEAPON_CANE",
+        "body": "WEAPON_CANE"
+    },
+    "WEAPON_GRENADE": {
+
+        "prefix": "WEAPON_GRENADE",
+        "body": "WEAPON_GRENADE"
+    },
+    "WEAPON_TEARGAS": {
+        "prefix": "WEAPON_TEARGAS",
+        "body": "WEAPON_TEARGAS"
+    },
+    "WEAPON_MOLTOV": {
+
+        "prefix": "WEAPON_MOLTOV",
+        "body": "WEAPON_MOLTOV"
+    },
+    "WEAPON_COLT45": {
+
+        "prefix": "WEAPON_COLT45",
+        "body": "WEAPON_COLT45"
+    },
+    "WEAPON_SILENCED": {
+
+        "prefix": "WEAPON_SILENCED",
+        "body": "WEAPON_SILENCED"
+    },
+    "WEAPON_DEAGLE": {
+        "prefix": "WEAPON_DEAGLE",
+        "body": "WEAPON_DEAGLE"
+    },
+    "WEAPON_SHOTGUN": {
+        "prefix": "WEAPON_SHOTGUN",
+        "body": "WEAPON_SHOTGUN"
+    },
+    "WEAPON_SAWEDOFF": {
+        "prefix": "WEAPON_SAWEDOFF",
+        "body": "WEAPON_SAWEDOFF"
+    },
+    "WEAPON_SHOTGSPA": {
+        "prefix": "WEAPON_SHOTGSPA",
+        "body": "WEAPON_SHOTGSPA"
+    },
+    "WEAPON_UZI": {
+        "prefix": "WEAPON_UZI",
+        "body": "WEAPON_UZI"
+    },
+    "WEAPON_MP5": {
+        "prefix": "WEAPON_MP5",
+        "body": "WEAPON_MP5"
+    },
+    "WEAPON_AK47": {
+        "prefix": "WEAPON_AK47",
+        "body": "WEAPON_AK47"
+    },
+    "WEAPON_M4": {
+        "prefix": "WEAPON_M4",
+        "body": "WEAPON_M4"
+    },
+    "WEAPON_TEC9": {
+        "prefix": "WEAPON_TEC9",
+        "body": "WEAPON_TEC9"
+    },
+    "WEAPON_RIFLE" : {
+        "prefix": "WEAPON_RIFLE",
+        "body": "WEAPON_RIFLE"
+    },
+    "WEAPON_SNIPER" : {
+        "prefix": "WEAPON_SNIPER",
+        "body": "WEAPON_SNIPER"
+    },
+    "WEAPON_ROCKETLAUNCHER" : {
+        "prefix": "WEAPON_ROCKETLAUNCHER",
+        "body": "WEAPON_ROCKETLAUNCHER"
+    },
+    "WEAPON_HEATSEEKER" : {
+        "prefix": "WEAPON_HEATSEEKER",
+        "body": "WEAPON_HEATSEEKER"
+    },
+    "WEAPON_FLAMETHROWER" : {
+        "prefix": "WEAPON_FLAMETHROWER",
+        "body": "WEAPON_FLAMETHROWER"
+    },
+    "WEAPON_MINIGUN": {
+        "prefix": "WEAPON_MINIGUN",
+        "body": "WEAPON_MINIGUN"
+    },
+    "WEAPON_SATCHEL": {
+        "prefix": "WEAPON_SATCHEL",
+        "body": "WEAPON_SATCHEL"
+    },
+    "WEAPON_BOMB" : {
+        "prefix": "WEAPON_BOMB",
+        "body": "WEAPON_BOMB"
+    },
+    "WEAPON_SPRAYCAN" : {
+        "prefix": "WEAPON_SPRAYCAN",
+        "body": "WEAPON_SPRAYCAN"
+    },
+    "WEAPON_FIREEXTINGUISHER" : {
+        "prefix": "WEAPON_FIREEXTINGUISHER",
+        "body": "WEAPON_FIREEXTINGUISHER"
+    },
+    "WEAPON_CAMERA" : {
+        "prefix": "WEAPON_CAMERA",
+        "body": "WEAPON_CAMERA"
+    },
+    "WEAPON_PARACHUTE" : {
+        "prefix": "WEAPON_PARACHUTE",
+        "body": "WEAPON_PARACHUTE"
+    },
+    "WEAPON_VEHICLE" : {
+        "prefix": "WEAPON_VEHICLE",
+        "body": "WEAPON_VEHICLE"
+    },
+    "WEAPON_DROWN" : {
+        "prefix": "WEAPON_DROWN",
+        "body": "WEAPON_DROWN"
+    },
+    "WEAPON_COLLISION" : {
+        "prefix": "WEAPON_COLLISION",
+        "body": "WEAPON_COLLISION"
+    },
+    "KEY_ACTION": {
+        "prefix": "KEY_ACTION",
+        "body": "KEY_ACTION"
+    },
+    "KEY_CROUCH": {
+        "prefix": "KEY_CROUCH",
+        "body": "KEY_CROUCH"
+    },
+    "KEY_FIRE": {
+        "prefix": "KEY_FIRE",
+        "body": "KEY_FIRE"
+    },
+    "KEY_SPRINT": {
+        "prefix": "KEY_SPRINT",
+        "body": "KEY_SPRINT"
+    },
+    "KEY_SECONDARY_ATTACK": {
+        "prefix": "KEY_SECONDARY_ATTACK",
+        "body": "KEY_SECONDARY_ATTACK"
+    },
+    "KEY_JUMP": {
+        "prefix": "KEY_JUMP",
+        "body": "KEY_JUMP"
+    },
+    "KEY_LOOK_RIGHT": {
+        "prefix": "KEY_LOOK_RIGHT",
+        "body": "KEY_LOOK_RIGHT"
+    },
+    "KEY_HANDBRAKE": {
+        "prefix": "KEY_HANDBRAKE",
+        "body": "KEY_HANDBRAKE"
+    },
+    "KEY_LOOK_LEFT": {
+        "prefix": "KEY_LOOK_LEFT",
+        "body": "KEY_LOOK_LEFT"
+    },
+    "KEY_SUBMISSION": {
+        "prefix": "KEY_SUBMISSION",
+        "body": "KEY_SUBMISSION"
+    },
+    "KEY_LOOK_BEHIND": {
+        "prefix": "KEY_LOOK_BEHIND",
+        "body": "KEY_LOOK_BEHIND"
+    },
+    "KEY_WALK": {
+        "prefix": "KEY_WALK",
+        "body": "KEY_WALK"
+    },
+    "KEY_ANALOG_UP": {
+        "prefix": "KEY_ANALOG_UP",
+        "body": "KEY_ANALOG_UP"
+    },
+    "KEY_ANALOG_DOWN": {
+        "prefix": "KEY_ANALOG_DOWN",
+        "body": "KEY_ANALOG_DOWN"
+    },
+    "KEY_ANALOG_LEFT": {
+        "prefix": "KEY_ANALOG_LEFT",
+        "body": "KEY_ANALOG_LEFT"
+    },
+    "KEY_ANALOG_RIGHT": {
+        "prefix": "KEY_ANALOG_RIGHT",
+        "body": "KEY_ANALOG_RIGHT"
+    },
+    "KEY_YES": {
+        "prefix": "KEY_YES",
+        "body": "KEY_YES"
+    },
+    "KEY_NO": {
+        "prefix": "KEY_NO",
+        "body": "KEY_NO"
+    },
+    "KEY_CTRL_BACK": {
+        "prefix": "KEY_CTRL_BACK",
+        "body": "KEY_CTRL_BACK"
+    },
+    "KEY_UP": {
+        "prefix": "KEY_UP",
+        "body": "KEY_UP"
+    },
+    "KEY_DOWN": {
+        "prefix": "KEY_DOWN",
+        "body": "KEY_DOWN"
+    },
+    "KEY_LEFT": {
+        "prefix": "KEY_LEFT",
+        "body": "KEY_LEFT"
+    },
+    "KEY_RIGHT": {
+        "prefix": "KEY_RIGHT",
+        "body": "KEY_RIGHT"
+    },
+    "CLICK_SOURCE_SCOREBOARD": { 
+        "prefix": "CLICK_SOURCE_SCOREBOARD",
+        "body": "CLICK_SOURCE_SCOREBOARD"
+    },
+    "EDIT_RESPONSE_CANCEL": { 
+        "prefix": "EDIT_RESPONSE_CANCEL",
+        "body": "EDIT_RESPONSE_CANCEL"
+    },
+    "EDIT_RESPONSE_FINAL": { 
+        "prefix": "EDIT_RESPONSE_FINAL",
+        "body": "EDIT_RESPONSE_FINAL"
+    },
+    "EDIT_RESPONSE_UPDATE": { 
+        "prefix": "EDIT_RESPONSE_UPDATE",
+        "body": "EDIT_RESPONSE_UPDATE"
+    },
+    "SELECT_OBJECT_GLOBAL_OBJECT": { 
+        "prefix": "SELECT_OBJECT_GLOBAL_OBJECT",
+        "body": "SELECT_OBJECT_GLOBAL_OBJECT"
+    },
+    "SELECT_OBJECT_PLAYER_OBJECT": { 
+        "prefix": "SELECT_OBJECT_PLAYER_OBJECT",
+        "body": "SELECT_OBJECT_PLAYER_OBJECT"
+    },
+    "BULLET_HIT_TYPE_NONE": { 
+        "prefix": "BULLET_HIT_TYPE_NONE",
+        "body": "BULLET_HIT_TYPE_NONE"
+    },
+    "BULLET_HIT_TYPE_PLAYER": { 
+        "prefix": "BULLET_HIT_TYPE_PLAYER",
+        "body": "BULLET_HIT_TYPE_PLAYER"
+    },
+    "BULLET_HIT_TYPE_VEHICLE": { 
+        "prefix": "BULLET_HIT_TYPE_VEHICLE",
+        "body": "BULLET_HIT_TYPE_VEHICLE"
+    },
+    "BULLET_HIT_TYPE_OBJECT": { 
+        "prefix": "BULLET_HIT_TYPE_OBJECT",
+        "body": "BULLET_HIT_TYPE_OBJECT"
+    },
+    "BULLET_HIT_TYPE_PLAYER_OBJECT": { 
+        "prefix": "BULLET_HIT_TYPE_PLAYER_OBJECT",
+        "body": "BULLET_HIT_TYPE_PLAYER_OBJECT"
+    }
+}

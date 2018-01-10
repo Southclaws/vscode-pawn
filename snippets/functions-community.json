@@ -700,30 +700,60 @@
         "body":
             "orm_select(${1:ORM:id}, ${2:const callback[] = \"\"}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
     },
+    "orm_select_inline": {
+        "prefix": "orm_select_inline",
+        "body":
+            "orm_select_inline(${1:ORM:id}, ${2:callback:Callback}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
+    },
     "orm_update": {
         "prefix": "orm_update",
         "body":
             "orm_update(${1:ORM:id}, ${2:const callback[] = \"\"}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
+    },
+    "orm_update_inline": {
+        "prefix": "orm_update_inline",
+        "body":
+            "orm_update_inline(${1:ORM:id}, ${2:callback:Callback}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
     },
     "orm_insert": {
         "prefix": "orm_insert",
         "body":
             "orm_insert(${1:ORM:id}, ${2:const callback[] = \"\"}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
     },
+    "orm_insert_inline": {
+        "prefix": "orm_insert_inline",
+        "body":
+            "orm_insert_inline(${1:ORM:id}, ${2:callback:Callback}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
+    },
     "orm_delete": {
         "prefix": "orm_delete",
         "body":
             "orm_delete(${1:ORM:id}, ${2:const callback[] = \"\"}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
+    },
+    "orm_delete_inline": {
+        "prefix": "orm_delete_inline",
+        "body":
+            "orm_delete_inline(${1:ORM:id}, ${2:callback:Callback}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
     },
     "orm_load": {
         "prefix": "orm_load",
         "body":
             "orm_load(${1:ORM:id}, ${2:const callback[] = \"\"}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
     },
+    "orm_load_inline": {
+        "prefix": "orm_load_inline",
+        "body":
+            "orm_load_inline(${1:ORM:id}, ${2:callback:Callback}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
+    },
     "orm_save": {
         "prefix": "orm_save",
         "body":
             "orm_save(${1:ORM:id}, ${2:const callback[] = \"\"}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
+    },
+    "orm_save_inline": {
+        "prefix": "orm_save_inline",
+        "body":
+            "orm_save_inline(${1:ORM:id}, ${2:callback:Callback}, ${3:const format[] = \"\"}, ${4:{Float, _}:...})$0"
     },
     "orm_addvar_int": {
         "prefix": "orm_addvar_int",
@@ -785,6 +815,11 @@
         "body":
             "mysql_set_option(${1:MySQLOpt:option_id}, ${2:E_MYSQL_OPTION:type}, ${3:{Float, _}:...})$0"
     },
+    "mysql_pquery_inline": {
+        "prefix": "mysql_pquery_inline",
+        "body":
+            "mysql_pquery_inline(${1:MySQL:handle}, ${2:const query[]}, ${3:callback:Callback}, ${4:const format[] = \"\"}, ${5:{Float, _}:...})$0"
+    },
     "mysql_pquery": {
         "prefix": "mysql_pquery",
         "body":
@@ -794,6 +829,11 @@
         "prefix": "mysql_tquery",
         "body":
             "mysql_tquery(${1:MySQL:handle}, ${2:const query[]}, ${3:const callback[] = \"\"}, ${4:const format[] = \"\"}, ${5:{Float, _}:...})$0"
+    },
+    "mysql_tquery_inline": {
+        "prefix": "mysql_tquery_inline",
+        "body":
+            "mysql_tquery_inline(${1:MySQL:handle}, ${2:const query[]}, ${3:callback:Callback}, ${4:const format[] = \"\"}, ${5:{Float, _}:...})$0"
     },
     "mysql_query": {
         "prefix": "mysql_query",
