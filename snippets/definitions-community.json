@@ -1,0 +1,247 @@
+{
+    "Y_HOOKS_CONTINUE_RETURN_1": {
+        "prefix": "Y_HOOKS_CONTINUE_RETURN_1",
+        "body": "Y_HOOKS_CONTINUE_RETURN_1"
+    },
+    "Y_HOOKS_CONTINUE_RETURN_0": {
+        "prefix": "Y_HOOKS_CONTINUE_RETURN_0",
+        "body": "Y_HOOKS_CONTINUE_RETURN_0"
+    },
+    "Y_HOOKS_BREAK_RETURN_0": {
+        "prefix": "Y_HOOKS_BREAK_RETURN_0",
+        "body": "Y_HOOKS_BREAK_RETURN_0"
+    },
+    "Y_HOOKS_BREAK_RETURN_1": {
+        "prefix": "Y_HOOKS_BREAK_RETURN_1",
+        "body": "Y_HOOKS_BREAK_RETURN_1"
+    },
+    
+    "ER_DBACCESS_DENIED_ERROR": { 
+        "prefix": "ER_DBACCESS_DENIED_ERROR",
+        "body": "ER_DBACCESS_DENIED_ERROR"
+    },
+    "ER_ACCESS_DENIED_ERROR": { 
+        "prefix": "ER_ACCESS_DENIED_ERROR",
+        "body": "ER_ACCESS_DENIED_ERROR"
+    },
+    "ER_UNKNOWN_TABLE": { 
+        "prefix": "ER_UNKNOWN_TABLE",
+        "body": "ER_UNKNOWN_TABLE"
+    },
+    "ER_SYNTAX_ERROR": { 
+        "prefix": "ER_SYNTAX_ERROR",
+        "body": "ER_SYNTAX_ERROR"
+    },
+    "CR_SERVER_GONE_ERROR": { 
+        "prefix": "CR_SERVER_GONE_ERROR",
+        "body": "CR_SERVER_GONE_ERROR"
+    },
+    "CR_SERVER_LOST": { 
+        "prefix": "CR_SERVER_LOST",
+        "body": "CR_SERVER_LOST"
+    },
+    "CR_COMMAND_OUT_OF_SYNC": { 
+        "prefix": "CR_COMMAND_OUT_OF_SYNC",
+        "body": "CR_COMMAND_OUT_OF_SYNC"
+    },
+    "CR_SERVER_LOST_EXTENDED": { 
+        "prefix": "CR_SERVER_LOST_EXTENDED",
+        "body": "CR_SERVER_LOST_EXTENDED"
+    },
+    "MYSQL_DEFAULT_HANDLE": {
+        "prefix": "MYSQL_DEFAULT_HANDLE",
+        "body": "MYSQL_DEFAULT_HANDLE"
+    },
+    "MYSQL_INVALID_HANDLE": {
+        "prefix": "MYSQL_INVALID_HANDLE",
+        "body": "MYSQL_INVALID_HANDLE"
+    },
+    "MYSQL_INVALID_CACHE": {
+        "prefix": "MYSQL_INVALID_CACHE",
+        "body": "MYSQL_INVALID_CACHE"
+    },
+    "MYSQL_INVALID_ORM": {
+        "prefix": "MYSQL_INVALID_ORM",
+        "body": "MYSQL_INVALID_ORM"
+    },
+    "DUPLICATE_CONNECTIONS": {
+        "prefix": "DUPLICATE_CONNECTIONS",
+        "body": "DUPLICATE_CONNECTIONS"
+    },
+    "DUPLICATE_CONNECTION_WARNING": {
+        "prefix": "DUPLICATE_CONNECTION_WARNING",
+        "body": "DUPLICATE_CONNECTION_WARNING"
+    },
+    "ERROR_INVALID": {
+        "prefix": "ERROR_INVALID",
+        "body": "ERROR_INVALID"
+    },
+    "ERROR_OK": {
+        "prefix": "ERROR_OK",
+        "body": "ERROR_OK"
+    },
+    "ERROR_NO_DATA": {
+        "prefix": "ERROR_NO_DATA",
+        "body": "ERROR_NO_DATA"
+    },
+    "NONE": {
+        "prefix": "NONE",
+      "body":   "NONE"
+    },
+    "DEBUG": {
+        "prefix": "DEBUG",
+       "body":  "DEBUG"
+    },
+    "INFO": {
+        "prefix": "INFO",
+      "body":   "INFO"
+    },
+    "WARNING": {
+        "prefix": "WARNING",
+        "body": "WARNING"
+    },
+    "ERROR": {
+        "prefix": "ERROR",
+       "body":  "ERROR"
+    },
+    "ALL": {
+        "prefix": "ALL",
+     "body":    "ALL"
+    },
+    "MYSQL_TYPE_INVALID": {
+        "prefix": "MYSQL_TYPE_INVALID",
+        "body": "MYSQL_TYPE_INVALID"
+    },
+    "MYSQL_TYPE_DECIMAL": {
+        "prefix": "MYSQL_TYPE_DECIMAL",
+        "body": "MYSQL_TYPE_DECIMAL"
+    },
+    "MYSQL_TYPE_TINY": {
+        "prefix": "MYSQL_TYPE_TINY",
+        "body": "MYSQL_TYPE_TINY"
+    },
+    "MYSQL_TYPE_SHORT": {
+        "prefix": "MYSQL_TYPE_SHORT",
+        "body": "MYSQL_TYPE_SHORT"
+    },
+    "MYSQL_TYPE_LONG": {
+        "prefix": "MYSQL_TYPE_LONG",
+        "body": "MYSQL_TYPE_LONG"
+    },
+    "MYSQL_TYPE_FLOAT": {
+        "prefix": "MYSQL_TYPE_FLOAT",
+        "body": "MYSQL_TYPE_FLOAT"
+    },
+    "MYSQL_TYPE_DOUBLE": {
+        "prefix": "MYSQL_TYPE_DOUBLE",
+        "body": "MYSQL_TYPE_DOUBLE"
+    },
+    "MYSQL_TYPE_NULL": {
+        "prefix": "MYSQL_TYPE_NULL",
+        "body": "MYSQL_TYPE_NULL"
+    },
+    "MYSQL_TYPE_TIMESTAMP": {
+        "prefix": "MYSQL_TYPE_TIMESTAMP",
+        "body:": "MYSQL_TYPE_TIMESTAMP"
+    },
+    "MYSQL_TYPE_LONGLONG": {
+        "prefix": "MYSQL_TYPE_LONGLONG",
+        "body:": "MYSQL_TYPE_LONGLONG"
+    },
+    "MYSQL_TYPE_INT24": {
+        "prefix": "MYSQL_TYPE_INT24",
+        "body:": "MYSQL_TYPE_INT24"
+    },
+    "MYSQL_TYPE_DATE": {
+        "prefix": "MYSQL_TYPE_DATE",
+        "body:": "MYSQL_TYPE_DATE"
+    },
+    "MYSQL_TYPE_TIME": {
+        "prefix": "MYSQL_TYPE_TIME",
+        "body:": "MYSQL_TYPE_TIME"
+    },
+    "MYSQL_TYPE_DATETIME": {
+        "prefix": "MYSQL_TYPE_DATETIME",
+        "body:": "MYSQL_TYPE_DATETIME"
+    },
+    "MYSQL_TYPE_YEAR": {
+        "prefix": "MYSQL_TYPE_YEAR",
+        "body:": "MYSQL_TYPE_YEAR"
+    },
+    "MYSQL_TYPE_NEWDATE": {
+        "prefix": "MYSQL_TYPE_NEWDATE",
+        "body:": "MYSQL_TYPE_NEWDATE"
+    },
+    "MYSQL_TYPE_VARCHAR": {
+        "prefix": "MYSQL_TYPE_VARCHAR",
+        "body:": "MYSQL_TYPE_VARCHAR"
+    },
+    "MYSQL_TYPE_BIT": {
+        "prefix": "MYSQL_TYPE_BIT",
+        "body:": "MYSQL_TYPE_BIT"
+    },
+    "MYSQL_TYPE_TIMESTAMP2": {
+        "prefix": "MYSQL_TYPE_TIMESTAMP2",
+        "body:": "MYSQL_TYPE_TIMESTAMP2"
+    },
+    "MYSQL_TYPE_DATETIME2": {
+        "prefix": "MYSQL_TYPE_DATETIME2",
+        "body:": "MYSQL_TYPE_DATETIME2"
+    },
+    "MYSQL_TYPE_TIME2": {
+        "prefix": "MYSQL_TYPE_TIME2",
+        "body": "MYSQL_TYPE_TIME2"
+    },
+    "MYSQL_TYPE_JSON": {
+        "prefix": "MYSQL_TYPE_JSON",
+        "body": "MYSQL_TYPE_JSON"
+    },
+    "MYSQL_TYPE_NEWDECIMAL": {
+        "prefix": "MYSQL_TYPE_NEWDECIMAL",
+        "body": "MYSQL_TYPE_NEWDECIMAL"
+    },
+    "MYSQL_TYPE_ENUM": {
+        "prefix": "MYSQL_TYPE_ENUM",
+        "body": "MYSQL_TYPE_ENUM"
+    },
+    "MYSQL_TYPE_SET": {
+        "prefix": "MYSQL_TYPE_SET",
+        "body": "MYSQL_TYPE_SET"
+    },
+    "MYSQL_TYPE_TINY_BLOB": {
+        "prefix": "MYSQL_TYPE_TINY_BLOB",
+        "body": "MYSQL_TYPE_TINY_BLOB"
+    },
+    "MYSQL_TYPE_MEDIUM_BLOB": {
+        "prefix": "MYSQL_TYPE_MEDIUM_BLOB",
+        "body": "MYSQL_TYPE_MEDIUM_BLOB"
+    },
+    "MYSQL_TYPE_LONG_BLOB": {
+        "prefix": "MYSQL_TYPE_LONG_BLOB",
+        "body": "MYSQL_TYPE_LONG_BLOB"
+    },
+    "MYSQL_TYPE_BLOB": {
+        "prefix": "MYSQL_TYPE_BLOB",
+        "body": "MYSQL_TYPE_BLOB"
+    },
+    "MYSQL_TYPE_VAR_STRING": {
+        "prefix": "MYSQL_TYPE_VAR_STRING",
+        "body": "MYSQL_TYPE_VAR_STRING"
+    },
+    "MYSQL_TYPE_STRING": {
+        "prefix": "MYSQL_TYPE_STRING",
+        "body": "MYSQL_TYPE_STRING"
+    },
+    "MYSQL_TYPE_GEOMETRY": {
+        "prefix": "MYSQL_TYPE_GEOMETRY",
+        "body": "MYSQL_TYPE_GEOMETRY"
+    },
+    "MILLISECONDS": {
+        "prefix": "MILLISECONDS",
+        "body": "MILLISECONDS"
+    },
+    "MICROSECONDS": {
+        "prefix": "MICROSECONDS",
+        "body": "MICROSECONDS"  
+    }
+}
