@@ -76,7 +76,12 @@
                         "severity": 3,
                         "message": 4
                     }
-                ]
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "watch-build: starting compilation",
+                    "endsPattern": "watch-build: finished"
+                }
             }
         ],
         "commands": [
