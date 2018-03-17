@@ -1,0 +1,118 @@
+[COLOR="#FF4700"][SIZE="7"][B]vscode-pawn[/B][/SIZE][/COLOR]
+
+Pawn tools for vscode.
+
+Currently this is a port of the Sublime Text package which includes proper Pawn syntax highlighting, autocompletions for the standard library and some popular libraries.
+
+Coming soon:
+
+[LIST]
+
+[*]Static Analysis
+
+[*]Auto-complete
+
+[*]Intellisense support
+
+
+[/LIST]
+
+[COLOR="RoyalBlue"][SIZE="6"][B]Installation[/B][/SIZE][/COLOR]
+
+Just search for “Pawn Tools” in the vscode extensions and install it.
+
+Alternatively, you can check out the source code or view the marketplace page:
+
+[LIST]
+
+[*][URL="https://github.com/Southclaws/vscode-pawn"]GitHub Page[/URL]
+
+[*][URL="https://marketplace.visualstudio.com/items?itemName=southclaws.vscode-pawn"]Marketplace Page[/URL]
+
+
+[/LIST]
+
+[COLOR="RoyalBlue"][SIZE="6"][B]Compiling Pawn Code[/B][/SIZE][/COLOR]
+
+Code uses a method called “Tasks” to run compilers and build tools. All you need to do is create a folder named [FONT="courier new"].vscode[/FONT] in your project’s directory and in there, create a file named [FONT="courier new"]tasks.json[/FONT].
+
+The contents depends on what shell you are using. Most users on the latest Windows 10 will have PowerShell as the default and otherwise you’ll be using Command Prompt (cmd). These shells require different escape characters.
+
+[COLOR="DeepSkyBlue"][SIZE="5"][B]PowerShell[/B][/SIZE][/COLOR]
+
+[PHP]
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-normal",
+      "type": "shell",
+      "command": "&'${workspaceRoot}\\pawno\\pawncc.exe'",
+      "args": ["${relativeFile}", "'-;+'", "'-(+'", "'-d3'"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "isBackground": false,
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated"
+      },
+      "problemMatcher": "$pawncc"
+    }
+  ]
+}
+[/PHP]
+
+[COLOR="DeepSkyBlue"][SIZE="5"][B]CMD[/B][/SIZE][/COLOR]
+
+[PHP]
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-normal",
+      "type": "shell",
+      "command": "\"${workspaceRoot}\\pawno\\pawncc.exe\"",
+      "args": ["${relativeFile}", "-;+", "-(+", "-d3"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "isBackground": false,
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated"
+      },
+      "problemMatcher": "$pawncc"
+    }
+  ]
+}
+[/PHP]
+
+[COLOR="DeepSkyBlue"][SIZE="5"][B]Other Shells[/B][/SIZE][/COLOR]
+
+If you’re tech-savvy enough to install and use other shells such as MSYS, Git Bash, zsh, etc. then you’re probably knowledgable enough to set up the command invocation with the correct escape characters Bash is mostly straight forward but requires paths with spaces to be escaped as well as the pawncc flags like [FONT="courier new"]-;+[/FONT] and [FONT="courier new"]-(+[/FONT] because semicolons and brackets are part of the Bash language.
+
+[IMG]https://i.imgur.com/ywElfTy.gif[/IMG]
+
+[FONT="courier new"]"command": "${workspaceRoot}\\pawno\\pawncc.exe",[/FONT] is the important bit here, this is the path to your Pawn compiler and I’ve assumed most of you have a left-over [FONT="courier new"]pawno[/FONT] folder from that long dead text editor! This folder not only contains Pawno but also the Pawn code compiler (pawncc.exe).
+
+[FONT="courier new"]"args": ["\\\"${relativeFile}\\\"", "\\\"-;+\\\"", "\\\"-(+\\\""],[/FONT] is also important, this is where you define the arguments passed to the compiler. Pawno also did this but you might not have known. The defaults have always been [FONT="courier new"]-;+[/FONT] to force semicolon usage and [FONT="courier new"]-(+[/FONT] to force brackets in statements. Please note the excessive use of backslash characters, if you want to add more arguments you must use the same triple-backslash-quote around the argument if it involves a special character.
+
+If you store your Pawn compiler elsewhere, just replace the entire [FONT="courier new"]command[/FONT] setting with the full path to your compiler.
+
+Also, if you want to disable debug symbols (you won’t be able to use crashdetect) just remove [FONT="courier new"]-d3[/FONT] from [FONT="courier new"]"args": ["${relativeFile}", "-;+", "-(+", "-d3"],[/FONT].
+
+[FONT="courier new"]problemMatcher[/FONT] is the part that allows recognising the Pawn compiler output and presenting it in the [FONT="courier new"]problems[/FONT] panel of the editor. This doesn’t work well with external includes because the paths change from relative to absolute. [URL="http://sampctl.com"]sampctl[/URL] fortunately fixes this (and a lot of other annoying things).
+
+[COLOR="RoyalBlue"][SIZE="6"][B]Features[/B][/SIZE][/COLOR]
+
+Currently just syntax highlighting and completions from the Sublime project.
+
+Once the [URL="https://github.com/Southclaws/pawn-parser"]Pawn-Parser[/URL] project reaches a workable state, this extension will feature more language features such as intellisense support, go-to-definition, view-all-references, etc…
+
+Here’s what the problems panel looks like when the tasks.json is set up properly:
+
+[IMG]https://i.imgur.com/k8ST5pih.png[/IMG]
+
