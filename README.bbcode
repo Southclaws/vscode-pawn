@@ -56,7 +56,7 @@ You can check which shell is default by simply opening the integrated terminal a
       "label": "build-normal",
       "type": "shell",
       "command": "&'${workspaceRoot}\\pawno\\pawncc.exe'",
-      "args": ["${relativeFile}", "'-;+'", "'-(+'", "'-d3'"],
+      "args": ["${file}", "-Dgamemodes", "'-;+'", "'-(+'", "'-d3'"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -82,7 +82,7 @@ You can check which shell is default by simply opening the integrated terminal a
       "label": "build-normal",
       "type": "shell",
       "command": "\"${workspaceRoot}\\pawno\\pawncc.exe\"",
-      "args": ["${relativeFile}", "-;+", "-(+", "-d3"],
+      "args": ["${file}", "-Dgamemodes", "-;+", "-(+", "-d3"],
       "group": {
         "kind": "build",
         "isDefault": true
