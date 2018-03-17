@@ -31,6 +31,11 @@ The contents depends on what shell you are using. Most users on the latest
 Windows 10 will have PowerShell as the default and otherwise you'll be using
 Command Prompt (cmd). These shells require different escape characters.
 
+You can check which shell is default by simply opening the integrated terminal
+and checking what the dropdown says:
+
+![https://i.imgur.com/7BVdDBN.png](https://i.imgur.com/7BVdDBN.png)
+
 ### PowerShell
 
 ```json
