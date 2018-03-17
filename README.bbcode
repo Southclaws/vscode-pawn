@@ -36,6 +36,8 @@ Alternatively, you can check out the source code or view the marketplace page:
 
 Code uses a method called “Tasks” to run compilers and build tools. All you need to do is create a folder named [FONT="courier new"].vscode[/FONT] in your project’s directory and in there, create a file named [FONT="courier new"]tasks.json[/FONT].
 
+[IMG]https://i.imgur.com/ywElfTy.gif[/IMG]
+
 The contents depends on what shell you are using. Most users on the latest Windows 10 will have PowerShell as the default and otherwise you’ll be using Command Prompt (cmd). These shells require different escape characters.
 
 You can check which shell is default by simply opening the integrated terminal and checking what the dropdown says:
@@ -97,8 +99,6 @@ You can check which shell is default by simply opening the integrated terminal a
 [COLOR="DeepSkyBlue"][SIZE="5"][B]Other Shells[/B][/SIZE][/COLOR]
 
 If you’re tech-savvy enough to install and use other shells such as MSYS, Git Bash, zsh, etc. then you’re probably knowledgable enough to set up the command invocation with the correct escape characters Bash is mostly straight forward but requires paths with spaces to be escaped as well as the pawncc flags like [FONT="courier new"]-;+[/FONT] and [FONT="courier new"]-(+[/FONT] because semicolons and brackets are part of the Bash language.
-
-[IMG]https://i.imgur.com/ywElfTy.gif[/IMG]
 
 [FONT="courier new"]"command": "${workspaceRoot}\\pawno\\pawncc.exe",[/FONT] is the important bit here, this is the path to your Pawn compiler and I’ve assumed most of you have a left-over [FONT="courier new"]pawno[/FONT] folder from that long dead text editor! This folder not only contains Pawno but also the Pawn code compiler (pawncc.exe).
 

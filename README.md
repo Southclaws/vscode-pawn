@@ -27,6 +27,8 @@ Code uses a method called "Tasks" to run compilers and build tools. All you need
 to do is create a folder named `.vscode` in your project's directory and in
 there, create a file named `tasks.json`.
 
+![https://i.imgur.com/ywElfTy.gif](https://i.imgur.com/ywElfTy.gif)
+
 The contents depends on what shell you are using. Most users on the latest
 Windows 10 will have PowerShell as the default and otherwise you'll be using
 Command Prompt (cmd). These shells require different escape characters.
@@ -95,8 +97,6 @@ Bash, zsh, etc. then you're probably knowledgable enough to set up the command
 invocation with the correct escape characters Bash is mostly straight forward
 but requires paths with spaces to be escaped as well as the pawncc flags like
 `-;+` and `-(+` because semicolons and brackets are part of the Bash language.
-
-![https://i.imgur.com/ywElfTy.gif](https://i.imgur.com/ywElfTy.gif)
 
 `"command": "${workspaceRoot}\\pawno\\pawncc.exe",` is the important bit here,
 this is the path to your Pawn compiler and I've assumed most of you have a
