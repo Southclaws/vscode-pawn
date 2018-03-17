@@ -6,6 +6,9 @@ Currently this is a port of the Sublime Text package which includes proper Pawn
 syntax highlighting, autocompletions for the standard library and some popular
 libraries.
 
+If you like development tools that speed up your workflow and increase
+productivity, check out **[sampctl](http://bit.ly/sampctl-thread)**!
+
 Coming soon:
 
 * Static Analysis
