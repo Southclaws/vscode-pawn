@@ -101,31 +101,31 @@ invocation with the correct escape characters Bash is mostly straight forward
 but requires paths with spaces to be escaped as well as the pawncc flags like
 `-;+` and `-(+` because semicolons and brackets are part of the Bash language.
 
+### Explanation
+
 `"command": "${workspaceRoot}\\pawno\\pawncc.exe",` is the important bit here,
 this is the path to your Pawn compiler and I've assumed most of you have a
 left-over `pawno` folder from that long dead text editor! This folder not only
 contains Pawno but also the Pawn code compiler (pawncc.exe).
 
-`"args": ["\\\"${relativeFile}\\\"", "\\\"-;+\\\"", "\\\"-(+\\\""],` is also
-important, this is where you define the arguments passed to the compiler. Pawno
-also did this but you might not have known. The defaults have always been `-;+`
-to force semicolon usage and `-(+` to force brackets in statements. Please note
-the excessive use of backslash characters, if you want to add more arguments you
-must use the same triple-backslash-quote around the argument if it involves a
-special character.
+`"args": [...],` is also important, this is where you define the arguments
+passed to the compiler. Pawno also did this but you might not have known. The
+defaults have always been `-;+` to force semicolon usage and `-(+` to force
+brackets in statements. This is the part that is heavily dependent on what shell
+you are using because characters like `;`, `+` and `(` are control characters
+for various shells.
 
 If you store your Pawn compiler elsewhere, just replace the entire `command`
 setting with the full path to your compiler.
 
 Also, if you want to disable debug symbols (you won't be able to use
-crashdetect) just remove `-d3` from
-`"args": ["${relativeFile}", "-;+", "-(+", "-d3"],`.
+crashdetect) just remove `-d3` from `"args"`.
 
 `problemMatcher` is the part that allows recognising the Pawn compiler output
 and presenting it in the `problems` panel of the editor. This doesn't work well
 with external includes because the paths change from relative to absolute.
-[sampctl](http://sampctl.com) fortunately fixes this (and a lot of other
-annoying things).
+[sampctl](http://bit.ly/sampctl-thread) fortunately fixes this (and a lot of
+other annoying things).
 
 ## Features
 
