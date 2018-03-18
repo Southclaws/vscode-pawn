@@ -51,7 +51,7 @@ and checking what the dropdown says:
       "label": "build-normal",
       "type": "shell",
       "command": "&'${workspaceRoot}\\pawno\\pawncc.exe'",
-      "args": ["${file}", "-Dgamemodes", "'-;+'", "'-(+'", "'-d3'"],
+      "args": ["'${file}'", "-Dgamemodes", "'-;+'", "'-(+'", "'-d3'"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -77,7 +77,7 @@ and checking what the dropdown says:
       "label": "build-normal",
       "type": "shell",
       "command": "\"${workspaceRoot}\\pawno\\pawncc.exe\"",
-      "args": ["${file}", "-Dgamemodes", "-;+", "-(+", "-d3"],
+      "args": ["\"${file}\"", "-Dgamemodes", "-;+", "-(+", "-d3"],
       "group": {
         "kind": "build",
         "isDefault": true
