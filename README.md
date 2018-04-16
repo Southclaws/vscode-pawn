@@ -26,6 +26,33 @@ Alternatively, you can check out the source code or view the marketplace page:
 
 ## Compiling Pawn Code
 
+To actually compile after you've set up the `tasks.json` below, press
+CTRL+Shift+B (Windows) or CMD+Shift+B (Mac), or alternatively open up the
+command palette with CTRL+Shift+P (Windows) or CMD+Shift+P (Mac) and type
+`Run Task`, hit enter and select `build-normal`.
+
+If you use [sampctl](http://bit.ly/sampctl) it's the same process except you'll
+have four options in the `Run Task` list:
+
+* `build only` - build the package
+* `build watcher` - build the package on every file change
+* `run tests` - run the package
+* `run tests watcher` - run the package on every file change
+
+### With `sampctl package init`
+
+If you're using sampctl, the `sampctl package init` command will automatically
+generate a vscode `tasks.json` if you selected `vscode` in the editor part of
+the setup menu.
+
+If you've already got a package but you didn't do this, you can simply download
+the `tasks.json` from the
+[Pawn Package template repo](https://github.com/Southclaws/pawn-package-template/blob/master/.vscode/tasks.json).
+
+Once you've done that, there's no more setup needed!
+
+### Creating `tasks.json`
+
 Code uses a method called "Tasks" to run compilers and build tools. All you need
 to do is create a folder named `.vscode` in your project's directory and in
 there, create a file named `tasks.json`.
@@ -36,12 +63,15 @@ The contents depends on what shell you are using. Most users on the latest
 Windows 10 will have PowerShell as the default and otherwise you'll be using
 Command Prompt (cmd). These shells require different escape characters.
 
+**Note: In a recent vscode update, this behaviour was changed, it requires
+testing for the latest version!**
+
 You can check which shell is default by simply opening the integrated terminal
 and checking what the dropdown says:
 
 ![https://i.imgur.com/7BVdDBN.png](https://i.imgur.com/7BVdDBN.png)
 
-### PowerShell
+#### PowerShell
 
 ```json
 {
@@ -67,7 +97,7 @@ and checking what the dropdown says:
 }
 ```
 
-### CMD
+#### CMD
 
 ```json
 {
@@ -93,7 +123,7 @@ and checking what the dropdown says:
 }
 ```
 
-### Other Shells
+#### Other Shells
 
 If you're tech-savvy enough to install and use other shells such as MSYS, Git
 Bash, zsh, etc. then you're probably knowledgable enough to set up the command
@@ -101,7 +131,7 @@ invocation with the correct escape characters Bash is mostly straight forward
 but requires paths with spaces to be escaped as well as the pawncc flags like
 `-;+` and `-(+` because semicolons and brackets are part of the Bash language.
 
-### Explanation
+#### Explanation
 
 `"command": "${workspaceRoot}\\pawno\\pawncc.exe",` is the important bit here,
 this is the path to your Pawn compiler and I've assumed most of you have a
