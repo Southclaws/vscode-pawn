@@ -59,19 +59,7 @@ there, create a file named `tasks.json`.
 
 ![https://i.imgur.com/ywElfTy.gif](https://i.imgur.com/ywElfTy.gif)
 
-The contents depends on what shell you are using. Most users on the latest
-Windows 10 will have PowerShell as the default and otherwise you'll be using
-Command Prompt (cmd). These shells require different escape characters.
-
-**Note: In a recent vscode update, this behaviour was changed, it requires
-testing for the latest version!**
-
-You can check which shell is default by simply opening the integrated terminal
-and checking what the dropdown says:
-
-![https://i.imgur.com/7BVdDBN.png](https://i.imgur.com/7BVdDBN.png)
-
-#### PowerShell
+Then paste this into that file:
 
 ```json
 {
@@ -80,8 +68,8 @@ and checking what the dropdown says:
     {
       "label": "build-normal",
       "type": "shell",
-      "command": "&'${workspaceRoot}\\pawno\\pawncc.exe'",
-      "args": ["'${file}'", "-Dgamemodes", "'-;+'", "'-(+'", "'-d3'"],
+      "command": "${workspaceRoot}/pawno/pawncc.exe",
+      "args": ["${file}", "-Dgamemodes", "-;+", "-(+", "-d3"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -96,40 +84,6 @@ and checking what the dropdown says:
   ]
 }
 ```
-
-#### CMD
-
-```json
-{
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "build-normal",
-      "type": "shell",
-      "command": "\"${workspaceRoot}\\pawno\\pawncc.exe\"",
-      "args": ["\"${file}\"", "-Dgamemodes", "-;+", "-(+", "-d3"],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "isBackground": false,
-      "presentation": {
-        "reveal": "silent",
-        "panel": "dedicated"
-      },
-      "problemMatcher": "$pawncc"
-    }
-  ]
-}
-```
-
-#### Other Shells
-
-If you're tech-savvy enough to install and use other shells such as MSYS, Git
-Bash, zsh, etc. then you're probably knowledgable enough to set up the command
-invocation with the correct escape characters Bash is mostly straight forward
-but requires paths with spaces to be escaped as well as the pawncc flags like
-`-;+` and `-(+` because semicolons and brackets are part of the Bash language.
 
 #### Explanation
 
