@@ -167,7 +167,7 @@
 				  | #  or type modifier / closing bracket before name
 				    (?&lt;= [^&amp;]&amp; | [*&gt;)}\]] ) ) \s*
 
-				(   (?: [A-Za-z_]\w*+ | ::[^:] )++
+				(   (?: [A-Za-z_@]\w*+ | ::[^:] )++
 				    (?: (?&lt;= ^ operator | \W operator )  # C++ operator?
 				        (?: [-*&amp;&lt;&gt;=+!]+ | \(\) | \[\] ) )? )
 
@@ -203,7 +203,7 @@
 				  | #  or type modifier / closing bracket before name
 				    (?&lt;= [^&amp;]&amp; | [*&gt;)}\]\:] ) ) \s*
 
-				(   (?: [A-Za-z_]\w*+ | ::[^:] )++
+				(   (?: [A-Za-z_@]\w*+ | ::[^:] )++
 				    (?: (?&lt;= ^ operator | \W operator )  # C++ operator?
 				        (?: [-*&amp;&lt;&gt;=+!]+ | \(\) | \[\] ) )? )
 
@@ -233,7 +233,7 @@
 			<string>(?x)
 				\s*
 				(?= # don't consume to recognize support functions
-				    (?: [A-Za-z_]\w*+ | ::[^:] )++
+				    (?: [A-Za-z_@]\w*+ | ::[^:] )++
 				    (?:\s|/\*.*?\*/)*+ \( )
 			</string>
 			<key>end</key> <string>\)</string>
@@ -241,11 +241,11 @@
 			<array>
 				<dict> <key>include</key> <string>#lex</string> </dict>
 				<dict>
-					<key>match</key> <string>(?:(?&lt;=\.)|(?&lt;=-&gt;))\b([A-Za-z_]\w*+)\b</string>
+					<key>match</key> <string>(?:(?&lt;=\.)|(?&lt;=-&gt;))\b([A-Za-z_@]\w*+)\b</string>
 					<key>name</key> <string>variable.other.dot-access.c support.function.any-method.c</string>
 				</dict>
 				<dict>
-					<key>match</key> <string>(?:[A-Za-z_]\w*+|::[^:])++</string>
+					<key>match</key> <string>(?:[A-Za-z_@]\w*+|::[^:])++</string>
 					<key>name</key> <string>support.function.any-method.c</string>
 				</dict>
 				<dict> <key>include</key> <string>#parens-lookahead-end</string> </dict>
