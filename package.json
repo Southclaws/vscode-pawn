@@ -1,8 +1,7 @@
 {
     "name": "vscode-pawn",
     "displayName": "Pawn Tools",
-    "description":
-        "Pawn tools for vscode. Includes syntax highlighting and snippets/completions for common libraries.",
+    "description": "Pawn tools for vscode. Includes syntax highlighting and snippets/completions for common libraries.",
     "version": "0.6.5",
     "publisher": "southclaws",
     "engines": {
@@ -17,15 +16,27 @@
         "url": "https://github.com/Southclaws/vscode-pawn.git"
     },
     "icon": "sampctl-icon.png",
-    "categories": ["Other", "Languages"],
-    "activationEvents": ["onLanguage:pawn"],
+    "categories": [
+        "Other",
+        "Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:pawn"
+    ],
     "main": "./out/extension",
     "contributes": {
         "languages": [
             {
                 "id": "pawn",
-                "aliases": ["Pawn", "pawn"],
-                "extensions": [".p", ".pwn", ".inc"],
+                "aliases": [
+                    "Pawn",
+                    "pawn"
+                ],
+                "extensions": [
+                    ".p",
+                    ".pwn",
+                    ".inc"
+                ],
                 "configuration": "./language-configuration.json"
             }
         ],
@@ -62,10 +73,12 @@
             {
                 "name": "pawncc",
                 "owner": "pawn",
-                "fileLocation": ["relative", "${workspaceRoot}/gamemodes"],
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}/gamemodes"
+                ],
                 "pattern": {
-                    "regexp":
-                        "^(.*?)\\(([0-9]*)[- 0-9]*\\) \\: (fatal error|error|warning) [0-9]*\\: (.*)$",
+                    "regexp": "^(.*?)\\(([0-9]*)[- 0-9]*\\) \\: (fatal error|error|warning) [0-9]*\\: (.*)$",
                     "file": 1,
                     "location": 2,
                     "severity": 3,
@@ -112,9 +125,11 @@
     },
     "devDependencies": {
         "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
+        "vscode": "^1.1.21",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
     },
-    "dependencies": {}
+    "dependencies": {
+        "axios": "^0.18.0"
+    }
 }
