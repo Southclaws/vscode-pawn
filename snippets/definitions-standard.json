@@ -1,508 +1,596 @@
 {
-    "BODY_PART_TORSO": { 
+    "BODY_PART_TORSO": {
         "prefix": "BODY_PART_TORSO",
+        "description": "The torso body part macro with the id 3.",
         "body": "BODY_PART_TORSO"
     },
-    "BODY_PART_GROIN": { 
+    "BODY_PART_GROIN": {
         "prefix": "BODY_PART_GROIN",
+        "description": "The groin body part macro with the id 4.",
         "body": "BODY_PART_GROIN"
     },
-    "BODY_PART_LEFT_ARM": { 
+    "BODY_PART_LEFT_ARM": {
         "prefix": "BODY_PART_LEFT_ARM",
+        "description": "The left arm body part macro with the id 5.",
         "body": "BODY_PART_LEFT_ARM"
     },
-    "BODY_PART_RIGHT_ARM": { 
+    "BODY_PART_RIGHT_ARM": {
         "prefix": "BODY_PART_RIGHT_ARM",
+        "description": "The right arm body part macro with the id 6.",
         "body": "BODY_PART_RIGHT_ARM"
     },
-    "BODY_PART_LEFT_LEG": { 
+    "BODY_PART_LEFT_LEG": {
         "prefix": "BODY_PART_LEFT_LEG",
+        "description": "The left leg body part macro with the id 7.",
         "body": "BODY_PART_LEFT_LEG"
     },
-    "BODY_PART_RIGHT_LEG": { 
+    "BODY_PART_RIGHT_LEG": {
         "prefix": "BODY_PART_RIGHT_LEG",
+        "description": "The left leg body part macro with the id 8.",
         "body": "BODY_PART_RIGHT_LEG"
     },
-    "BODY_PART_HEAD": { 
+    "BODY_PART_HEAD": {
         "prefix": "BODY_PART_HEAD",
+        "description": "The head body part macro with the id 9.",
         "body": "BODY_PART_HEAD"
     },
     "MAX_PLAYER_NAME": {
         "prefix": "MAX_PLAYER_NAME",
+        "description": "A value which defines the maximum length of a player's name, 24 characters by default.",
         "body": "MAX_PLAYER_NAME"
     },
-    "MAX_PLAYERS": { 
+    "MAX_PLAYERS": {
         "prefix": "MAX_PLAYERS",
+        "description": "A value which defines the number of players that can join the server. It is separate from the 'maxplayers' server variable.",
         "body": "MAX_PLAYERS"
     },
-    "MAX_VEHICLES": { 
+    "MAX_VEHICLES": {
         "prefix": "MAX_VEHICLES",
+        "description": "A value which defines the maximum number of vehicles and equals 2000.",
         "body": "MAX_VEHICLES"
     },
-    "MAX_ACTORS": { 
+    "MAX_ACTORS": {
         "prefix": "MAX_ACTORS",
+        "description": "A value which defines the maximum number of actors and equals 1000.",
         "body": "MAX_ACTORS"
     },
-    "INVALID_PLAYER_ID": { 
+    "INVALID_PLAYER_ID": {
         "prefix": "INVALID_PLAYER_ID",
+        "description": "A value which defines an invalid player's id and equals 0xFFFF.",
         "body": "INVALID_PLAYER_ID"
     },
-    "INVALID_VEHICLE_ID": { 
+    "INVALID_VEHICLE_ID": {
         "prefix": "INVALID_VEHICLE_ID",
+        "description": "A value which defines an invalid vehicle's id and equals 0xFFFF.",
         "body": "INVALID_VEHICLE_ID"
     },
-    "INVALID_ACTOR_ID": { 
+    "INVALID_ACTOR_ID": {
         "prefix": "INVALID_ACTOR_ID",
+        "description": "A value which defines an invalid actor's id and equals 0xFFFF.",
         "body": "INVALID_ACTOR_ID"
     },
-    "NO_TEAM": { 
+    "NO_TEAM": {
         "prefix": "NO_TEAM",
+        "description": "A value used to tag players as not beloning to any team and equals 255.",
         "body": "NO_TEAM"
     },
-    "MAX_OBJECTS": { 
+    "MAX_OBJECTS": {
         "prefix": "MAX_OBJECTS",
+        "description": "A value which defines the maximum number of objects and equals 1000.",
         "body": "MAX_OBJECTS"
     },
-    "INVALID_OBJECT_ID": { 
+    "INVALID_OBJECT_ID": {
         "prefix": "INVALID_OBJECT_ID",
+        "description": "A value which defines an invalid object's id and equals 0xFFFF.",
         "body": "INVALID_OBJECT_ID"
     },
-    "MAX_GANG_ZONES": { 
+    "MAX_GANG_ZONES": {
         "prefix": "MAX_GANG_ZONES",
+        "description": "A value which defines the maximum number of gang zones and equals 1024.",
         "body": "MAX_GANG_ZONES"
     },
-    "MAX_TEXT_DRAWS": { 
+    "MAX_TEXT_DRAWS": {
         "prefix": "MAX_TEXT_DRAWS",
         "body": "MAX_TEXT_DRAWS"
     },
-    "MAX_PLAYER_TEXT_DRAWS": { 
+    "MAX_PLAYER_TEXT_DRAWS": {
         "prefix": "MAX_PLAYER_TEXT_DRAWS",
+        "description": "A value which defines the maximum number of textdraws and equals 2048.",
         "body": "MAX_PLAYER_TEXT_DRAWS"
     },
-    "MAX_MENUS": { 
+    "MAX_MENUS": {
         "prefix": "MAX_MENUS",
+        "description": "A value which defines the maximum number of menus and equals 128.",
         "body": "MAX_MENUS"
     },
-    "MAX_3DTEXT_GLOBAL": { 
+    "MAX_3DTEXT_GLOBAL": {
         "prefix": "MAX_3DTEXT_GLOBAL",
+        "description": "A value which defines the maximum number of global 3D text labels and equals 1024.",
         "body": "MAX_3DTEXT_GLOBAL"
     },
-    "MAX_3DTEXT_PLAYER": { 
+    "MAX_3DTEXT_PLAYER": {
         "prefix": "MAX_3DTEXT_PLAYER",
+        "description": "A value which defines the maximum number of player 3D text labels and equals 1024.",
         "body": "MAX_3DTEXT_PLAYER"
     },
-    "MAX_PICKUPS": { 
+    "MAX_PICKUPS": {
         "prefix": "MAX_PICKUPS",
+        "description": "A value which defines the maximum number of pickups and equals 4096.",
         "body": "MAX_PICKUPS"
     },
-    "INVALID_MENU": { 
+    "INVALID_MENU": {
         "prefix": "INVALID_MENU",
+        "description": "A value which defines an invalid menu's id and equals 0xFF.",
         "body": "INVALID_MENU"
     },
-    "INVALID_TEXT_DRAW": { 
+    "INVALID_TEXT_DRAW": {
         "prefix": "INVALID_TEXT_DRAW",
+        "description": "A value which defines an invalid textdraw's id and equals 0xFFFF.",
         "body": "INVALID_TEXT_DRAW"
     },
-    "INVALID_GANG_ZONE": { 
+    "INVALID_GANG_ZONE": {
         "prefix": "INVALID_GANG_ZONE",
+        "description": "A value which defines an invalid gang zone's id and equals -1.",
         "body": "INVALID_GANG_ZONE"
     },
-    "INVALID_3DTEXT_ID": { 
+    "INVALID_3DTEXT_ID": {
         "prefix": "INVALID_3DTEXT_ID",
+        "description": "A value which defines an invalid 3D text label's id and equals 0xFFFF.",
         "body": "INVALID_3DTEXT_ID"
     },
     "PLAYER_STATE_ONFOOT": {
-
         "prefix": "PLAYER_STATE_ONFOOT",
+        "description": "A value which defines the player' state when being on foot, it has the id 1.",
         "body": "PLAYER_STATE_ONFOOT"
     },
     "PLAYER_STATE_NONE": {
-
         "prefix": "PLAYER_STATE_NONE",
+        "description": "A value which defines the player' state when being initialized, it has the id 0.",
         "body": "PLAYER_STATE_NONE"
     },
     "PLAYER_STATE_DRIVER": {
-
         "prefix": "PLAYER_STATE_DRIVER",
+        "description": "A value which defines the player' state when driving a vehicle, it has the id 2.",
         "body": "PLAYER_STATE_DRIVER"
     },
     "PLAYER_STATE_PASSENGER": {
-
         "prefix": "PLAYER_STATE_PASSENGER",
+        "description": "A value which defines the player' state when being a passenger of a vehicle, it has the id 3.",
         "body": "PLAYER_STATE_PASSENGER"
     },
     "PLAYER_STATE_EXIT_VEHICLE": {
-
         "prefix": "PLAYER_STATE_EXIT_VEHICLE",
+        "description": "A value which defines the player' state when exiting a vehicle, it has the id 4.",
         "body": "PLAYER_STATE_EXIT_VEHICLE"
     },
     "PLAYER_STATE_ENTER_VEHICLE_DRIVER": {
-
         "prefix": "PLAYER_STATE_ENTER_VEHICLE_DRIVER",
+        "description": "A value which defines the player' state when entering a vehicle as a driver, it has the id 5.",
         "body": "PLAYER_STATE_ENTER_VEHICLE_DRIVER"
     },
     "PLAYER_STATE_ENTER_VEHICLE_PASSENGER": {
-
         "prefix": "PLAYER_STATE_ENTER_VEHICLE_PASSENGER",
+        "description": "A value which defines the player' state when entering a vehicle as a passenger, it has the id 6.",
         "body": "PLAYER_STATE_ENTER_VEHICLE_PASSENGER"
     },
     "PLAYER_STATE_WASTED": {
-
         "prefix": "PLAYER_STATE_WASTED",
+        "description": "A value which defines the player' state when dead or on class selection, it has the id 7.",
         "body": "PLAYER_STATE_WASTED"
     },
     "PLAYER_STATE_SPAWNED": {
-
         "prefix": "PLAYER_STATE_SPAWNED",
+        "description": "A value which defines the player' state when spawned, it has the id 8.",
         "body": "PLAYER_STATE_SPAWNED"
     },
     "PLAYER_STATE_SPECTATING": {
-
         "prefix": "PLAYER_STATE_SPECTATING",
+        "description": "A value which defines the player' state when spectating, it has the id 9.",
         "body": "PLAYER_STATE_SPECTATING"
     },
     "PLAYER_MARKERS_MODE_OFF": {
-
         "prefix": "PLAYER_MARKERS_MODE_OFF",
+        "description": "A value which defines the state of the player's marker as being off, it has the id 0.",
         "body": "PLAYER_MARKERS_MODE_OFF"
     },
     "PLAYER_MARKERS_MODE_GLOBAL": {
-
         "prefix": "PLAYER_MARKERS_MODE_GLOBAL",
+        "description": "A value which defines the state of the player's marker as being globaly visible, it has the id 1.",
         "body": "PLAYER_MARKERS_MODE_GLOBAL"
     },
     "PLAYER_MARKERS_MODE_STREAMED": {
-
         "prefix": "PLAYER_MARKERS_MODE_STREAMED",
+        "description": "A value which defines the state of the player's marker as being visible for streamed players, it has the id 2.",
         "body": "PLAYER_MARKERS_MODE_STREAMED"
     },
     "WEAPON_BRASSKNUCKLE": {
         "prefix": "WEAPON_BRASSKNUCKLE",
+        "description": "ID: 1\nName: Brass Knuckles\nSlot: 0\nModel: 331",
         "body": "WEAPON_BRASSKNUCKLE"
     },
     "WEAPON_GOLFCLUB": {
         "prefix": "WEAPON_GOLFCLUB",
+        "description": "ID: 2\nName: Golf Club\nSlot: 1\nModel: 333",
         "body": "WEAPON_GOLFCLUB"
     },
     "WEAPON_NITESTICK": {
-
         "prefix": "WEAPON_NITESTICK",
+        "description": "ID: 3\nName: Nightstick\nSlot: 1\nModel: 334",
         "body": "WEAPON_NITESTICK"
     },
     "WEAPON_KNIFE": {
-
         "prefix": "WEAPON_KNIFE",
+        "description": "ID: 4\nName: Knife\nSlot: 1\nModel: 335",
         "body": "WEAPON_KNIFE"
     },
     "WEAPON_BAT": {
-
         "prefix": "WEAPON_BAT",
+        "description": "ID: 5\nName: Baseball Bat\nSlot: 1\nModel: 336",
         "body": "WEAPON_BAT"
     },
     "WEAPON_SHOVEL": {
-
         "prefix": "WEAPON_SHOVEL",
+        "description": "ID: 6\nName: Shovel\nSlot: 1\nModel: 337",
         "body": "WEAPON_SHOVEL"
     },
     "WEAPON_POOLSTICK": {
-
         "prefix": "WEAPON_POOLSTICK",
+        "description": "ID: 7\nName: Pool Cue\nSlot: 1\nModel: 338",
         "body": "WEAPON_POOLSTICK"
     },
     "WEAPON_KATANA": {
-
         "prefix": "WEAPON_KATANA",
+        "description": "ID: 8\nName: Kqtqnq\nSlot: 1\nModel: 339",
         "body": "WEAPON_KATANA"
     },
     "WEAPON_CHAINSAW": {
-
         "prefix": "WEAPON_CHAINSAW",
+        "description": "ID: 9\nName: Chainsaw\nSlot: 1\nModel: 341",
         "body": "WEAPON_CHAINSAW"
     },
     "WEAPON_DILDO": {
-
         "prefix": "WEAPON_DILDO",
+        "description": "ID: 10\nName: Purple Dildo\nSlot: 10\nModel: 321",
         "body": "WEAPON_DILDO"
     },
     "WEAPON_DILDO2": {
-
         "prefix": "WEAPON_DILDO2",
+        "description": "ID: 11\nName: Dildo\nSlot: 10\nModel: 322",
         "body": "WEAPON_DILDO2"
     },
     "WEAPON_VIBRATOR": {
-
         "prefix": "WEAPON_VIBRATOR",
+        "description": "ID: 12\nName: Vibrator\nSlot: 10\nModel: 323",
         "body": "WEAPON_VIBRATOR"
     },
     "WEAPON_VIBRATOR2": {
-
         "prefix": "WEAPON_VIBRATOR2",
+        "description": "ID: 13\nName: Silver Vibrator\nSlot: 10\nModel: 324",
         "body": "WEAPON_VIBRATOR2"
     },
     "WEAPON_FLOWER": {
-
         "prefix": "WEAPON_FLOWER",
+        "description": "ID: 14\nName: Flowers\nSlot: 10\nModel: 325",
         "body": "WEAPON_FLOWER"
     },
     "WEAPON_CANE": {
-
         "prefix": "WEAPON_CANE",
+        "description": "ID: 15\nName: Cane\nSlot: 10\nModel: 326",
         "body": "WEAPON_CANE"
     },
     "WEAPON_GRENADE": {
-
         "prefix": "WEAPON_GRENADE",
+        "description": "ID: 16\nName: Grenade\nSlot: 8\nModel: 342",
         "body": "WEAPON_GRENADE"
     },
     "WEAPON_TEARGAS": {
         "prefix": "WEAPON_TEARGAS",
+        "description": "ID: 17\nName: Tear Gas\nSlot: 8\nModel: 343",
         "body": "WEAPON_TEARGAS"
     },
     "WEAPON_MOLTOV": {
-
         "prefix": "WEAPON_MOLTOV",
+        "description": "ID: 18\nName: Molotov Cocktail\nSlot: 8\nModel: 344",
         "body": "WEAPON_MOLTOV"
     },
     "WEAPON_COLT45": {
-
         "prefix": "WEAPON_COLT45",
+        "description": "ID: 22\nName: 9mm\nSlot: 2\nModel: 346",
         "body": "WEAPON_COLT45"
     },
     "WEAPON_SILENCED": {
-
         "prefix": "WEAPON_SILENCED",
+        "description": "ID: 23\nName: Silenced 9mm\nSlot: 2\nModel: 347",
         "body": "WEAPON_SILENCED"
     },
     "WEAPON_DEAGLE": {
         "prefix": "WEAPON_DEAGLE",
+        "description": "ID: 24\nName: Desert Eagle\nSlot: 2\nModel: 348",
         "body": "WEAPON_DEAGLE"
     },
     "WEAPON_SHOTGUN": {
         "prefix": "WEAPON_SHOTGUN",
+        "description": "ID: 25\nName: Shotgun\nSlot: 3\nModel: 349",
         "body": "WEAPON_SHOTGUN"
     },
     "WEAPON_SAWEDOFF": {
         "prefix": "WEAPON_SAWEDOFF",
+        "description": "ID: 26\nName: Swanoff Shotgun\nSlot: 3\nModel: 350",
         "body": "WEAPON_SAWEDOFF"
     },
     "WEAPON_SHOTGSPA": {
         "prefix": "WEAPON_SHOTGSPA",
+        "description": "ID: 27\nName: Combat Shotgun\nSlot: 3\nModel: 351",
         "body": "WEAPON_SHOTGSPA"
     },
     "WEAPON_UZI": {
         "prefix": "WEAPON_UZI",
+        "description": "ID: 28\nName: Micro SMG/Uzi\nSlot: 4\nModel: 352",
         "body": "WEAPON_UZI"
     },
     "WEAPON_MP5": {
         "prefix": "WEAPON_MP5",
+        "description": "ID: 29\nName: MP5\nSlot: 4\nModel: 353",
         "body": "WEAPON_MP5"
     },
     "WEAPON_AK47": {
         "prefix": "WEAPON_AK47",
+        "description": "ID: 30\nName: AK-47\nSlot: 5\nModel: 355",
         "body": "WEAPON_AK47"
     },
     "WEAPON_M4": {
         "prefix": "WEAPON_M4",
+        "description": "ID: 31\nName: M4\nSlot: 5\nModel: 356",
         "body": "WEAPON_M4"
     },
     "WEAPON_TEC9": {
         "prefix": "WEAPON_TEC9",
+        "description": "ID: 32\nName: Tec-9\nSlot: 4\nModel: 372",
         "body": "WEAPON_TEC9"
     },
-    "WEAPON_RIFLE" : {
+    "WEAPON_RIFLE": {
         "prefix": "WEAPON_RIFLE",
+        "description": "ID: 33\nName: Country Rifle\nSlot: 6\nModel: 357",
         "body": "WEAPON_RIFLE"
     },
-    "WEAPON_SNIPER" : {
+    "WEAPON_SNIPER": {
         "prefix": "WEAPON_SNIPER",
+        "description": "ID: 34\nName: Sniper Rifle\nSlot: 6\nModel: 358",
         "body": "WEAPON_SNIPER"
     },
-    "WEAPON_ROCKETLAUNCHER" : {
+    "WEAPON_ROCKETLAUNCHER": {
         "prefix": "WEAPON_ROCKETLAUNCHER",
+        "description": "ID: 35\nName: RPG\nSlot: 7\nModel: 359",
         "body": "WEAPON_ROCKETLAUNCHER"
     },
-    "WEAPON_HEATSEEKER" : {
+    "WEAPON_HEATSEEKER": {
         "prefix": "WEAPON_HEATSEEKER",
+        "description": "ID: 36\nName: HS Rocket\nSlot: 7\nModel: 360",
         "body": "WEAPON_HEATSEEKER"
     },
-    "WEAPON_FLAMETHROWER" : {
+    "WEAPON_FLAMETHROWER": {
         "prefix": "WEAPON_FLAMETHROWER",
+        "description": "ID: 37\nName: Flamethrower\nSlot: 7\nModel: 361",
         "body": "WEAPON_FLAMETHROWER"
     },
     "WEAPON_MINIGUN": {
         "prefix": "WEAPON_MINIGUN",
+        "description": "ID: 38\nName: Minigun\nSlot: 7\nModel: 362",
         "body": "WEAPON_MINIGUN"
     },
     "WEAPON_SATCHEL": {
         "prefix": "WEAPON_SATCHEL",
+        "description": "ID: 39\nName: Satchel Charge\nSlot: 8\nModel: 363",
         "body": "WEAPON_SATCHEL"
     },
-    "WEAPON_BOMB" : {
+    "WEAPON_BOMB": {
         "prefix": "WEAPON_BOMB",
+        "description": "ID: 40\nName: Detonator\nSlot: 12\nModel: 364",
         "body": "WEAPON_BOMB"
     },
-    "WEAPON_SPRAYCAN" : {
+    "WEAPON_SPRAYCAN": {
         "prefix": "WEAPON_SPRAYCAN",
+        "description": "ID: 41\nName: Spraycan\nSlot: 9\nModel: 365",
         "body": "WEAPON_SPRAYCAN"
     },
-    "WEAPON_FIREEXTINGUISHER" : {
+    "WEAPON_FIREEXTINGUISHER": {
         "prefix": "WEAPON_FIREEXTINGUISHER",
+        "description": "ID: 42\nName: Fire Extinguisher\nSlot: 9\nModel: 366",
         "body": "WEAPON_FIREEXTINGUISHER"
     },
-    "WEAPON_CAMERA" : {
+    "WEAPON_CAMERA": {
         "prefix": "WEAPON_CAMERA",
+        "description": "ID: 43\nName: Camera\nSlot: 9\nModel: 367",
         "body": "WEAPON_CAMERA"
     },
-    "WEAPON_PARACHUTE" : {
+    "WEAPON_PARACHUTE": {
         "prefix": "WEAPON_PARACHUTE",
+        "description": "ID: 46\nName: Parachute\nSlot: 11\nModel: 371",
         "body": "WEAPON_PARACHUTE"
     },
-    "WEAPON_VEHICLE" : {
+    "WEAPON_VEHICLE": {
         "prefix": "WEAPON_VEHICLE",
+        "description": "ID: 49\nName: Vehicle\nSlot: N/A\nModel: N/A\nNote: Only used as a death icon.",
         "body": "WEAPON_VEHICLE"
     },
-    "WEAPON_DROWN" : {
+    "WEAPON_DROWN": {
         "prefix": "WEAPON_DROWN",
+        "description": "ID: 53\nName: Drowned\nSlot: N/A\nModel: N/A\nNote: Only used as a death icon.",
         "body": "WEAPON_DROWN"
     },
-    "WEAPON_COLLISION" : {
+    "WEAPON_COLLISION": {
         "prefix": "WEAPON_COLLISION",
+        "description": "ID: 54\nName: Splat\nSlot: N/A\nModel: N/A\nNote: Only used as a death icon.",
         "body": "WEAPON_COLLISION"
     },
     "KEY_ACTION": {
-        "prefix": "KEY_ACTION",
-        "body": "KEY_ACTION"
+        "prefix": " KEY_ACTION",
+        "description": "Value:  1\nCode (On Foot): ~k~~PED_ANSWER_PHONE~\nCode (In Vehicle):  ~k~~VEHICLE_FIREWEAPON_ALT~\nKey (On Foot):  TAB\nKey (In Vehicle):  ALT GR / LCTRL / NUM0",
+        "body": " KEY_ACTION"
     },
     "KEY_CROUCH": {
-        "prefix": "KEY_CROUCH",
-        "body": "KEY_CROUCH"
+        "prefix": " KEY_CROUCH",
+        "description": "Value:  2\nCode (On Foot): ~k~~PED_DUCK~\nCode (In Vehicle):  ~k~~VEHICLE_HORN~\nKey (On Foot):  C\nKey (In Vehicle):  H / CAPSLOCK",
+        "body": " KEY_CROUCH"
     },
     "KEY_FIRE": {
-        "prefix": "KEY_FIRE",
-        "body": "KEY_FIRE"
+        "prefix": " KEY_FIRE",
+        "description": "Value:  4\nCode (On Foot): ~k~~PED_FIREWEAPON~\nCode (In Vehicle):  ~k~~VEHICLE_FIREWEAPON~\nKey (On Foot):  LCTRL / LMB (Left Mouse Button)\nKey (In Vehicle):  LALT",
+        "body": " KEY_FIRE"
     },
     "KEY_SPRINT": {
-        "prefix": "KEY_SPRINT",
-        "body": "KEY_SPRINT"
+        "prefix": " KEY_SPRINT",
+        "description": "Value:  8\nCode (On Foot): ~k~~PED_SPRINT~\nCode (In Vehicle):  ~k~~VEHICLE_ACCELERATE~\nKey (On Foot):  SPACE\nKey (In Vehicle):  W",
+        "body": " KEY_SPRINT"
     },
     "KEY_SECONDARY_ATTACK": {
-        "prefix": "KEY_SECONDARY_ATTACK",
-        "body": "KEY_SECONDARY_ATTACK"
+        "prefix": " KEY_SECONDARY_ATTACK",
+        "description": "Value:  16\nCode (On Foot): ~k~~VEHICLE_ENTER_EXIT~\nCode (In Vehicle):  ~k~~VEHICLE_ENTER_EXIT~\nKey (On Foot):  ENTER\nKey (In Vehicle):  ENTER",
+        "body": " KEY_SECONDARY_ATTACK"
     },
     "KEY_JUMP": {
-        "prefix": "KEY_JUMP",
-        "body": "KEY_JUMP"
+        "prefix": " KEY_JUMP",
+        "description": "Value:  32\nCode (On Foot): ~k~~PED_JUMPING~\nCode (In Vehicle):  ~k~~VEHICLE_BRAKE~\nKey (On Foot):  LSHIFT\nKey (In Vehicle):  S",
+        "body": " KEY_JUMP"
     },
     "KEY_LOOK_RIGHT": {
-        "prefix": "KEY_LOOK_RIGHT",
-        "body": "KEY_LOOK_RIGHT"
+        "prefix": " KEY_LOOK_RIGHT",
+        "description": "Value:  64\nCode (On Foot): -\nCode (In Vehicle):  ~k~~VEHICLE_LOOKRIGHT~\nKey (On Foot):  -\nKey (In Vehicle):  E",
+        "body": " KEY_LOOK_RIGHT"
     },
-    "KEY_HANDBRAKE": {
-        "prefix": "KEY_HANDBRAKE",
-        "body": "KEY_HANDBRAKE"
+    "KEY_HANDBRAKE/KEY_AIM(1)": {
+        "prefix": " KEY_HANDBRAKE/KEY_AIM(1)",
+        "description": "Value:  128\nCode (On Foot): ~k~~PED_LOCK_TARGET~\nCode (In Vehicle):  ~k~~VEHICLE_HANDBRAKE~\nKey (On Foot):  RMB (Right Mouse Button)\nKey (In Vehicle):  SPACE",
+        "body": " KEY_HANDBRAKE/KEY_AIM(1)"
     },
     "KEY_LOOK_LEFT": {
-        "prefix": "KEY_LOOK_LEFT",
-        "body": "KEY_LOOK_LEFT"
-    },
-    "KEY_SUBMISSION": {
-        "prefix": "KEY_SUBMISSION",
-        "body": "KEY_SUBMISSION"
+        "prefix": " KEY_LOOK_LEFT",
+        "description": "Value:  256\nCode (On Foot): -\nCode (In Vehicle):  ~k~~VEHICLE_LOOKLEFT~\nKey (On Foot):  -\nKey (In Vehicle):  Q",
+        "body": " KEY_LOOK_LEFT"
     },
     "KEY_LOOK_BEHIND": {
-        "prefix": "KEY_LOOK_BEHIND",
-        "body": "KEY_LOOK_BEHIND"
+        "prefix": " KEY_LOOK_BEHIND",
+        "description": "Value:  320(5)\nCode (On Foot): ~k~~PED_LOOKBEHIND~\nCode (In Vehicle):  ~k~~VEHICLE_LOOKBEHIND~\nKey (On Foot):  NUM1 / MMB (Middle Mouse Button - Click the mouse wheel)\nKey (In Vehicle):  2",
+        "body": " KEY_LOOK_BEHIND"
+    },
+    "KEY_SUBMISSION": {
+        "prefix": " KEY_SUBMISSION",
+        "description": "Value:  512\nCode (On Foot): -\nCode (In Vehicle):  ~k~~TOGGLE_SUBMISSIONS~\nKey (On Foot):  NUM1 / MMB (Middle Mouse Button - Click the mouse wheel)\nKey (In Vehicle):  2 / NUMPAD +",
+        "body": " KEY_SUBMISSION"
     },
     "KEY_WALK": {
-        "prefix": "KEY_WALK",
-        "body": "KEY_WALK"
+        "prefix": " KEY_WALK",
+        "description": "Value:  1024\nCode (On Foot): ~k~~SNEAK_ABOUT~\nCode (In Vehicle):  -\nKey (On Foot):  LALT\nKey (In Vehicle):  -",
+        "body": " KEY_WALK"
     },
     "KEY_ANALOG_UP": {
-        "prefix": "KEY_ANALOG_UP",
-        "body": "KEY_ANALOG_UP"
+        "prefix": " KEY_ANALOG_UP",
+        "description": "Value:  2048\nCode (On Foot): -\nCode (In Vehicle):  ~k~~VEHICLE_TURRETUP~\nKey (On Foot):  NUM8(6)\nKey (In Vehicle):  NUM8",
+        "body": " KEY_ANALOG_UP"
     },
     "KEY_ANALOG_DOWN": {
-        "prefix": "KEY_ANALOG_DOWN",
-        "body": "KEY_ANALOG_DOWN"
+        "prefix": " KEY_ANALOG_DOWN",
+        "description": "Value:  4096\nCode (On Foot): -\nCode (In Vehicle):  ~k~~VEHICLE_TURRETDOWN~\nKey (On Foot):  NUM2(6)\nKey (In Vehicle):  NUM2",
+        "body": " KEY_ANALOG_DOWN"
     },
     "KEY_ANALOG_LEFT": {
-        "prefix": "KEY_ANALOG_LEFT",
-        "body": "KEY_ANALOG_LEFT"
+        "prefix": " KEY_ANALOG_LEFT",
+        "description": "Value:  8192\nCode (On Foot): ~k~~VEHICLE_LOOKLEFT~\nCode (In Vehicle):  ~k~~VEHICLE_TURRETLEFT~\nKey (On Foot):  NUM4\nKey (In Vehicle):  NUM4",
+        "body": " KEY_ANALOG_LEFT"
     },
     "KEY_ANALOG_RIGHT": {
-        "prefix": "KEY_ANALOG_RIGHT",
-        "body": "KEY_ANALOG_RIGHT"
+        "prefix": " KEY_ANALOG_RIGHT",
+        "description": "Value:  16384\nCode (On Foot): ~k~~VEHICLE_LOOKRIGHT~\nCode (In Vehicle):  ~k~~VEHICLE_TURRETRIGHT~\nKey (On Foot):  NUM6\nKey (In Vehicle):  NUM6",
+        "body": " KEY_ANALOG_RIGHT"
     },
     "KEY_YES": {
-        "prefix": "KEY_YES",
-        "body": "KEY_YES"
+        "prefix": " KEY_YES",
+        "description": "Value:  65536\nCode (On Foot): ~k~~CONVERSATION_YES~\nCode (In Vehicle):  ~k~~CONVERSATION_YES~\nKey (On Foot):  Y\nKey (In Vehicle):  Y",
+        "body": " KEY_YES"
     },
     "KEY_NO": {
-        "prefix": "KEY_NO",
-        "body": "KEY_NO"
+        "prefix": " KEY_NO",
+        "description": "Value:  131072\nCode (On Foot): ~k~~CONVERSATION_NO~\nCode (In Vehicle):  ~k~~CONVERSATION_NO~\nKey (On Foot):  N\nKey (In Vehicle):  N",
+        "body": " KEY_NO"
     },
     "KEY_CTRL_BACK": {
-        "prefix": "KEY_CTRL_BACK",
-        "body": "KEY_CTRL_BACK"
+        "prefix": " KEY_CTRL_BACK",
+        "description": "Value:  262144(4)\nCode (On Foot): ~k~~GROUP_CONTROL_BWD~\nCode (In Vehicle):  ~k~~GROUP_CONTROL_BWD~\nKey (On Foot):  H\nKey (In Vehicle):  H",
+        "body": " KEY_CTRL_BACK"
     },
     "KEY_UP": {
-        "prefix": "KEY_UP",
-        "body": "KEY_UP"
+        "prefix": " KEY_UP",
+        "description": "Value:  -128\nCode (On Foot): ~k~~GO_FORWARD~\nCode (In Vehicle):  ~k~~VEHICLE_STEERUP~\nKey (On Foot):  UP\nKey (In Vehicle):  UP",
+        "body": " KEY_UP"
     },
     "KEY_DOWN": {
-        "prefix": "KEY_DOWN",
-        "body": "KEY_DOWN"
+        "prefix": " KEY_DOWN",
+        "description": "Value:  128\nCode (On Foot): ~k~~GO_BACK~\nCode (In Vehicle):  ~k~~VEHICLE_STEERDOWN~\nKey (On Foot):  DOWN\nKey (In Vehicle):  DOWN",
+        "body": " KEY_DOWN"
     },
     "KEY_LEFT": {
-        "prefix": "KEY_LEFT",
-        "body": "KEY_LEFT"
+        "prefix": " KEY_LEFT",
+        "description": "Value:  -128\nCode (On Foot): ~k~~GO_LEFT~\nCode (In Vehicle):  ~k~~VEHICLE_STEERLEFT~\nKey (On Foot):  LEFT\nKey (In Vehicle):  LEFT",
+        "body": " KEY_LEFT"
     },
     "KEY_RIGHT": {
-        "prefix": "KEY_RIGHT",
-        "body": "KEY_RIGHT"
+        "prefix": " KEY_RIGHT",
+        "description": "Value:  128\nCode (On Foot): ~k~~GO_RIGHT~\nCode (In Vehicle):  ~k~~VEHICLE_STEERRIGHT~\nKey (On Foot):  RIGHT\nKey (In Vehicle):  RIGHT",
+        "body": " KEY_RIGHT"
     },
-    "CLICK_SOURCE_SCOREBOARD": { 
+    "CLICK_SOURCE_SCOREBOARD": {
         "prefix": "CLICK_SOURCE_SCOREBOARD",
+        "description": "A value which defines the source of the player's click to be the score board (ID 0).",
         "body": "CLICK_SOURCE_SCOREBOARD"
     },
-    "EDIT_RESPONSE_CANCEL": { 
+    "EDIT_RESPONSE_CANCEL": {
         "prefix": "EDIT_RESPONSE_CANCEL",
+        "description": "A value which defines the object edition cancellation response type (ID 0).",
         "body": "EDIT_RESPONSE_CANCEL"
     },
-    "EDIT_RESPONSE_FINAL": { 
+    "EDIT_RESPONSE_FINAL": {
         "prefix": "EDIT_RESPONSE_FINAL",
+        "description": "A value which defines the object edition save response type (ID 1).",
         "body": "EDIT_RESPONSE_FINAL"
     },
-    "EDIT_RESPONSE_UPDATE": { 
+    "EDIT_RESPONSE_UPDATE": {
         "prefix": "EDIT_RESPONSE_UPDATE",
+        "description": "A value which defines the object edition update response type (ID 2).",
         "body": "EDIT_RESPONSE_UPDATE"
     },
-    "SELECT_OBJECT_GLOBAL_OBJECT": { 
+    "SELECT_OBJECT_GLOBAL_OBJECT": {
         "prefix": "SELECT_OBJECT_GLOBAL_OBJECT",
+        "description": "A value which defines the object selection type to be of a global object.",
         "body": "SELECT_OBJECT_GLOBAL_OBJECT"
     },
-    "SELECT_OBJECT_PLAYER_OBJECT": { 
+    "SELECT_OBJECT_PLAYER_OBJECT": {
         "prefix": "SELECT_OBJECT_PLAYER_OBJECT",
+        "description": "A value which defines the object selection type to be of a player object.",
         "body": "SELECT_OBJECT_PLAYER_OBJECT"
     },
-    "BULLET_HIT_TYPE_NONE": { 
+    "BULLET_HIT_TYPE_NONE": {
         "prefix": "BULLET_HIT_TYPE_NONE",
+        "description": "A value which defines the type of the target that was hit by the shot to be nothing (Used with OnPlayerWeaponShot), (ID 0).",
         "body": "BULLET_HIT_TYPE_NONE"
     },
-    "BULLET_HIT_TYPE_PLAYER": { 
+    "BULLET_HIT_TYPE_PLAYER": {
         "prefix": "BULLET_HIT_TYPE_PLAYER",
+        "description": "A value which defines the type of the target that was hit by the shot to be another player (Used with OnPlayerWeaponShot), (ID 1).",
         "body": "BULLET_HIT_TYPE_PLAYER"
     },
-    "BULLET_HIT_TYPE_VEHICLE": { 
+    "BULLET_HIT_TYPE_VEHICLE": {
         "prefix": "BULLET_HIT_TYPE_VEHICLE",
+        "description": "A value which defines the type of the target that was hit by the shot to be a vehicle (Used with OnPlayerWeaponShot), (ID 2).",
         "body": "BULLET_HIT_TYPE_VEHICLE"
     },
-    "BULLET_HIT_TYPE_OBJECT": { 
+    "BULLET_HIT_TYPE_OBJECT": {
         "prefix": "BULLET_HIT_TYPE_OBJECT",
+        "description": "A value which defines the type of the target that was hit by the shot to be an object (Used with OnPlayerWeaponShot), (ID 3).",
         "body": "BULLET_HIT_TYPE_OBJECT"
     },
-    "BULLET_HIT_TYPE_PLAYER_OBJECT": { 
+    "BULLET_HIT_TYPE_PLAYER_OBJECT": {
         "prefix": "BULLET_HIT_TYPE_PLAYER_OBJECT",
+        "description": "A value which defines the type of the target that was hit by the shot to be a player object (Used with OnPlayerWeaponShot), (ID 4).",
         "body": "BULLET_HIT_TYPE_PLAYER_OBJECT"
     }
 }

@@ -1,22 +1,26 @@
 {
     "#if !defined … #define … #endif": {
         "prefix": "def",
+        "description": "The #define directive allows the definition of macros within your source code. These macro definitions allow constant values to be declared for use throughout your code.",
         "body":
             "#if !defined ${1/([A-Za-z0-9_]+).*/$1/}\n\t#define ${1:SYMBOL} ${2:value}\n#endif$0"
     },
 
     "#include \"…\"": {
         "prefix": "include",
+        "description": "The #include directive tells the preprocessor to insert the contents of another file into the source code at the point where the #include directive is found.",
         "body": "include \"${1:}\"$0"
     },
 
     "#include <…>": {
         "prefix": "include",
+        "description": "The #include directive tells the preprocessor to insert the contents of another file into the source code at the point where the #include directive is found.",
         "body": "include <${1:}>$0"
     },
 
     "ALS Callback": {
         "prefix": "ALS",
+        "description": "Callback hook.",
         "body":
             "public ${2:Function}(${3:Args})\n{\n\t${4}\n\t#if defined ${1:Prefix}_${2:Function}\n\t\treturn ${1:Prefix}_${2:Function}(${3:Args});\n\t#else\n\t\treturn 1;\n\t#endif\n}\n#if defined _ALS_${2:Function}\n\t#undef ${2:Function}\n#else\n\t#define _ALS_${2:Function}\n#endif\n\n#define ${2:Function} ${1:Prefix}_${2:Function}\n#if defined ${1:Prefix}_${2:Function}\n\tforward ${1:Prefix}_${2:Function}(${3:Args});\n#endif$0"
     }
