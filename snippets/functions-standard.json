@@ -366,47 +366,47 @@
     },
     "SetSpawnInfo": {
         "prefix": "SetSpawnInfo",
-        "description": "",
+        "description": "This function can be used to change the spawn information of a specific player. It allows you to automatically set someone's spawn weapons, their team, skin and spawn position, normally used in case of minigames or automatic-spawn systems.",
         "body": "SetSpawnInfo(${1:playerid}, ${2:team}, ${3:skin}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:rotation}, ${8:weapon1}, ${9:weapon1_ammo}, ${10:weapon2}, ${11:weapon2_ammo}, ${12:weapon3}, ${13:weapon3_ammo})$0"
     },
     "SpawnPlayer": {
         "prefix": "SpawnPlayer",
-        "description": "",
+        "description": "(Re)Spawns a player.",
         "body": "SpawnPlayer(${1:playerid})$0"
     },
     "SetPlayerPos": {
         "prefix": "SetPlayerPos",
-        "description": "",
+        "description": "Set a player's position.",
         "body": "SetPlayerPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
     },
     "SetPlayerPosFindZ": {
         "prefix": "SetPlayerPosFindZ",
-        "description": "",
+        "description": "This sets the players position then adjusts the players z-coordinate to the nearest solid ground under the position.",
         "body": "SetPlayerPosFindZ(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
     },
     "GetPlayerPos": {
         "prefix": "GetPlayerPos",
-        "description": "",
+        "description": "Get the position of a player, represented by X, Y and Z coordinates.",
         "body": "GetPlayerPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
     },
     "SetPlayerFacingAngle": {
         "prefix": "SetPlayerFacingAngle",
-        "description": "",
+        "description": "Set a player's facing angle (Z rotation).",
         "body": "SetPlayerFacingAngle(${1:playerid}, ${2:Float:ang})$0"
     },
     "GetPlayerFacingAngle": {
         "prefix": "GetPlayerFacingAngle",
-        "description": "",
+        "description": "Gets the angle a player is facing.",
         "body": "GetPlayerFacingAngle(${1:playerid}, ${2:Float:ang})$0"
     },
     "IsPlayerInRangeOfPoint": {
         "prefix": "IsPlayerInRangeOfPoint",
-        "description": "",
+        "description": "Checks if a player is in range of a point.",
         "body": "IsPlayerInRangeOfPoint(${1:playerid}, ${2:Float:range}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})$0"
     },
     "GetPlayerDistanceFromPoint": {
         "prefix": "GetPlayerDistanceFromPoint",
-        "description": "",
+        "description": "Calculate the distance between a player and a map coordinate.",
         "body": "GetPlayerDistanceFromPoint(${1:playerid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
     },
     "IsPlayerStreamedIn": {
@@ -416,637 +416,637 @@
     },
     "SetPlayerInterior": {
         "prefix": "SetPlayerInterior",
-        "description": "",
+        "description": "Checks if a player is streamed in another player's client.",
         "body": "SetPlayerInterior(${1:playerid}, ${2:interiorid})$0"
     },
     "GetPlayerInterior": {
         "prefix": "GetPlayerInterior",
-        "description": "",
+        "description": "Retrieves the player's current interior. ",
         "body": "GetPlayerInterior(${1:playerid})$0"
     },
     "SetPlayerHealth": {
         "prefix": "SetPlayerHealth",
-        "description": "",
+        "description": "Set the health of a player.",
         "body": "SetPlayerHealth(${1:playerid}, ${2:Float:health})$0"
     },
     "GetPlayerHealth": {
         "prefix": "GetPlayerHealth",
-        "description": "",
+        "description": "Get the health of a player.",
         "body": "GetPlayerHealth(${1:playerid}, ${2:Float:health})$0"
     },
     "SetPlayerArmour": {
         "prefix": "SetPlayerArmour",
-        "description": "",
+        "description": "Set a player's armor level.",
         "body": "SetPlayerArmour(${1:playerid}, ${2:Float:armour})$0"
     },
     "GetPlayerArmour": {
         "prefix": "GetPlayerArmour",
-        "description": "",
+        "description": "This function stores the armour of a player into a variable.",
         "body": "GetPlayerArmour(${1:playerid}, ${2:Float:armour})$0"
     },
     "SetPlayerAmmo": {
         "prefix": "SetPlayerAmmo",
-        "description": "",
+        "description": "Set the ammo of a player's weapon.",
         "body": "SetPlayerAmmo(${1:playerid}, ${2:weaponslot}, ${3:ammo})$0"
     },
     "GetPlayerAmmo": {
         "prefix": "GetPlayerAmmo",
-        "description": "",
+        "description": "Gets the amount of ammo in a player's current weapon.",
         "body": "GetPlayerAmmo(${1:playerid})$0"
     },
     "GetPlayerWeaponState": {
         "prefix": "GetPlayerWeaponState",
-        "description": "",
+        "description": "Check the state of a player's weapon.",
         "body": "GetPlayerWeaponState(${1:playerid})$0"
     },
     "GetPlayerTargetPlayer": {
         "prefix": "GetPlayerTargetPlayer",
-        "description": "",
+        "description": "Check who a player is aiming at.",
         "body": "GetPlayerTargetPlayer(${1:playerid})$0"
     },
     "GetPlayerTargetActor": {
         "prefix": "GetPlayerTargetActor",
-        "description": "",
+        "description": "Gets id of an actor which is aimed by certain player.",
         "body": "GetPlayerTargetActor(${1:playerid})$0"
     },
     "SetPlayerTeam": {
         "prefix": "SetPlayerTeam",
-        "description": "",
+        "description": "Set the team of a player.",
         "body": "SetPlayerTeam(${1:playerid}, ${2:teamid})$0"
     },
     "GetPlayerTeam": {
         "prefix": "GetPlayerTeam",
-        "description": "",
+        "description": "Get the ID of the team the player is on.",
         "body": "GetPlayerTeam(${1:playerid})$0"
     },
     "SetPlayerScore": {
         "prefix": "SetPlayerScore",
-        "description": "",
+        "description": "Set a player's score.",
         "body": "SetPlayerScore(${1:playerid}, ${2:score})$0"
     },
     "GetPlayerScore": {
         "prefix": "GetPlayerScore",
-        "description": "",
+        "description": "This function returns a player's score as it was set using SetPlayerScore.",
         "body": "GetPlayerScore(${1:playerid})$0"
     },
     "GetPlayerDrunkLevel": {
         "prefix": "GetPlayerDrunkLevel",
-        "description": "",
+        "description": "Checks the player's level of drunkenness. If the level is less than 2000, the player is sober. The player's level of drunkness goes down slowly automatically (26 levels per second) but will always reach 2000 at the end (in 0.3b it will stop at zero). The higher drunkenness levels affect the player's camera, and the car driving handling. The level of drunkenness increases when the player drinks from a bottle (You can use SetPlayerSpecialAction to give them bottles).",
         "body": "GetPlayerDrunkLevel(${1:playerid})$0"
     },
     "SetPlayerDrunkLevel": {
         "prefix": "SetPlayerDrunkLevel",
-        "description": "",
+        "description": "Sets the drunk level of a player which makes the player's camera sway and vehicles hard to control.",
         "body": "SetPlayerDrunkLevel(${1:playerid}, ${2:level})$0"
     },
     "SetPlayerColor": {
         "prefix": "SetPlayerColor",
-        "description": "",
+        "description": "Set the colour of a player's nametag and marker (radar blip).",
         "body": "SetPlayerColor(${1:playerid}, ${2:color})$0"
     },
     "GetPlayerColor": {
         "prefix": "GetPlayerColor",
-        "description": "",
+        "description": "Gets the color of the player's name and radar marker. Only works after SetPlayerColor.",
         "body": "GetPlayerColor(${1:playerid})$0"
     },
     "SetPlayerSkin": {
         "prefix": "SetPlayerSkin",
-        "description": "",
+        "description": "Set the skin of a player. A player's skin is their character model.",
         "body": "SetPlayerSkin(${1:playerid}, ${2:skinid})$0"
     },
     "GetPlayerSkin": {
         "prefix": "GetPlayerSkin",
-        "description": "",
+        "description": "Get the skin of a player. A player's skin is their character model.",
         "body": "GetPlayerSkin(${1:playerid})$0"
     },
     "GivePlayerWeapon": {
         "prefix": "GivePlayerWeapon",
-        "description": "",
+        "description": "Give a player a weapon with a specified amount of ammo.",
         "body": "GivePlayerWeapon(${1:playerid}, ${2:weaponid}, ${3:ammo})$0"
     },
     "ResetPlayerWeapons": {
         "prefix": "ResetPlayerWeapons",
-        "description": "",
+        "description": "Removes all weapons from a player.",
         "body": "ResetPlayerWeapons(${1:playerid})$0"
     },
     "SetPlayerArmedWeapon": {
         "prefix": "SetPlayerArmedWeapon",
-        "description": "",
+        "description": "Sets which weapon (that a player already has) the player is holding.",
         "body": "SetPlayerArmedWeapon(${1:playerid}, ${2:weaponid})$0"
     },
     "GetPlayerWeaponData": {
         "prefix": "GetPlayerWeaponData",
-        "description": "",
+        "description": "Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in the 'SMG' slot).",
         "body": "GetPlayerWeaponData(${1:playerid}, ${2:slot}, ${3:weapons}, ${4:ammo})$0"
     },
     "GivePlayerMoney": {
         "prefix": "GivePlayerMoney",
-        "description": "",
+        "description": "Give money to or take money from a player.",
         "body": "GivePlayerMoney(${1:playerid}, ${2:money})$0"
     },
     "ResetPlayerMoney": {
         "prefix": "ResetPlayerMoney",
-        "description": "",
+        "description": "Reset a player's money to $0.",
         "body": "ResetPlayerMoney(${1:playerid})$0"
     },
     "SetPlayerName": {
         "prefix": "SetPlayerName",
-        "description": "",
+        "description": "Sets the name of a player.",
         "body": "SetPlayerName(${1:playerid}, ${2:const name[]})$0"
     },
     "GetPlayerMoney": {
         "prefix": "GetPlayerMoney",
-        "description": "",
+        "description": "Retrieves the amount of money a player has.",
         "body": "GetPlayerMoney(${1:playerid})$0"
     },
     "GetPlayerState": {
         "prefix": "GetPlayerState",
-        "description": "",
+        "description": "Get a player's current state.",
         "body": "GetPlayerState(${1:playerid})$0"
     },
     "GetPlayerIp": {
         "prefix": "GetPlayerIp",
-        "description": "",
+        "description": "Get the specified player's IP address and store it in a string.",
         "body": "GetPlayerIp(${1:playerid}, ${2:name[]}, ${3:len})$0"
     },
     "GetPlayerPing": {
         "prefix": "GetPlayerPing",
-        "description": "",
+        "description": "Get the ping of a player. The ping measures the amount of time it takes for the server to 'ping' the client and for the client to send the message back.",
         "body": "GetPlayerPing(${1:playerid})$0"
     },
     "GetPlayerWeapon": {
         "prefix": "GetPlayerWeapon",
-        "description": "",
+        "description": "Returns the ID of the weapon a player is currently holding.",
         "body": "GetPlayerWeapon(${1:playerid})$0"
     },
     "GetPlayerKeys": {
         "prefix": "GetPlayerKeys",
-        "description": "",
+        "description": "Check which keys a player is pressing.",
         "body": "GetPlayerKeys(${1:playerid}, ${2:keys}, ${3:updown}, ${4:leftright})$0"
     },
     "GetPlayerName": {
         "prefix": "GetPlayerName",
-        "description": "",
+        "description": "Get a player's name.",
         "body": "GetPlayerName(${1:playerid}, ${2:const name[]}, ${3:len})$0"
     },
     "SetPlayerTime": {
         "prefix": "SetPlayerTime",
-        "description": "",
+        "description": "Sets the game time for a player. If a player's clock is enabled (TogglePlayerClock) the time displayed by it will update automatically.",
         "body": "SetPlayerTime(${1:playerid}, ${2:hour}, ${3:minute})$0"
     },
     "GetPlayerTime": {
         "prefix": "GetPlayerTime",
-        "description": "",
+        "description": "Get the player's current game time. Set by SetWorldTime, or by the game automatically if TogglePlayerClock is used.",
         "body": "GetPlayerTime(${1:playerid}, ${2:hour}, ${3:minute})$0"
     },
     "TogglePlayerClock": {
         "prefix": "TogglePlayerClock",
-        "description": "",
+        "description": "Toggle the in-game clock (top-right corner) for a specific player. When this is enabled, time will progress at 1 minute per second. Weather will also interpolate (slowly change over time) when set using SetWeather/SetPlayerWeather.",
         "body": "TogglePlayerClock(${1:playerid}, ${2:toggle})$0"
     },
     "SetPlayerWeather": {
         "prefix": "SetPlayerWeather",
-        "description": "",
+        "description": "Set a player's weather.",
         "body": "SetPlayerWeather(${1:playerid}, ${2:weather})$0"
     },
     "ForceClassSelection": {
         "prefix": "ForceClassSelection",
-        "description": "",
+        "description": "Forces a player to go back to class selection.",
         "body": "ForceClassSelection(${1:playerid})$0"
     },
     "SetPlayerWantedLevel": {
         "prefix": "SetPlayerWantedLevel",
-        "description": "",
+        "description": "Set a player's wanted level (6 brown stars under HUD).",
         "body": "SetPlayerWantedLevel(${1:playerid}, ${2:level})$0"
     },
     "GetPlayerWantedLevel": {
         "prefix": "GetPlayerWantedLevel",
-        "description": "",
+        "description": "Gets the wanted level of a player.",
         "body": "GetPlayerWantedLevel(${1:playerid})$0"
     },
     "SetPlayerFightingStyle": {
         "prefix": "SetPlayerFightingStyle",
-        "description": "",
+        "description": "Set a player's special fighting style. To use in-game, aim and press the 'secondary attack' key (ENTER by default).",
         "body": "SetPlayerFightingStyle(${1:playerid}, ${2:style})$0"
     },
     "GetPlayerFightingStyle": {
         "prefix": "GetPlayerFightingStyle",
-        "description": "",
+        "description": "Get the fighting style the player currently using.",
         "body": "GetPlayerFightingStyle(${1:playerid})$0"
     },
     "SetPlayerVelocity": {
         "prefix": "SetPlayerVelocity",
-        "description": "",
+        "description": "Set a player's velocity on the X, Y and Z axes.",
         "body": "SetPlayerVelocity(${1:playerid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
     },
     "GetPlayerVelocity": {
         "prefix": "GetPlayerVelocity",
-        "description": "",
+        "description": "Get the velocity (speed) of a player on the X, Y and Z axes.",
         "body": "GetPlayerVelocity(${1:playerid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z })$0"
     },
     "PlayCrimeReportForPlayer": {
         "prefix": "PlayCrimeReportForPlayer",
-        "description": "",
+        "description": "This function plays a crime report for a player - just like in single-player when CJ commits a crime.",
         "body": "PlayCrimeReportForPlayer(${1:playerid}, ${2:suspectid}, ${3:crime})$0"
     },
     "PlayAudioStreamForPlayer": {
         "prefix": "PlayAudioStreamForPlayer",
-        "description": "",
+        "description": "Play an 'audio stream' for a player. Normal audio files also work (e.g. MP3).",
         "body": "PlayAudioStreamForPlayer(${1:playerid}, ${2:url[]}, ${3:Float:posX = 0.0}, ${4:Float:posY = 0.0}, ${5:Float:posZ = 0.0}, ${6:Float:distance = 50.0}, ${7:usepos = 0})$0"
     },
     "StopAudioStreamForPlayer": {
         "prefix": "StopAudioStreamForPlayer",
-        "description": "",
+        "description": "Stops the current audio stream for a player.",
         "body": "StopAudioStreamForPlayer(${1:playerid})$0"
     },
     "SetPlayerShopName": {
         "prefix": "SetPlayerShopName",
-        "description": "",
+        "description": "Loads or unloads an interior script for a player (for example the ammunation menu).",
         "body": "SetPlayerShopName(${1:playerid}, ${2:shopname[]})$0"
     },
     "SetPlayerSkillLevel": {
         "prefix": "SetPlayerSkillLevel",
-        "description": "",
+        "description": "Set the skill level of a certain weapon type for a player.",
         "body": "SetPlayerSkillLevel(${1:playerid}, ${2:skill}, ${3:level})$0"
     },
     "GetPlayerSurfingVehicleID": {
         "prefix": "GetPlayerSurfingVehicleID",
-        "description": "",
+        "description": "Get the ID of the vehicle that the player is surfing (stuck to the roof of).",
         "body": "GetPlayerSurfingVehicleID(${1:playerid})$0"
     },
     "GetPlayerSurfingObjectID": {
         "prefix": "GetPlayerSurfingObjectID",
-        "description": "",
+        "description": "Returns the ID of the object the player is surfing on.",
         "body": "GetPlayerSurfingObjectID(${1:playerid})$0"
     },
     "RemoveBuildingForPlayer": {
         "prefix": "RemoveBuildingForPlayer",
-        "description": "",
+        "description": "Removes a standard San Andreas model for a single player within a specified range.",
         "body": "RemoveBuildingForPlayer(${1:playerid}, ${2:modelid}, ${3:Float:fX}, ${4:Float:fY}, ${5:Float:fZ}, ${6:Float:fRadius})$0"
     },
     "GetPlayerLastShotVectors": {
         "prefix": "GetPlayerLastShotVectors",
-        "description": "",
+        "description": "Retrieves the start and end (hit) position of the last bullet a player fired.",
         "body": "GetPlayerLastShotVectors(${1:playerid}, ${2:Float:fOriginX}, ${3:Float:fOriginY}, ${4:Float:fOriginZ}, ${5:Float:fHitPosX}, ${6:Float:fHitPosY}, ${7:Float:fHitPosZ})$0"
     },
     "SetPlayerAttachedObject": {
         "prefix": "SetPlayerAttachedObject",
-        "description": "",
+        "description": "Attach an object to a specific bone on a player.",
         "body": "SetPlayerAttachedObject(${1:playerid}, ${2:index}, ${3:modelid}, ${4:bone}, ${5:Float:fOffsetX = 0.0}, ${6:Float:fOffsetY = 0.0}, ${7:Float:fOffsetZ = 0.0}, ${8:Float:fRotX = 0.0}, ${9:Float:fRotY = 0.0}, ${10:Float:fRotZ = 0.0}, ${11:Float:fScaleX = 1.0}, ${12:Float:fScaleY = 1.0}, ${13:Float:fScaleZ = 1.0}, ${14:materialcolor1 = 0}, ${15:materialcolor2 = 0})$0"
     },
     "RemovePlayerAttachedObject": {
         "prefix": "RemovePlayerAttachedObject",
-        "description": "",
+        "description": "Remove an attached object from a player.",
         "body": "RemovePlayerAttachedObject(${1:playerid}, ${2:index})$0"
     },
     "IsPlayerAttachedObjectSlotUsed": {
         "prefix": "IsPlayerAttachedObjectSlotUsed",
-        "description": "",
+        "description": "Check if a player has an object attached in the specified index (slot).",
         "body": "IsPlayerAttachedObjectSlotUsed(${1:playerid}, ${2:index})$0"
     },
     "EditAttachedObject": {
         "prefix": "EditAttachedObject",
-        "description": "",
+        "description": "Enter edition mode for an attached object.",
         "body": "EditAttachedObject(${1:playerid}, ${2:index})$0"
     },
     "CreatePlayerTextDraw": {
         "prefix": "CreatePlayerTextDraw",
-        "description": "",
+        "description": "Creates a textdraw for a single player. This can be used as a way around the global text-draw limit.",
         "body": "CreatePlayerTextDraw(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:text[]})$0"
     },
     "PlayerTextDrawDestroy": {
         "prefix": "PlayerTextDrawDestroy",
-        "description": "",
+        "description": "Destroy a player-textdraw.",
         "body": "PlayerTextDrawDestroy(${1:playerid}, ${2:PlayerText:text})$0"
     },
     "PlayerTextDrawLetterSize": {
         "prefix": "PlayerTextDrawLetterSize",
-        "description": "",
+        "description": "Sets the width and height of the letters in a player-textdraw.",
         "body": "PlayerTextDrawLetterSize(${1:playerid}, ${2:PlayerText:text}, ${3:Float:x}, ${4:Float:y})$0"
     },
     "PlayerTextDrawTextSize": {
         "prefix": "PlayerTextDrawTextSize",
-        "description": "",
+        "description": "Change the size of a player-textdraw (box if PlayerTextDrawUseBox is enabled and/or clickable area for use with PlayerTextDrawSetSelectable).",
         "body": "PlayerTextDrawTextSize(${1:playerid}, ${2:PlayerText:text}, ${3:Float:x}, ${4:Float:y})$0"
     },
     "PlayerTextDrawAlignment": {
         "prefix": "PlayerTextDrawAlignment",
-        "description": "",
+        "description": "Set the text alignment of a player-textdraw.",
         "body": "PlayerTextDrawAlignment(${1:playerid}, ${2:PlayerText:text}, ${3:alignment})$0"
     },
     "PlayerTextDrawColor": {
         "prefix": "PlayerTextDrawColor",
-        "description": "",
+        "description": "Sets the text color of a player-textdraw",
         "body": "PlayerTextDrawColor(${1:playerid}, ${2:PlayerText:text}, ${3:color})$0"
     },
     "PlayerTextDrawUseBox": {
         "prefix": "PlayerTextDrawUseBox",
-        "description": "",
+        "description": "Toggle the box on a player-textdraw.",
         "body": "PlayerTextDrawUseBox(${1:playerid}, ${2:PlayerText:text}, ${3:use})$0"
     },
     "PlayerTextDrawBoxColor": {
         "prefix": "PlayerTextDrawBoxColor",
-        "description": "",
+        "description": "Sets the color of a textdraw's box (PlayerTextDrawUseBox).",
         "body": "PlayerTextDrawBoxColor(${1:playerid}, ${2:PlayerText:text}, ${3:color})$0"
     },
     "PlayerTextDrawSetShadow": {
         "prefix": "PlayerTextDrawSetShadow",
-        "description": "",
+        "description": "Adds a shadow to the bottom-right side of the text in a player-textdraw. The shadow font matches the text font.",
         "body": "PlayerTextDrawSetShadow(${1:playerid}, ${2:PlayerText:text}, ${3:size})$0"
     },
     "PlayerTextDrawSetOutline": {
         "prefix": "PlayerTextDrawSetOutline",
-        "description": "",
+        "description": "Set the outline of a player-textdraw. The outline colour cannot be changed unless PlayerTextDrawBackgroundColor is used.",
         "body": "PlayerTextDrawSetOutline(${1:playerid}, ${2:PlayerText:text}, ${3:size})$0"
     },
     "PlayerTextDrawBackgroundColor": {
         "prefix": "PlayerTextDrawBackgroundColor",
-        "description": "",
+        "description": "Adjust the background color of a player-textdraw.",
         "body": "PlayerTextDrawBackgroundColor(${1:playerid}, ${2:PlayerText:text}, ${3:color})$0"
     },
     "PlayerTextDrawFont": {
         "prefix": "PlayerTextDrawFont",
-        "description": "",
+        "description": "Change the font of a player-textdraw.",
         "body": "PlayerTextDrawFont(${1:playerid}, ${2:PlayerText:text}, ${3:font})$0"
     },
     "PlayerTextDrawSetProportional": {
         "prefix": "PlayerTextDrawSetProportional",
-        "description": "",
+        "description": "Appears to scale text spacing to a proportional ratio. Useful when using PlayerTextDrawLetterSize to ensure the text has even character spacing.",
         "body": "PlayerTextDrawSetProportional(${1:playerid}, ${2:PlayerText:text}, ${3:set})$0"
     },
     "PlayerTextDrawSetSelectable": {
         "prefix": "PlayerTextDrawSetSelectable",
-        "description": "",
+        "description": "Toggles whether a player-textdraw can be selected or not.",
         "body": "PlayerTextDrawSetSelectable(${1:playerid}, ${2:PlayerText:text}, ${3:set})$0"
     },
     "PlayerTextDrawShow": {
         "prefix": "PlayerTextDrawShow",
-        "description": "",
+        "description": "Show a player-textdraw to the player it was created for.",
         "body": "PlayerTextDrawShow(${1:playerid}, ${2:PlayerText:text})$0"
     },
     "PlayerTextDrawHide": {
         "prefix": "PlayerTextDrawHide",
-        "description": "",
+        "description": "Hide a player-textdraw from the player it was created for.",
         "body": "PlayerTextDrawHide(${1:playerid}, ${2:PlayerText:text})$0"
     },
     "PlayerTextDrawSetString": {
         "prefix": "PlayerTextDrawSetString",
-        "description": "",
+        "description": "Change the text of a player-textdraw.",
         "body": "PlayerTextDrawSetString(${1:playerid}, ${2:PlayerText:text}, ${3:string[]})$0"
     },
     "PlayerTextDrawSetPreviewModel": {
         "prefix": "PlayerTextDrawSetPreviewModel",
-        "description": "",
+        "description": "Sets a player textdraw 2D preview sprite of a specified model ID.",
         "body": "PlayerTextDrawSetPreviewModel(${1:playerid}, ${2:PlayerText:text}, ${3:modelindex})$0"
     },
     "PlayerTextDrawSetPreviewRot": {
         "prefix": "PlayerTextDrawSetPreviewRot",
-        "description": "",
+        "description": "Sets the rotation and zoom of a 3D model preview player-textdraw.",
         "body": "PlayerTextDrawSetPreviewRot(${1:playerid}, ${2:PlayerText:text}, ${3:Float:fRotX}, ${4:Float:fRotY}, ${5:Float:fRotZ}, ${6:Float:fZoom = 1.0})$0"
     },
     "PlayerTextDrawSetPreviewVehCol": {
         "prefix": "PlayerTextDrawSetPreviewVehCol",
-        "description": "",
+        "description": "Set the color of a vehicle in a player-textdraw model preview (if a vehicle is shown).",
         "body": "PlayerTextDrawSetPreviewVehCol(${1:playerid}, ${2:PlayerText:text}, ${3:color1}, ${4:color2})$0"
     },
     "SetPVarInt": {
         "prefix": "SetPVarInt",
-        "description": "",
+        "description": "Set an integer player variable.",
         "body": "SetPVarInt(${1:playerid}, ${2:varname[]}, ${3:int_value})$0"
     },
     "GetPVarInt": {
         "prefix": "GetPVarInt",
-        "description": "",
+        "description": "Gets an integer player variable's value.",
         "body": "GetPVarInt(${1:playerid}, ${2:varname[]})$0"
     },
     "SetPVarString": {
         "prefix": "SetPVarString",
-        "description": "",
+        "description": "Saves a string into a player variable.",
         "body": "SetPVarString(${1:playerid}, ${2:varname[]}, ${3:string_value[]})$0"
     },
     "GetPVarString": {
         "prefix": "GetPVarString",
-        "description": "",
+        "description": "Gets a player variable as a string.",
         "body": "GetPVarString(${1:playerid}, ${2:varname[]}, ${3:string_return[]}, ${4:len})$0"
     },
     "SetPVarFloat": {
         "prefix": "SetPVarFloat",
-        "description": "",
+        "description": "Set a float player variable's value.",
         "body": "SetPVarFloat(${1:playerid}, ${2:varname[]}, ${3:Float:float_value})$0"
     },
     "GetPVarFloat": {
         "prefix": "GetPVarFloat",
-        "description": "",
+        "description": "Get a float player variable's value.",
         "body": "GetPVarFloat(${1:playerid}, ${2:varname[]})$0"
     },
     "DeletePVar": {
         "prefix": "DeletePVar",
-        "description": "",
+        "description": "Deletes a previously set player variable.",
         "body": "DeletePVar(${1:playerid}, ${2:varname[]})$0"
     },
     "GetPVarsUpperIndex": {
         "prefix": "GetPVarsUpperIndex",
-        "description": "",
+        "description": "Each PVar (player-variable) has its own unique identification number for lookup, this function returns the highest ID set for a player.",
         "body": "GetPVarsUpperIndex(${1:playerid})$0"
     },
     "GetPVarNameAtIndex": {
         "prefix": "GetPVarNameAtIndex",
-        "description": "",
+        "description": "Retrieve the name of a player's pVar via the index.",
         "body": "GetPVarNameAtIndex(${1:playerid}, ${2:index}, ${3:ret_varname[]}, ${4:ret_len})$0"
     },
     "GetPVarType": {
         "prefix": "GetPVarType",
-        "description": "",
+        "description": "Gets the type (integer, float or string) of a player variable.",
         "body": "GetPVarType(${1:playerid}, ${2:varname[]})$0"
     },
     "SetPlayerChatBubble": {
         "prefix": "SetPlayerChatBubble",
-        "description": "",
+        "description": "Creates a chat bubble above a player's name tag.",
         "body": "SetPlayerChatBubble(${1:playerid}, ${2:text[]}, ${3:color}, ${4:Float:drawdistance}, ${5:expiretime})$0"
     },
     "PutPlayerInVehicle": {
         "prefix": "PutPlayerInVehicle",
-        "description": "",
+        "description": "Puts a player in a vehicle.",
         "body": "PutPlayerInVehicle(${1:playerid}, ${2:vehicleid}, ${3:seatid})$0"
     },
     "GetPlayerVehicleID": {
         "prefix": "GetPlayerVehicleID",
-        "description": "",
+        "description": "This function gets the ID of the vehicle the player is currently in. Note: NOT the model id of the vehicle. See GetVehicleModel for that.",
         "body": "GetPlayerVehicleID(${1:playerid})$0"
     },
     "GetPlayerVehicleSeat": {
         "prefix": "GetPlayerVehicleSeat",
-        "description": "",
+        "description": "Find out which seat a player is in.",
         "body": "GetPlayerVehicleSeat(${1:playerid})$0"
     },
     "RemovePlayerFromVehicle": {
         "prefix": "RemovePlayerFromVehicle",
-        "description": "",
+        "description": "Removes/ejects a player from their vehicle.",
         "body": "RemovePlayerFromVehicle(${1:playerid})$0"
     },
     "TogglePlayerControllable": {
         "prefix": "TogglePlayerControllable",
-        "description": "",
+        "description": "Toggles whether a player can control their character or not. The player will also be unable to move their camera.",
         "body": "TogglePlayerControllable(${1:playerid}, ${2:toggle})$0"
     },
     "PlayerPlaySound": {
         "prefix": "PlayerPlaySound",
-        "description": "",
+        "description": "Plays the specified sound for a player.",
         "body": "PlayerPlaySound(${1:playerid}, ${2:soundid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})$0"
     },
     "ApplyAnimation": {
         "prefix": "ApplyAnimation",
-        "description": "",
+        "description": "Apply an animation to a player.",
         "body": "ApplyAnimation(${1:playerid}, ${2:animlib[]}, ${3:animname[]}, ${4:Float:fDelta}, ${5:loop}, ${6:lockx}, ${7:locky}, ${8:freeze}, ${9:time}, ${10:forcesync = 0})$0"
     },
     "ClearAnimations": {
         "prefix": "ClearAnimations",
-        "description": "",
+        "description": "Clears all animations for the given player (it also cancels all current tasks such as jetpacking,parachuting,entering vehicles, driving (removes player out of vehicle), swimming, etc.. ).",
         "body": "ClearAnimations(${1:playerid}, ${2:forcesync = 0})$0"
     },
     "GetPlayerAnimationIndex": {
         "prefix": "GetPlayerAnimationIndex",
-        "description": "",
+        "description": "Returns the index of any running applied animations.",
         "body": "GetPlayerAnimationIndex(${1:playerid})$0"
     },
     "GetAnimationName": {
         "prefix": "GetAnimationName",
-        "description": "",
+        "description": "Get the animation library/name for the index.",
         "body": "GetAnimationName(${1:index}, ${2:animlib[]}, ${3:len1}, ${4:animname[]}, ${5:len2})$0"
     },
     "GetPlayerSpecialAction": {
         "prefix": "GetPlayerSpecialAction",
-        "description": "",
+        "description": "Retrieves a player's current special action.",
         "body": "GetPlayerSpecialAction(${1:playerid})$0"
     },
     "SetPlayerSpecialAction": {
         "prefix": "SetPlayerSpecialAction",
-        "description": "",
+        "description": "This function allows to set players special action.",
         "body": "SetPlayerSpecialAction(${1:playerid}, ${2:actionid})$0"
     },
     "DisableRemoteVehicleCollisions": {
         "prefix": "DisableRemoteVehicleCollisions",
-        "description": "",
+        "description": "Disables collisions between occupied vehicles for a player.",
         "body": "DisableRemoteVehicleCollisions(${1:playerid}, ${2:disable})$0"
     },
     "SetPlayerCheckpoint": {
         "prefix": "SetPlayerCheckpoint",
-        "description": "",
+        "description": "Sets a checkpoint (red cylinder) for a player. Also shows a red blip on the radar. When players enter a checkpoint, OnPlayerEnterCheckpoint is called and actions can be performed.",
         "body": "SetPlayerCheckpoint(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:size})$0"
     },
     "DisablePlayerCheckpoint": {
         "prefix": "DisablePlayerCheckpoint",
-        "description": "",
+        "description": "Disables (hides/destroys) a player's set checkpoint. Players can only have a single checkpoint set at a time. Checkpoints don't need to be disabled before setting another one.",
         "body": "DisablePlayerCheckpoint(${1:playerid})$0"
     },
     "SetPlayerRaceCheckpoint": {
         "prefix": "SetPlayerRaceCheckpoint",
-        "description": "",
+        "description": "Creates a race checkpoint. When the player enters it, the OnPlayerEnterRaceCheckpoint callback is called.",
         "body": "SetPlayerRaceCheckpoint(${1:playerid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:nextx}, ${7:Float:nexty}, ${8:Float:nextz}, ${9:Float:size})$0"
     },
     "DisablePlayerRaceCheckpoint": {
         "prefix": "DisablePlayerRaceCheckpoint",
-        "description": "",
+        "description": "Disable any initialized race checkpoints for a specific player, since you can only have one at any given time.",
         "body": "DisablePlayerRaceCheckpoint(${1:playerid})$0"
     },
     "SetPlayerWorldBounds": {
         "prefix": "SetPlayerWorldBounds",
-        "description": "",
+        "description": "Set the world boundaries for a player. Players can not go out of the boundaries (they will be pushed back in).",
         "body": "SetPlayerWorldBounds(${1:playerid}, ${2:Float:x_max}, ${3:Float:x_min}, ${4:Float:y_max}, ${5:Float:y_min})$0"
     },
     "SetPlayerMarkerForPlayer": {
         "prefix": "SetPlayerMarkerForPlayer",
-        "description": "",
+        "description": "Change the colour of a player's nametag and radar blip for another player.",
         "body": "SetPlayerMarkerForPlayer(${1:playerid}, ${2:showplayerid}, ${3:color})$0"
     },
     "ShowPlayerNameTagForPlayer": {
         "prefix": "ShowPlayerNameTagForPlayer",
-        "description": "",
+        "description": "This functions allows you to toggle the drawing of player nametags, healthbars and armor bars which display above their head. For use of a similar function like this on a global level, ShowNameTags function.",
         "body": "ShowPlayerNameTagForPlayer(${1:playerid}, ${2:showplayerid}, ${3:show})$0"
     },
     "SetPlayerMapIcon": {
         "prefix": "SetPlayerMapIcon",
-        "description": "",
+        "description": "Place an icon/marker on a player's map. Can be used to mark locations such as banks and hospitals to players.",
         "body": "SetPlayerMapIcon(${1:playerid}, ${2:iconid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:markertype}, ${7:color}, ${8:style = MAPICON_LOCAL})$0"
     },
     "RemovePlayerMapIcon": {
         "prefix": "RemovePlayerMapIcon",
-        "description": "",
+        "description": "Removes a map icon that was set earlier for a player using SetPlayerMapIcon.",
         "body": "RemovePlayerMapIcon(${1:playerid}, ${2:iconid})$0"
     },
     "AllowPlayerTeleport": {
         "prefix": "AllowPlayerTeleport",
-        "description": "",
+        "description": "Enable/Disable the teleporting ability for a player by right-clicking on the map",
         "body": "AllowPlayerTeleport(${1:playerid}, ${2:allow})$0"
     },
     "SetPlayerCameraPos": {
         "prefix": "SetPlayerCameraPos",
-        "description": "",
+        "description": "Sets the camera to a specific position for a player.",
         "body": "SetPlayerCameraPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
     },
     "SetPlayerCameraLookAt": {
         "prefix": "SetPlayerCameraLookAt",
-        "description": "",
-        "body": "SetPlayerCameraLookAt(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:cut = CAMERA_CUT})$0"
+        "description": "Set the direction a player's camera looks at. Generally meant to be used in combination with SetPlayerCameraPos.",
+        "body": "SetPlayerCameraLookAt(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5|CAMERA_CUT,CAMERA_MOVE|})$0"
     },
     "SetCameraBehindPlayer": {
         "prefix": "SetCameraBehindPlayer",
-        "description": "",
+        "description": "Restore the camera to a place behind the player, after using a function like SetPlayerCameraPos.",
         "body": "SetCameraBehindPlayer(${1:playerid})$0"
     },
     "GetPlayerCameraPos": {
         "prefix": "GetPlayerCameraPos",
-        "description": "",
+        "description": "Get the position of the player's camera.",
         "body": "GetPlayerCameraPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
     },
     "GetPlayerCameraFrontVector": {
         "prefix": "GetPlayerCameraFrontVector",
-        "description": "",
+        "description": "This function will return the current direction of player's aiming in 3-D space, the coords are relative to the camera position, see GetPlayerCameraPos.",
         "body": "GetPlayerCameraFrontVector(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
     },
     "GetPlayerCameraMode": {
         "prefix": "GetPlayerCameraMode",
-        "description": "",
+        "description": "Returns the current GTA camera mode for the requested player. The camera modes are useful in determining whether a player is aiming, doing a passenger driveby etc.",
         "body": "GetPlayerCameraMode(${1:playerid})$0"
     },
     "EnablePlayerCameraTarget": {
         "prefix": "EnablePlayerCameraTarget",
-        "description": "",
+        "description": "Toggle camera targeting functions for a player. Disabled by default to save bandwidth.",
         "body": "EnablePlayerCameraTarget(${1:playerid}, ${2:enable})$0"
     },
     "GetPlayerCameraTargetObject": {
         "prefix": "GetPlayerCameraTargetObject",
-        "description": "",
+        "description": "Allows you to retrieve the ID of the object the player is looking at.",
         "body": "GetPlayerCameraTargetObject(${1:playerid})$0"
     },
     "GetPlayerCameraTargetVehicle": {
         "prefix": "GetPlayerCameraTargetVehicle",
-        "description": "",
+        "description": "Get the ID of the vehicle the player is looking at.",
         "body": "GetPlayerCameraTargetVehicle(${1:playerid})$0"
     },
     "GetPlayerCameraTargetPlayer": {
         "prefix": "GetPlayerCameraTargetPlayer",
-        "description": "",
+        "description": "Allows you to retrieve the ID of the player the playerid is looking at.",
         "body": "GetPlayerCameraTargetPlayer(${1:playerid})$0"
     },
     "GetPlayerCameraTargetActor": {
         "prefix": "GetPlayerCameraTargetActor",
-        "description": "",
+        "description": "Allows you to retrieve the ID of the actor the player is looking at (in any).",
         "body": "GetPlayerCameraTargetActor(${1:playerid})$0"
     },
     "GetPlayerCameraAspectRatio": {
         "prefix": "GetPlayerCameraAspectRatio",
-        "description": "",
+        "description": "Retrieves the aspect ratio of a player's camera.",
         "body": "GetPlayerCameraAspectRatio(${1:playerid})$0"
     },
     "GetPlayerCameraZoom": {
         "prefix": "GetPlayerCameraZoom",
-        "description": "",
+        "description": "Retrieves the game camera zoom level for a given player.",
         "body": "GetPlayerCameraZoom(${1:playerid})$0"
     },
     "AttachCameraToObject": {
         "prefix": "AttachCameraToObject",
-        "description": "",
+        "description": "You can use this function to attach the player camera to objects.",
         "body": "AttachCameraToObject(${1:playerid}, ${2:objectid})$0"
     },
     "AttachCameraToPlayerObject": {
@@ -1056,157 +1056,157 @@
     },
     "InterpolateCameraPos": {
         "prefix": "InterpolateCameraPos",
-        "description": "",
+        "description": "Attaches a player's camera to a player-object. The player is able to move their camera while it is attached to an object. Can be used with MovePlayerObject and AttachPlayerObjectToVehicle.",
         "body": "InterpolateCameraPos(${1:playerid}, ${2:Float:FromX}, ${3:Float:FromY}, ${4:Float:FromZ}, ${5:Float:ToX}, ${6:Float:ToY}, ${7:Float:ToZ}, ${8:time}, ${9:cut = CAMERA_CUT})$0"
     },
     "InterpolateCameraLookAt": {
         "prefix": "InterpolateCameraLookAt",
-        "description": "",
+        "description": "Interpolate a player's camera's 'look at' point between two coordinates with a set speed. Can be be used with InterpolateCameraPos.",
         "body": "InterpolateCameraLookAt(${1:playerid}, ${2:Float:FromX}, ${3:Float:FromY}, ${4:Float:FromZ}, ${5:Float:ToX}, ${6:Float:ToY}, ${7:Float:ToZ}, ${8:time}, ${9:cut = CAMERA_CUT})$0"
     },
     "IsPlayerConnected": {
         "prefix": "IsPlayerConnected",
-        "description": "",
+        "description": "Checks if a player is connected (if an ID is taken by a connected player).",
         "body": "IsPlayerConnected(${1:playerid})$0"
     },
     "IsPlayerInVehicle": {
         "prefix": "IsPlayerInVehicle",
-        "description": "",
+        "description": "Checks if a player is in a specific vehicle.",
         "body": "IsPlayerInVehicle(${1:playerid}, ${2:vehicleid})$0"
     },
     "IsPlayerInAnyVehicle": {
         "prefix": "IsPlayerInAnyVehicle",
-        "description": "",
+        "description": "Check if a player is inside any vehicle (as a driver or passenger).",
         "body": "IsPlayerInAnyVehicle(${1:playerid})$0"
     },
     "IsPlayerInCheckpoint": {
         "prefix": "IsPlayerInCheckpoint",
-        "description": "",
+        "description": "Check if the player is currently inside a checkpoint, this could be used for properties or teleport points for example.",
         "body": "IsPlayerInCheckpoint(${1:playerid})$0"
     },
     "IsPlayerInRaceCheckpoint": {
         "prefix": "IsPlayerInRaceCheckpoint",
-        "description": "",
+        "description": "Check if the player is inside their current set race checkpoint (SetPlayerRaceCheckpoint).",
         "body": "IsPlayerInRaceCheckpoint(${1:playerid})$0"
     },
     "SetPlayerVirtualWorld": {
         "prefix": "SetPlayerVirtualWorld",
-        "description": "",
+        "description": "Set the virtual world of a player. They can only see other players or vehicles that are in that same world.",
         "body": "SetPlayerVirtualWorld(${1:playerid}, ${2:worldid})$0"
     },
     "GetPlayerVirtualWorld": {
         "prefix": "GetPlayerVirtualWorld",
-        "description": "",
+        "description": "Retrieves the current virtual world the player is in.",
         "body": "GetPlayerVirtualWorld(${1:playerid})$0"
     },
     "EnableStuntBonusForPlayer": {
         "prefix": "EnableStuntBonusForPlayer",
-        "description": "",
+        "description": "Toggle stunt bonuses for a player. Enabled by default.",
         "body": "EnableStuntBonusForPlayer(${1:playerid}, ${2:enable})$0"
     },
     "EnableStuntBonusForAll": {
         "prefix": "EnableStuntBonusForAll",
-        "description": "",
+        "description": "Enables or disables stunt bonuses for all players. If enabled, players will receive monetary rewards when performing a stunt in a vehicle (e.g. a wheelie).",
         "body": "EnableStuntBonusForAll(${1:enable})$0"
     },
     "TogglePlayerSpectating": {
         "prefix": "TogglePlayerSpectating",
-        "description": "",
+        "description": "Toggle whether a player is in spectator mode or not. While in spectator mode a player can spectate (watch) other players and vehicles. After using this function, either PlayerSpectatePlayer or PlayerSpectateVehicle needs to be used.",
         "body": "TogglePlayerSpectating(${1:playerid}, ${2:toggle})$0"
     },
     "PlayerSpectatePlayer": {
         "prefix": "PlayerSpectatePlayer",
-        "description": "",
+        "description": "Makes a player spectate (watch) another player.",
         "body": "PlayerSpectatePlayer(${1:playerid}, ${2:targetplayerid}, ${3:mode = SPECTATE_MODE_NORMAL})$0"
     },
     "PlayerSpectateVehicle": {
         "prefix": "PlayerSpectateVehicle",
-        "description": "",
+        "description": "Sets a player to spectate another vehicle. Their camera will be attached to the vehicle as if they are driving it.",
         "body": "PlayerSpectateVehicle(${1:playerid}, ${2:targetvehicleid}, ${3:mode = SPECTATE_MODE_NORMAL})$0"
     },
     "StartRecordingPlayerData": {
         "prefix": "StartRecordingPlayerData",
-        "description": "",
+        "description": "Starts recording a player's movements to a file, which can then be reproduced by an NPC.",
         "body": "StartRecordingPlayerData(${1:playerid}, ${2:recordtype}, ${3:recordname[]})$0"
     },
     "StopRecordingPlayerData": {
         "prefix": "StopRecordingPlayerData",
-        "description": "",
+        "description": "Stops all the recordings that had been started with StartRecordingPlayerData for a specific player.",
         "body": "StopRecordingPlayerData(${1:playerid})$0"
     },
     "SelectTextDraw": {
         "prefix": "SelectTextDraw",
-        "description": "",
+        "description": "Display the cursor and allow the player to select a textdraw",
         "body": "SelectTextDraw(${1:playerid}, ${2:hovercolor})$0"
     },
     "CancelSelectTextDraw": {
         "prefix": "CancelSelectTextDraw",
-        "description": "",
+        "description": "Cancel textdraw selection with the mouse",
         "body": "CancelSelectTextDraw(${1:playerid})$0"
     },
     "CreateExplosionForPlayer": {
         "prefix": "CreateExplosionForPlayer",
-        "description": "",
+        "description": "Creates an explosion that is only visible to a single player. This can be used to isolate explosions from other players or to make them only appear in specific virtual worlds.",
         "body": "CreateExplosionForPlayer(${1:playerid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z}, ${5:type}, ${6:Float:Radius})$0"
     },
     "print": {
         "prefix": "print",
-        "description": "",
+        "description": "Prints a string to the server console (not in-game chat) and logs (server_log.txt).",
         "body": "print(${1:const string[]})$0"
     },
     "printf": {
         "prefix": "printf",
-        "description": "",
+        "description": "Outputs a formatted string on the console (the server window, not the in-game chat).",
         "body": "printf(${1:const format[]}, ${2:...})$0"
     },
     "format": {
         "prefix": "format",
-        "description": "",
+        "description": "Formats a string to include variables and other strings inside it.",
         "body": "format(${1:output[]}, ${2:len}, ${3:const format[]}, ${4:...})$0"
     },
     "SendClientMessage": {
         "prefix": "SendClientMessage",
-        "description": "",
+        "description": "This function sends a message to a specific player with a chosen color in the chat. The whole line in the chatbox will be in the set color unless color embedding is used (0.3c or later).",
         "body": "SendClientMessage(${1:playerid}, ${2:color}, ${3:const message[]})$0"
     },
     "SendClientMessageToAll": {
         "prefix": "SendClientMessageToAll",
-        "description": "",
+        "description": "Displays a message in chat to all players. This is a multi-player equivalent of SendClientMessage.",
         "body": "SendClientMessageToAll(${1:color}, ${2:const message[]})$0"
     },
     "SendPlayerMessageToPlayer": {
         "prefix": "SendPlayerMessageToPlayer",
-        "description": "",
+        "description": "Sends a message in the name of a player to another player on the server. The message will appear in the chat box but can only be seen by the user specified with 'playerid'. The line will start with the sender's name in their color, followed by the message in white.",
         "body": "SendPlayerMessageToPlayer(${1:playerid}, ${2:senderid}, ${3:const message[]})$0"
     },
     "SendPlayerMessageToAll": {
         "prefix": "SendPlayerMessageToAll",
-        "description": "",
+        "description": "Sends a message in the name of a player to all other players on the server. The line will start with the sender's name in their color, followed by the message in white.",
         "body": "SendPlayerMessageToAll(${1:senderid}, ${2:const message[]})$0"
     },
     "SendDeathMessage": {
         "prefix": "SendDeathMessage",
-        "description": "",
+        "description": "Adds a death to the 'killfeed' on the right-hand side of the screen for all players.",
         "body": "SendDeathMessage(${1:killer}, ${2:killee}, ${3:weapon})$0"
     },
     "SendDeathMessageToPlayer": {
         "prefix": "SendDeathMessageToPlayer",
-        "description": "",
+        "description": "Adds a death to the 'killfeed' on the right-hand side of the screen for a single player.",
         "body": "SendDeathMessageToPlayer(${1:playerid}, ${2:killer}, ${3:killee}, ${4:weapon})$0"
     },
     "GameTextForAll": {
         "prefix": "GameTextForAll",
-        "description": "",
+        "description": "Shows 'game text' (on-screen text) for a certain length of time for all players.",
         "body": "GameTextForAll(${1:const string[]}, ${2:time}, ${3:style})$0"
     },
     "GameTextForPlayer": {
         "prefix": "GameTextForPlayer",
-        "description": "",
+        "description": "Shows 'game text' (on-screen text) for a certain length of time for a specific player.",
         "body": "GameTextForPlayer(${1:playerid}, ${2:const string[]}, ${3:time}, ${4:style})$0"
     },
     "SetTimer": {
         "prefix": "SetTimer",
-        "description": "",
+        "description": "Sets a 'timer' to call a function after some time. Can be set to repeat.",
         "body": "SetTimer(${1:funcname[]}, ${2:interval}, ${3:repeating})$0"
     },
     "SetTimerEx": {
@@ -1216,242 +1216,242 @@
     },
     "KillTimer": {
         "prefix": "KillTimer",
-        "description": "",
+        "description": "Sets a timer to call a function after the specified interval. This variant ('Ex') can pass parameters (such as a player ID) to the function.",
         "body": "KillTimer(${1:timerid})$0"
     },
     "GetTickCount": {
         "prefix": "GetTickCount",
-        "description": "",
+        "description": "Returns the uptime of the actual server (not the SA-MP server) in milliseconds.",
         "body": "GetTickCount()$0"
     },
     "GetMaxPlayers": {
         "prefix": "GetMaxPlayers",
-        "description": "",
+        "description": "Returns the maximum number of players that can join the server, as set by the server variable 'maxplayers' in server.cfg.",
         "body": "GetMaxPlayers()$0"
     },
     "CallRemoteFunction": {
         "prefix": "CallRemoteFunction",
-        "description": "",
+        "description": "Calls a public function in any script that is loaded.",
         "body": "CallRemoteFunction(${1:const function[]}, ${2:const format[]}, ${3:...})$0"
     },
     "CallLocalFunction": {
         "prefix": "CallLocalFunction",
-        "description": "",
+        "description": "Calls a public function from the script in which it is used.",
         "body": "CallLocalFunction(${1:const function[]}, ${2:const format[]}, ${3:...})$0"
     },
     "VectorSize": {
         "prefix": "VectorSize",
-        "description": "",
+        "description": "Returns the norm (length) of the provided vector.",
         "body": "VectorSize(${1:Float:x}, ${2:Float:y}, ${3:Float:z})$0"
     },
     "asin": {
         "prefix": "asin",
-        "description": "",
+        "description": "Returns the arcsine (in radians) of a number.",
         "body": "asin(${1:Float:value})$0"
     },
     "acos": {
         "prefix": "acos",
-        "description": "",
+        "description": "Returns the arccos (in radians) of a number.",
         "body": "acos(${1:Float:value})$0"
     },
     "atan": {
         "prefix": "atan",
-        "description": "",
+        "description": "Get the inversed value of an arc tangent in radians.",
         "body": "atan(${1:Float:value})$0"
     },
     "atan2": {
         "prefix": "atan2",
-        "description": "",
+        "description": "Get the inversed value of an arc tangent in radians.",
         "body": "atan2(${1:Float:x}, ${2:Float:y})$0"
     },
     "GetPlayerPoolSize": {
         "prefix": "GetPlayerPoolSize",
-        "description": "",
+        "description": "Gets the highest playerid currently in use on the server.",
         "body": "GetPlayerPoolSize()$0"
     },
     "GetVehiclePoolSize": {
         "prefix": "GetVehiclePoolSize",
-        "description": "",
+        "description": "Gets the highest vehicleid currently in use on the server.",
         "body": "GetVehiclePoolSize()$0"
     },
     "GetActorPoolSize": {
         "prefix": "GetActorPoolSize",
-        "description": "",
+        "description": "Gets the highest actorid created on the server.",
         "body": "GetActorPoolSize()$0"
     },
     "SHA256_PassHash": {
         "prefix": "SHA256_PassHash",
-        "description": "",
+        "description": "Hashes a password using the SHA-256 hashing algorithm. Includes a salt. The output is always 256 bytes in length, or the equivalent of 64 Pawn cells.",
         "body": "SHA256_PassHash(${1:password[]}, ${2:salt[]}, ${3:ret_hash[]}, ${4:ret_hash_len})$0"
     },
     "SetSVarInt": {
         "prefix": "SetSVarInt",
-        "description": "",
+        "description": "Set an integer server variable.",
         "body": "SetSVarInt(${1:varname[]}, ${2:int_value})$0"
     },
     "GetSVarInt": {
         "prefix": "GetSVarInt",
-        "description": "",
+        "description": "Gets an integer server variable's value.",
         "body": "GetSVarInt(${1:varname[]})$0"
     },
     "SetSVarString": {
         "prefix": "SetSVarString",
-        "description": "",
+        "description": "Set a string server variable.",
         "body": "SetSVarString(${1:varname[]}, ${2:string_value[]})$0"
     },
     "GetSVarString": {
         "prefix": "GetSVarString",
-        "description": "",
+        "description": "Gets a string server variable's value.",
         "body": "GetSVarString(${1:varname[]}, ${2:string_return[]}, ${3:len})$0"
     },
     "SetSVarFloat": {
         "prefix": "SetSVarFloat",
-        "description": "",
+        "description": "Set a float server variable.",
         "body": "SetSVarFloat(${1:varname[]}, ${2:Float:float_value})$0"
     },
     "GetSVarFloat": {
         "prefix": "GetSVarFloat",
-        "description": "",
+        "description": "Gets a float server variable's value.",
         "body": "GetSVarFloat(${1:varname[]})$0"
     },
     "DeleteSVar": {
         "prefix": "DeleteSVar",
-        "description": "",
+        "description": "Deletes a previously set server variable.",
         "body": "DeleteSVar(${1:varname[]})$0"
     },
     "GetSVarsUpperIndex": {
         "prefix": "GetSVarsUpperIndex",
-        "description": "",
+        "description": "Each SVar (server-variable) has its own unique identification number for lookup, this function returns the highest ID.",
         "body": "GetSVarsUpperIndex()$0"
     },
     "GetSVarNameAtIndex": {
         "prefix": "GetSVarNameAtIndex",
-        "description": "",
+        "description": "Retrieve the name of a sVar via the index.",
         "body": "GetSVarNameAtIndex(${1:index}, ${2:ret_varname[]}, ${3:ret_len})$0"
     },
     "GetSVarType": {
         "prefix": "GetSVarType",
-        "description": "",
+        "description": "Gets the type (integer, float or string) of a server variable.",
         "body": "GetSVarType(${1:varname[]})$0"
     },
     "SetGameModeText": {
         "prefix": "SetGameModeText",
-        "description": "",
+        "description": "Set the name of the game mode, which appears in the server browser.",
         "body": "SetGameModeText(${1:const string[]})$0"
     },
     "SetTeamCount": {
         "prefix": "SetTeamCount",
-        "description": "",
+        "description": "This function is used to change the amount of teams used in the gamemode. It has no obvious way of being used, but can help to indicate the number of teams used for better (more effective) internal handling. This function should only be used in the OnGameModeInit callback. Important: You can pass 2 billion here if you like, this function has no effect at all.",
         "body": "SetTeamCount(${1:count})$0"
     },
     "AddPlayerClass": {
         "prefix": "AddPlayerClass",
-        "description": "",
+        "description": "Adds a class to class selection. Classes are used so players may spawn with a skin of their choice.",
         "body": "AddPlayerClass(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:z_angle}, ${6:weapon1}, ${7:weapon1_ammo}, ${8:weapon2}, ${9:weapon2_ammo}, ${10:weapon3}, ${11:weapon3_ammo})$0"
     },
     "AddPlayerClassEx": {
         "prefix": "AddPlayerClassEx",
-        "description": "",
+        "description": "This function is exactly the same as the AddPlayerClass function, with the addition of a team parameter.",
         "body": "AddPlayerClassEx(${1:teamid}, ${2:modelid}, ${3:Float:spawn_x}, ${4:Float:spawn_y}, ${5:Float:spawn_z}, ${6:Float:z_angle}, ${7:weapon1}, ${8:weapon1_ammo}, ${9:weapon2}, ${10:weapon2_ammo}, ${11:weapon3}, ${12:weapon3_ammo})$0"
     },
     "AddStaticVehicle": {
         "prefix": "AddStaticVehicle",
-        "description": "",
+        "description": "Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.",
         "body": "AddStaticVehicle(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:z_angle}, ${6:color1}, ${7:color2})$0"
     },
     "AddStaticVehicleEx": {
         "prefix": "AddStaticVehicleEx",
-        "description": "",
+        "description": "Adds a 'static' vehicle (models are pre-loaded for players)to the gamemode. Differs from AddStaticVehicle in only one way: allows a respawn time to be set for when the vehicle is left unoccupied by the driver.",
         "body": "AddStaticVehicleEx(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:z_angle}, ${6:color1}, ${7:color2}, ${8:respawn_delay}, ${9:addsiren=0})$0"
     },
     "AddStaticPickup": {
         "prefix": "AddStaticPickup",
-        "description": "",
+        "description": "This function adds a 'static' pickup to the game. These pickups support weapons, health, armor etc., with the ability to function without scripting them (weapons/health/armor will be given automatically).",
         "body": "AddStaticPickup(${1:model}, ${2:type}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:virtualworld = 0})$0"
     },
     "CreatePickup": {
         "prefix": "CreatePickup",
-        "description": "",
+        "description": "This function does exactly the same as AddStaticPickup, except it returns a pickup ID which can be used to destroy it afterwards and be tracked using OnPlayerPickUpPickup.",
         "body": "CreatePickup(${1:model}, ${2:type}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:virtualworld = 0})$0"
     },
     "DestroyPickup": {
         "prefix": "DestroyPickup",
-        "description": "",
+        "description": "Destroys a pickup created with CreatePickup.",
         "body": "DestroyPickup(${1:pickup})$0"
     },
     "ShowNameTags": {
         "prefix": "ShowNameTags",
-        "description": "",
+        "description": "Toggle the drawing of nametags, health bars and armor bars above players.",
         "body": "ShowNameTags(${1:show})$0"
     },
     "ShowPlayerMarkers": {
         "prefix": "ShowPlayerMarkers",
-        "description": "",
+        "description": "Toggles player markers (blips on the radar). Must be used when the server starts (OnGameModeInit). For other times, see SetPlayerMarkerForPlayer.",
         "body": "ShowPlayerMarkers(${1:mode})$0"
     },
     "GameModeExit": {
         "prefix": "GameModeExit",
-        "description": "",
+        "description": "Ends the current gamemode.",
         "body": "GameModeExit()$0"
     },
     "SetWorldTime": {
         "prefix": "SetWorldTime",
-        "description": "",
+        "description": "Sets the world time (for all players) to a specific hour.",
         "body": "SetWorldTime(${1:hour})$0"
     },
     "GetWeaponName": {
         "prefix": "GetWeaponName",
-        "description": "",
+        "description": "Get the name of a weapon.",
         "body": "GetWeaponName(${1:weaponid}, ${2:const weapon[]}, ${3:len})$0"
     },
     "EnableTirePopping": {
         "prefix": "EnableTirePopping",
-        "description": "",
+        "description": "With this function you can enable or disable tire popping.",
         "body": "EnableTirePopping(${1:enable})$0"
     },
     "EnableVehicleFriendlyFire": {
         "prefix": "EnableVehicleFriendlyFire",
-        "description": "",
+        "description": "Enable friendly fire for team vehicles. Players will be unable to damage teammates' vehicles (SetPlayerTeam must be used!).",
         "body": "EnableVehicleFriendlyFire()$0"
     },
     "AllowInteriorWeapons": {
         "prefix": "AllowInteriorWeapons",
-        "description": "",
+        "description": "Toggle whether the usage of weapons in interiors is allowed or not.",
         "body": "AllowInteriorWeapons(${1:allow})$0"
     },
     "SetWeather": {
         "prefix": "SetWeather",
-        "description": "",
+        "description": "Set the world weather for all players.",
         "body": "SetWeather(${1:weatherid})$0"
     },
     "SetGravity": {
         "prefix": "SetGravity",
-        "description": "",
+        "description": "Set the gravity for all players.",
         "body": "SetGravity(${1:Float:gravity})$0"
     },
     "AllowAdminTeleport": {
         "prefix": "AllowAdminTeleport",
-        "description": "",
+        "description": "This function will determine whether RCON admins will be teleported to their waypoint when they set one.",
         "body": "AllowAdminTeleport(${1:allow})$0"
     },
     "SetDeathDropAmount": {
         "prefix": "SetDeathDropAmount",
-        "description": "",
+        "description": "Warning: This function does not work in the current SA:MP version!",
         "body": "SetDeathDropAmount(${1:amount})$0"
     },
     "CreateExplosion": {
         "prefix": "CreateExplosion",
-        "description": "",
+        "description": "Create an explosion at the specified coordinates.",
         "body": "CreateExplosion(${1:Float:X}, ${2:Float:Y}, ${3:Float:Z}, ${4:type}, ${5:Float:Radius})$0"
     },
     "EnableZoneNames": {
         "prefix": "EnableZoneNames",
-        "description": "",
+        "description": "This function allows to turn on zone / area names such as the 'Vinewood' or 'Doherty' text at the bottom-right of the screen as they enter the area. This is a gamemode option and should be set in the callback OnGameModeInit.",
         "body": "EnableZoneNames(${1:enable})$0"
     },
     "UsePlayerPedAnims": {
         "prefix": "UsePlayerPedAnims",
-        "description": "",
+        "description": "Uses standard player walking animation (animation of the CJ skin) instead of custom animations for every skin (e.g. skating for skater skins).",
         "body": "UsePlayerPedAnims()$0"
     },
     "DisableInteriorEnterExits": {
@@ -1461,297 +1461,297 @@
     },
     "SetNameTagDrawDistance": {
         "prefix": "SetNameTagDrawDistance",
-        "description": "",
+        "description": "Disable all the interior entrances and exits in the game (the yellow arrows at doors).",
         "body": "SetNameTagDrawDistance(${1:Float:distance})$0"
     },
     "DisableNameTagLOS": {
         "prefix": "DisableNameTagLOS",
-        "description": "",
+        "description": "Disables the nametag Line-Of-Sight checking so that players can see nametags through objects.",
         "body": "DisableNameTagLOS()$0"
     },
     "LimitGlobalChatRadius": {
         "prefix": "LimitGlobalChatRadius",
-        "description": "",
+        "description": "Set a radius limitation for the chat. Only players at a certain distance from the player will see their message in the chat. Also changes the distance at which a player can see other players on the map at the same distance.",
         "body": "LimitGlobalChatRadius(${1:Float:chat_radius})$0"
     },
     "LimitPlayerMarkerRadius": {
         "prefix": "LimitPlayerMarkerRadius",
-        "description": "",
+        "description": "Set the player marker radius.",
         "body": "LimitPlayerMarkerRadius(${1:Float:marker_radius})$0"
     },
     "ConnectNPC": {
         "prefix": "ConnectNPC",
-        "description": "",
+        "description": "Connect an NPC to the server.",
         "body": "ConnectNPC(${1:name[]}, ${2:script[]})$0"
     },
     "IsPlayerNPC": {
         "prefix": "IsPlayerNPC",
-        "description": "",
+        "description": "Check if a player is an actual player or an NPC.",
         "body": "IsPlayerNPC(${1:playerid})$0"
     },
     "IsPlayerAdmin": {
         "prefix": "IsPlayerAdmin",
-        "description": "",
+        "description": "Check if a player is logged in as an RCON admin.",
         "body": "IsPlayerAdmin(${1:playerid})$0"
     },
     "Kick": {
         "prefix": "Kick",
-        "description": "",
+        "description": "Kicks a player from the server. They will have to quit the game and re-connect if they wish to continue playing.",
         "body": "Kick(${1:playerid})$0"
     },
     "Ban": {
         "prefix": "Ban",
-        "description": "",
+        "description": "Ban a player who is currently in the server. They will be unable to join the server ever again. The ban will be IP-based, and be saved in the samp.ban file in the server's root directory. BanEx can be used to give a reason for the ban. IP bans can be added/removed using the RCON banip and unbanip commands (SendRconCommand).",
         "body": "Ban(${1:playerid})$0"
     },
     "BanEx": {
         "prefix": "BanEx",
-        "description": "",
+        "description": "Ban a player with a reason.",
         "body": "BanEx(${1:playerid}, ${2:const reason[]})$0"
     },
     "SendRconCommand": {
         "prefix": "SendRconCommand",
-        "description": "",
+        "description": "Sends an RCON (Remote Console) command.",
         "body": "SendRconCommand(${1:command[]})$0"
     },
     "GetPlayerNetworkStats": {
         "prefix": "GetPlayerNetworkStats",
-        "description": "",
+        "description": "Gets a player's network stats and saves them into a string.",
         "body": "GetPlayerNetworkStats(${1:playerid}, ${2:retstr[]}, ${3:retstr_size})$0"
     },
     "GetNetworkStats": {
         "prefix": "GetNetworkStats",
-        "description": "",
+        "description": "Gets the server's network stats and stores them in a string.",
         "body": "GetNetworkStats(${1:retstr[]}, ${2:retstr_size})$0"
     },
     "GetPlayerVersion": {
         "prefix": "GetPlayerVersion",
-        "description": "",
+        "description": "Returns the SA-MP client version, as reported by the player.",
         "body": "GetPlayerVersion(${1:playerid}, ${2:const version[]}, ${3:len})$0"
     },
     "BlockIpAddress": {
         "prefix": "BlockIpAddress",
-        "description": "",
+        "description": "Blocks an IP address from further communication with the server for a set amount of time (with wildcards allowed). Players trying to connect to the server with a blocked IP address will receive the generic 'You are banned from this server.' message. Players that are online on the specified IP before the block will timeout after a few seconds and, upon reconnect, will receive the same message.",
         "body": "BlockIpAddress(${1:ip_address[]}, ${2:timems})$0"
     },
     "UnBlockIpAddress": {
         "prefix": "UnBlockIpAddress",
-        "description": "",
+        "description": "Unblock an IP address that was previously blocked using BlockIpAddress.",
         "body": "UnBlockIpAddress(${1:ip_address[]})$0"
     },
     "GetServerVarAsString": {
         "prefix": "GetServerVarAsString",
-        "description": "",
+        "description": "Get the string value of a server variable.",
         "body": "GetServerVarAsString(${1:const varname[]}, ${2:buffer[]}, ${3:len})$0"
     },
     "GetServerVarAsInt": {
         "prefix": "GetServerVarAsInt",
-        "description": "",
+        "description": "Get the integer value of a server variable.",
         "body": "GetServerVarAsInt(${1:const varname[]})$0"
     },
     "GetServerVarAsBool": {
         "prefix": "GetServerVarAsBool",
-        "description": "",
+        "description": "Get the boolean value of a server variable.",
         "body": "GetServerVarAsBool(${1:const varname[]})$0"
     },
     "GetConsoleVarAsString": {
         "prefix": "GetConsoleVarAsString",
-        "description": "",
+        "description": "Get the string value of a console variable.",
         "body": "GetConsoleVarAsString(${1:const varname[]}, ${2:buffer[]}, ${3:len})$0"
     },
     "GetConsoleVarAsInt": {
         "prefix": "GetConsoleVarAsInt",
-        "description": "",
+        "description": "Get the integer value of a console variable.",
         "body": "GetConsoleVarAsInt(${1:const varname[]})$0"
     },
     "GetConsoleVarAsBool": {
         "prefix": "GetConsoleVarAsBool",
-        "description": "",
+        "description": "Get the boolean value of a console variable.",
         "body": "GetConsoleVarAsBool(${1:const varname[]})$0"
     },
     "GetServerTickRate": {
         "prefix": "GetServerTickRate",
-        "description": "",
+        "description": "Gets the tick rate (like FPS) of the server.",
         "body": "GetServerTickRate()$0"
     },
     "NetStats_GetConnectedTime": {
         "prefix": "NetStats_GetConnectedTime",
-        "description": "",
+        "description": "Gets the amount of time (in milliseconds) that a player has been connected to the server for.",
         "body": "NetStats_GetConnectedTime(${1:playerid})$0"
     },
     "NetStats_MessagesReceived": {
         "prefix": "NetStats_MessagesReceived",
-        "description": "",
+        "description": "Gets the number of messages the server has received from the player.",
         "body": "NetStats_MessagesReceived(${1:playerid})$0"
     },
     "NetStats_BytesReceived": {
         "prefix": "NetStats_BytesReceived",
-        "description": "",
+        "description": "Gets the amount of data (in bytes) that the server has received from the player.",
         "body": "NetStats_BytesReceived(${1:playerid})$0"
     },
     "NetStats_MessagesSent": {
         "prefix": "NetStats_MessagesSent",
-        "description": "",
+        "description": "Gets the number of messages the server has sent to the player.",
         "body": "NetStats_MessagesSent(${1:playerid})$0"
     },
     "NetStats_BytesSent": {
         "prefix": "NetStats_BytesSent",
-        "description": "",
+        "description": "Gets the amount of data (in bytes) that the server has sent to the player.",
         "body": "NetStats_BytesSent(${1:playerid})$0"
     },
     "NetStats_MessagesRecvPerSecond": {
         "prefix": "NetStats_MessagesRecvPerSecond",
-        "description": "",
+        "description": "Gets the number of messages the player has received in the last second.",
         "body": "NetStats_MessagesRecvPerSecond(${1:playerid})$0"
     },
     "NetStats_PacketLossPercent": {
         "prefix": "NetStats_PacketLossPercent",
-        "description": "",
+        "description": "Gets the packet loss percentage of a player. Packet loss means data the player is sending to the server is being lost (or vice-versa).",
         "body": "NetStats_PacketLossPercent(${1:playerid})$0"
     },
     "NetStats_ConnectionStatus": {
         "prefix": "NetStats_ConnectionStatus",
-        "description": "",
+        "description": "Gets the player's current connection status.",
         "body": "NetStats_ConnectionStatus(${1:playerid})$0"
     },
     "NetStats_GetIpPort": {
         "prefix": "NetStats_GetIpPort",
-        "description": "",
+        "description": "Get a player's IP and port.",
         "body": "NetStats_GetIpPort(${1:playerid}, ${2:ip_port[]}, ${3:ip_port_len})$0"
     },
     "CreateMenu": {
         "prefix": "CreateMenu",
-        "description": "",
+        "description": "Creates a menu.",
         "body": "CreateMenu(${1:const title[]}, ${2:columns}, ${3:Float:x}, ${4:Float:y}, ${5:Float:col1width}, ${6:Float:col2width = 0.0})$0"
     },
     "DestroyMenu": {
         "prefix": "DestroyMenu",
-        "description": "",
+        "description": "Destroys the specified menu.",
         "body": "DestroyMenu(${1:Menu:menuid})$0"
     },
     "AddMenuItem": {
         "prefix": "AddMenuItem",
-        "description": "",
+        "description": "Adds an item to a specified menu.",
         "body": "AddMenuItem(${1:Menu:menuid}, ${2:column}, ${3:const menutext[]})$0"
     },
     "SetMenuColumnHeader": {
         "prefix": "SetMenuColumnHeader",
-        "description": "",
+        "description": "Sets the caption of a column in a menu.",
         "body": "SetMenuColumnHeader(${1:Menu:menuid}, ${2:column}, ${3:const columnheader[]})$0"
     },
     "ShowMenuForPlayer": {
         "prefix": "ShowMenuForPlayer",
-        "description": "",
+        "description": "Shows a previously created menu for a player.",
         "body": "ShowMenuForPlayer(${1:Menu:menuid}, ${2:playerid})$0"
     },
     "HideMenuForPlayer": {
         "prefix": "HideMenuForPlayer",
-        "description": "",
+        "description": "Hides a menu for a player.",
         "body": "HideMenuForPlayer(${1:Menu:menuid}, ${2:playerid})$0"
     },
     "IsValidMenu": {
         "prefix": "IsValidMenu",
-        "description": "",
+        "description": "Checks if a menu is valid.",
         "body": "IsValidMenu(${1:Menu:menuid})$0"
     },
     "DisableMenu": {
         "prefix": "DisableMenu",
-        "description": "",
+        "description": "Disable a menu.",
         "body": "DisableMenu(${1:Menu:menuid})$0"
     },
     "DisableMenuRow": {
         "prefix": "DisableMenuRow",
-        "description": "",
+        "description": "Disable a specific row in a menu for all players. It will be greyed-out and can't be selected by players.",
         "body": "DisableMenuRow(${1:Menu:menuid}, ${2:row})$0"
     },
     "GetPlayerMenu": {
         "prefix": "GetPlayerMenu",
-        "description": "",
+        "description": "Gets the ID of the menu the player is currently viewing (shown by ShowMenuForPlayer).",
         "body": "GetPlayerMenu(${1:playerid})$0"
     },
     "TextDrawCreate": {
         "prefix": "TextDrawCreate",
-        "description": "",
+        "description": "Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See this page for extensive information about textdraws.",
         "body": "TextDrawCreate(${1:Float:x}, ${2:Float:y}, ${3:text[]})$0"
     },
     "TextDrawDestroy": {
         "prefix": "TextDrawDestroy",
-        "description": "",
+        "description": "Destroys a previously-created textdraw.",
         "body": "TextDrawDestroy(${1:Text:text})$0"
     },
     "TextDrawLetterSize": {
         "prefix": "TextDrawLetterSize",
-        "description": "",
+        "description": "Sets the width and height of the letters.",
         "body": "TextDrawLetterSize(${1:Text:text}, ${2:Float:x}, ${3:Float:y})$0"
     },
     "TextDrawTextSize": {
         "prefix": "TextDrawTextSize",
-        "description": "",
+        "description": "Change the size of a textdraw (box if TextDrawUseBox is enabled and/or clickable area for use with TextDrawSetSelectable).",
         "body": "TextDrawTextSize(${1:Text:text}, ${2:Float:x}, ${3:Float:y})$0"
     },
     "TextDrawAlignment": {
         "prefix": "TextDrawAlignment",
-        "description": "",
+        "description": "Set the alignment of text in a text draw.",
         "body": "TextDrawAlignment(${1:Text:text}, ${2:alignment})$0"
     },
     "TextDrawColor": {
         "prefix": "TextDrawColor",
-        "description": "",
+        "description": "Sets the text color of a textdraw",
         "body": "TextDrawColor(${1:Text:text}, ${2:color})$0"
     },
     "TextDrawUseBox": {
         "prefix": "TextDrawUseBox",
-        "description": "",
+        "description": "Toggle whether a textdraw uses a box or not.",
         "body": "TextDrawUseBox(${1:Text:text}, ${2:use})$0"
     },
     "TextDrawBoxColor": {
         "prefix": "TextDrawBoxColor",
-        "description": "",
+        "description": "Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 1).",
         "body": "TextDrawBoxColor(${1:Text:text}, ${2:color})$0"
     },
     "TextDrawSetShadow": {
         "prefix": "TextDrawSetShadow",
-        "description": "",
+        "description": "Sets the size of a textdraw's text's shadow.",
         "body": "TextDrawSetShadow(${1:Text:text}, ${2:size})$0"
     },
     "TextDrawSetOutline": {
         "prefix": "TextDrawSetOutline",
-        "description": "",
+        "description": "Sets the thickness of a textdraw's text's outline. TextDrawBackgroundColor can be used to change the color.",
         "body": "TextDrawSetOutline(${1:Text:text}, ${2:size})$0"
     },
     "TextDrawBackgroundColor": {
         "prefix": "TextDrawBackgroundColor",
-        "description": "",
+        "description": "Adjusts the text draw area background color (the outline/shadow - NOT the box. For box color, see TextDrawBoxColor).",
         "body": "TextDrawBackgroundColor(${1:Text:text}, ${2:color})$0"
     },
     "TextDrawFont": {
         "prefix": "TextDrawFont",
-        "description": "",
+        "description": "Changes the text font.",
         "body": "TextDrawFont(${1:Text:text}, ${2:font})$0"
     },
     "TextDrawSetProportional": {
         "prefix": "TextDrawSetProportional",
-        "description": "",
+        "description": "Appears to scale text spacing to a proportional ratio. Useful when using TextDrawLetterSize to ensure the text has even character spacing.",
         "body": "TextDrawSetProportional(${1:Text:text}, ${2:set})$0"
     },
     "TextDrawSetSelectable": {
         "prefix": "TextDrawSetSelectable",
-        "description": "",
+        "description": "Sets whether a textdraw can be selected (clicked on) or not",
         "body": "TextDrawSetSelectable(${1:Text:text}, ${2:set})$0"
     },
     "TextDrawShowForPlayer": {
         "prefix": "TextDrawShowForPlayer",
-        "description": "",
+        "description": "Shows a textdraw for a specific player.",
         "body": "TextDrawShowForPlayer(${1:playerid}, ${2:Text:text})$0"
     },
     "TextDrawHideForPlayer": {
         "prefix": "TextDrawHideForPlayer",
-        "description": "",
+        "description": "Hides a textdraw for a specific player.",
         "body": "TextDrawHideForPlayer(${1:playerid}, ${2:Text:text})$0"
     },
     "TextDrawShowForAll": {
         "prefix": "TextDrawShowForAll",
-        "description": "",
+        "description": "Shows a textdraw for all players.",
         "body": "TextDrawShowForAll(${1:Text:text})$0"
     },
     "TextDrawHideForAll": {
@@ -1761,507 +1761,507 @@
     },
     "TextDrawSetString": {
         "prefix": "TextDrawSetString",
-        "description": "",
+        "description": "Hides a text draw for all players.",
         "body": "TextDrawSetString(${1:Text:text}, ${2:string[]})$0"
     },
     "TextDrawSetPreviewModel": {
         "prefix": "TextDrawSetPreviewModel",
-        "description": "",
+        "description": "Set the model for a textdraw model preview. Click here to see this function's effect.",
         "body": "TextDrawSetPreviewModel(${1:Text:text}, ${2:modelindex})$0"
     },
     "TextDrawSetPreviewRot": {
         "prefix": "TextDrawSetPreviewRot",
-        "description": "",
+        "description": "Sets the rotation and zoom of a 3D model preview textdraw.",
         "body": "TextDrawSetPreviewRot(${1:Text:text}, ${2:Float:fRotX}, ${3:Float:fRotY}, ${4:Float:fRotZ}, ${5:Float:fZoom = 1.0})$0"
     },
     "TextDrawSetPreviewVehCol": {
         "prefix": "TextDrawSetPreviewVehCol",
-        "description": "",
+        "description": "If a vehicle model is used in a 3D preview textdraw, this sets the two colour values for that vehicle.",
         "body": "TextDrawSetPreviewVehCol(${1:Text:text}, ${2:color1}, ${3:color2})$0"
     },
     "GangZoneCreate": {
         "prefix": "GangZoneCreate",
-        "description": "",
+        "description": "Create a gangzone (colored radar area).",
         "body": "GangZoneCreate(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy})$0"
     },
     "GangZoneDestroy": {
         "prefix": "GangZoneDestroy",
-        "description": "",
+        "description": "Destroy a gangzone.",
         "body": "GangZoneDestroy(${1:zone})$0"
     },
     "GangZoneShowForPlayer": {
         "prefix": "GangZoneShowForPlayer",
-        "description": "",
+        "description": "Show a gangzone for a player. Must be created with GangZoneCreate first.",
         "body": "GangZoneShowForPlayer(${1:playerid}, ${2:zone}, ${3:color})$0"
     },
     "GangZoneShowForAll": {
         "prefix": "GangZoneShowForAll",
-        "description": "",
+        "description": "Shows a gangzone with the desired color to all players.",
         "body": "GangZoneShowForAll(${1:zone}, ${2:color})$0"
     },
     "GangZoneHideForPlayer": {
         "prefix": "GangZoneHideForPlayer",
-        "description": "",
+        "description": "Hides a gangzone for a player.",
         "body": "GangZoneHideForPlayer(${1:playerid}, ${2:zone})$0"
     },
     "GangZoneHideForAll": {
         "prefix": "GangZoneHideForAll",
-        "description": "",
+        "description": "GangZoneHideForAll hides a gangzone from all players.",
         "body": "GangZoneHideForAll(${1:zone})$0"
     },
     "GangZoneFlashForPlayer": {
         "prefix": "GangZoneFlashForPlayer",
-        "description": "",
+        "description": "Makes a gangzone flash for a player.",
         "body": "GangZoneFlashForPlayer(${1:playerid}, ${2:zone}, ${3:flashcolor})$0"
     },
     "GangZoneFlashForAll": {
         "prefix": "GangZoneFlashForAll",
-        "description": "",
+        "description": "GangZoneFlashForAll flashes a gangzone for all players.",
         "body": "GangZoneFlashForAll(${1:zone}, ${2:flashcolor})$0"
     },
     "GangZoneStopFlashForPlayer": {
         "prefix": "GangZoneStopFlashForPlayer",
-        "description": "",
+        "description": "Stops a gangzone flashing for a player.",
         "body": "GangZoneStopFlashForPlayer(${1:playerid}, ${2:zone})$0"
     },
     "GangZoneStopFlashForAll": {
         "prefix": "GangZoneStopFlashForAll",
-        "description": "",
+        "description": "Stops a gangzone flashing for all players.",
         "body": "GangZoneStopFlashForAll(${1:zone})$0"
     },
     "Create3DTextLabel": {
         "prefix": "Create3DTextLabel",
-        "description": "",
+        "description": "Creates a 3D Text Label at a specific location in the world",
         "body": "Create3DTextLabel(${1:text[]}, ${2:color}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:Float:DrawDistance}, ${7:virtualworld}, ${8:testLOS=0})$0"
     },
     "Delete3DTextLabel": {
         "prefix": "Delete3DTextLabel",
-        "description": "",
+        "description": "Delete a 3D text label (created with Create3DTextLabel).",
         "body": "Delete3DTextLabel(${1:Text3D:id})$0"
     },
     "Attach3DTextLabelToPlayer": {
         "prefix": "Attach3DTextLabelToPlayer",
-        "description": "",
+        "description": "Attach a 3D text label to a player.",
         "body": "Attach3DTextLabelToPlayer(${1:Text3D:id}, ${2:playerid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ})$0"
     },
     "Attach3DTextLabelToVehicle": {
         "prefix": "Attach3DTextLabelToVehicle",
-        "description": "",
+        "description": "Attaches a 3D Text Label to a specific vehicle.",
         "body": "Attach3DTextLabelToVehicle(${1:Text3D:id}, ${2:vehicleid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ})$0"
     },
     "Update3DTextLabelText": {
         "prefix": "Update3DTextLabelText",
-        "description": "",
+        "description": "Updates a 3D Text Label text and color",
         "body": "Update3DTextLabelText(${1:Text3D:id}, ${2:color}, ${3:text[]})$0"
     },
     "CreatePlayer3DTextLabel": {
         "prefix": "CreatePlayer3DTextLabel",
-        "description": "",
+        "description": "Creates a 3D Text Label only for a specific player",
         "body": "CreatePlayer3DTextLabel(${1:playerid}, ${2:text[]}, ${3:color}, ${4:Float:X}, ${5:Float:Y}, ${6:Float:Z}, ${7:Float:DrawDistance}, ${8:attachedplayer=INVALID_PLAYER_ID}, ${9:attachedvehicle=INVALID_VEHICLE_ID}, ${10:testLOS=0})$0"
     },
     "DeletePlayer3DTextLabel": {
         "prefix": "DeletePlayer3DTextLabel",
-        "description": "",
+        "description": "Destroy a 3D text label that was created using CreatePlayer3DTextLabel.",
         "body": "DeletePlayer3DTextLabel(${1:playerid}, ${2:PlayerText3D:id})$0"
     },
     "UpdatePlayer3DTextLabelText": {
         "prefix": "UpdatePlayer3DTextLabelText",
-        "description": "",
+        "description": "Updates a player 3D Text Label's text and color.",
         "body": "UpdatePlayer3DTextLabelText(${1:playerid}, ${2:PlayerText3D:id}, ${3:color}, ${4:text[]})$0"
     },
     "ShowPlayerDialog": {
         "prefix": "ShowPlayerDialog",
-        "description": "",
-        "body": "ShowPlayerDialog(${1:playerid}, ${2:dialogid}, ${3:style}, ${4:caption[]}, ${5:info[]}, ${6:button1[]}, ${7:button2[]})$0"
+        "description": "Shows the player a synchronous (only one at a time) dialog box.",
+        "body": "ShowPlayerDialog(${1:playerid}, ${2:dialogid}, ${3|DIALOG_STYLE_MSGBOX,DIALOG_STYLE_INPUT,DIALOG_STYLE_LIST,DIALOG_STYLE_PASSWORD,DIALOG_STYLE_TABLIST,DIALOG_STYLE_TABLIST_HEADERS|}, ${4:caption[]}, ${5:info[]}, ${6:button1[]}, ${7:button2[]})$0"
     },
     "OnGameModeInit": {
         "prefix": "OnGameModeInit",
-        "description": "",
+        "description": "This callback is triggered when the gamemode starts.",
         "body": "OnGameModeInit()$0"
     },
     "OnGameModeExit": {
         "prefix": "OnGameModeExit",
-        "description": "",
+        "description": "This callback is called when a gamemode ends, either through 'gmx', the server being shut down, or GameModeExit.",
         "body": "OnGameModeExit()$0"
     },
     "OnFilterScriptInit": {
         "prefix": "OnFilterScriptInit",
-        "description": "",
+        "description": "This callback is called when a filterscript is initialized (loaded). It is only called inside the filterscript which is starting.",
         "body": "OnFilterScriptInit()$0"
     },
     "OnFilterScriptExit": {
         "prefix": "OnFilterScriptExit",
-        "description": "",
+        "description": "This callback is called when a filterscript is unloaded. It is only called inside the filterscript which is unloaded.",
         "body": "OnFilterScriptExit()$0"
     },
     "OnPlayerConnect": {
         "prefix": "OnPlayerConnect",
-        "description": "",
+        "description": "This callback is called when a player connects to the server.",
         "body": "OnPlayerConnect(${1:playerid})$0"
     },
     "OnPlayerDisconnect": {
         "prefix": "OnPlayerDisconnect",
-        "description": "",
+        "description": "This callback is called when a player disconnects from the server.",
         "body": "OnPlayerDisconnect(${1:playerid}, ${2:reason})$0"
     },
     "OnPlayerSpawn": {
         "prefix": "OnPlayerSpawn",
-        "description": "",
+        "description": "This callback is called when a player spawns.(i.e. after caling SpawnPlayer function)",
         "body": "OnPlayerSpawn(${1:playerid})$0"
     },
     "OnPlayerDeath": {
         "prefix": "OnPlayerDeath",
-        "description": "",
+        "description": "This callback is called when a player dies, either by suicide or by being killed by another player.",
         "body": "OnPlayerDeath(${1:playerid}, ${2:killerid}, ${3:reason})$0"
     },
     "OnVehicleSpawn": {
         "prefix": "OnVehicleSpawn",
-        "description": "",
+        "description": "This callback is called when a vehicle respawns.",
         "body": "OnVehicleSpawn(${1:vehicleid})$0"
     },
     "OnVehicleDeath": {
         "prefix": "OnVehicleDeath",
-        "description": "",
+        "description": "This callback is called when a vehicle is destroyed - either by exploding or becoming submerged in water.",
         "body": "OnVehicleDeath(${1:vehicleid}, ${2:killerid})$0"
     },
     "OnPlayerCommandText": {
         "prefix": "OnPlayerCommandText",
-        "description": "",
+        "description": "This callback is called when a player enters a command into the client chat window. Commands are anything that start with a forward slash, e.g. /help.",
         "body": "OnPlayerCommandText(${1:playerid}, ${2:cmdtext[]})$0"
     },
     "OnPlayerRequestClass": {
         "prefix": "OnPlayerRequestClass",
-        "description": "",
+        "description": "Called when a player changes class at class selection (and when class selection first appears).",
         "body": "OnPlayerRequestClass(${1:playerid}, ${2:classid})$0"
     },
     "OnPlayerEnterVehicle": {
         "prefix": "OnPlayerEnterVehicle",
-        "description": "",
+        "description": "This callback is called when a player starts to enter a vehicle, meaning the player is not in vehicle yet at the time this callback is called.",
         "body": "OnPlayerEnterVehicle(${1:playerid}, ${2:vehicleid}, ${3:ispassenger})$0"
     },
     "OnPlayerExitVehicle": {
         "prefix": "OnPlayerExitVehicle",
-        "description": "",
+        "description": "This callback is called when a player starts to exit a vehicle.",
         "body": "OnPlayerExitVehicle(${1:playerid}, ${2:vehicleid})$0"
     },
     "OnPlayerStateChange": {
         "prefix": "OnPlayerStateChange",
-        "description": "",
+        "description": "This callback is called when a player changes state. For example, when a player changes from being the driver of a vehicle to being on-foot.",
         "body": "OnPlayerStateChange(${1:playerid}, ${2:newstate}, ${3:oldstate})$0"
     },
     "OnPlayerEnterCheckpoint": {
         "prefix": "OnPlayerEnterCheckpoint",
-        "description": "",
+        "description": "This callback is called when a player enters the checkpoint set for that player.",
         "body": "OnPlayerEnterCheckpoint(${1:playerid})$0"
     },
     "OnPlayerLeaveCheckpoint": {
         "prefix": "OnPlayerLeaveCheckpoint",
-        "description": "",
+        "description": "This callback is called when a player leaves the checkpoint set for them by SetPlayerCheckpoint. Only one checkpoint can be set at a time.",
         "body": "OnPlayerLeaveCheckpoint(${1:playerid})$0"
     },
     "OnPlayerEnterRaceCheckpoint": {
         "prefix": "OnPlayerEnterRaceCheckpoint",
-        "description": "",
+        "description": "This callback is called when a player enters a race checkpoint.",
         "body": "OnPlayerEnterRaceCheckpoint(${1:playerid})$0"
     },
     "OnPlayerLeaveRaceCheckpoint": {
         "prefix": "OnPlayerLeaveRaceCheckpoint",
-        "description": "",
+        "description": "This callback is called when a player leaves the race checkpoint.",
         "body": "OnPlayerLeaveRaceCheckpoint(${1:playerid})$0"
     },
     "OnRconCommand": {
         "prefix": "OnRconCommand",
-        "description": "",
+        "description": "This callback is called when a command is sent through the server console, remote RCON, or via the in-game '/rcon command'.",
         "body": "OnRconCommand(${1:cmd[]})$0"
     },
     "OnPlayerRequestSpawn": {
         "prefix": "OnPlayerRequestSpawn",
-        "description": "",
+        "description": "Called when a player attempts to spawn via class selection either by pressing SHIFT or clicking the 'Spawn' button.",
         "body": "OnPlayerRequestSpawn(${1:playerid})$0"
     },
     "OnObjectMoved": {
         "prefix": "OnObjectMoved",
-        "description": "",
+        "description": "This callback is called when an object is moved after MoveObject (when it stops moving).",
         "body": "OnObjectMoved(${1:objectid})$0"
     },
     "OnPlayerObjectMoved": {
         "prefix": "OnPlayerObjectMoved",
-        "description": "",
+        "description": "This callback is called when a player object is moved after MovePlayerObject (when it stops moving).",
         "body": "OnPlayerObjectMoved(${1:playerid}, ${2:objectid})$0"
     },
     "OnPlayerPickUpPickup": {
         "prefix": "OnPlayerPickUpPickup",
-        "description": "",
+        "description": "Called when a player picks up a pickup created with CreatePickup.",
         "body": "OnPlayerPickUpPickup(${1:playerid}, ${2:pickupid})$0"
     },
     "OnVehicleMod": {
         "prefix": "OnVehicleMod",
-        "description": "",
+        "description": "This callback is called when a vehicle is modded.",
         "body": "OnVehicleMod(${1:playerid}, ${2:vehicleid}, ${3:componentid})$0"
     },
     "OnEnterExitModShop": {
         "prefix": "OnEnterExitModShop",
-        "description": "",
+        "description": "This callback is called when a player enters or exits a mod shop.",
         "body": "OnEnterExitModShop(${1:playerid}, ${2:enterexit}, ${3:interiorid})$0"
     },
     "OnVehiclePaintjob": {
         "prefix": "OnVehiclePaintjob",
-        "description": "",
+        "description": "Called when a player previews a vehicle paintjob inside a mod shop. Watch out, this callback is not called when the player buys the paintjob.",
         "body": "OnVehiclePaintjob(${1:playerid}, ${2:vehicleid}, ${3:paintjobid})$0"
     },
     "OnVehicleRespray": {
         "prefix": "OnVehicleRespray",
-        "description": "",
+        "description": "This callback is called when a player exits a mod shop, even if the colors weren't changed. Watch out, the name is ambiguous, Pay 'n' Spray shops don't call this callback.",
         "body": "OnVehicleRespray(${1:playerid}, ${2:vehicleid}, ${3:color1}, ${4:color2})$0"
     },
     "OnVehicleDamageStatusUpdate": {
         "prefix": "OnVehicleDamageStatusUpdate",
-        "description": "",
+        "description": "This callback is called when a vehicle element such as doors, tires, panels, or lights change their damage status.",
         "body": "OnVehicleDamageStatusUpdate(${1:vehicleid}, ${2:playerid})$0"
     },
     "OnUnoccupiedVehicleUpdate": {
         "prefix": "OnUnoccupiedVehicleUpdate",
-        "description": "",
+        "description": "This callback is called when a player's client updates/syncs the position of a vehicle they're not driving. This can happen outside of the vehicle or when the player is a passenger of a vehicle that has no driver.",
         "body": "OnUnoccupiedVehicleUpdate(${1:vehicleid}, ${2:playerid}, ${3:passenger_seat}, ${4:Float:new_x}, ${5:Float:new_y}, ${6:Float:new_z}, ${7:Float:vel_x}, ${8:Float:vel_y}, ${9:Float:vel_z})$0"
     },
     "OnPlayerSelectedMenuRow": {
         "prefix": "OnPlayerSelectedMenuRow",
-        "description": "",
+        "description": "This callback is called when a player selects an item from a menu (ShowMenuForPlayer).",
         "body": "OnPlayerSelectedMenuRow(${1:playerid}, ${2:row})$0"
     },
     "OnPlayerExitedMenu": {
         "prefix": "OnPlayerExitedMenu",
-        "description": "",
+        "description": "Called when a player exits a menu.",
         "body": "OnPlayerExitedMenu(${1:playerid})$0"
     },
     "OnPlayerInteriorChange": {
         "prefix": "OnPlayerInteriorChange",
-        "description": "",
+        "description": "Called when a player changes interior. Can be triggered by SetPlayerInterior or when a player enter/exits a building.",
         "body": "OnPlayerInteriorChange(${1:playerid}, ${2:newinteriorid}, ${3:oldinteriorid})$0"
     },
     "OnPlayerKeyStateChange": {
         "prefix": "OnPlayerKeyStateChange",
-        "description": "",
+        "description": "This callback is called when the state of any supported key is changed (pressed/released). Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).",
         "body": "OnPlayerKeyStateChange(${1:playerid}, ${2:newkeys}, ${3:oldkeys})$0"
     },
     "OnRconLoginAttempt": {
         "prefix": "OnRconLoginAttempt",
-        "description": "",
+        "description": "This callback is called when someone attempts to log in to RCON in-game; successful or not.",
         "body": "OnRconLoginAttempt(${1:ip[]}, ${2:password[]}, ${3:success })$0"
     },
     "OnPlayerUpdate": {
         "prefix": "OnPlayerUpdate",
-        "description": "",
+        "description": "This callback is called every time a client/player updates the server with their status. It is often used to create custom callbacks for client updates that aren't actively tracked by the server, such as health or armor updates or players switching weapons.",
         "body": "OnPlayerUpdate(${1:playerid})$0"
     },
     "OnActorStreamIn": {
         "prefix": "OnActorStreamIn",
-        "description": "",
+        "description": "This callback is called when an actor is streamed in by a player's client.",
         "body": "OnActorStreamIn(${1:actorid}, ${2:forplayerid})$0"
     },
     "OnActorStreamOut": {
         "prefix": "OnActorStreamOut",
-        "description": "",
+        "description": "This callback is called when an actor is streamed out by a player's client.",
         "body": "OnActorStreamOut(${1:actorid}, ${2:forplayerid})$0"
     },
     "OnDialogResponse": {
         "prefix": "OnDialogResponse",
-        "description": "",
+        "description": "This callback is called when a player responds to a dialog shown using ShowPlayerDialog by either clicking a button, pressing ENTER/ESC or double-clicking a list item (if using a list style dialog).",
         "body": "OnDialogResponse(${1:playerid}, ${2:dialogid}, ${3:response}, ${4:listitem}, ${5:inputtext[]})$0"
     },
     "OnPlayerTakeDamage": {
         "prefix": "OnPlayerTakeDamage",
-        "description": "",
+        "description": "This callback is called when a player takes damage.",
         "body": "OnPlayerTakeDamage(${1:playerid}, ${2:issuerid}, ${3:Float:amount}, ${4:weaponid}, ${5:bodypart})$0"
     },
     "OnPlayerGiveDamage": {
         "prefix": "OnPlayerGiveDamage",
-        "description": "",
+        "description": "This callback is called when a player gives damage to another player.",
         "body": "OnPlayerGiveDamage(${1:playerid}, ${2:damagedid}, ${3:Float:amount}, ${4:weaponid}, ${5:bodypart})$0"
     },
     "OnPlayerGiveDamageActor": {
         "prefix": "OnPlayerGiveDamageActor",
-        "description": "",
+        "description": "This callback is called when a player gives damage to an actor.",
         "body": "OnPlayerGiveDamageActor(${1:playerid}, ${2:damaged_actorid}, ${3:Float:amount}, ${4:weaponid}, ${5:bodypart})$0"
     },
     "OnPlayerClickMap": {
         "prefix": "OnPlayerClickMap",
-        "description": "",
+        "description": "OnPlayerClickMap is called when a player places a target/waypoint on the pause menu map (by right-clicking).",
         "body": "OnPlayerClickMap(${1:playerid}, ${2:Float:fX}, ${3:Float:fY}, ${4:Float:fZ})$0"
     },
     "OnPlayerClickTextDraw": {
         "prefix": "OnPlayerClickTextDraw",
-        "description": "",
+        "description": "This callback is called when a player clicks on a textdraw or cancels the select mode with the Escape key.",
         "body": "OnPlayerClickTextDraw(${1:playerid}, ${2:Text:clickedid})$0"
     },
     "OnPlayerClickPlayerTextDraw": {
         "prefix": "OnPlayerClickPlayerTextDraw",
-        "description": "",
+        "description": "This callback is called when a player clicks on a player-textdraw. It is not called when player cancels the select mode (ESC) - however, OnPlayerClickTextDraw is.",
         "body": "OnPlayerClickPlayerTextDraw(${1:playerid}, ${2:PlayerText:playertextid})$0"
     },
     "OnIncomingConnection": {
         "prefix": "OnIncomingConnection",
-        "description": "",
+        "description": "This callback is called when an IP address attempts a connection to the server. To block incoming connections, use BlockIpAddress.",
         "body": "OnIncomingConnection(${1:playerid}, ${2:ip_address[]}, ${3:port})$0"
     },
     "OnTrailerUpdate": {
         "prefix": "OnTrailerUpdate",
-        "description": "",
+        "description": "This callback is called when a player sent a trailer update.",
         "body": "OnTrailerUpdate(${1:playerid}, ${2:vehicleid})$0"
     },
     "OnVehicleSirenStateChange": {
         "prefix": "OnVehicleSirenStateChange",
-        "description": "",
+        "description": "This callback is called when a vehicle's siren is toggled.",
         "body": "OnVehicleSirenStateChange(${1:playerid}, ${2:vehicleid}, ${3:newstate})$0"
     },
     "OnPlayerClickPlayer": {
         "prefix": "OnPlayerClickPlayer",
-        "description": "",
+        "description": "Called when a player double-clicks on a player on the scoreboard.",
         "body": "OnPlayerClickPlayer(${1:playerid}, ${2:clickedplayerid}, ${3:source})$0"
     },
     "OnPlayerEditObject": {
         "prefix": "OnPlayerEditObject",
-        "description": "",
+        "description": "This callback is called when a player finishes editing an object (EditObject/EditPlayerObject).",
         "body": "OnPlayerEditObject(${1:playerid}, ${2:playerobject}, ${3:objectid}, ${4:response}, ${5:Float:fX}, ${6:Float:fY}, ${7:Float:fZ}, ${8:Float:fRotX}, ${9:Float:fRotY}, ${10:Float:fRotZ })$0"
     },
     "OnPlayerEditAttachedObject": {
         "prefix": "OnPlayerEditAttachedObject",
-        "description": "",
+        "description": "This callback is called when a player ends attached object edition mode.",
         "body": "OnPlayerEditAttachedObject(${1:playerid}, ${2:response}, ${3:index}, ${4:modelid}, ${5:boneid}, ${6:Float:fOffsetX}, ${7:Float:fOffsetY}, ${8:Float:fOffsetZ}, ${9:Float:fRotX}, ${10:Float:fRotY}, ${11:Float:fRotZ}, ${12:Float:fScaleX}, ${13:Float:fScaleY}, ${14:Float:fScaleZ })$0"
     },
     "OnPlayerSelectObject": {
         "prefix": "OnPlayerSelectObject",
-        "description": "",
+        "description": "This callback is called when a player selects an object after SelectObject has been used.",
         "body": "OnPlayerSelectObject(${1:playerid}, ${2:type}, ${3:objectid}, ${4:modelid}, ${5:Float:fX}, ${6:Float:fY}, ${7:Float:fZ})$0"
     },
     "OnPlayerWeaponShot": {
         "prefix": "OnPlayerWeaponShot",
-        "description": "",
+        "description": "This callback is called when a player fires a shot from a weapon. Only bullet weapons are supported. Only passenger drive-by is supported (not driver drive-by, and not sea sparrow / hunter shots).",
         "body": "OnPlayerWeaponShot(${1:playerid}, ${2:weaponid}, ${3:hittype}, ${4:hitid}, ${5:Float:fX}, ${6:Float:fY}, ${7:Float:fZ})$0"
     },
     "db_open": {
         "prefix": "db_open",
-        "description": "",
+        "description": "This function is used to open a connection to a SQLite database, which is inside the '/scriptfiles' folder",
         "body": "db_open(${1:name[]})$0"
     },
     "db_close": {
         "prefix": "db_close",
-        "description": "",
+        "description": "Closes an SQLite database that was opened with db_open.",
         "body": "db_close(${1:DB:db})$0"
     },
     "db_query": {
         "prefix": "db_query",
-        "description": "",
+        "description": "This function is used to execute an SQL query on an opened SQLite database.",
         "body": "db_query(${1:DB:db}, ${2:query[]})$0"
     },
     "db_free_result": {
         "prefix": "db_free_result",
-        "description": "",
+        "description": "Frees result memory allocated from db_query.",
         "body": "db_free_result(${1:DBResult:dbresult})$0"
     },
     "db_num_rows": {
         "prefix": "db_num_rows",
-        "description": "",
+        "description": "Returns the number of rows from a db_query",
         "body": "db_num_rows(${1:DBResult:dbresult})$0"
     },
     "db_next_row": {
         "prefix": "db_next_row",
-        "description": "",
+        "description": "Moves to the next row of the result allocated from db_query.",
         "body": "db_next_row(${1:DBResult:dbresult})$0"
     },
     "db_num_fields": {
         "prefix": "db_num_fields",
-        "description": "",
+        "description": "Get the number of fields in a result.",
         "body": "db_num_fields(${1:DBResult:dbresult})$0"
     },
     "db_field_name": {
         "prefix": "db_field_name",
-        "description": "",
+        "description": "Returns the name of a field at a particular index.",
         "body": "db_field_name(${1:DBResult:dbresult}, ${2:field}, ${3:result[]}, ${4:maxlength})$0"
     },
     "db_get_field": {
         "prefix": "db_get_field",
-        "description": "",
+        "description": "Get the content of a field from db_query",
         "body": "db_get_field(${1:DBResult:dbresult}, ${2:field}, ${3:result[]}, ${4:maxlength})$0"
     },
     "db_get_field_int": {
         "prefix": "db_get_field_int",
-        "description": "",
+        "description": "Get the content of a field as an integer from db_query",
         "body": "db_get_field_int(${1:DBResult:result}, ${2:field = 0})$0"
     },
     "db_get_field_float": {
         "prefix": "db_get_field_float",
-        "description": "",
+        "description": "Get the content of a field as a float from db_query",
         "body": "db_get_field_float(${1:DBResult:result}, ${2:field = 0})$0"
     },
     "db_get_field_assoc": {
         "prefix": "db_get_field_assoc",
-        "description": "",
+        "description": "Get the contents of field with specified name.",
         "body": "db_get_field_assoc(${1:DBResult:dbresult}, ${2:const field[]}, ${3:result[]}, ${4:maxlength})$0"
     },
     "db_get_field_assoc_int": {
         "prefix": "db_get_field_assoc_int",
-        "description": "",
+        "description": "Get the contents of field as an integer with specified name.",
         "body": "db_get_field_assoc_int(${1:DBResult:result}, ${2:const field[]})$0"
     },
     "db_get_field_assoc_float": {
         "prefix": "db_get_field_assoc_float",
-        "description": "",
+        "description": "Get the contents of field as a float with specified name.",
         "body": "db_get_field_assoc_float(${1:DBResult:result}, ${2:const field[]})$0"
     },
     "db_get_mem_handle": {
         "prefix": "db_get_mem_handle",
-        "description": "",
+        "description": "Get memory handle for an SQLite database that was opened with db_open.",
         "body": "db_get_mem_handle(${1:DB:db})$0"
     },
     "db_get_result_mem_handle": {
         "prefix": "db_get_result_mem_handle",
-        "description": "",
+        "description": "Get memory handle for an SQLite query that was executed with db_query.",
         "body": "db_get_result_mem_handle(${1:DBResult:result})$0"
     },
     "db_debug_openfiles": {
         "prefix": "db_debug_openfiles",
-        "description": "",
+        "description": "db_debug_openfiles.",
         "body": "db_debug_openfiles()$0"
     },
     "db_debug_openresults": {
         "prefix": "db_debug_openresults",
-        "description": "",
+        "description": "db_debug_openresults.",
         "body": "db_debug_openresults()$0"
     },
     "CreateVehicle": {
         "prefix": "CreateVehicle",
-        "description": "",
+        "description": "Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at any time in the script.",
         "body": "CreateVehicle(${1:vehicletype}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rotation}, ${6:color1}, ${7:color2}, ${8:respawn_delay}, ${9:addsiren=0})$0"
     },
     "DestroyVehicle": {
         "prefix": "DestroyVehicle",
-        "description": "",
+        "description": "Destroy a vehicle. It will disappear instantly.",
         "body": "DestroyVehicle(${1:vehicleid})$0"
     },
     "IsValidVehicle": {
         "prefix": "IsValidVehicle",
-        "description": "",
+        "description": "Check if a vehicle is created.",
         "body": "IsValidVehicle(${1:vehicleid})$0"
     },
     "IsVehicleStreamedIn": {
         "prefix": "IsVehicleStreamedIn",
-        "description": "",
+        "description": "Checks if a vehicle is streamed in for a player. Only nearby vehicles are streamed in (visible) for a player.",
         "body": "IsVehicleStreamedIn(${1:vehicleid}, ${2:forplayerid})$0"
     },
     "GetVehiclePos": {
         "prefix": "GetVehiclePos",
-        "description": "",
+        "description": "Gets the position of a vehicle.",
         "body": "GetVehiclePos(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
     },
     "SetVehiclePos": {
         "prefix": "SetVehiclePos",
-        "description": "",
+        "description": "Set a vehicle's position",
         "body": "SetVehiclePos(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
     },
     "GetVehicleZAngle": {
         "prefix": "GetVehicleZAngle",
-        "description": "",
+        "description": "Get the rotation of a vehicle on the Z axis (yaw).",
         "body": "GetVehicleZAngle(${1:vehicleid}, ${2:Float:z_angle})$0"
     },
     "GetVehicleRotationQuat": {
@@ -2271,242 +2271,242 @@
     },
     "GetVehicleDistanceFromPoint": {
         "prefix": "GetVehicleDistanceFromPoint",
-        "description": "",
+        "description": "Returns a vehicle's rotation on all axes as a quaternion.",
         "body": "GetVehicleDistanceFromPoint(${1:vehicleid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
     },
     "SetVehicleZAngle": {
         "prefix": "SetVehicleZAngle",
-        "description": "",
+        "description": "Set the Z rotation (yaw) of a vehicle.",
         "body": "SetVehicleZAngle(${1:vehicleid}, ${2:Float:z_angle})$0"
     },
     "SetVehicleParamsForPlayer": {
         "prefix": "SetVehicleParamsForPlayer",
-        "description": "",
+        "description": "Set the parameters of a vehicle for a player.",
         "body": "SetVehicleParamsForPlayer(${1:vehicleid}, ${2:playerid}, ${3:objective}, ${4:doorslocked})$0"
     },
     "ManualVehicleEngineAndLights": {
         "prefix": "ManualVehicleEngineAndLights",
-        "description": "",
+        "description": "Use this function before any player connects (OnGameModeInit) to tell all clients that the script will control vehicle engines and lights. This prevents the game automatically turning the engine on/off when players enter/exit vehicles and headlights automatically coming on when it is dark.",
         "body": "ManualVehicleEngineAndLights()$0"
     },
     "SetVehicleParamsEx": {
         "prefix": "SetVehicleParamsEx",
-        "description": "",
+        "description": "Sets a vehicle's parameters for all players.",
         "body": "SetVehicleParamsEx(${1:vehicleid}, ${2:engine}, ${3:lights}, ${4:alarm}, ${5:doors}, ${6:bonnet}, ${7:boot}, ${8:objective})$0"
     },
     "GetVehicleParamsEx": {
         "prefix": "GetVehicleParamsEx",
-        "description": "",
+        "description": "Gets a vehicle's parameters.",
         "body": "GetVehicleParamsEx(${1:vehicleid}, ${2:engine}, ${3:lights}, ${4:alarm}, ${5:doors}, ${6:bonnet}, ${7:boot}, ${8:objective})$0"
     },
     "GetVehicleParamsSirenState": {
         "prefix": "GetVehicleParamsSirenState",
-        "description": "",
+        "description": "Returns a vehicle's siren state (on/off).",
         "body": "GetVehicleParamsSirenState(${1:vehicleid})$0"
     },
     "SetVehicleParamsCarDoors": {
         "prefix": "SetVehicleParamsCarDoors",
-        "description": "",
+        "description": "Allows you to open and close the doors of a vehicle.",
         "body": "SetVehicleParamsCarDoors(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
     },
     "GetVehicleParamsCarDoors": {
         "prefix": "GetVehicleParamsCarDoors",
-        "description": "",
+        "description": "Allows you to retrieve the current state of a vehicle's doors",
         "body": "GetVehicleParamsCarDoors(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
     },
     "SetVehicleParamsCarWindows": {
         "prefix": "SetVehicleParamsCarWindows",
-        "description": "",
+        "description": "Allows you to open and close the windows of a vehicle.",
         "body": "SetVehicleParamsCarWindows(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
     },
     "GetVehicleParamsCarWindows": {
         "prefix": "GetVehicleParamsCarWindows",
-        "description": "",
+        "description": "Allows you to retrieve the current state of a vehicle's windows",
         "body": "GetVehicleParamsCarWindows(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
     },
     "SetVehicleToRespawn": {
         "prefix": "SetVehicleToRespawn",
-        "description": "",
+        "description": "Sets a vehicle back to the position at where it was created.",
         "body": "SetVehicleToRespawn(${1:vehicleid})$0"
     },
     "LinkVehicleToInterior": {
         "prefix": "LinkVehicleToInterior",
-        "description": "",
+        "description": "Links a vehicle to an interior. Vehicles can only be seen by players in the same interior (SetPlayerInterior).",
         "body": "LinkVehicleToInterior(${1:vehicleid}, ${2:interiorid})$0"
     },
     "AddVehicleComponent": {
         "prefix": "AddVehicleComponent",
-        "description": "",
+        "description": "Adds a 'component' (often referred to as a 'mod' (modification)) to a vehicle. Valid components can be found here.",
         "body": "AddVehicleComponent(${1:vehicleid}, ${2:componentid})$0"
     },
     "RemoveVehicleComponent": {
         "prefix": "RemoveVehicleComponent",
-        "description": "",
+        "description": "Remove a component from a vehicle.",
         "body": "RemoveVehicleComponent(${1:vehicleid}, ${2:componentid})$0"
     },
     "ChangeVehicleColor": {
         "prefix": "ChangeVehicleColor",
-        "description": "",
+        "description": "Change a vehicle's primary and secondary colors.",
         "body": "ChangeVehicleColor(${1:vehicleid}, ${2:color1}, ${3:color2})$0"
     },
     "ChangeVehiclePaintjob": {
         "prefix": "ChangeVehiclePaintjob",
-        "description": "",
+        "description": "Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).",
         "body": "ChangeVehiclePaintjob(${1:vehicleid}, ${2:paintjobid})$0"
     },
     "SetVehicleHealth": {
         "prefix": "SetVehicleHealth",
-        "description": "",
+        "description": "Set a vehicle's health. When a vehicle's health decreases the engine will produce smoke, and finally fire when it decreases to less than 250 (25%).",
         "body": "SetVehicleHealth(${1:vehicleid}, ${2:Float:health})$0"
     },
     "GetVehicleHealth": {
         "prefix": "GetVehicleHealth",
-        "description": "",
+        "description": "Get the health of a vehicle.",
         "body": "GetVehicleHealth(${1:vehicleid}, ${2:Float:health})$0"
     },
     "AttachTrailerToVehicle": {
         "prefix": "AttachTrailerToVehicle",
-        "description": "",
+        "description": "Attach a vehicle to another vehicle as a trailer.",
         "body": "AttachTrailerToVehicle(${1:trailerid}, ${2:vehicleid})$0"
     },
     "DetachTrailerFromVehicle": {
         "prefix": "DetachTrailerFromVehicle",
-        "description": "",
+        "description": "Detach the connection between a vehicle and its trailer, if any.",
         "body": "DetachTrailerFromVehicle(${1:vehicleid})$0"
     },
     "IsTrailerAttachedToVehicle": {
         "prefix": "IsTrailerAttachedToVehicle",
-        "description": "",
+        "description": "Checks if a vehicle has a trailer attached to it. Use GetVehicleTrailer to get the vehicle ID of the trailer (if any).",
         "body": "IsTrailerAttachedToVehicle(${1:vehicleid})$0"
     },
     "GetVehicleTrailer": {
         "prefix": "GetVehicleTrailer",
-        "description": "",
+        "description": "Get the ID of the trailer attached to a vehicle.",
         "body": "GetVehicleTrailer(${1:vehicleid})$0"
     },
     "SetVehicleNumberPlate": {
         "prefix": "SetVehicleNumberPlate",
-        "description": "",
+        "description": "Set a vehicle numberplate.",
         "body": "SetVehicleNumberPlate(${1:vehicleid}, ${2:numberplate[]})$0"
     },
     "GetVehicleModel": {
         "prefix": "GetVehicleModel",
-        "description": "",
+        "description": "Gets the model ID of a vehicle.",
         "body": "GetVehicleModel(${1:vehicleid})$0"
     },
     "GetVehicleComponentInSlot": {
         "prefix": "GetVehicleComponentInSlot",
-        "description": "",
+        "description": "Retrieves the installed component ID (modshop mod(ification)) on a vehicle in a specific slot.",
         "body": "GetVehicleComponentInSlot(${1:vehicleid}, ${2:slot})$0"
     },
     "GetVehicleComponentType": {
         "prefix": "GetVehicleComponentType",
-        "description": "",
+        "description": "Find out what type of component a certain ID is.",
         "body": "GetVehicleComponentType(${1:component})$0"
     },
     "RepairVehicle": {
         "prefix": "RepairVehicle",
-        "description": "",
+        "description": "Fully repairs a vehicle, including visual damage (bumps, dents, scratches, popped tires etc.).",
         "body": "RepairVehicle(${1:vehicleid})$0"
     },
     "GetVehicleVelocity": {
         "prefix": "GetVehicleVelocity",
-        "description": "",
+        "description": "Get the velocity of a vehicle on the X, Y and Z axes.",
         "body": "GetVehicleVelocity(${1:vehicleid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
     },
     "SetVehicleVelocity": {
         "prefix": "SetVehicleVelocity",
-        "description": "",
+        "description": "Sets the X, Y and Z velocity of a vehicle.",
         "body": "SetVehicleVelocity(${1:vehicleid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
     },
     "SetVehicleAngularVelocity": {
         "prefix": "SetVehicleAngularVelocity",
-        "description": "",
+        "description": "Sets the angular X, Y and Z velocity of a vehicle",
         "body": "SetVehicleAngularVelocity(${1:vehicleid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
     },
     "GetVehicleDamageStatus": {
         "prefix": "GetVehicleDamageStatus",
-        "description": "",
+        "description": "Retrieve the damage statuses of a vehicle.",
         "body": "GetVehicleDamageStatus(${1:vehicleid}, ${2:panels}, ${3:doors}, ${4:lights}, ${5:tires})$0"
     },
     "UpdateVehicleDamageStatus": {
         "prefix": "UpdateVehicleDamageStatus",
-        "description": "",
+        "description": "Sets the various visual damage statuses of a vehicle, such as popped tires, broken lights and damaged panels.",
         "body": "UpdateVehicleDamageStatus(${1:vehicleid}, ${2:panels}, ${3:doors}, ${4:lights}, ${5:tires})$0"
     },
     "GetVehicleModelInfo": {
         "prefix": "GetVehicleModelInfo",
-        "description": "",
+        "description": "Retrieve information about a specific vehicle model such as the size or position of seats",
         "body": "GetVehicleModelInfo(${1:vehiclemodel}, ${2:infotype}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z})$0"
     },
     "SetVehicleVirtualWorld": {
         "prefix": "SetVehicleVirtualWorld",
-        "description": "",
+        "description": "Sets the 'virtual world' of a vehicle. Players will only be able to see vehicles in their own virtual world.",
         "body": "SetVehicleVirtualWorld(${1:vehicleid}, ${2:worldid})$0"
     },
     "GetVehicleVirtualWorld": {
         "prefix": "GetVehicleVirtualWorld",
-        "description": "",
+        "description": "Get the virtual world of a vehicle.",
         "body": "GetVehicleVirtualWorld(${1:vehicleid})$0"
     },
     "fopen": {
         "prefix": "fopen",
-        "description": "",
-        "body": "fopen(${1:const name[]}, ${2:filemode: mode = io_readwrite})$0"
+        "description": "Open a file (to read from or write to).",
+        "body": "fopen(${1:const name[]}, ${2|io_read,io_write,io_readwrite,io_append|})$0"
     },
     "fclose": {
         "prefix": "fclose",
-        "description": "",
+        "description": "Closes a file. Files should always be closed when the script no longer needs them (after reading/writing).",
         "body": "fclose(${1:File: handle})$0"
     },
     "ftemp": {
         "prefix": "ftemp",
-        "description": "",
+        "description": "Creates a file in the 'tmp', 'temp' or root directory with random name for reading and writing. The file is deleted after fclose() is used on the file.",
         "body": "ftemp()$0"
     },
     "fremove": {
         "prefix": "fremove",
-        "description": "",
+        "description": "Delete a file.",
         "body": "fremove(${1:const name[]})$0"
     },
     "fwrite": {
         "prefix": "fwrite",
-        "description": "",
+        "description": "Write text into a file.",
         "body": "fwrite(${1:File: handle}, ${2:const string[]})$0"
     },
     "fread": {
         "prefix": "fread",
-        "description": "",
+        "description": "Read a single line from a file.",
         "body": "fread(${1:File: handle}, ${2:string[]}, ${3:size = sizeof string}, ${4:bool: pack = false})$0"
     },
     "fputchar": {
         "prefix": "fputchar",
-        "description": "",
+        "description": "Write one character to a file.",
         "body": "fputchar(${1:File: handle}, ${2:value}, ${3:bool: utf8 = true})$0"
     },
     "fgetchar": {
         "prefix": "fgetchar",
-        "description": "",
+        "description": "Reads a single character from a file.",
         "body": "fgetchar(${1:File: handle}, ${2:value}, ${3:bool: utf8 = true})$0"
     },
     "fblockwrite": {
         "prefix": "fblockwrite",
-        "description": "",
+        "description": "Write data to a file in binary format, while ignoring line brakes and encoding.",
         "body": "fblockwrite(${1:File: handle}, ${2:const buffer[]}, ${3:size = sizeof buffer})$0"
     },
     "fblockread": {
         "prefix": "fblockread",
-        "description": "",
+        "description": "This function allows you to read data from a file, without encoding and line terminators.",
         "body": "fblockread(${1:File: handle}, ${2:buffer[]}, ${3:size = sizeof buffer})$0"
     },
     "fseek": {
         "prefix": "fseek",
-        "description": "",
+        "description": "Change the current position in the file. You can either seek forward or backward through the file.",
         "body": "fseek(${1:File: handle}, ${2:position = 0}, ${3:seek_whence: whence = seek_start})$0"
     },
     "flength": {
         "prefix": "flength",
-        "description": "",
+        "description": "Returns the length of a file.",
         "body": "flength(${1:File: handle})$0"
     },
     "fexist": {
@@ -2516,177 +2516,177 @@
     },
     "fmatch": {
         "prefix": "fmatch",
-        "description": "",
+        "description": "Checks if a specific file exists in the scriptfiles directory.",
         "body": "fmatch(${1:name[]}, ${2:const pattern[]}, ${3:index = 0}, ${4:size = sizeof name})$0"
     },
     "file_move": {
         "prefix": "file_move",
-        "description": "",
+        "description": "Move a file.",
         "body": "file_move(${1:file[]}, ${2:destination[]})$0"
     },
     "file_copy": {
         "prefix": "file_copy",
-        "description": "",
+        "description": "Copies a file.",
         "body": "file_copy(${1:file[]}, ${2:destination[]})$0"
     },
     "file_delete": {
         "prefix": "file_delete",
-        "description": "",
+        "description": "Deletes a file.",
         "body": "file_delete(${1:file[]})$0"
     },
     "file_create": {
         "prefix": "file_create",
-        "description": "",
+        "description": "Creates a file.",
         "body": "file_create(${1:file[]})$0"
     },
     "file_write": {
         "prefix": "file_write",
-        "description": "",
+        "description": "Writes in a file.",
         "body": "file_write(${1:file[]}, ${2:text[]}, ${3:mode[] = \"a\"})$0"
     },
     "file_read": {
         "prefix": "file_read",
-        "description": "",
+        "description": "Reads from a file.",
         "body": "file_read(${1:file[]}, ${2:storage[]}, ${3:size = sizeof(storage})$0"
     },
     "file_log": {
         "prefix": "file_log",
-        "description": "",
+        "description": "Logs into a file.",
         "body": "file_log()$0"
     },
     "file_exists": {
         "prefix": "file_exists",
-        "description": "",
+        "description": "Checks if a file exists.",
         "body": "file_exists(${1:file[]})$0"
     },
     "f_open": {
         "prefix": "f_open",
-        "description": "",
+        "description": "Opens a file.",
         "body": "f_open(${1:file[]}, ${2:mode[] = \"r\"})$0"
     },
     "f_close": {
         "prefix": "f_close",
-        "description": "",
+        "description": "Closes a file.",
         "body": "f_close(${1:File: file})$0"
     },
     "f_read": {
         "prefix": "f_read",
-        "description": "",
+        "description": "Reads from a file.",
         "body": "f_read(${1:File: file}, ${2:storage[]}, ${3:size = sizeof(storage})$0"
     },
     "f_write": {
         "prefix": "f_write",
-        "description": "",
+        "description": "Writes to a file.",
         "body": "f_write(${1:File: file}, ${2:string[]})$0"
     },
     "dir_create": {
         "prefix": "dir_create",
-        "description": "",
+        "description": "Create a directory.",
         "body": "dir_create(${1:directory[]})$0"
     },
     "dir_delete": {
         "prefix": "dir_delete",
-        "description": "",
+        "description": "Deletes a directory.",
         "body": "dir_delete(${1:directory[]})$0"
     },
     "dir_exists": {
         "prefix": "dir_exists",
-        "description": "",
+        "description": "Checks if a directory exists.",
         "body": "dir_exists(${1:directory[]})$0"
     },
     "dir_open": {
         "prefix": "dir_open",
-        "description": "",
+        "description": "Opens a directory.",
         "body": "dir_open(${1:directory[]})$0"
     },
     "dir_close": {
         "prefix": "dir_close",
-        "description": "",
+        "description": "Closes a directory.",
         "body": "dir_close(${1:dir:handle})$0"
     },
     "dir_list": {
         "prefix": "dir_list",
-        "description": "",
+        "description": "Lists the contents of a directory.",
         "body": "dir_list(${1:dir:handle}, ${2:storage[]}, ${3:type}, ${4:length = sizeof(storage})$0"
     },
     "float": {
         "prefix": "float",
-        "description": "",
+        "description": "Converts an integer into a float.",
         "body": "float(${1:value})$0"
     },
     "floatstr": {
         "prefix": "floatstr",
-        "description": "",
+        "description": "Converts a string to a float.",
         "body": "floatstr(${1:const string[]})$0"
     },
     "floatmul": {
         "prefix": "floatmul",
-        "description": "",
+        "description": "Multiplies two floats with each other.",
         "body": "floatmul(${1:Float:oper1}, ${2:Float:oper2})$0"
     },
     "floatdiv": {
         "prefix": "floatdiv",
-        "description": "",
+        "description": "Divide one float by another one. Redundant as the division operator (/) does the same thing.",
         "body": "floatdiv(${1:Float:dividend}, ${2:Float:divisor})$0"
     },
     "floatadd": {
         "prefix": "floatadd",
-        "description": "",
+        "description": "Adds two floats together. This function is redundant as the standard operator (+) does the same thing.",
         "body": "floatadd(${1:Float:oper1}, ${2:Float:oper2})$0"
     },
     "floatsub": {
         "prefix": "floatsub",
-        "description": "",
+        "description": "Subtracts one float from another one. Note that this function has no real use, as one can simply use the standard operator (-) instead.",
         "body": "floatsub(${1:Float:oper1}, ${2:Float:oper2})$0"
     },
     "floatfract": {
         "prefix": "floatfract",
-        "description": "",
+        "description": "Get the fractional part of a float. This means the value of the numbers after the decimal point.",
         "body": "floatfract(${1:Float:value})$0"
     },
     "floatround": {
         "prefix": "floatround",
-        "description": "",
+        "description": "Round a floating point number to an integer value.",
         "body": "floatround(${1:Float:value}, ${2:floatround_method:method=floatround_round})$0"
     },
     "floatcmp": {
         "prefix": "floatcmp",
-        "description": "",
+        "description": "floatcmp can be used to compare float values to each other, to validate the comparison.",
         "body": "floatcmp(${1:Float:oper1}, ${2:Float:oper2})$0"
     },
     "floatsqroot": {
         "prefix": "floatsqroot",
-        "description": "",
+        "description": "Calculates the square root of given value.",
         "body": "floatsqroot(${1:Float:value})$0"
     },
     "floatpower": {
         "prefix": "floatpower",
-        "description": "",
+        "description": "Raises the given value to the power of the exponent.",
         "body": "floatpower(${1:Float:value}, ${2:Float:exponent})$0"
     },
     "floatlog": {
         "prefix": "floatlog",
-        "description": "",
+        "description": "This function allows you to get the logarithm of a float value.",
         "body": "floatlog(${1:Float:value}, ${2:Float:base=10.0})$0"
     },
     "floatsin": {
         "prefix": "floatsin",
-        "description": "",
-        "body": "floatsin(${1:Float:value}, ${2:anglemode:mode=radian})$0"
+        "description": "Get the sine from a given angle. The input angle may be in radians, degrees or grades.",
+        "body": "floatsin(${1:Float:value}, ${2|degrees,radian,grades|})$0"
     },
     "floatcos": {
         "prefix": "floatcos",
-        "description": "",
-        "body": "floatcos(${1:Float:value}, ${2:anglemode:mode=radian})$0"
+        "description": "Get the cosine from a given angle. The input angle may be in radians, degrees or grades.",
+        "body": "floatcos(${1:Float:value}, ${2|degrees,radian,grades|})$0"
     },
     "floattan": {
         "prefix": "floattan",
-        "description": "",
-        "body": "floattan(${1:Float:value}, ${2:anglemode:mode=radian})$0"
+        "description": "Get the tangent from a given angle. The input angle may be in radians, degrees or grades.",
+        "body": "floattan(${1:Float:value}, ${2|degrees,radian,grades|})$0"
     },
     "floatabs": {
         "prefix": "floatabs",
-        "description": "",
+        "description": "This function returns the absolute value of float.",
         "body": "floatabs(${1:Float:value})$0"
     }
 }
