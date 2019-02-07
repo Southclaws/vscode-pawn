@@ -2807,7 +2807,130 @@
         "prefix": "Streamer_OnPluginError",
         "body": "Streamer_OnPluginError(${1:error[]})$0"
     },
-
+    "INI_IsEscapeSequence": {
+        "prefix": "INI_IsEscapeSequence",
+        "body": "INI_IsEscapeSequence(${1:str[]}, ${2:pos})$0"
+    },
+    "INI_ReverseWhitespace": {
+        "prefix": "INI_ReverseWhitespace",
+        "body": "INI_ReverseWhitespace(${1:str[]}, ${2:pos})$0"
+    },
+    "INI_IdentifyLineType": {
+        "prefix": "INI_IdentifyLineType",
+        "body": "INI_IdentifyLineType(${1:str[]}, ${2:p0s}, ${3:p0e}, ${4:p1s}, ${5:p1e}, ${6:p2s}, ${7:p2e}, ${8:cont})$0"
+    },
+    "INI_Open": {
+        "prefix": "INI_Open",
+        "body": "INI_Open(${1:filename[]})$0"
+    },
+    "INI_Load": {
+        "prefix": "INI_Load",
+        "body": "INI_Load(${1:filename[]}, ${2:bool:bExtra} = false, ${3:extra} = 0, ${4:bool:bLocal} = true)$0"
+    },
+    "INI_Close": {
+        "prefix": "INI_Close",
+        "body": "INI_Close(${1:INI:handle})$0"
+    },
+    "INI_DoParentTag": {
+        "prefix": "INI_DoParentTag",
+        "body": "INI_DoParentTag(${1:filename[]}, ${2:remoteformat[]}, ${3:bool:bFileFirst}, ${4:bool:bExtra}, ${5:extra}, ${6:bLocal}, ${7:bPassTag}, ${8:bFilter}, ${9:filter})$0"
+    },
+    "INI_SetTag": {
+        "prefix": "INI_SetTag",
+        "body": "INI_SetTag(${1:INI:file}, ${2:tag[]})$0"
+    },
+    "INI_DeleteTag": {
+        "prefix": "INI_DeleteTag",
+        "body": "INI_DeleteTag(${1:INI:file}, ${2:tag[]})$0"
+    },
+    "INI_ParseFile": {
+        "prefix": "INI_ParseFile",
+        "body": "INI_ParseFile(${1:filename[]}, ${2:remoteformat[]}, ${3:bool:bFileFirst}, ${4:bool:bExtra}, ${5:extra}, ${6:bLocal}, ${7:bPassTag}, ${8:bFilter}, ${9:filter})$0"
+    },
+    "INI_AddToBuffer": {
+        "prefix": "INI_AddToBuffer",
+        "body": "INI_AddToBuffer(${1:INI:file}, ${2:name[]}, ${3:data[]})$0"
+    },
+    "INI_WriteBuffer": {
+        "prefix": "INI_WriteBuffer",
+        "body": "INI_WriteBuffer(${1:INI:file})$0"
+    },
+    "INI_GetEntryText": {
+        "prefix": "INI_GetEntryText",
+        "body": "INI_GetEntryText(${1:str[]}, ${2:p0s}, ${3:p0e}, ${4:p1s}, ${5:p1e}, ${6:p2s}, ${7:p2e}, ${8:cont})$0"
+    },
+    "INI_RemoveEntry": {
+        "prefix": "INI_RemoveEntry",
+        "body": "INI_RemoveEntry(${1:INI:file}, ${2:name[]})$0"
+    },
+    "INI_FreeEntry": {
+        "prefix": "INI_FreeEntry",
+        "body": "INI_FreeEntry(${1:slot})$0"
+    },
+    "INI_TryGetValue": {
+        "prefix": "INI_TryGetValue",
+        "body": "INI_TryGetValue(${1:start}, ${2:end})$0"
+    },
+    "INI_WriteInt": {
+        "prefix": "INI_WriteInt",
+        "body": "INI_WriteInt(${1:INI:file}, ${2:name[]}, ${3:data})$0"
+    },
+    "INI_Int": {
+        "prefix": "INI_Int",
+        "body": "INI_Int(${1:name[]}, ${2:variable})$0"
+    },
+    "INI_WriteFloat": {
+        "prefix": "INI_WriteFloat",
+        "body": "INI_WriteFloat(${1:INI:file}, ${2:name[]}, ${3:Float:data})$0"
+    },
+    "INI_Float": {
+        "prefix": "INI_Float",
+        "body": "INI_Float(${1:name[]}, ${2:variable})$0"
+    },
+    "INI_WriteHex": {
+        "prefix": "INI_WriteHex",
+        "body": "INI_WriteHex(${1:INI:file}, ${2:name[]}, ${3:Float:data})$0"
+    },
+    "INI_Hex": {
+        "prefix": "INI_Hex",
+        "body": "INI_Hex(${1:name[]}, ${2:variable})$0"
+    },
+    "INI_WriteString": {
+        "prefix": "INI_WriteString",
+        "body": "INI_WriteString(${1:INI:file}, ${2:name[]}, ${3:data[]})$0"
+    },
+    "INI_String": {
+        "prefix": "INI_String",
+        "body": "INI_String(${1:name[]}, ${2:variable})$0"
+    },
+    "INI_FindString": {
+        "prefix": "INI_FindString",
+        "body": "INI_FindString(${1:str[]}, ${2:sub[]}, ${3:pos})$0"
+    },
+    "INI_WriteBool": {
+        "prefix": "INI_WriteBool",
+        "body": "INI_WriteBool(${1:INI:file}, ${2:name[]}, ${3:bool:data})$0"
+    },
+    "INI_Bool": {
+        "prefix": "INI_Bool",
+        "body": "INI_Bool(${1:name[]}, ${2:variable})$0"
+    },
+    "INI_WriteBin": {
+        "prefix": "INI_WriteBin",
+        "body": "INI_WriteBin(${1:name[]}, ${2:variable}, ${3:data})$0"
+    },
+    "INI_Bin": {
+        "prefix": "INI_Bin",
+        "body": "INI_Bin(${1:name[]}, ${2:variable})$0"
+    },
+    "INI_SetupCallbackName": {
+        "prefix": "INI_SetupCallbackName",
+        "body": "INI_SetupCallbackName(${1:fmat[]}, ${2:const remoteFormat[]}, ${3:filename[]}, ${4:const bool:bFileFirst})$0"
+    },
+    "INI_GetCallback": {
+        "prefix": "INI_GetCallback",
+        "body": "INI_GetCallback(${1:callback[E_CALLBACK_DATA]}, ${2:const format[]}, ${3:tag[]}, ${4:const input[]}, ${5:const len}, ${6:tag[]}, ${7:callbackFormat[]}, ${8:const bool:remote})$0"
+    },
     "strlen": {
         "prefix": "strlen",
         "body": "strlen(${1:const string[]})$0"
