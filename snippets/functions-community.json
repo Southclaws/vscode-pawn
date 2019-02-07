@@ -3206,5 +3206,20 @@
     "y_command": {
         "prefix": "YCMD",
         "body": "YCMD:${1:command_name}(playerid, params[], help) \n{\n\t${4}\n\treturn 1;\n}$0"
+    },
+
+    "zcmd_command": {
+        "prefix": "ZCMD command",
+        "body": "CMD:${1:command_name}(playerid, params[])\n{\n\t${4}\n\treturn 1;\n}$0"
+    },
+
+    "zcmd_OnPlayerCommandReceived": {
+        "prefix": "ZCMD OnPlayerCommandReceived",
+        "body": "public OnPlayerCommandReceived(${1:playerid}, {$2:cmdtext[]})\n{\t\n${4}\n\treturn 1;\n}$0"
+    },
+
+    "zcmd_OnPlayerCommandPerformed": {
+        "prefix": "ZCMD OnPlayerCommandPerformed",
+        "body": "public OnPlayerCommandPerformed(${1:playerid}, ${2:cmdtext[]}, ${3:success})\n{\t\n${4}\n\treturn 1;\n}$0"
     }
 }
