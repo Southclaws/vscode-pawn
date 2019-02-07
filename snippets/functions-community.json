@@ -1883,179 +1883,222 @@
 
     "db_query_hook": {
         "prefix": "db_query_hook",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_query_hook(${1:iTagOf3 = tagof(_bAutoRelease})$0"
     },
     "db_escape_string": {
         "prefix": "db_escape_string",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body":
             "db_escape_string(${1:szString[]}, ${2:szEnclosing[] = \"'\"}, ${3:iSize = sizeof(szString})$0"
     },
     "db_is_persistent": {
         "prefix": "db_is_persistent",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_is_persistent(${1:DB:db})$0"
     },
     "db_is_valid_persistent": {
         "prefix": "db_is_valid_persistent",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_is_valid_persistent(${1:DB:db})$0"
     },
     "db_is_table_exists": {
         "prefix": "db_is_table_exists",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_is_table_exists(${1:DB:db}, ${2:szTable[]})$0"
     },
     "db_rewind": {
         "prefix": "db_rewind",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_rewind(${1:DBResult:dbrResult})$0"
     },
     "db_exec": {
         "prefix": "db_exec",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_exec(${1:DB:db}, ${2:szQuery[]})$0"
     },
     "db_insert": {
         "prefix": "db_insert",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_insert(${1:DB:db}, ${2:szQuery[]})$0"
     },
     "db_get_struct_info": {
         "prefix": "db_get_struct_info",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_get_struct_info(${1:DB:db}, ${2:;_}, ${3:e_SQLITE3}:iOffset})$0"
     },
     "db_set_struct_info": {
         "prefix": "db_set_struct_info",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_set_struct_info(${1:DB:db}, ${2:;_}, ${3:e_SQLITE3}:iOffset}, ${4:iValue})$0"
     },
     "db_set_row_index": {
         "prefix": "db_set_row_index",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_set_row_index(${1:DBResult:dbrResult}, ${2:iRow})$0"
     },
     "db_get_row_index": {
         "prefix": "db_get_row_index",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_get_row_index(${1:DBResult:dbrResult})$0"
     },
     "db_open_persistent": {
         "prefix": "db_open_persistent",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_open_persistent(${1:szName[]})$0"
     },
     "db_close_hook": {
         "prefix": "db_close_hook",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_close_hook(${1:DB:db})$0"
     },
     "db_query_int": {
         "prefix": "db_query_int",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_query_int(${1:DB:db}, ${2:szQuery[]}, ${3:iField = 0})$0"
     },
     "db_query_float": {
         "prefix": "db_query_float",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_query_float(${1:DB:db}, ${2:szQuery[]}, ${3:iField = 0})$0"
     },
     "db_is_result_freed": {
         "prefix": "db_is_result_freed",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_is_result_freed(${1:DBResult:dbrResult})$0"
     },
     "db_free_result_hook": {
         "prefix": "db_free_result_hook",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_free_result_hook(${1:DBResult:dbrResult})$0"
     },
     "db_free_persistent": {
         "prefix": "db_free_persistent",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_free_persistent(${1:DB:db})$0"
     },
     "db_changes": {
         "prefix": "db_changes",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_changes(${1:DB:db})$0"
     },
     "db_begin_transaction": {
         "prefix": "db_begin_transaction",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_begin_transaction(${1:DB:db})$0"
     },
     "db_end_transaction": {
         "prefix": "db_end_transaction",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_end_transaction(${1:DB:db})$0"
     },
     "db_set_asynchronous": {
         "prefix": "db_set_asynchronous",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_set_asynchronous(${1:DB:db}, ${2:bool:bSet = true})$0"
     },
     "db_set_synchronous": {
         "prefix": "db_set_synchronous",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_set_synchronous(${1:DB:db}, ${2:DB::e_SYNCHRONOUS_MODE:iValue})$0"
     },
     "db_attach_memory_db": {
         "prefix": "db_attach_memory_db",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_attach_memory_db(${1:DB:db}, ${2:szName[]})$0"
     },
     "db_detach_memory_db": {
         "prefix": "db_detach_memory_db",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_detach_memory_db(${1:DB:db}, ${2:szName[]})$0"
     },
     "db_total_changes": {
         "prefix": "db_total_changes",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_total_changes(${1:DB:db})$0"
     },
     "db_last_insert_rowid": {
         "prefix": "db_last_insert_rowid",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_last_insert_rowid(${1:DB:db})$0"
     },
     "db_field_is_null": {
         "prefix": "db_field_is_null",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_field_is_null(${1:DBResult:dbrResult}, ${2:iField})$0"
     },
     "db_autofree_result": {
         "prefix": "db_autofree_result",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_autofree_result(${1:DBResult:dbrResult})$0"
     },
     "db_prepare": {
         "prefix": "db_prepare",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_prepare(${1:DB:db}, ${2:szQuery[]})$0"
     },
     "stmt_bind_value": {
         "prefix": "stmt_bind_value",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body":
             "stmt_bind_value(${1:&DBStatement:stStatement}, ${2:iParam}, ${3:DBDataType:iType}, ${4:;Float}, ${5:_}:...})$0"
     },
     "stmt_bind_result_field": {
         "prefix": "stmt_bind_result_field",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body":
             "stmt_bind_result_field(${1:&DBStatement:stStatement}, ${2:iField}, ${3:DBDataType:iType}, ${4:;Float}, ${5:_}:...})$0"
     },
     "stmt_skip_row": {
         "prefix": "stmt_skip_row",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "stmt_skip_row(${1:&DBStatement:stStatement})$0"
     },
     "stmt_fetch_row": {
         "prefix": "stmt_fetch_row",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "stmt_fetch_row(${1:&DBStatement:stStatement})$0"
     },
     "stmt_rows_left": {
         "prefix": "stmt_rows_left",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "stmt_rows_left(${1:&DBStatement:stStatement})$0"
     },
     "stmt_execute": {
         "prefix": "stmt_execute",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body":
             "stmt_execute(${1:&DBStatement:stStatement}, ${2:bool:bStoreResult = true}, ${3:bool:bAutoFreeResult = true})$0"
     },
     "stmt_free_result": {
         "prefix": "stmt_free_result",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "stmt_free_result(${1:&DBStatement:stStatement})$0"
     },
     "stmt_close": {
         "prefix": "stmt_close",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "stmt_close(${1:&DBStatement:stStatement})$0"
     },
     "stmt_autoclose": {
         "prefix": "stmt_autoclose",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "stmt_autoclose(${1:&DBStatement:stStatement})$0"
     },
     "db_get_last_error": {
         "prefix": "db_get_last_error",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_get_last_error()$0"
     },
     "db_get_field_hook": {
         "prefix": "db_get_field_hook",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body":
             "db_get_field_hook(${1:DBResult:dbresult}, ${2:field}, ${3:result[]}, ${4:maxlength = sizeof(result})$0"
     },
     "db_get_field_assoc_hook": {
         "prefix": "db_get_field_assoc_hook",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body":
             "db_get_field_assoc_hook(${1:DBResult:dbresult}, ${2:field[]}, ${3:result[]}, ${4:maxlength = sizeof(result})$0"
     },
@@ -2065,10 +2108,12 @@
     },
     "db_print_result": {
         "prefix": "db_print_result",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_print_result(${1:DBResult:dbrResult}, ${2:iMaxFieldLength = 40})$0"
     },
     "db_print_query": {
         "prefix": "db_print_query",
+        "description": "Part of the SQLitei(mproved). This is not part from the native sa-mp SQLite implementation.",
         "body": "db_print_query(${1:DB:db}, ${2:szQuery[]}, ${3:iMaxFieldLength = 40})$0"
     },
 
