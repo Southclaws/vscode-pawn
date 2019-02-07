@@ -2931,6 +2931,82 @@
         "prefix": "INI_GetCallback",
         "body": "INI_GetCallback(${1:callback[E_CALLBACK_DATA]}, ${2:const format[]}, ${3:tag[]}, ${4:const input[]}, ${5:const len}, ${6:tag[]}, ${7:callbackFormat[]}, ${8:const bool:remote})$0"
     },
+    "dini_Exists": {
+        "prefix": "dini_Exists",
+        "body": "dini_Exists(${1:const filename[]})$0"
+    },
+    "dini_Remove": {
+        "prefix": "dini_Remove",
+        "body": "dini_Remove(${1:const filename[]})$0"
+    },
+    "dini_Create": {
+        "prefix": "dini_Create",
+        "body": "dini_Create(${1:const filename[]})$0"
+    },
+    "dini_Set": {
+        "prefix": "dini_Set",
+        "body": "dini_Set(${1:const filename[]}, ${2:const key[]}, ${3:const value[]})$0"
+    },
+    "dini_IntSet": {
+        "prefix": "dini_IntSet",
+        "body": "dini_IntSet(${1:const filename[]}, ${2:const key[]}, ${3:value})$0"
+    },
+    "dini_FloatSet": {
+        "prefix": "dini_FloatSet",
+        "body": "dini_FloatSet(${1:const filename[]}, ${2:const key[]}, ${3:Float:value})$0"
+    },
+    "dini_BoolSet": {
+        "prefix": "dini_BoolSet",
+        "body": "dini_BoolSet(${1:const filename[]}, ${2:const key[]}, ${3:bool:value})$0"
+    },
+    "dini_Get": {
+        "prefix": "dini_Get",
+        "body": "dini_Get(${1:const filename[]}, ${2:const key[]})$0"
+    },
+    "dini_Int": {
+        "prefix": "dini_Int",
+        "body": "dini_Int(${1:const filename[]}, ${2:const key[]})$0"
+    },
+    "dini_Float": {
+        "prefix": "dini_Float",
+        "body": "dini_Float(${1:const filename[]}, ${2:const key[]})$0"
+    },
+    "dini_Bool": {
+        "prefix": "dini_Bool",
+        "body": "dini_Bool(${1:const filename[]}, ${2:const key[]})$0"
+    },
+    "dini_Unset": {
+        "prefix": "dini_Unset",
+        "body": "dini_Unset(${1:const filename[]}, ${2:const key[]})$0"
+    },
+    "dini_Isset": {
+        "prefix": "dini_Isset",
+        "body": "dini_Isset(${1:const filename[]}, ${2:const key[]})$0"
+    },
+    "DINI_StripNewLine": {
+        "prefix": "DINI_StripNewLine",
+        "body": "DINI_StripNewLine(${1:const string[]})$0"
+    },
+    "DINI_fcopytextfile": {
+        "prefix": "DINI_fcopytextfile",
+        "body": "DINI_fcopytextfile(${1:const filename[]}, ${2:const newfilename[]})$0"
+    },
+    "dini_Timeout": {
+        "prefix": "DINI_fcopytextfile",
+        "body": "DINI_fcopytextfile(${1:const filename[]})$0"
+    },
+    "dini_NumKeys": {
+        "prefix": "dini_NumKeys",
+        "body": "dini_NumKeys(${1:const filename[]})$0"
+    },
+    "dini_GetKeyName": {
+        "prefix": "dini_GetKeyName",
+        "body": "dini_GetKeyName(${1:const filename[]}, ${2:keyid})$0"
+    },
+    "DINI_frenametextfile": {
+        "prefix": "DINI_frenametextfile",
+        "body": "DINI_frenametextfile(${1:const filename[]}, ${2:const newfilename[]})$0"
+    },
     "strlen": {
         "prefix": "strlen",
         "body": "strlen(${1:const string[]})$0"
