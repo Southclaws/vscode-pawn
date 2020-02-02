@@ -23,5 +23,15 @@
         "description": "Callback hook.",
         "body":
             "public ${2:Function}(${3:Args})\n{\n\t${4}\n\t#if defined ${1:Prefix}_${2:Function}\n\t\treturn ${1:Prefix}_${2:Function}(${3:Args});\n\t#else\n\t\treturn 1;\n\t#endif\n}\n#if defined _ALS_${2:Function}\n\t#undef ${2:Function}\n#else\n\t#define _ALS_${2:Function}\n#endif\n\n#define ${2:Function} ${1:Prefix}_${2:Function}\n#if defined ${1:Prefix}_${2:Function}\n\tforward ${1:Prefix}_${2:Function}(${3:Args});\n#endif$0"
+    },
+    
+    "sizeof": {
+        "prefix": "sizeof",
+        "body": "sizeof(${1:array})$0"
+    },
+    
+    "return": {
+        "prefix": "return",
+        "body": "return ${1:}$0"
     }
 }
