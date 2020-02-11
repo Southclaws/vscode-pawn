@@ -2848,6 +2848,78 @@
         "prefix": "OnPlayerLeaveDynamicArea",
         "body": "OnPlayerLeaveDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid})$0"
     },
+    "CreateDynamicActor": {
+        "prefix": "CreateDynamicActor",
+        "body": "CreateDynamicActor(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:r}, ${6:invulnerable = 1}, ${7:Float:health = 100.0}, ${8:worldid = -1}, ${9:interiorid = -1}, ${10:playerid = -1}, ${11:Float:streamdistance = STREAMER_ACTOR_SD}, ${12:areaid = -1}, ${13:priority = 0})$0"
+    },
+    "DestroyDynamicActor": {
+        "prefix": "DestroyDynamicActor",
+        "body": "DestroyDynamicActor(${1:actorid})$0"
+    },
+    "IsValidDynamicActor": {
+        "prefix": "IsValidDynamicActor",
+        "body": "IsValidDynamicActor(${1:actorid})$0"
+    },
+    "IsDynamicActorStreamedIn": {
+        "prefix": "IsDynamicActorStreamedIn",
+        "body": "IsDynamicActorStreamedIn(${1:actorid}, ${2:forplayerid})$0"
+    },
+    "GetDynamicActorVirtualWorld": {
+        "prefix": "GetDynamicActorVirtualWorld",
+        "body": "GetDynamicActorVirtualWorld(${1:actorid})$0"
+    },
+    "SetDynamicActorVirtualWorld": {
+        "prefix": "SetDynamicActorVirtualWorld",
+        "body": "SetDynamicActorVirtualWorld(${1:actorid}, ${2:vworld})$0"
+    },
+    "ApplyDynamicActorAnimation": {
+        "prefix": "ApplyDynamicActorAnimation",
+        "body": "ApplyDynamicActorAnimation(${1:actorid}, ${2:animlib[]}, ${3:animname[]}, ${4:Float:fdelta}, ${5:loop}, ${6:lockx}, ${7:locky}, ${8:freeze}, ${9:time})$0"
+    },
+    "ClearDynamicActorAnimations": {
+        "prefix": "ClearDynamicActorAnimations",
+        "body": "ClearDynamicActorAnimations(${1:actorid})$0"
+    },
+    "GetDynamicActorFacingAngle": {
+        "prefix": "GetDynamicActorFacingAngle",
+        "body": "GetDynamicActorFacingAngle(${1:actorid}, ${2:&Float:ang})$0"
+    },
+    "SetDynamicActorFacingAngle": {
+        "prefix": "SetDynamicActorFacingAngle",
+        "body": "SetDynamicActorFacingAngle(${1:actorid}, ${2:Float:ang})$0"
+    },
+    "GetDynamicActorPos": {
+        "prefix": "GetDynamicActorPos",
+        "body": "GetDynamicActorPos(${1:actorid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})$0"
+    },
+    "SetDynamicActorPos": {
+        "prefix": "SetDynamicActorPos",
+        "body": "SetDynamicActorPos(${1:actorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+    },
+    "GetDynamicActorHealth": {
+        "prefix": "GetDynamicActorHealth",
+        "body": "GetDynamicActorHealth(${1:actorid}, ${2:&Float:health})$0"
+    },
+    "SetDynamicActorHealth": {
+        "prefix": "SetDynamicActorHealth",
+        "body": "SetDynamicActorHealth(${1:actorid}, ${2:Float:health})$0"
+    },
+    "SetDynamicActorInvulnerable": {
+        "prefix": "SetDynamicActorInvulnerable",
+        "body": "SetDynamicActorInvulnerable(${1:actorid}, ${2:invulnerable = 1})$0"
+    },
+    "IsDynamicActorInvulnerable": {
+        "prefix": "IsDynamicActorInvulnerable",
+        "body": "IsDynamicActorInvulnerable(${1:actorid})$0"
+    },
+    "GetPlayerTargetDynamicActor": {
+        "prefix": "GetPlayerTargetDynamicActor",
+        "body": "GetPlayerTargetDynamicActor(${1:playerid})$0"
+    },
+    "GetPlayerCameraTargetDynActor": {
+        "prefix": "GetPlayerCameraTargetDynActor",
+        "body": "GetPlayerCameraTargetDynActor(${1:playerid})$0"
+    },
     "Streamer_OnPluginError": {
         "prefix": "Streamer_OnPluginError",
         "body": "Streamer_OnPluginError(${1:error[]})$0"
