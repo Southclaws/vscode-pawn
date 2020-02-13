@@ -124,12 +124,12 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "typescript": "^3.7.5",
+        "vscode": "^1.1.36",
+        "@types/node": "^13.7.1",
+        "@types/mocha": "^7.0.1"
     },
     "dependencies": {
-        "axios": "^0.18.0"
+        "axios": "^0.19.2"
     }
 }
