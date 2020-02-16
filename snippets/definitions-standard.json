@@ -69,6 +69,231 @@
         "description": "A value which defines an invalid actor's id and equals 0xFFFF.",
         "body": "INVALID_ACTOR_ID"
     },
+    "MAX_PLAYER_ATTACHED_OBJECTS": {
+        "prefix": "MAX_PLAYER_ATTACHED_OBJECTS",
+        "description": "A value which defines the maximum amount of player objects which can be attached to and equals 10.",
+        "body": "MAX_PLAYER_ATTACHED_OBJECTS"
+    },
+    "MAX_CHATBUBBLE_LENGTH": {
+        "prefix": "MAX_CHATBUBBLE_LENGTH",
+        "description": "A value which defines the maximum lenght of text that can be shown with chat bubble and equals 144.",
+        "body": "MAX_CHATBUBBLE_LENGTH"
+    },
+    "MAPICON_LOCAL": {
+        "prefix": "MAPICON_LOCAL",
+        "description": "A value which defines mapicons state that only displays in player's local area, equals to (0).",
+        "body": "MAPICON_LOCAL"
+    },
+    "MAPICON_GLOBAL": {
+        "prefix": "MAPICON_GLOBAL",
+        "description": "A value which defines mapicons state that always displays on the radar, equals to (1).",
+        "body": "MAPICON_GLOBAL"
+    },
+    "MAPICON_LOCAL_CHECKPOINT": {
+        "prefix": "MAPICON_LOCAL_CHECKPOINT",
+        "description": "A value which defines mapicons state that only displays in player's local area and has a checkpoint marker, equals to (2).",
+        "body": "MAPICON_LOCAL_CHECKPOINT"
+    },
+    "MAPICON_GLOBAL_CHECKPOINT": {
+        "prefix": "MAPICON_GLOBAL_CHECKPOINT",
+        "description": "A value which defines mapicons state that always displays on the radar and has a checkpoint marker, equals to (3).",
+        "body": "MAPICON_GLOBAL_CHECKPOINT"
+    },
+    "CAMERA_CUT": {
+        "prefix": "CAMERA_CUT",
+        "description": "A value which defines camera style: cutting, equals to (2).",
+        "body": "CAMERA_CUT"
+    },
+    "CAMERA_MOVE": {
+        "prefix": "CAMERA_MOVE",
+        "description": "A value which defines camera style: moving, equals to (1).",
+        "body": "CAMERA_MOVE"
+    },
+    "SPECTATE_MODE_NORMAL": {
+        "prefix": "SPECTATE_MODE_NORMAL",
+        "description": "A value which defines normal camera mode for spectating - third person point of view, equals to (1).",
+        "body": "SPECTATE_MODE_NORMAL"
+    },
+    "SPECTATE_MODE_FIXED": {
+        "prefix": "SPECTATE_MODE_FIXED",
+        "description": "A value which defines fixed camera mode for spectating - tracks player/vehicles position, equals to (2).",
+        "body": "SPECTATE_MODE_FIXED"
+    },
+    "SPECTATE_MODE_SIDE": {
+        "prefix": "SPECTATE_MODE_SIDE",
+        "description": "A value which defines side camera mode for spectating - attaches camera to the player/vehicle from side, equals to (3).",
+        "body": "SPECTATE_MODE_SIDE"
+    },
+    "PLAYER_VARTYPE_NONE": {
+        "prefix": "PLAYER_VARTYPE_NONE",
+        "description": "A value which defines typeless player variable, equals to (0).",
+        "body": "PLAYER_VARTYPE_NONE"
+    },
+    "PLAYER_VARTYPE_INT": {
+        "prefix": "PLAYER_VARTYPE_INT",
+        "description": "A value which defines integer type player variable, equals to (1).",
+        "body": "PLAYER_VARTYPE_INT"
+    },
+    "PLAYER_VARTYPE_STRING": {
+        "prefix": "PLAYER_VARTYPE_STRING",
+        "description": "A value which defines string type player variable, equals to (2).",
+        "body": "PLAYER_VARTYPE_STRING"
+    },
+    "PLAYER_VARTYPE_FLOAT": {
+        "prefix": "PLAYER_VARTYPE_FLOAT",
+        "description": "A value which defines float type player variable, equals to (3).",
+        "body": "PLAYER_VARTYPE_FLOAT"
+    },
+    "SERVER_VARTYPE_NONE": {
+        "prefix": "SERVER_VARTYPE_NONE",
+        "description": "A value which defines typeless server variable, equals to (0).",
+        "body": "SERVER_VARTYPE_NONE"
+    },
+    "SERVER_VARTYPE_INT": {
+        "prefix": "SERVER_VARTYPE_INT",
+        "description": "A value which defines integer type server variable, equals to (1).",
+        "body": "SERVER_VARTYPE_INT"
+    },
+    "SERVER_VARTYPE_STRING": {
+        "prefix": "SERVER_VARTYPE_STRING",
+        "description": "A value which defines string type server variable, equals to (2).",
+        "body": "SERVER_VARTYPE_STRING"
+    },
+    "SERVER_VARTYPE_FLOAT": {
+        "prefix": "SERVER_VARTYPE_FLOAT",
+        "description": "A value which defines float type server variable, equals to (3).",
+        "body": "SERVER_VARTYPE_FLOAT"
+    },
+    "CARMODTYPE_SPOILER": {
+        "prefix": "CARMODTYPE_SPOILER",
+        "description": "A value which defines car component modtype-spoiler, equals (0).",
+        "body": "CARMODTYPE_SPOILER"
+    },
+    "CARMODTYPE_HOOD": {
+        "prefix": "CARMODTYPE_HOOD",
+        "description": "A value which defines car component modtype-hood, equals (1).",
+        "body": "CARMODTYPE_HOOD"
+    },
+    "CARMODTYPE_ROOF": {
+        "prefix": "CARMODTYPE_ROOF",
+        "description": "A value which defines car component modtype-roof, equals (2).",
+        "body": "CARMODTYPE_ROOF"
+    },
+    "CARMODTYPE_SIDESKIRT": {
+        "prefix": "CARMODTYPE_SIDESKIRT",
+        "description": "A value which defines car component modtype-roof, equals (3).",
+        "body": "CARMODTYPE_SIDESKIRT"
+    },
+    "CARMODTYPE_LAMPS": {
+        "prefix": "CARMODTYPE_LAMPS",
+        "description": "A value which defines car component modtype-roof, equals (4).",
+        "body": "CARMODTYPE_LAMPS"
+    },
+    "CARMODTYPE_NITRO": {
+        "prefix": "CARMODTYPE_NITRO",
+        "description": "A value which defines car component modtype-roof, equals (5).",
+        "body": "CARMODTYPE_NITRO"
+    },
+    "CARMODTYPE_EXHAUST": {
+        "prefix": "CARMODTYPE_EXHAUST",
+        "description": "A value which defines car component modtype-roof, equals (6).",
+        "body": "CARMODTYPE_EXHAUST"
+    },
+    "CARMODTYPE_WHEELS": {
+        "prefix": "CARMODTYPE_WHEELS",
+        "description": "A value which defines car component modtype-roof, equals (7).",
+        "body": "CARMODTYPE_WHEELS"
+    },
+    "CARMODTYPE_STEREO": {
+        "prefix": "CARMODTYPE_STEREO",
+        "description": "A value which defines car component modtype-stereo, equals (8).",
+        "body": "CARMODTYPE_STEREO"
+    },
+    "CARMODTYPE_HYDRAULICS": {
+        "prefix": "CARMODTYPE_HYDRAULICS",
+        "description": "A value which defines car component modtype-hydraulics, equals (9).",
+        "body": "CARMODTYPE_HYDRAULICS"
+    },
+    "CARMODTYPE_FRONT_BUMPER": {
+        "prefix": "CARMODTYPE_FRONT_BUMPER",
+        "description": "A value which defines car component modtype-front bumper, equals (10).",
+        "body": "CARMODTYPE_FRONT_BUMPER"
+    },
+    "CARMODTYPE_REAR_BUMPER": {
+        "prefix": "CARMODTYPE_REAR_BUMPER",
+        "description": "A value which defines car component modtype-rear bumper, equals (11).",
+        "body": "CARMODTYPE_REAR_BUMPER"
+    },
+    "CARMODTYPE_VENT_RIGHT": {
+        "prefix": "CARMODTYPE_VENT_RIGHT",
+        "description": "A value which defines car component modtype-right vent, equals (12).",
+        "body": "CARMODTYPE_VENT_RIGHT"
+    },
+    "CARMODTYPE_VENT_LEFT": {
+        "prefix": "CARMODTYPE_VENT_LEFT",
+        "description": "A value which defines car component modtype-left vent, equals (13).",
+        "body": "CARMODTYPE_VENT_LEFT"
+    },
+    "VEHICLE_PARAMS_UNSET": {
+        "prefix": "VEHICLE_PARAMS_UNSET",
+        "description": "A value which defines vehicle param that isn't set, equals (-1)\nSuch as engine, light, alarm, etc.",
+        "body": "VEHICLE_PARAMS_UNSET"
+    },
+    "VEHICLE_PARAMS_OFF": {
+        "prefix": "VEHICLE_PARAMS_OFF",
+        "description": "A value which defines vehicle param that is off, equals (0)\nSuch as engine, light, alarm, etc.",
+        "body": "VEHICLE_PARAMS_OFF"
+    },
+    "VEHICLE_PARAMS_ON": {
+        "prefix": "VEHICLE_PARAMS_ON",
+        "description": "A value which defines vehicle param that is on, equals (1)\nSuch as engine, light, alarm, etc.",
+        "body": "VEHICLE_PARAMS_ON"
+    },
+    "VEHICLE_MODEL_INFO_SIZE": {
+        "prefix": "VEHICLE_MODEL_INFO_SIZE",
+        "description": "A value which defines vehicles information type-modelsize, equals (1).",
+        "body": "VEHICLE_MODEL_INFO_SIZE"
+    },
+    "VEHICLE_MODEL_INFO_FRONTSEAT": {
+        "prefix": "VEHICLE_MODEL_INFO_FRONTSEAT",
+        "description": "A value which defines vehicles information type-front seat position, equals (2).",
+        "body": "VEHICLE_MODEL_INFO_FRONTSEAT"
+    },
+    "VEHICLE_MODEL_INFO_REARSEAT": {
+        "prefix": "VEHICLE_MODEL_INFO_REARSEAT",
+        "description": "A value which defines vehicles information type-front seat position, equals (3).",
+        "body": "VEHICLE_MODEL_INFO_REARSEAT"
+    },
+    "VEHICLE_MODEL_INFO_PETROLCAP": {
+        "prefix": "VEHICLE_MODEL_INFO_PETROLCAP",
+        "description": "A value which defines vehicles information type-fuel cap position, equals (4).",
+        "body": "VEHICLE_MODEL_INFO_PETROLCAP"
+    },
+    "VEHICLE_MODEL_INFO_WHEELSFRONT": {
+        "prefix": "VEHICLE_MODEL_INFO_WHEELSFRONT",
+        "description": "A value which defines vehicles information type-front wheels position, equals (5).",
+        "body": "VEHICLE_MODEL_INFO_WHEELSFRONT"
+    },
+    "VEHICLE_MODEL_INFO_WHEELSREAR": {
+        "prefix": "VEHICLE_MODEL_INFO_WHEELSREAR",
+        "description": "A value which defines vehicles information type-rear wheels position, equals (6).",
+        "body": "VEHICLE_MODEL_INFO_WHEELSREAR"
+    },
+    "VEHICLE_MODEL_INFO_WHEELSMID": {
+        "prefix": "VEHICLE_MODEL_INFO_WHEELSMID",
+        "description": "A value which defines vehicles information type-middle wheels position, equals (7).",
+        "body": "VEHICLE_MODEL_INFO_WHEELSMID"
+    },
+    "VEHICLE_MODEL_INFO_FRONT_BUMPER_Z": {
+        "prefix": "VEHICLE_MODEL_INFO_FRONT_BUMPER_Z",
+        "description": "A value which defines vehicles information type-front bumper height, equals (8).",
+        "body": "VEHICLE_MODEL_INFO_FRONT_BUMPER_Z"
+    },
+    "VEHICLE_MODEL_INFO_REAR_BUMPER_Z": {
+        "prefix": "VEHICLE_MODEL_INFO_REAR_BUMPER_Z",
+        "description": "A value which defines vehicles information type-rear bumper height, equals (9).",
+        "body": "VEHICLE_MODEL_INFO_REAR_BUMPER_Z"
+    },
     "NO_TEAM": {
         "prefix": "NO_TEAM",
         "description": "A value used to tag players as not beloning to any team and equals 255.",
@@ -91,12 +316,23 @@
     },
     "MAX_TEXT_DRAWS": {
         "prefix": "MAX_TEXT_DRAWS",
+        "description": "A value which defines the maximum number of global textdraws and equals 2048.",
         "body": "MAX_TEXT_DRAWS"
     },
     "MAX_PLAYER_TEXT_DRAWS": {
         "prefix": "MAX_PLAYER_TEXT_DRAWS",
-        "description": "A value which defines the maximum number of textdraws and equals 2048.",
+        "description": "A value which defines the maximum number of player textdraws and equals 256.",
         "body": "MAX_PLAYER_TEXT_DRAWS"
+    },
+    "TEXT_DRAW_FONT_SPRITE_DRAW": {
+        "prefix": "TEXT_DRAW_FONT_SPRITE_DRAW",
+        "description": "A value which defines sprite textdraw type, equals 4.",
+        "body": "TEXT_DRAW_FONT_SPRITE_DRAW"
+    },
+    "TEXT_DRAW_FONT_MODEL_PREVIEW": {
+        "prefix": "TEXT_DRAW_FONT_MODEL_PREVIEW",
+        "description": "A value which defines model preview textdraw type, equals 4.",
+        "body": "TEXT_DRAW_FONT_MODEL_PREVIEW"
     },
     "MAX_MENUS": {
         "prefix": "MAX_MENUS",
@@ -128,6 +364,11 @@
         "description": "A value which defines an invalid textdraw's id and equals 0xFFFF.",
         "body": "INVALID_TEXT_DRAW"
     },
+    "INVALID_PLAYER_TEXT_DRAW": {
+        "prefix": "INVALID_PLAYER_TEXT_DRAW",
+        "description": "A value which defines an invalid player textdraw's id and equals 0xFFFF.",
+        "body": "INVALID_PLAYER_TEXT_DRAW"
+    },
     "INVALID_GANG_ZONE": {
         "prefix": "INVALID_GANG_ZONE",
         "description": "A value which defines an invalid gang zone's id and equals -1.",
@@ -137,6 +378,11 @@
         "prefix": "INVALID_3DTEXT_ID",
         "description": "A value which defines an invalid 3D text label's id and equals 0xFFFF.",
         "body": "INVALID_3DTEXT_ID"
+    },
+    "INVALID_PLAYER_3DTEXT_ID": {
+        "prefix": "INVALID_PLAYER_3DTEXT_ID",
+        "description": "A value which defines an invalid player 3D text label's id and equals 0xFFFF.",
+        "body": "INVALID_PLAYER_3DTEXT_ID"
     },
     "PLAYER_STATE_ONFOOT": {
         "prefix": "PLAYER_STATE_ONFOOT",
@@ -187,6 +433,216 @@
         "prefix": "PLAYER_STATE_SPECTATING",
         "description": "A value which defines the player' state when spectating, it has the id 9.",
         "body": "PLAYER_STATE_SPECTATING"
+    },
+    "WEAPONSTATE_UNKNOWN": {
+        "prefix": "WEAPONSTATE_UNKNOWN",
+        "description": "A weapon state value which defines unknown weapon state, equals to (-1).",
+        "body": "WEAPONSTATE_UNKNOWN"
+    },
+    "WEAPONSTATE_NO_BULLETS": {
+        "prefix": "WEAPONSTATE_NO_BULLETS",
+        "description": "A weapon state value which defines weapon is without the ammo, equals to (0).",
+        "body": "WEAPONSTATE_NO_BULLETS"
+    },
+    "WEAPONSTATE_LAST_BULLET": {
+        "prefix": "WEAPONSTATE_LAST_BULLET",
+        "description": "A weapon state value which defines weapon that has last bullet in the magazine, equals to (1).",
+        "body": "WEAPONSTATE_LAST_BULLET"
+    },
+    "WEAPONSTATE_MORE_BULLETS": {
+        "prefix": "WEAPONSTATE_MORE_BULLETS",
+        "description": "A weapon state value which defines weapon with multiple bullets, equals to (2).",
+        "body": "WEAPONSTATE_MORE_BULLETS"
+    },
+    "WEAPONSTATE_RELOADING": {
+        "prefix": "WEAPONSTATE_RELOADING",
+        "description": "A weapon state value which defines weapons magazine reload, equals to (3).",
+        "body": "WEAPONSTATE_RELOADING"
+    },
+    "SPECIAL_ACTION_NONE": {
+        "prefix": "SPECIAL_ACTION_NONE",
+        "description": "A value which defines special action `nothing`, equals to (0).",
+        "body": "SPECIAL_ACTION_NONE"
+    },
+    "SPECIAL_ACTION_DUCK": {
+        "prefix": "SPECIAL_ACTION_DUCK",
+        "description": "A value which defines special action `ducking`, equals to (1).",
+        "body": "SPECIAL_ACTION_DUCK"
+    },
+    "SPECIAL_ACTION_USEJETPACK": {
+        "prefix": "SPECIAL_ACTION_USEJETPACK",
+        "description": "A value which defines special action using jetpack, equals to (2).",
+        "body": "SPECIAL_ACTION_USEJETPACK"
+    },
+    "SPECIAL_ACTION_ENTER_VEHICLE": {
+        "prefix": "SPECIAL_ACTION_ENTER_VEHICLE",
+        "description": "A value which defines special action entering the vehicle, equals to (3).",
+        "body": "SPECIAL_ACTION_ENTER_VEHICLE"
+    },
+    "SPECIAL_ACTION_EXIT_VEHICLE": {
+        "prefix": "SPECIAL_ACTION_EXIT_VEHICLE",
+        "description": "A value which defines special action exiting the vehicle, equals to (4).",
+        "body": "SPECIAL_ACTION_EXIT_VEHICLE"
+    },
+    "SPECIAL_ACTION_DANCE1": {
+        "prefix": "SPECIAL_ACTION_DANCE1",
+        "description": "A value which defines special action dancing move 1, equals to (5).",
+        "body": "SPECIAL_ACTION_DANCE1"
+    },
+    "SPECIAL_ACTION_DANCE2": {
+        "prefix": "SPECIAL_ACTION_DANCE2",
+        "description": "A value which defines special action dancing move 2, equals to (6).",
+        "body": "SPECIAL_ACTION_DANCE2"
+    },
+    "SPECIAL_ACTION_DANCE3": {
+        "prefix": "SPECIAL_ACTION_DANCE3",
+        "description": "A value which defines special action dancing move 3, equals to (7).",
+        "body": "SPECIAL_ACTION_DANCE3"
+    },
+    "SPECIAL_ACTION_DANCE4": {
+        "prefix": "SPECIAL_ACTION_DANCE4",
+        "description": "A value which defines special action dancing move 4, equals to (8).",
+        "body": "SPECIAL_ACTION_DANCE4"
+    },
+    "SPECIAL_ACTION_HANDSUP": {
+        "prefix": "SPECIAL_ACTION_HANDSUP",
+        "description": "A value which defines special action hands up, equals to (10).",
+        "body": "SPECIAL_ACTION_HANDSUP"
+    },
+    "SPECIAL_ACTION_USECELLPHONE": {
+        "prefix": "SPECIAL_ACTION_USECELLPHONE",
+        "description": "A value which defines special action using cellphone, equals to (11).",
+        "body": "SPECIAL_ACTION_USECELLPHONE"
+    },
+    "SPECIAL_ACTION_SITTING": {
+        "prefix": "SPECIAL_ACTION_SITTING",
+        "description": "A value which defines special action sitting, equals to (12).",
+        "body": "SPECIAL_ACTION_SITTING"
+    },
+    "SPECIAL_ACTION_STOPUSECELLPHONE": {
+        "prefix": "SPECIAL_ACTION_STOPUSECELLPHONE",
+        "description": "A value which defines special action hanging up cellphone, equals to (13).",
+        "body": "SPECIAL_ACTION_STOPUSECELLPHONE"
+    },
+    "SPECIAL_ACTION_DRINK_BEER": {
+        "prefix": "SPECIAL_ACTION_DRINK_BEER",
+        "description": "A value which defines special action drinking the beer, equals to (20).",
+        "body": "SPECIAL_ACTION_DRINK_BEER"
+    },
+    "SPECIAL_ACTION_SMOKE_CIGGY": {
+        "prefix": "SPECIAL_ACTION_SMOKE_CIGGY",
+        "description": "A value which defines special action smoking the cigarette, equals to (21).",
+        "body": "SPECIAL_ACTION_SMOKE_CIGGY"
+    },
+    "SPECIAL_ACTION_DRINK_WINE": {
+        "prefix": "SPECIAL_ACTION_DRINK_WINE",
+        "description": "A value which defines special action drinking the wine, equals to (22).",
+        "body": "SPECIAL_ACTION_DRINK_WINE"
+    },
+    "SPECIAL_ACTION_DRINK_SPRUNK": {
+        "prefix": "SPECIAL_ACTION_DRINK_SPRUNK",
+        "description": "A value which defines special action drinking soda, equals to (23).",
+        "body": "SPECIAL_ACTION_DRINK_SPRUNK"
+    },
+    "SPECIAL_ACTION_PISSING": {
+        "prefix": "SPECIAL_ACTION_PISSING",
+        "description": "A value which defines special action pissing, equals to (68).",
+        "body": "SPECIAL_ACTION_PISSING"
+    },
+    "SPECIAL_ACTION_CUFFED": {
+        "prefix": "SPECIAL_ACTION_CUFFED",
+        "description": "A value which defines special action being cuffed, equals to (24).",
+        "body": "SPECIAL_ACTION_CUFFED"
+    },
+    "SPECIAL_ACTION_CARRY": {
+        "prefix": "SPECIAL_ACTION_CARRY",
+        "description": "A value which defines special action carrying something, equals to (25).",
+        "body": "SPECIAL_ACTION_CARRY"
+    },
+    "FIGHT_STYLE_NORMAL": {
+        "prefix": "FIGHT_STYLE_NORMAL",
+        "description": "A value which defines normal fighting style, equals to (4).",
+        "body": "FIGHT_STYLE_NORMAL"
+    },
+    "FIGHT_STYLE_BOXING": {
+        "prefix": "FIGHT_STYLE_BOXING",
+        "description": "A value which defines boxing fighting style, equals to (5).",
+        "body": "FIGHT_STYLE_BOXING"
+    },
+    "FIGHT_STYLE_KUNGFU": {
+        "prefix": "FIGHT_STYLE_KUNGFU",
+        "description": "A value which defines kungfu fighting style, equals to (6).",
+        "body": "FIGHT_STYLE_KUNGFU"
+    },
+    "FIGHT_STYLE_KNEEHEAD": {
+        "prefix": "FIGHT_STYLE_KNEEHEAD",
+        "description": "A value which defines lethwei fighting style, equals to (7).",
+        "body": "FIGHT_STYLE_KNEEHEAD"
+    },
+    "FIGHT_STYLE_GRABKICK": {
+        "prefix": "FIGHT_STYLE_GRABKICK",
+        "description": "A value which defines kickbox fighting style, equals to (15).",
+        "body": "FIGHT_STYLE_GRABKICK"
+    },
+    "FIGHT_STYLE_ELBOW": {
+        "prefix": "FIGHT_STYLE_ELBOW",
+        "description": "A value which defines elbow fighting style, equals to (16).",
+        "body": "FIGHT_STYLE_ELBOW"
+    },
+    "WEAPONSKILL_PISTOL": {
+        "prefix": "WEAPONSKILL_PISTOL",
+        "description": "A value which defines weapon skill type for a 9mm pistol, equals to (0).",
+        "body": "WEAPONSKILL_PISTOL"
+    },
+    "WEAPONSKILL_PISTOL_SILENCED": {
+        "prefix": "WEAPONSKILL_PISTOL_SILENCED",
+        "description": "A value which defines weapon skill type for a Silenced Pistol, equals to (1).",
+        "body": "WEAPONSKILL_PISTOL_SILENCED"
+    },
+    "WEAPONSKILL_DESERT_EAGLE": {
+        "prefix": "WEAPONSKILL_DESERT_EAGLE",
+        "description": "A value which defines weapon skill type for a Desert Eagle Pistol, equals to (2).",
+        "body": "WEAPONSKILL_DESERT_EAGLE"
+    },
+    "WEAPONSKILL_SHOTGUN": {
+        "prefix": "WEAPONSKILL_SHOTGUN",
+        "description": "A value which defines weapon skill type for a Shotgun, equals to (3).",
+        "body": "WEAPONSKILL_SHOTGUN"
+    },
+    "WEAPONSKILL_SAWNOFF_SHOTGUN": {
+        "prefix": "WEAPONSKILL_SAWNOFF_SHOTGUN",
+        "description": "A value which defines weapon skill type for a Sawed-Off Shotgun, equals to (4).",
+        "body": "WEAPONSKILL_SAWNOFF_SHOTGUN"
+    },
+    "WEAPONSKILL_SPAS12_SHOTGUN": {
+        "prefix": "WEAPONSKILL_SPAS12_SHOTGUN",
+        "description": "A value which defines weapon skill type for a Spas12 Shotgun, equals to (5).",
+        "body": "WEAPONSKILL_SPAS12_SHOTGUN"
+    },
+    "WEAPONSKILL_MICRO_UZI": {
+        "prefix": "WEAPONSKILL_MICRO_UZI",
+        "description": "A value which defines weapon skill type for a micro Uzi and Tec9, equals to (6).",
+        "body": "WEAPONSKILL_MICRO_UZI"
+    },
+    "WEAPONSKILL_MP5": {
+        "prefix": "WEAPONSKILL_MP5",
+        "description": "A value which defines weapon skill type for a MP5, equals to (7).",
+        "body": "WEAPONSKILL_MP5"
+    },
+    "WEAPONSKILL_AK47": {
+        "prefix": "WEAPONSKILL_AK47",
+        "description": "A value which defines weapon skill type for an AK-47, equals to (8).",
+        "body": "WEAPONSKILL_AK47"
+    },
+    "WEAPONSKILL_M4": {
+        "prefix": "WEAPONSKILL_M4",
+        "description": "A value which defines weapon skill type for a M4, equals to (9).",
+        "body": "WEAPONSKILL_M4"
+    },
+    "WEAPONSKILL_SNIPERRIFLE": {
+        "prefix": "WEAPONSKILL_SNIPERRIFLE",
+        "description": "A value which defines weapon skill type for a Sniper Rifle / Cuntgun, equals to (10).",
+        "body": "WEAPONSKILL_SNIPERRIFLE"
     },
     "PLAYER_MARKERS_MODE_OFF": {
         "prefix": "PLAYER_MARKERS_MODE_OFF",
@@ -538,6 +994,21 @@
         "description": "Value:  128\nCode (On Foot): ~k~~GO_RIGHT~\nCode (In Vehicle):  ~k~~VEHICLE_STEERRIGHT~\nKey (On Foot):  RIGHT\nKey (In Vehicle):  RIGHT",
         "body": " KEY_RIGHT"
     },
+    "PLAYER_RECORDING_TYPE_NONE": {
+        "prefix": " PLAYER_RECORDING_TYPE_NONE",
+        "description": "A value which defines players recording playbacktype - NONE, (ID 0).",
+        "body": " PLAYER_RECORDING_TYPE_NONE"
+    },
+    "PLAYER_RECORDING_TYPE_DRIVER": {
+        "prefix": " PLAYER_RECORDING_TYPE_DRIVER",
+        "description": "A value which defines players recording playbacktypetype - As a driver/pilot, (ID 1).",
+        "body": " PLAYER_RECORDING_TYPE_DRIVER"
+    },
+    "PLAYER_RECORDING_TYPE_ONFOOT": {
+        "prefix": " PLAYER_RECORDING_TYPE_ONFOOT",
+        "description": "A value which defines players recording playbacktypetype - standing/walking, (ID 2).",
+        "body": " PLAYER_RECORDING_TYPE_ONFOOT"
+    },
     "CLICK_SOURCE_SCOREBOARD": {
         "prefix": "CLICK_SOURCE_SCOREBOARD",
         "description": "A value which defines the source of the player's click to be the score board (ID 0).",
@@ -592,5 +1063,180 @@
         "prefix": "BULLET_HIT_TYPE_PLAYER_OBJECT",
         "description": "A value which defines the type of the target that was hit by the shot to be a player object (Used with OnPlayerWeaponShot), (ID 4).",
         "body": "BULLET_HIT_TYPE_PLAYER_OBJECT"
+    },
+    "DIALOG_STYLE_MSGBOX": {
+        "prefix": "DIALOG_STYLE_MSGBOX",
+        "description": "A value which defines message-box-styled dialog, (ID 1).",
+        "body": "DIALOG_STYLE_MSGBOX"
+    },
+    "DIALOG_STYLE_INPUT": {
+        "prefix": "DIALOG_STYLE_INPUT",
+        "description": "A value which defines input styled dialog, (ID 1).",
+        "body": "DIALOG_STYLE_INPUT"
+    },
+    "DIALOG_STYLE_LIST": {
+        "prefix": "DIALOG_STYLE_LIST",
+        "description": "A value which defines list styled dialog, (ID 2).",
+        "body": "DIALOG_STYLE_LIST"
+    },
+    "DIALOG_STYLE_PASSWORD": {
+        "prefix": "DIALOG_STYLE_PASSWORD",
+        "description": "A value which defines password-input styled dialog, (ID 3).",
+        "body": "DIALOG_STYLE_PASSWORD"
+    },
+    "DIALOG_STYLE_TABLIST": {
+        "prefix": "DIALOG_STYLE_TABLIST",
+        "description": "A value which defines tablist styled dialog, (ID 4).",
+        "body": "DIALOG_STYLE_TABLIST"
+    },
+    "DIALOG_STYLE_TABLIST_HEADERS": {
+        "prefix": "DIALOG_STYLE_TABLIST_HEADERS",
+        "description": "A value which defines tablist styled dialog with headers, (ID 5).",
+        "body": "DIALOG_STYLE_TABLIST_HEADERS"
+    },
+    "HTTP_GET": {
+        "prefix": "HTTP_GET",
+        "description": "A value which defines http get request code, (ID 1).",
+        "body": "HTTP_GET"
+    },
+    "HTTP_POST": {
+        "prefix": "HTTP_POST",
+        "description": "A value which defines http post request code, (ID 2).",
+        "body": "HTTP_POST"
+    },
+    "HTTP_HEAD": {
+        "prefix": "HTTP_HEAD",
+        "description": "A value which defines http head request code, (ID 3).",
+        "body": "HTTP_HEAD"
+    },
+    "HTTP_ERROR_BAD_HOST": {
+        "prefix": "HTTP_ERROR_BAD_HOST",
+        "description": "A value which defines https `bad host` error response code, (ID 1).",
+        "body": "HTTP_ERROR_BAD_HOST"
+    },
+    "HTTP_ERROR_NO_SOCKET": {
+        "prefix": "HTTP_ERROR_NO_SOCKET",
+        "description": "A value which defines https `no socket` error response code, (ID 2).",
+        "body": "HTTP_ERROR_NO_SOCKET"
+    },
+    "HTTP_ERROR_CANT_CONNECT": {
+        "prefix": "HTTP_ERROR_CANT_CONNECT",
+        "description": "A value which defines https `cant connect` - error response code, (ID 3).",
+        "body": "HTTP_ERROR_CANT_CONNECT"
+    },
+    "HTTP_ERROR_CANT_WRITE": {
+        "prefix": "HTTP_ERROR_CANT_WRITE",
+        "description": "A value which defines https `cant write` - error response code, (ID 4).",
+        "body": "HTTP_ERROR_CANT_WRITE"
+    },
+    "HTTP_ERROR_CONTENT_TOO_BIG": {
+        "prefix": "HTTP_ERROR_CONTENT_TOO_BIG",
+        "description": "A value which defines https `content too big` - error response code, (ID 5).",
+        "body": "HTTP_ERROR_CONTENT_TOO_BIG"
+    },
+    "HTTP_ERROR_MALFORMED_RESPONSE": {
+        "prefix": "HTTP_ERROR_MALFORMED_RESPONSE",
+        "description": "A value which defines https `malformed` - error response code, (ID 6).",
+        "body": "HTTP_ERROR_MALFORMED_RESPONSE"
+    },
+    "DOWNLOAD_REQUEST_EMPTY": {
+        "prefix": "DOWNLOAD_REQUEST_EMPTY",
+        "description": "A value which defines an empty request type, (ID 0).",
+        "body": "DOWNLOAD_REQUEST_EMPTY"
+    },
+    "DOWNLOAD_REQUEST_MODEL_FILE": {
+        "prefix": "DOWNLOAD_REQUEST_MODEL_FILE",
+        "description": "A value which defines model request type, (ID 1).",
+        "body": "DOWNLOAD_REQUEST_MODEL_FILE"
+    },
+    "DOWNLOAD_REQUEST_TEXTURE_FILE": {
+        "prefix": "DOWNLOAD_REQUEST_TEXTURE_FILE",
+        "description": "A value which defines models texture request type, (ID 2).",
+        "body": "DOWNLOAD_REQUEST_TEXTURE_FILE"
+    },
+    "OBJECT_MATERIAL_SIZE_32x32": {
+        "prefix": "OBJECT_MATERIAL_SIZE_32x32",
+        "description": "A value which defines 32x32 text material size, (ID 10).",
+        "body": "OBJECT_MATERIAL_SIZE_32x32"
+    },
+    "OBJECT_MATERIAL_SIZE_64x32": {
+        "prefix": "OBJECT_MATERIAL_SIZE_64x32",
+        "description": "A value which defines 64x32 text material size, (ID 20).",
+        "body": "OBJECT_MATERIAL_SIZE_64x32"
+    },
+    "OBJECT_MATERIAL_SIZE_64x64": {
+        "prefix": "OBJECT_MATERIAL_SIZE_64x64",
+        "description": "A value which defines 64x64 text material size, (ID 30).",
+        "body": "OBJECT_MATERIAL_SIZE_64x64"
+    },
+    "OBJECT_MATERIAL_SIZE_128x32": {
+        "prefix": "OBJECT_MATERIAL_SIZE_128x32",
+        "description": "A value which defines 128x32 text material size, (ID 40).",
+        "body": "OBJECT_MATERIAL_SIZE_128x32"
+    },
+    "OBJECT_MATERIAL_SIZE_128x64": {
+        "prefix": "OBJECT_MATERIAL_SIZE_128x64",
+        "description": "A value which defines 128x64 text material size, (ID 50).",
+        "body": "OBJECT_MATERIAL_SIZE_128x64"
+    },
+    "OBJECT_MATERIAL_SIZE_128x128": {
+        "prefix": "OBJECT_MATERIAL_SIZE_128x128",
+        "description": "A value which defines 128x128 text material size, (ID 60).",
+        "body": "OBJECT_MATERIAL_SIZE_128x128"
+    },
+    "OBJECT_MATERIAL_SIZE_256x32": {
+        "prefix": "OBJECT_MATERIAL_SIZE_256x32",
+        "description": "A value which defines 256x32 text material size, (ID 70).",
+        "body": "OBJECT_MATERIAL_SIZE_256x32"
+    },
+    "OBJECT_MATERIAL_SIZE_256x64": {
+        "prefix": "OBJECT_MATERIAL_SIZE_256x64",
+        "description": "A value which defines 256x64 text material size, (ID 80).",
+        "body": "OBJECT_MATERIAL_SIZE_256x64"
+    },
+    "OBJECT_MATERIAL_SIZE_256x128": {
+        "prefix": "OBJECT_MATERIAL_SIZE_256x128",
+        "description": "A value which defines 256x128 text material size, (ID 90).",
+        "body": "OBJECT_MATERIAL_SIZE_256x128"
+    },
+    "OBJECT_MATERIAL_SIZE_256x256": {
+        "prefix": "OBJECT_MATERIAL_SIZE_256x256",
+        "description": "A value which defines 256x256 text material size, (ID 100).",
+        "body": "OBJECT_MATERIAL_SIZE_256x256"
+    },
+    "OBJECT_MATERIAL_SIZE_512x64": {
+        "prefix": "OBJECT_MATERIAL_SIZE_512x64",
+        "description": "A value which defines 512x64 text material size, (ID 110).",
+        "body": "OBJECT_MATERIAL_SIZE_512x64"
+    },
+    "OBJECT_MATERIAL_SIZE_512x128": {
+        "prefix": "OBJECT_MATERIAL_SIZE_512x128",
+        "description": "A value which defines 512x128 text material size, (ID 120).",
+        "body": "OBJECT_MATERIAL_SIZE_512x128"
+    },
+    "OBJECT_MATERIAL_SIZE_512x256": {
+        "prefix": "OBJECT_MATERIAL_SIZE_512x256",
+        "description": "A value which defines 512x128 text material size, (ID 130).",
+        "body": "OBJECT_MATERIAL_SIZE_512x256"
+    },
+    "OBJECT_MATERIAL_SIZE_512x512": {
+        "prefix": "OBJECT_MATERIAL_SIZE_512x512",
+        "description": "A value which defines 512x128 text material size, (ID 140).",
+        "body": "OBJECT_MATERIAL_SIZE_512x512"
+    },
+    "OBJECT_MATERIAL_TEXT_ALIGN_LEFT": {
+        "prefix": "OBJECT_MATERIAL_TEXT_ALIGN_LEFT",
+        "description": "A value which defines texts aligment to the left, (ID 0).",
+        "body": "OBJECT_MATERIAL_TEXT_ALIGN_LEFT"
+    },
+    "OBJECT_MATERIAL_TEXT_ALIGN_CENTER": {
+        "prefix": "OBJECT_MATERIAL_TEXT_ALIGN_CENTER",
+        "description": "A value which defines texts aligment to the center, (ID 1).",
+        "body": "OBJECT_MATERIAL_TEXT_ALIGN_CENTER"
+    },
+    "OBJECT_MATERIAL_TEXT_ALIGN_RIGHT": {
+        "prefix": "OBJECT_MATERIAL_TEXT_ALIGN_RIGHT",
+        "description": "A value which defines texts aligment to the right, (ID 2).",
+        "body": "OBJECT_MATERIAL_TEXT_ALIGN_RIGHT"
     }
 }

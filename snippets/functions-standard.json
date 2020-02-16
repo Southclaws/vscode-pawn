@@ -42,7 +42,7 @@
     "GetActorPos": {
         "prefix": "GetActorPos",
         "description": "Get the position of an actor.",
-        "body": "GetActorPos(${1:actorid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+        "body": "GetActorPos(${1:actorid}, ${2:&Float:X}, ${3:&Float:Y}, ${4:&Float:Z})$0"
     },
     "SetActorFacingAngle": {
         "prefix": "SetActorFacingAngle",
@@ -52,7 +52,7 @@
     "GetActorFacingAngle": {
         "prefix": "GetActorFacingAngle",
         "description": "Get the facing angle of an actor.",
-        "body": "GetActorFacingAngle(${1:actorid}, ${2:Float:ang})$0"
+        "body": "GetActorFacingAngle(${1:actorid}, ${2:&Float:ang})$0"
     },
     "SetActorHealth": {
         "prefix": "SetActorHealth",
@@ -62,7 +62,7 @@
     "GetActorHealth": {
         "prefix": "GetActorHealth",
         "description": "Get the health of an actor.",
-        "body": "GetActorHealth(${1:actorid}, ${2:Float:health})$0"
+        "body": "GetActorHealth(${1:actorid}, ${2:&Float:health})$0"
     },
     "SetActorInvulnerable": {
         "prefix": "SetActorInvulnerable",
@@ -202,7 +202,7 @@
     "GetObjectPos": {
         "prefix": "GetObjectPos",
         "description": "Get the position of an object.",
-        "body": "GetObjectPos(${1:objectid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+        "body": "GetObjectPos(${1:objectid}, ${2:&Float:X}, ${3:&Float:Y}, ${4:&Float:Z})$0"
     },
     "SetObjectRot": {
         "prefix": "SetObjectRot",
@@ -212,7 +212,7 @@
     "GetObjectRot": {
         "prefix": "GetObjectRot",
         "description": "Use this function to get the objects current rotation. The rotation is saved by reference in three RotX/RotY/RotZ variables.",
-        "body": "GetObjectRot(${1:objectid}, ${2:Float:RotX}, ${3:Float:RotY}, ${4:Float:RotZ})$0"
+        "body": "GetObjectRot(${1:objectid}, ${2:&Float:RotX}, ${3:&Float:RotY}, ${4:&Float:RotZ})$0"
     },
     "GetObjectModel": {
         "prefix": "GetObjectModel",
@@ -287,7 +287,7 @@
     "GetPlayerObjectPos": {
         "prefix": "GetPlayerObjectPos",
         "description": "Get the position of a player object.",
-        "body": "GetPlayerObjectPos(${1:playerid}, ${2:objectid}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z})$0"
+        "body": "GetPlayerObjectPos(${1:playerid}, ${2:objectid}, ${3:&Float:X}, ${4:&Float:Y}, ${5:&Float:Z})$0"
     },
     "SetPlayerObjectRot": {
         "prefix": "SetPlayerObjectRot",
@@ -297,7 +297,7 @@
     "GetPlayerObjectRot": {
         "prefix": "GetPlayerObjectRot",
         "description": "Use this function to get the object's current rotation. The rotation is saved by reference in three RotX/RotY/RotZ variables.",
-        "body": "GetPlayerObjectRot(${1:playerid}, ${2:objectid}, ${3:Float:RotX}, ${4:Float:RotY}, ${5:Float:RotZ})$0"
+        "body": "GetPlayerObjectRot(${1:playerid}, ${2:objectid}, ${3:&Float:RotX}, ${4:&Float:RotY}, ${5:&Float:RotZ})$0"
     },
     "GetPlayerObjectModel": {
         "prefix": "GetPlayerObjectModel",
@@ -387,7 +387,7 @@
     "GetPlayerPos": {
         "prefix": "GetPlayerPos",
         "description": "Get the position of a player, represented by X, Y and Z coordinates.",
-        "body": "GetPlayerPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+        "body": "GetPlayerPos(${1:playerid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})$0"
     },
     "SetPlayerFacingAngle": {
         "prefix": "SetPlayerFacingAngle",
@@ -397,7 +397,7 @@
     "GetPlayerFacingAngle": {
         "prefix": "GetPlayerFacingAngle",
         "description": "Gets the angle a player is facing.",
-        "body": "GetPlayerFacingAngle(${1:playerid}, ${2:Float:ang})$0"
+        "body": "GetPlayerFacingAngle(${1:playerid}, ${2:&Float:ang})$0"
     },
     "IsPlayerInRangeOfPoint": {
         "prefix": "IsPlayerInRangeOfPoint",
@@ -432,7 +432,7 @@
     "GetPlayerHealth": {
         "prefix": "GetPlayerHealth",
         "description": "Get the health of a player.",
-        "body": "GetPlayerHealth(${1:playerid}, ${2:Float:health})$0"
+        "body": "GetPlayerHealth(${1:playerid}, ${2:&Float:health})$0"
     },
     "SetPlayerArmour": {
         "prefix": "SetPlayerArmour",
@@ -442,7 +442,7 @@
     "GetPlayerArmour": {
         "prefix": "GetPlayerArmour",
         "description": "This function stores the armour of a player into a variable.",
-        "body": "GetPlayerArmour(${1:playerid}, ${2:Float:armour})$0"
+        "body": "GetPlayerArmour(${1:playerid}, ${2:&Float:armour})$0"
     },
     "SetPlayerAmmo": {
         "prefix": "SetPlayerAmmo",
@@ -537,7 +537,7 @@
     "GetPlayerWeaponData": {
         "prefix": "GetPlayerWeaponData",
         "description": "Get the weapon and ammo in a specific player's weapon slot (e.g. the weapon in the 'SMG' slot).",
-        "body": "GetPlayerWeaponData(${1:playerid}, ${2:slot}, ${3:weapons}, ${4:ammo})$0"
+        "body": "GetPlayerWeaponData(${1:playerid}, ${2:slot}, ${3:&weapons}, ${4:&ammo})$0"
     },
     "GivePlayerMoney": {
         "prefix": "GivePlayerMoney",
@@ -582,7 +582,7 @@
     "GetPlayerKeys": {
         "prefix": "GetPlayerKeys",
         "description": "Check which keys a player is pressing.",
-        "body": "GetPlayerKeys(${1:playerid}, ${2:keys}, ${3:updown}, ${4:leftright})$0"
+        "body": "GetPlayerKeys(${1:playerid}, ${2:&keys}, ${3:&updown}, ${4:&leftright})$0"
     },
     "GetPlayerName": {
         "prefix": "GetPlayerName",
@@ -687,7 +687,7 @@
     "GetPlayerLastShotVectors": {
         "prefix": "GetPlayerLastShotVectors",
         "description": "Retrieves the start and end (hit) position of the last bullet a player fired.",
-        "body": "GetPlayerLastShotVectors(${1:playerid}, ${2:Float:fOriginX}, ${3:Float:fOriginY}, ${4:Float:fOriginZ}, ${5:Float:fHitPosX}, ${6:Float:fHitPosY}, ${7:Float:fHitPosZ})$0"
+        "body": "GetPlayerLastShotVectors(${1:playerid}, ${2:&Float:fOriginX}, ${3:&Float:fOriginY}, ${4:&Float:fOriginZ}, ${5:&Float:fHitPosX}, ${6:&Float:fHitPosY}, ${7:&Float:fHitPosZ})$0"
     },
     "SetPlayerAttachedObject": {
         "prefix": "SetPlayerAttachedObject",
@@ -997,12 +997,12 @@
     "GetPlayerCameraPos": {
         "prefix": "GetPlayerCameraPos",
         "description": "Get the position of the player's camera.",
-        "body": "GetPlayerCameraPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+        "body": "GetPlayerCameraPos(${1:playerid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})$0"
     },
     "GetPlayerCameraFrontVector": {
         "prefix": "GetPlayerCameraFrontVector",
         "description": "This function will return the current direction of player's aiming in 3-D space, the coords are relative to the camera position, see GetPlayerCameraPos.",
-        "body": "GetPlayerCameraFrontVector(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+        "body": "GetPlayerCameraFrontVector(${1:playerid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})$0"
     },
     "GetPlayerCameraMode": {
         "prefix": "GetPlayerCameraMode",
@@ -2252,7 +2252,7 @@
     "GetVehiclePos": {
         "prefix": "GetVehiclePos",
         "description": "Gets the position of a vehicle.",
-        "body": "GetVehiclePos(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+        "body": "GetVehiclePos(${1:vehicleid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})$0"
     },
     "SetVehiclePos": {
         "prefix": "SetVehiclePos",
@@ -2262,12 +2262,12 @@
     "GetVehicleZAngle": {
         "prefix": "GetVehicleZAngle",
         "description": "Get the rotation of a vehicle on the Z axis (yaw).",
-        "body": "GetVehicleZAngle(${1:vehicleid}, ${2:Float:z_angle})$0"
+        "body": "GetVehicleZAngle(${1:vehicleid}, ${2:&Float:z_angle})$0"
     },
     "GetVehicleRotationQuat": {
         "prefix": "GetVehicleRotationQuat",
         "description": "",
-        "body": "GetVehicleRotationQuat(${1:vehicleid}, ${2:Float:w}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})$0"
+        "body": "GetVehicleRotationQuat(${1:vehicleid}, ${2:&Float:w}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})$0"
     },
     "GetVehicleDistanceFromPoint": {
         "prefix": "GetVehicleDistanceFromPoint",
@@ -2312,7 +2312,7 @@
     "GetVehicleParamsCarDoors": {
         "prefix": "GetVehicleParamsCarDoors",
         "description": "Allows you to retrieve the current state of a vehicle's doors",
-        "body": "GetVehicleParamsCarDoors(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
+        "body": "GetVehicleParamsCarDoors(${1:vehicleid}, ${2:&driver}, ${3:&passenger}, ${4:&backleft}, ${5:&backright})$0"
     },
     "SetVehicleParamsCarWindows": {
         "prefix": "SetVehicleParamsCarWindows",
@@ -2322,7 +2322,7 @@
     "GetVehicleParamsCarWindows": {
         "prefix": "GetVehicleParamsCarWindows",
         "description": "Allows you to retrieve the current state of a vehicle's windows",
-        "body": "GetVehicleParamsCarWindows(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright})$0"
+        "body": "GetVehicleParamsCarWindows(${1:vehicleid}, ${2:&driver}, ${3:&passenger}, ${4:&backleft}, ${5:&backright})$0"
     },
     "SetVehicleToRespawn": {
         "prefix": "SetVehicleToRespawn",
@@ -2412,7 +2412,7 @@
     "GetVehicleVelocity": {
         "prefix": "GetVehicleVelocity",
         "description": "Get the velocity of a vehicle on the X, Y and Z axes.",
-        "body": "GetVehicleVelocity(${1:vehicleid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z})$0"
+        "body": "GetVehicleVelocity(${1:vehicleid}, ${2:&Float:X}, ${3:&Float:Y}, ${4:&Float:Z})$0"
     },
     "SetVehicleVelocity": {
         "prefix": "SetVehicleVelocity",
@@ -2688,5 +2688,150 @@
         "prefix": "floatabs",
         "description": "This function returns the absolute value of float.",
         "body": "floatabs(${1:Float:value})$0"
+    },
+    "getarg": {
+        "prefix": "getarg",
+        "description": "Get an argument that was passed to a function.",
+        "body": "getarg(${1:arg}, ${2:index = 0})$0"
+    },
+    "getdate": {
+        "prefix": "getdate",
+        "description": "Get the current server date",
+        "body": "getdate(${1:&year = 0}, ${1:&month = 0}, ${1:&day = 0})$0"
+    },
+    "gettime": {
+        "prefix": "gettime",
+        "description": "Get the current server time",
+        "body": "gettime(${1:&hour = 0}, ${1:&minute = 0}, ${1:&second = 0})$0"
+    },
+    "gpci": {
+        "prefix": "gpci",
+        "description": "Fetch the GPCI of a user, this is linked to their SAMP/GTA on their computer.",
+        "body": "gpci(${1:playerid}, ${1:string[]}, ${1:length})$0"
+    },
+    "heapspace": {
+        "prefix": "heapspace",
+        "description": "Returns the amount of memory available for the heap/stack in bytes.",
+        "body": "heapspace()$0"
+    },
+    "ispacked": {
+        "prefix": "ispacked",
+        "description": "Checks if the given string is packed.",
+        "body": "ispacked(${1:const string[]})$0"
+    },
+    "memcpy": {
+        "prefix": "memcpy",
+        "description": "Copy bytes from one location to another.",
+        "body": "memcpy(${1:dest[]}, ${2:const source[]}, ${3:index = 0}, ${4:numbytes}, ${5:maxlenght = sizeof dest})$0"
+    },
+    "random": {
+        "prefix": "random",
+        "description": "Get a pseudo-random number.",
+        "body": "random(${1:max})$0"
+    },
+    "deleteproperty": {
+        "prefix": "deleteproperty",
+        "description": "Delete an earlier set property",
+        "body": "deleteproperty(${1:id = 0}, ${2:const name[]}, ${3:value = cellmin})$0"
+    },
+    "existproperty": {
+        "prefix": "existproperty",
+        "description": "Check if a property exist.",
+        "body": "existproperty(${1:id = 0}, ${2:const name[]}, ${3:value = cellmin})$0"
+    },
+    "setproperty": {
+        "prefix": "setproperty",
+        "description": "Add a new property or change an existing property.",
+        "body": "setproperty(${1:id = 0}, ${2:const name[]}, ${3:value = cellmin}, ${4:const string[]})$0"
+    },
+    "getproperty": {
+        "prefix": "getproperty",
+        "description": "Add a new property or change an existing property.",
+        "body": "getproperty(${1:id = 0}, ${2:const name[]}, ${3:value = cellmin}, ${4:string[]})$0"
+    },
+    "AddCharModel": {
+        "prefix": "AddCharModel",
+        "description": "Adds a new custom character model for download.",
+        "body": "AddCharModel(${1:baseid}, ${2:newid}, ${3:dffname[]}, ${4:txdname[]})$0"
+    },
+    "AddSimpleModel": {
+        "prefix": "AddSimpleModel",
+        "description": "Adds a new custom character model for download.",
+        "body": "AddSimpleModel(${1:virtualworld}, ${2:baseid}, ${3:newid}, ${4:dffname[]}, ${5:txdname[]})$0"
+    },
+    "AddSimpleModelTimed": {
+        "prefix": "AddSimpleModelTimed",
+        "description": "Adds a new custom character model for download.",
+        "body": "AddSimpleModelTimed(${1:virtualworld}, ${2:baseid}, ${3:newid}, ${4:dffname[]}, ${5:txdname[]}, ${6:timeon}, ${7:timeoff})$0"
+    },
+    "FindModelFileNameFromCRC": {
+        "prefix": "FindModelFileNameFromCRC",
+        "description": "Find an existing custom skin or simple object model file.",
+        "body": "FindModelFileNameFromCRC(${1:crc}, ${2:retstr[]}, ${3:retstr_size})$0"
+    },
+    "FindTextureFileNameFromCRC": {
+        "prefix": "FindTextureFileNameFromCRC",
+        "description": "Find an existing custom skin or simple object texture file.",
+        "body": "FindTextureFileNameFromCRC(${1:crc}, ${2:retstr[]}, ${3:retstr_size})$0"
+    },
+    "GetPlayerCustomSkin": {
+        "prefix": "GetPlayerCustomSkin",
+        "description": "Returns the class of the players custom skin downloaded from the server.",
+        "body": "GetPlayerCustomSkin(${1:playerid})$0"
+    },
+    "RedirectDownload": {
+        "prefix": "RedirectDownload",
+        "description": "Redirect a player custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.",
+        "body": "RedirectDownload(${1:playerid}, ${2:url[]})$0"
+    },
+    "OnPlayerFinishedDownloading": {
+        "prefix": "OnPlayerFinishedDownloading",
+        "description": "This callback is called when a player finishes downloading custom models.",
+        "body": "OnPlayerFinishedDownloading(${1:playerid}, ${2:virtualworld})$0"
+    },
+    "OnPlayerRequestDownload": {
+        "prefix": "OnPlayerRequestDownload",
+        "description": "This callback is called when a player request for custom model downloads.",
+        "body": "OnPlayerRequestDownload(${1:playerid}, ${2:type}, ${3:crc})$0"
+    },
+    "clamp": {
+        "prefix": "clamp",
+        "description": "Force a value to be inside a range.",
+        "body": "clamp(${1:value}, ${2:min}, ${3:max})$0"
+    },
+    "IsPlayerHoldingObject": {
+        "prefix": "IsPlayerHoldingObject",
+        "description": "Check if the player is holding an object.",
+        "body": "IsPlayerHoldingObject(${1:playerid})$0"
+    },
+    "funcidx": {
+        "prefix": "funcidx",
+        "description": "This function returns the ID of a public function by its name.",
+        "body": "funcidx(${1:const name[]})$0"
+    },
+    "GetGravity": {
+        "prefix": "GetGravity",
+        "description": "returns the value of gravity which was set by default or by SetGravity",
+        "body": "GetGravity()$0"
+    },
+    "GetVehicleRotation": {
+        "prefix": "GetVehicleRotation",
+        "description": "Get the rotation of a vehicle on the XYZ axis..",
+        "body": "GetVehicleRotation(${1:vehicleid}, ${2:&Float:rx}, ${3:&Float:ry}, ${4:&Float:rz})$0"
+    },
+    "GetPlayerCameraUpVector": {
+        "prefix": "GetPlayerCameraUpVector",
+        "description": "Returns the vector, that points to the upside of the camera's view, or, in other words, to the middle top of your screen.",
+        "body": "GetPlayerCameraUpVector(${1:playerid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})$0"
+    },
+    "OnPlayerPrivmsg": {
+        "prefix": "OnPlayerPrivmsg",
+        "description": "This callback is called when a player sends a private message through the native PM system /pm.\nFunction Is Disabled in current version of sa-mp.",
+        "body": "OnPlayerPrivmsg(${1:playerid}, ${2:recieverid}, ${3:text[]})$0"
+    },
+    "OnPlayerTeamPrivmsg": {
+        "prefix": "OnPlayerTeamPrivmsg",
+        "description": "This callback is called when a player sends a team private message through the native TPM system (/tpm).\nFunction Is Disabled in current version of sa-mp.",
+        "body": "OnPlayerTeamPrivmsg(${1:playerid}, ${2:text[]})$0"
     }
 }
