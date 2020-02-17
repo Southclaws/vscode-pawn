@@ -2185,7 +2185,7 @@
     "Streamer_GetRadiusMultiplier": {
         "prefix": "Streamer_GetRadiusMultiplier",
         "body":
-            "Streamer_GetRadiusMultiplier(${1:type}, ${2:Float:multiplier}, ${3:playerid = -1})$0"
+            "Streamer_GetRadiusMultiplier(${1:type}, ${2:&Float:multiplier}, ${3:playerid = -1})$0"
     },
     "Streamer_SetRadiusMultiplier": {
         "prefix": "Streamer_SetRadiusMultiplier",
@@ -2296,7 +2296,7 @@
     "Streamer_GetFloatData": {
         "prefix": "Streamer_GetFloatData",
         "body":
-            "Streamer_GetFloatData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:Float:result})$0"
+            "Streamer_GetFloatData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:&Float:result})$0"
     },
     "Streamer_SetFloatData": {
         "prefix": "Streamer_SetFloatData",
@@ -2347,7 +2347,7 @@
     "Streamer_GetDistanceToItem": {
         "prefix": "Streamer_GetDistanceToItem",
         "body":
-            "Streamer_GetDistanceToItem(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:STREAMER_ALL_TAGS id}, ${6:Float:distance}, ${7:dimensions = 3})$0"
+            "Streamer_GetDistanceToItem(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:STREAMER_ALL_TAGS id}, ${6:&Float:distance}, ${7:dimensions = 3})$0"
     },
     "Streamer_ToggleItem": {
         "prefix": "Streamer_ToggleItem",
@@ -2445,7 +2445,7 @@
     "GetDynamicObjectPos": {
         "prefix": "GetDynamicObjectPos",
         "body":
-            "GetDynamicObjectPos(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})$0"
+            "GetDynamicObjectPos(${1:STREAMER_TAG_OBJECT objectid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})$0"
     },
     "SetDynamicObjectRot": {
         "prefix": "SetDynamicObjectRot",
@@ -2455,7 +2455,7 @@
     "GetDynamicObjectRot": {
         "prefix": "GetDynamicObjectRot",
         "body":
-            "GetDynamicObjectRot(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})$0"
+            "GetDynamicObjectRot(${1:STREAMER_TAG_OBJECT objectid}, ${2:&Float:rx}, ${3:&Float:ry}, ${4:&Float:rz})$0"
     },
     "SetDynamicObjectNoCameraCol": {
         "prefix": "SetDynamicObjectNoCameraCol",
@@ -2509,7 +2509,7 @@
     "GetDynamicObjectMaterial": {
         "prefix": "GetDynamicObjectMaterial",
         "body":
-            "GetDynamicObjectMaterial(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:modelid}, ${4:txdname[]}, ${5:texturename[]}, ${6:materialcolor}, ${7:maxtxdname = sizeof txdname}, ${8:maxtexturename = sizeof texturename})$0"
+            "GetDynamicObjectMaterial(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:&modelid}, ${4:txdname[]}, ${5:texturename[]}, ${6:&materialcolor}, ${7:maxtxdname = sizeof txdname}, ${8:maxtexturename = sizeof texturename})$0"
     },
     "SetDynamicObjectMaterial": {
         "prefix": "SetDynamicObjectMaterial",
@@ -2524,7 +2524,7 @@
     "GetDynamicObjectMaterialText": {
         "prefix": "GetDynamicObjectMaterialText",
         "body":
-            "GetDynamicObjectMaterialText(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:text[]}, ${4:materialsize}, ${5:fontface[]}, ${6:fontsize}, ${7:bold}, ${8:fontcolor}, ${9:backcolor}, ${10:textalignment}, ${11:maxtext = sizeof text}, ${12:maxfontface = sizeof fontface})$0"
+            "GetDynamicObjectMaterialText(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:text[]}, ${4:&materialsize}, ${5:fontface[]}, ${6:&fontsize}, ${7:&bold}, ${8:&fontcolor}, ${9:&backcolor}, ${10:&textalignment}, ${11:maxtext = sizeof text}, ${12:maxfontface = sizeof fontface})$0"
     },
     "SetDynamicObjectMaterialText": {
         "prefix": "SetDynamicObjectMaterialText",
@@ -2985,6 +2985,26 @@
     "OnPlayerLeaveDynamicArea": {
         "prefix": "OnPlayerLeaveDynamicArea",
         "body": "OnPlayerLeaveDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid})$0"
+    },
+    "OnPlayerGiveDamageDynamicActor": {
+        "prefix": "OnPlayerGiveDamageDynamicActor",
+        "body": "OnPlayerGiveDamageDynamicActor(${1:playerid}, ${2:actorid}, ${3:Float:amount}, ${4:weaponid}, ${5:bodypart})$0"
+    },
+    "OnDynamicActorStreamIn": {
+        "prefix": "OnDynamicActorStreamIn",
+        "body": "OnDynamicActorStreamIn(${1:actorid}, ${2:forplayerid})$0"
+    },
+    "OnDynamicActorStreamOut": {
+        "prefix": "OnDynamicActorStreamOut",
+        "body": "OnDynamicActorStreamOut(${1:actorid}, ${2:forplayerid})$0"
+    },
+    "Streamer_OnItemStreamIn": {
+        "prefix": "Streamer_OnItemStreamIn",
+        "body": "Streamer_OnItemStreamIn(${1:type}, ${2:id})$0"
+    },
+    "Streamer_OnItemStreamOut": {
+        "prefix": "Streamer_OnItemStreamOut",
+        "body": "Streamer_OnItemStreamOut(${1:type}, ${2:id})$0"
     },
     "CreateDynamicActor": {
         "prefix": "CreateDynamicActor",

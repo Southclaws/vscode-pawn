@@ -243,5 +243,121 @@
     "MICROSECONDS": {
         "prefix": "MICROSECONDS",
         "body": "MICROSECONDS"  
+    },
+    "STREAMER_TYPE_OBJECT": {
+        "prefix": "STREAMER_TYPE_OBJECT (0)",
+        "body": "STREAMER_TYPE_OBJECT"  
+    },
+    "STREAMER_TYPE_PICKUP": {
+        "prefix": "STREAMER_TYPE_PICKUP (1)",
+        "body": "STREAMER_TYPE_PICKUP"  
+    },
+    "STREAMER_TYPE_CP": {
+        "prefix": "STREAMER_TYPE_CP (2)",
+        "body": "STREAMER_TYPE_CP"  
+    },
+    "STREAMER_TYPE_RACE_CP": {
+        "prefix": "STREAMER_TYPE_RACE_CP (3)",
+        "body": "STREAMER_TYPE_RACE_CP"  
+    },
+    "STREAMER_TYPE_MAP_ICON": {
+        "prefix": "STREAMER_TYPE_MAP_ICON (4)",
+        "body": "STREAMER_TYPE_MAP_ICON"  
+    },
+    "STREAMER_TYPE_3D_TEXT_LABEL": {
+        "prefix": "STREAMER_TYPE_3D_TEXT_LABEL (5)",
+        "body": "STREAMER_TYPE_3D_TEXT_LABEL"  
+    },
+    "STREAMER_TYPE_AREA": {
+        "prefix": "STREAMER_TYPE_AREA (6)",
+        "body": "STREAMER_TYPE_AREA"  
+    },
+    "STREAMER_TYPE_ACTOR": {
+        "prefix": "STREAMER_TYPE_ACTOR (7)",
+        "body": "STREAMER_TYPE_ACTOR"  
+    },
+    "STREAMER_AREA_TYPE_CIRCLE": {
+        "prefix": "STREAMER_AREA_TYPE_CIRCLE (0)",
+        "body": "STREAMER_AREA_TYPE_CIRCLE"  
+    },
+    "STREAMER_AREA_TYPE_CYLINDER": {
+        "prefix": "STREAMER_AREA_TYPE_CYLINDER (1)",
+        "body": "STREAMER_AREA_TYPE_CYLINDER"  
+    },
+    "STREAMER_AREA_TYPE_SPHERE": {
+        "prefix": "STREAMER_AREA_TYPE_SPHERE (2)",
+        "body": "STREAMER_AREA_TYPE_SPHERE"  
+    },
+    "STREAMER_AREA_TYPE_RECTANGLE": {
+        "prefix": "STREAMER_AREA_TYPE_RECTANGLE (3)",
+        "body": "STREAMER_AREA_TYPE_RECTANGLE"  
+    },
+    "STREAMER_AREA_TYPE_CUBOID": {
+        "prefix": "STREAMER_AREA_TYPE_CUBOID (4)",
+        "body": "STREAMER_AREA_TYPE_CUBOID"  
+    },
+    "STREAMER_AREA_TYPE_POLYGON": {
+        "prefix": "STREAMER_AREA_TYPE_POLYGON (5)",
+        "body": "STREAMER_AREA_TYPE_POLYGON"  
+    },
+    "STREAMER_OBJECT_TYPE_GLOBAL": {
+        "prefix": "STREAMER_OBJECT_TYPE_GLOBAL (0)",
+        "body": "STREAMER_OBJECT_TYPE_GLOBAL"  
+    },
+    "STREAMER_OBJECT_TYPE_PLAYER": {
+        "prefix": "STREAMER_OBJECT_TYPE_PLAYER (1)",
+        "body": "STREAMER_OBJECT_TYPE_PLAYER"  
+    },
+    "STREAMER_OBJECT_TYPE_DYNAMIC": {
+        "prefix": "STREAMER_OBJECT_TYPE_DYNAMIC (2)",
+        "body": "STREAMER_OBJECT_TYPE_DYNAMIC"  
+    },
+    "STREAMER_MAX_TYPES": {
+        "prefix": "STREAMER_MAX_TYPES (8)",
+        "body": "STREAMER_MAX_TYPES"  
+    },
+    "STREAMER_MAX_AREA_TYPES": {
+        "prefix": "STREAMER_MAX_AREA_TYPES (5)",
+        "body": "STREAMER_MAX_AREA_TYPES"  
+    },
+    "STREAMER_MAX_OBJECT_TYPES": {
+        "prefix": "STREAMER_MAX_OBJECT_TYPES (3)",
+        "body": "STREAMER_MAX_OBJECT_TYPES"  
+    },
+    "INVALID_STREAMER_ID": {
+        "prefix": "INVALID_STREAMER_ID (0)",
+        "body": "INVALID_STREAMER_ID"  
+    },
+    "STREAMER_OBJECT_SD": {
+        "prefix": "STREAMER_OBJECT_SD (300.0)",
+        "body": "STREAMER_OBJECT_SD"  
+    },
+    "STREAMER_OBJECT_DD": {
+        "prefix": "STREAMER_OBJECT_DD (0.0)",
+        "body": "STREAMER_OBJECT_DD"  
+    },
+    "STREAMER_PICKUP_SD": {
+        "prefix": "STREAMER_PICKUP_SD (200.0)",
+        "body": "STREAMER_PICKUP_SD"  
+    },
+    "STREAMER_CP_SD": {
+        "prefix": "STREAMER_CP_SD (200.0)",
+        "body": "STREAMER_CP_SD"  
+    },
+    "STREAMER_RACE_CP_SD": {
+        "prefix": "STREAMER_RACE_CP_SD (200.0)",
+        "body": "STREAMER_RACE_CP_SD"  
+    },
+    "STREAMER_MAP_ICON_SD": {
+        "prefix": "STREAMER_MAP_ICON_SD (200.0)",
+        "body": "STREAMER_MAP_ICON_SD "  
+    },
+    "STREAMER_3D_TEXT_LABEL_SD": {
+        "prefix": "STREAMER_3D_TEXT_LABEL_SD (200.0)",
+        "body": "STREAMER_3D_TEXT_LABEL_SD"  
+    },
+    "STREAMER_ACTOR_SD": {
+        "prefix": "STREAMER_ACTOR_SD (200.0)",
+        "body": "STREAMER_ACTOR_SD"  
     }
 }
