@@ -2833,5 +2833,15 @@
         "prefix": "OnPlayerTeamPrivmsg",
         "description": "This callback is called when a player sends a team private message through the native TPM system (/tpm).\nFunction Is Disabled in current version of sa-mp.",
         "body": "OnPlayerTeamPrivmsg(${1:playerid}, ${2:text[]})$0"
-    }
+    },
+    "SetDisabledWeapons": {
+        "prefix": "SetDisabledWeapons",
+        "description": "Forbids weapons, Warning: This function does not work in the current SA:MP version!",
+        "body": "SetDisabledWeapons(${1:...})$0"
+    },
+    "numargs": {
+        "prefix": "numargs",
+        "description": "Get the number of arguments passed to a function.",
+        "body": "numargs()$0"
+   }
 }
