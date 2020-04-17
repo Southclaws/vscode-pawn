@@ -59,7 +59,37 @@ there, create a file named `tasks.json`.
 
 ![https://i.imgur.com/ywElfTy.gif](https://i.imgur.com/ywElfTy.gif)
 
-Then paste this into that file:
+Then paste the following relevant snippet into that file, depending on your primary shell:
+
+#### PowerShell
+
+```json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-normal",
+      "type": "shell",
+      "command": "${workspaceRoot}/pawno/pawncc.exe",
+      "args": ["${file}", "--%", "-Dgamemodes", "-;+", "-(+", "-d3"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "isBackground": false,
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated"
+      },
+      "problemMatcher": "$pawncc"
+    }
+  ]
+}
+```
+
+#### Command Prompt (cmd.exe)
+
+This example includes no escape characters, so you can adapt this to other shells such as Bash, Oil, Fish, etc.
 
 ```json
 {
