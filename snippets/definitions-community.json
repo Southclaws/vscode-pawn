@@ -142,51 +142,51 @@
     },
     "MYSQL_TYPE_TIMESTAMP": {
         "prefix": "MYSQL_TYPE_TIMESTAMP",
-        "body:": "MYSQL_TYPE_TIMESTAMP"
+        "body": "MYSQL_TYPE_TIMESTAMP"
     },
     "MYSQL_TYPE_LONGLONG": {
         "prefix": "MYSQL_TYPE_LONGLONG",
-        "body:": "MYSQL_TYPE_LONGLONG"
+        "body": "MYSQL_TYPE_LONGLONG"
     },
     "MYSQL_TYPE_INT24": {
         "prefix": "MYSQL_TYPE_INT24",
-        "body:": "MYSQL_TYPE_INT24"
+        "body": "MYSQL_TYPE_INT24"
     },
     "MYSQL_TYPE_DATE": {
         "prefix": "MYSQL_TYPE_DATE",
-        "body:": "MYSQL_TYPE_DATE"
+        "body": "MYSQL_TYPE_DATE"
     },
     "MYSQL_TYPE_TIME": {
         "prefix": "MYSQL_TYPE_TIME",
-        "body:": "MYSQL_TYPE_TIME"
+        "body": "MYSQL_TYPE_TIME"
     },
     "MYSQL_TYPE_DATETIME": {
         "prefix": "MYSQL_TYPE_DATETIME",
-        "body:": "MYSQL_TYPE_DATETIME"
+        "body": "MYSQL_TYPE_DATETIME"
     },
     "MYSQL_TYPE_YEAR": {
         "prefix": "MYSQL_TYPE_YEAR",
-        "body:": "MYSQL_TYPE_YEAR"
+        "body": "MYSQL_TYPE_YEAR"
     },
     "MYSQL_TYPE_NEWDATE": {
         "prefix": "MYSQL_TYPE_NEWDATE",
-        "body:": "MYSQL_TYPE_NEWDATE"
+        "body": "MYSQL_TYPE_NEWDATE"
     },
     "MYSQL_TYPE_VARCHAR": {
         "prefix": "MYSQL_TYPE_VARCHAR",
-        "body:": "MYSQL_TYPE_VARCHAR"
+        "body": "MYSQL_TYPE_VARCHAR"
     },
     "MYSQL_TYPE_BIT": {
         "prefix": "MYSQL_TYPE_BIT",
-        "body:": "MYSQL_TYPE_BIT"
+        "body": "MYSQL_TYPE_BIT"
     },
     "MYSQL_TYPE_TIMESTAMP2": {
         "prefix": "MYSQL_TYPE_TIMESTAMP2",
-        "body:": "MYSQL_TYPE_TIMESTAMP2"
+        "body": "MYSQL_TYPE_TIMESTAMP2"
     },
     "MYSQL_TYPE_DATETIME2": {
         "prefix": "MYSQL_TYPE_DATETIME2",
-        "body:": "MYSQL_TYPE_DATETIME2"
+        "body": "MYSQL_TYPE_DATETIME2"
     },
     "MYSQL_TYPE_TIME2": {
         "prefix": "MYSQL_TYPE_TIME2",
