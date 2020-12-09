@@ -2,7 +2,7 @@
     "name": "vscode-pawn",
     "displayName": "Pawn Tools",
     "description": "Pawn tools for vscode. Includes syntax highlighting and snippets/completions for common libraries.",
-    "version": "0.6.6",
+    "version": "1.0.0",
     "publisher": "southclaws",
     "engines": {
         "vscode": "^1.19.0"
@@ -18,7 +18,7 @@
     "icon": "sampctl-icon.png",
     "categories": [
         "Other",
-        "Languages"
+        "Programming Languages"
     ],
     "activationEvents": [
         "onLanguage:pawn"
@@ -124,12 +124,15 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^3.7.5",
+        "typescript": "^4.1.2",
         "vscode": "^1.1.36",
-        "@types/node": "^13.7.1",
-        "@types/mocha": "^7.0.1"
+        "@types/node": "^14.14.11",
+        "@types/mocha": "^8.2.0"
     },
     "dependencies": {
-        "axios": "^0.19.2"
+        "axios": "^0.21.0",
+        "vscode-languageclient": "^6.1.3",
+        "vscode-languageserver": "^6.1.1",
+        "vscode-languageserver-textdocument": "^1.0.1"
     }
 }

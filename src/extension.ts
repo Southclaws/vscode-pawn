@@ -1,96 +1,62 @@
-"use strict";
-
+import { join } from "path";
 import * as vscode from "vscode";
-import * as net from "net";
-import { spawn, SpawnOptions, ChildProcess } from "child_process";
-import axios from 'axios';
+import * as VLC from "vscode-languageclient";
 
-// process stores the sampctl process handle while it's executing
-var process: ChildProcess;
+let client: VLC.LanguageClient;
+let snippetCollection: Map<string, vscode.CompletionItem> = new Map();
 
-type Package = {
-	user: string;
-	repo: string;
-	classification: string;
+const initSnippetCollector = async () => {
+  snippetCollection.clear();
+  const files = await vscode.workspace.findFiles("**/*.pwn");
+  for (const key in files) {
+    if (files.hasOwnProperty(key)) {
+      const element = files[key];
+      await vscode.workspace.openTextDocument(element);
+    }
+  }
+  const filesInc = await vscode.workspace.findFiles("**/*.inc");
+  for (const key in filesInc) {
+    if (filesInc.hasOwnProperty(key)) {
+      const element = filesInc[key];
+      await vscode.workspace.openTextDocument(element);
+    }
+  }
 };
 
-var packages:Package[];
+export async function activate(context: vscode.ExtensionContext) {
+  initSnippetCollector();
 
-const GetCompletionItem = (Range: vscode.Range) => (pack: Package) => {
+  let serverModule = context.asAbsolutePath(join("out", "server", "server.js"));
+  let debugOptions = { execArgv: ["--nolazy", "--inspect=6009"] };
+  let serverOptions: VLC.ServerOptions = {
+    run: { module: serverModule, transport: VLC.TransportKind.ipc },
+    debug: {
+      module: serverModule,
+      transport: VLC.TransportKind.ipc,
+      options: debugOptions,
+    },
+  };
 
-	const { user, repo , classification } = pack;
-	const content = new vscode.CompletionItem(user+"/"+repo, vscode.CompletionItemKind.Text);
-	content.additionalTextEdits = [vscode.TextEdit.delete(Range)];
-	content.insertText = `"${user}/${repo}"`;
-	return content;
-};
+  let clientOptions: VLC.LanguageClientOptions = {
+    documentSelector: [{ scheme: "file", language: "pawn" }],
+    synchronize: {
+      fileEvents: vscode.workspace.createFileSystemWatcher("**/.pwn"),
+    },
+  };
 
-async function GetPackagelist() {
-	try {
-		let response =  await axios.get("https://api.sampctl.com/");
-		packages = response.data.filter((item:Package) => item.classification === "full");
-	} catch(err) {
-		console.error(err);
-		vscode.window.showErrorMessage("Couldn't connect to https://api.sampctl.com/ packages suggestions might not work!");
-	}
+  client = new VLC.LanguageClient(
+    "Pawn Client",
+    "Pawn Server",
+    serverOptions,
+    clientOptions
+  );
 
+  client.start();
 }
 
-export function activate(context: vscode.ExtensionContext) {
-	GetPackagelist();
-	vscode.languages.registerCompletionItemProvider({ language: 'json', pattern: '**/pawn.json' }, {
-		async provideCompletionItems (document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext) {
-			
-			const editor = vscode.window.activeTextEditor;
-			const posline = editor.selection.active;
-			const { text } = document.lineAt(posline);
-			const currentLineReplaceRange = new vscode.Range(new vscode.Position(posline.line, position.character), new vscode.Position(posline.line, text.length));
-			
-			if(packages !== undefined) {
-				return packages.map(GetCompletionItem(currentLineReplaceRange));
-			}
-		},
-		resolveCompletionItem(item: vscode.CompletionItem, token: vscode.CancellationToken) {
-			return item;
-		}
-			
-	});
-	// vscode.window.showInformationMessage("Pawn Tools Loaded!");
-	context.subscriptions.push(
-		vscode.commands.registerCommand("extension.packageEnsure", packageEnsure)
-	);
-	context.subscriptions.push(
-		vscode.commands.registerCommand("extension.packageBuild", packageBuild)
-	);
-
+export function deactivate(): Thenable<void> | undefined {
+  if (!client) {
+    return undefined;
+  }
+  return client.stop();
 }
-
-async function packageEnsure() {
-	console.log("running: sampctl package ensure");
-
-	let opts: SpawnOptions = {
-		cwd: vscode.workspace.workspaceFolders[0].uri.fsPath
-	};
-
-	process = spawn("sampctl", ["package", "ensure"], opts);
-
-	process.on("close", (code: number, signal: string) => {
-		if (code != 0) {
-			vscode.window.showErrorMessage("ensure failed");
-		}
-	});
-}
-
-async function packageBuild() {
-	console.log("running: sampctl package build");
-
-	process = spawn("sampctl", ["package", "build"]);
-
-	process.on("close", (code: number, signal: string) => {
-		if (code != 0) {
-			vscode.window.showErrorMessage("build failed");
-		}
-	});
-}
-
-export function deactivate() {}
