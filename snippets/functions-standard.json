@@ -2609,6 +2609,11 @@
         "description": "Lists the contents of a directory.",
         "body": "dir_list(${1:dir:handle}, ${2:storage[]}, ${3:type}, ${4:length = sizeof(storage})$0"
     },
+    "sizeof": {
+        "prefix": "sizeof",
+        "description": "returns the size of a variable",
+        "body": "sizeof(${1:value})$0"
+    },
     "float": {
         "prefix": "float",
         "description": "Converts an integer into a float.",
