@@ -73,10 +73,7 @@
             {
                 "name": "pawncc",
                 "owner": "pawn",
-                "fileLocation": [
-                    "relative",
-                    "${workspaceRoot}/gamemodes"
-                ],
+                "fileLocation": "absolute",
                 "pattern": {
                     "regexp": "^(.*?)\\(([0-9]*)[- 0-9]*\\) \\: (fatal error|error|warning) [0-9]*\\: (.*)$",
                     "file": 1,
