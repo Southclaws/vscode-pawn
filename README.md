@@ -1,5 +1,10 @@
 # vscode-pawn
 
+## Update 03 April 2021: 
+
+* Added updated syntax for `y_inline_mysql`
+* Added highlighting for `y_timers` (`timer`). 
+
 Pawn tools for vscode.
 
 Currently this is a port of the Sublime Text package which includes proper Pawn

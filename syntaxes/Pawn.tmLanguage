@@ -850,7 +850,7 @@
 					</dict>
 				</dict>
 				<dict>
-					<key>match</key> <string>\s*\b(public|forward|native|char|const|static|stock|hook|task|ptask)\b</string>
+					<key>match</key> <string>\s*\b(public|forward|native|char|const|static|stock|hook|task|ptask|timer)\b</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key> <dict> <key>name</key> <string>storage.modifier.c</string> </dict>
