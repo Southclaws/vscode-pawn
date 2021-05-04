@@ -3577,6 +3577,6 @@
     
     "va_SendClientMessage": {
         "prefix": "va_SendClientMessage",
-        "body": "va_SendClientMessage(${1:playerid}, ${2:colour}, ${3:const fmat[]}, ${3:va_args<>})$0"
-    },
+        "body": "va_SendClientMessage(${1:playerid}, ${2:colour}, ${3:const fmat[]}, ${4:va_args<>})$0"
+    }
 }
