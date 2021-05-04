@@ -3573,5 +3573,10 @@
     "zcmd_OnPlayerCommandPerformed": {
         "prefix": "ZCMD OnPlayerCommandPerformed",
         "body": "public OnPlayerCommandPerformed(${1:playerid}, ${2:cmdtext[]}, ${3:success})\n{\t\n${4}\n\treturn 1;\n}$0"
-    }
+    },
+    
+    "va_SendClientMessage": {
+        "prefix": "va_SendClientMessage",
+        "body": "va_SendClientMessage(${1:playerid}, ${2:colour}, ${3:const fmat[]}, ${3:va_args<>})$0"
+    },
 }
