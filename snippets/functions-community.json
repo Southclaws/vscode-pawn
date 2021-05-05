@@ -3430,6 +3430,11 @@
         "body":
             "strcatmid(${1:dest[]}, ${2:const source[]}, ${3:start = 0}, ${4:end = -1}, ${5:maxlength = sizeof(dest})$0"
     },
+    "strcopy": {
+        "prefix": "strcopy",
+        "body":
+            "strcopy(${1:dest[]}, ${2:const source[]}, ${3:maxlength=sizeof dest})$0"
+    },
     "utf8encode": {
         "prefix": "utf8encode",
         "body": "utf8encode(${1:dest[]}, ${2:const source[]}, ${3:maxlength = sizeof(dest})$0"
