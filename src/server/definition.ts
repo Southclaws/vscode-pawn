@@ -9,7 +9,7 @@ import { TextDocument } from "vscode-languageserver-textdocument";
 import { functionTokens, PawnFunction } from "./function";
 
 export const parseDefinitions = (textDocument: TextDocument) => {
-  const regexDefine = /^#define\s([A-Za-z_]*?)($|\s)/gm;
+  const regexDefine = /^#define\s+([A-Za-z_]*?)($|\s)/gm;
   const content = textDocument.getText();
   const splitContent = content.split("\n");
   splitContent.forEach((cont: string, index: number) => {
