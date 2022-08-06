@@ -24,7 +24,7 @@ export interface FindFunctionIdentifierResult {
 export let functionTokens: Map<string, PawnFunction> = new Map();
 
 export const parseFunctions = (textDocument: TextDocument) => {
-  const regex = /^(forward|native|stock)\s(.*?)\((.*?)\)/gm;
+  const regex = /^(?:(forward|native|stock)\s+)?(\S+)\((.*?)\)/gm;
   const content = textDocument.getText();
   const splitContent = content.split("\n");
   splitContent.forEach((cont: string, index: number) => {
