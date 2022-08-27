@@ -3298,6 +3298,10 @@
         "prefix": "strcat",
         "body": "strcat(${1:dest[]}, ${2:const source[]}, ${3:maxlength=sizeof dest})$0"
     },
+    "strcp": {
+        "prefix": "strcp",
+        "body": "strcpy(${1:dest[]}, ${2:src[]}, ${3:maxlength=sizeof dest})$0"
+    },
     "strmid": {
         "prefix": "strmid",
         "body":
