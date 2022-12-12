@@ -5,12 +5,13 @@ import * as VLC from "vscode-languageclient";
 let client: VLC.LanguageClient;
 let snippetCollection: Map<string, vscode.CompletionItem> = new Map();
 
-const initSnippetCollector = async () => {
+const initSnippetCollector = async () => 
   snippetCollection.clear();
-  const files = await vscode.workspace.findFiles("**/*.pwn");
-  for (const key in files) {
-    if (files.hasOwnProperty(key)) {
-      const element = files[key];
+
+  const filesPwn = await vscode.workspace.findFiles("**/*.pwn");
+  for (const key in filesPwn) {
+    if (filesPwn.hasOwnProperty(key)) {
+      const element = filesPwn[key];
       await vscode.workspace.openTextDocument(element);
     }
   }
@@ -18,6 +19,14 @@ const initSnippetCollector = async () => {
   for (const key in filesInc) {
     if (filesInc.hasOwnProperty(key)) {
       const element = filesInc[key];
+      await vscode.workspace.openTextDocument(element);
+    }
+  }
+  
+  const filesPawn = await vscode.workspace.findFiles("**/*.pawn");
+  for (const key in filesPawn) {
+    if (filesPawn.hasOwnProperty(key)) {
+      const element = filesPawn[key];
       await vscode.workspace.openTextDocument(element);
     }
   }
