@@ -2719,15 +2719,54 @@
         "description": "Returns the amount of memory available for the heap/stack in bytes.",
         "body": "heapspace()$0"
     },
+    "strcat": {
+        "prefix": "strcat",
+        "body": "strcat(${1:dest[]}, ${2:const source[]}, ${3:maxlength=sizeof dest})$0"
+    },
+    "strlen": {
+        "prefix": "strlen",
+        "body": "strlen(${1:const string[]})$0"
+    },
     "ispacked": {
         "prefix": "ispacked",
         "description": "Checks if the given string is packed.",
         "body": "ispacked(${1:const string[]})$0"
     },
-    "memcpy": {
-        "prefix": "memcpy",
-        "description": "Copy bytes from one location to another.",
-        "body": "memcpy(${1:dest[]}, ${2:const source[]}, ${3:index = 0}, ${4:numbytes}, ${5:maxlenght = sizeof dest})$0"
+    "strcopy": {
+        "prefix": "strcopy",
+        "body": "strcopy(${1:dest[]}, ${2:src[]}, ${3:maxlength=sizeof dest})$0"
+    },
+    "strmid": {
+        "prefix": "strmid",
+        "body":
+            "strmid(${1:dest[]}, ${2:const source[]}, ${3:start}, ${4:end}, ${5:maxlength=sizeof dest})$0"
+    },
+    "strins": {
+        "prefix": "strins",
+        "body":
+            "strins(${1:string[]}, ${2:const substr[]}, ${3:pos}, ${4:maxlength=sizeof string})$0"
+    },
+    "strdel": {
+        "prefix": "strdel",
+        "body": "strdel(${1:string[]}, ${2:start}, ${3:end})$0"
+    },
+    "strcmp": {
+        "prefix": "strcmp",
+        "body":
+            "strcmp(${1:const string1[]}, ${2:const string2[]}, ${3:bool:ignorecase=false}, ${4:length=cellmax})$0"
+    },
+    "strfind": {
+        "prefix": "strfind",
+        "body":
+            "strfind(${1:const string[]}, ${2:const sub[]}, ${3:bool:ignorecase=false}, ${4:pos=0})$0"
+    },
+    "strval": {
+        "prefix": "strval",
+        "body": "strval(${1:const string[]})$0"
+    },
+    "valstr": {
+        "prefix": "valstr",
+        "body": "valstr(${1:dest[]}, ${2:value}, ${3:bool:pack=false})$0"
     },
     "random": {
         "prefix": "random",
