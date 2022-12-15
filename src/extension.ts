@@ -5,7 +5,7 @@ import * as VLC from "vscode-languageclient";
 let client: VLC.LanguageClient;
 let snippetCollection: Map<string, vscode.CompletionItem> = new Map();
 
-const initSnippetCollector = async () => 
+const initSnippetCollector = async () => {
   snippetCollection.clear();
 
   const filesPwn = await vscode.workspace.findFiles("**/*.pwn");
